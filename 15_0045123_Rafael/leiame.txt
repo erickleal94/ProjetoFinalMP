@@ -1,0 +1,3 @@
+Para se compilar o programa deve ser dado o comando make no terminal.
+Com make clean, serão apagados os códigos objetos e o executável.
+O framework gtest deve estar instalado no computador.
