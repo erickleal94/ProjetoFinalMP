@@ -7,10 +7,16 @@
 //a saída padrão
 #define DEBUG 0
 
+struct tarefa{
+	int id_externo;
+	char nome[103];
+	int tarefa_executada;
+};
+
 struct lista_vert;
 
 typedef struct lista_vert_codigo {
-	char nome[101]; /*nome do vértice, dada pelo usuário*/
+	struct tarefa dado; /*nome do vértice, dada pelo usuário*/
 	int id; /*representação interna do vértice, gerado pelo código*/
 	struct lista_vert_codigo *next;
 } lista_vert_codigo_t;
@@ -23,6 +29,7 @@ typedef struct lista_aresta {
 
 typedef struct lista_vert {
 	int id; /*representação interna do vértice, gerado pelo código*/
+	int id_externo;
 	lista_aresta_t *antecessores;
 	lista_aresta_t *sucessores;
 	struct lista_vert *next;
@@ -57,43 +64,39 @@ grafo_t *deletar_grafo(grafo_t *meu_grafo) {
 	return NULL;
 }
 
-resposta existe_vert(const grafo_t *meu_grafo, const char *nome) {
+resposta existe_vert(const grafo_t *meu_grafo, int id_externo) {
 	lista_vert_codigo_t *iterator;
 	
 	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = iterator->next) {
-		if (strcmp(iterator->nome, nome) == 0)
+		if (iterator->dado->id_externo == id_externo)
 			return TRUE;
 	}
 	return FALSE;
 }
 
-resposta existe_origem(const grafo_t *meu_grafo, const char *nome) {
+resposta existe_origem(const grafo_t *meu_grafo, int id_externo) {
 	lista_origem_t *iterator;
 	
-	if (existe_vert(meu_grafo, nome)) {
-		
-		int id = achar_id(meu_grafo, nome);
+	if (existe_vert(meu_grafo, id_externo)) {
 		
 		for (iterator = meu_grafo->origem; iterator != NULL; iterator = iterator->next) {
-			if (iterator->destino->id == id)
+			if (iterator->destino->id_externo == id_externo)
 				return TRUE;
 		}
 	}
 	return FALSE;
 }
 
-resposta existe_aresta(const grafo_t *meu_grafo, const char *nome1, const char *nome2) {
+resposta existe_aresta(const grafo_t *meu_grafo, int id_externo1, int id_externo2) {
 	lista_vert_t *vert_inicial;
 	lista_aresta_t *iterator;
 	
-	if (existe_vert(meu_grafo, nome1) && existe_vert(meu_grafo, nome2)) {
-		int id1 = achar_id(meu_grafo, nome1);
-		int id2 = achar_id(meu_grafo, nome2);
+	if (existe_vert(meu_grafo, id_externo1) && existe_vert(meu_grafo, id_externo2)) {
 		
 		for (vert_inicial = meu_grafo->vert; vert_inicial != NULL; vert_inicial = vert_inicial->next) {
-			if (vert_inicial->id == id1) {
+			if (vert_inicial->id_externo == id_externo1) {
 				for (iterator = vert_inicial->sucessores; iterator != NULL; iterator = iterator->next) {
-					if (iterator->destino->id == id2) {
+					if (iterator->destino->id_externo == id_externo2) {
 						return TRUE;
 					}
 				}
@@ -104,21 +107,21 @@ resposta existe_aresta(const grafo_t *meu_grafo, const char *nome1, const char *
 	return FALSE;
 }
 
-int achar_id(const grafo_t *meu_grafo, const char *nome) {
+int achar_id(const grafo_t *meu_grafo, int id_externo) {
 	lista_vert_codigo_t *iterator;
 	
 	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = iterator->next) {
-		if (strcmp(iterator->nome, nome) == 0) {
+		if (iterator->dado->id_externo == id_externo) {
 			return iterator->id;
 		}
 	}
 	return -1;
 }
-char *achar_nome(const grafo_t *meu_grafo, const int id) {
+char *achar_nome(const grafo_t *meu_grafo, int id_externo) {
 	lista_vert_codigo_t *iterator;
 	
 	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = iterator->next) {
-		if (iterator->id == id) {
+		if (iterator->id_externo == id_externo) {
 			return iterator->nome;
 		}
 	}
