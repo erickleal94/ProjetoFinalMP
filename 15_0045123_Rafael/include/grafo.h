@@ -77,7 +77,7 @@ grafo_t *deletar_grafo(grafo_t *meu_grafo);
  * 	O retorno será TRUE ou FALSE
  * 	O conteúdo do grafo e da string passados não serão modificados
 ***************************************************************************/
-resposta existe_vert(const grafo_t *meu_grafo, const char *nome);
+resposta existe_vert(const grafo_t *meu_grafo, int id_externo);
 
 /***************************************************************************
  * Função: Existe origem nome?
@@ -103,7 +103,7 @@ resposta existe_vert(const grafo_t *meu_grafo, const char *nome);
  * 	O retorno será TRUE ou FALSE
  * 	O conteúdo do grafo e da string passados não serão modificados
 ***************************************************************************/
-resposta existe_origem(const grafo_t *meu_grafo, const char *nome);
+resposta existe_origem(const grafo_t *meu_grafo, int id_externo);
 
 /***************************************************************************
  * Função: Existe aresta nome?
@@ -130,7 +130,7 @@ resposta existe_origem(const grafo_t *meu_grafo, const char *nome);
  * 	O retorno será TRUE ou FALSE
  * 	O conteúdo do grafo e das strings passados não serão modificados
 ***************************************************************************/
-resposta existe_aresta(const grafo_t *meu_grafo, const char *nome1, const char *nome2);
+resposta existe_aresta(const grafo_t *meu_grafo, int id_externo1, int id_externo2);
 
 /***************************************************************************
  * Função: Achar id
@@ -181,7 +181,7 @@ resposta existe_aresta(const grafo_t *meu_grafo, const char *nome1, const char *
  * 	O retorno será TRUE ou FALSE
  * 	O conteúdo do grafo e da string passados não serão modificados
 ***************************************************************************/
-int achar_id(const grafo_t *meu_grafo, const char *nome);
+int achar_id(const grafo_t *meu_grafo, int id_externo);
 
 /***************************************************************************
  * Função: Achar nome
@@ -215,7 +215,7 @@ int achar_id(const grafo_t *meu_grafo, const char *nome);
  * 	O retorno será TRUE ou FALSE
  * 	O conteúdo do grafo e do inteiro passados não serão modificados
 ***************************************************************************/
-char *achar_nome(const grafo_t *meu_grafo, const int id);
+char *achar_nome(const grafo_t *meu_grafo, int id_externo);
 
 /***************************************************************************
  * Função: Inserir vértice

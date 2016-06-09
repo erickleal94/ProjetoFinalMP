@@ -57,7 +57,7 @@ grafo_t *deletar_grafo(grafo_t *meu_grafo) {
 	lista_vert_codigo_t *iterator;
 	
 	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = meu_grafo->tabela) {
-		remover_vert(meu_grafo, iterator->nome);
+// 		remover_vert(meu_grafo, iterator->dado.nome);
 	}
 	free(meu_grafo);
 	
@@ -68,7 +68,7 @@ resposta existe_vert(const grafo_t *meu_grafo, int id_externo) {
 	lista_vert_codigo_t *iterator;
 	
 	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = iterator->next) {
-		if (iterator->dado->id_externo == id_externo)
+		if (iterator->dado.id_externo == id_externo)
 			return TRUE;
 	}
 	return FALSE;
@@ -111,7 +111,7 @@ int achar_id(const grafo_t *meu_grafo, int id_externo) {
 	lista_vert_codigo_t *iterator;
 	
 	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = iterator->next) {
-		if (iterator->dado->id_externo == id_externo) {
+		if (iterator->dado.id_externo == id_externo) {
 			return iterator->id;
 		}
 	}
@@ -121,13 +121,13 @@ char *achar_nome(const grafo_t *meu_grafo, int id_externo) {
 	lista_vert_codigo_t *iterator;
 	
 	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = iterator->next) {
-		if (iterator->id_externo == id_externo) {
-			return iterator->nome;
+		if (iterator->dado.id_externo == id_externo) {
+			return iterator->dado.nome;
 		}
 	}
 	return NULL;
 }
-
+/*
 void inserir_vert(grafo_t *meu_grafo, const char *nome) {
 	
 	if (existe_vert(meu_grafo, nome) == FALSE) {
@@ -149,7 +149,7 @@ void inserir_vert(grafo_t *meu_grafo, const char *nome) {
 			
 			novo->id = last + 1;
 			id = novo->id;
-			strcpy(novo->nome, nome);
+			strcpy(novo->dado.nome, nome);
 			
 			novo->next = iterator;
 			
@@ -511,10 +511,10 @@ void escrever_vert(const grafo_t *meu_grafo, FILE *fp) {
 	
 	if (iterator != NULL) {
 		
-		fprintf(fp, "%s", iterator->nome);
+		fprintf(fp, "%s", iterator->dado.nome);
 		
 		for (iterator = iterator->next; iterator != NULL; iterator = iterator->next) {
-			fprintf(fp, ", %s", iterator->nome);
+			fprintf(fp, ", %s", iterator->dado.nome);
 		}
 		fprintf(fp, "\n");
 	} else {//nenhum vertice
@@ -699,3 +699,4 @@ resposta eh_conexo(const grafo_t *meu_grafo) {
 	//nao necessario
 	return FALSE;
 }
+*/
