@@ -22,7 +22,7 @@ int achar_id(const grafo_priv_t *meu_grafo, int id_externo);
 char *achar_nome(const grafo_priv_t *meu_grafo, int id_externo);
 
 void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula);
-void inserir_aresta(grafo_priv_t *meu_grafo, int id1, Celula_priv_t *celula2, const double peso);
+void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *celula2, double peso);
 
 void Ler_Tarefas(Celula_priv_t *celula, const char *NomeArq);
 
