@@ -10,7 +10,7 @@ LIBS = -lm -lgtest -lpthread -lgtest_main -lncurses
 _DEPS = grafo.h
 DEPS = $(patsubst%,$(IDIR)/%,$(_DEPS))
 
-_OBJ = grafo.o
+_OBJ = grafo.o teste.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 default_target: teste
