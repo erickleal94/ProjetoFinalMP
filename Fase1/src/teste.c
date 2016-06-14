@@ -26,7 +26,7 @@ void Ler_Tarefas(grafo_t *meu_grafo, Celula_t *celula, const char *NomeArq){
 	for (i = 0; i < celula->pre_req; i++) {
 		int req;
 		fscanf("%d", &req);
-		//a direcao eh do per-requisito ate a celula
+		//a direcao eh do pre-requisito ate a celula
 		inserir_aresta(meu_grafo, req, celula);
 	}
 	
@@ -57,9 +57,10 @@ int main(){
 	
 	initscr();
 	start_color();
-	init_pair(1,COLOR_BLUE,COLOR_WHITE); //Texto(Azul)     |  Fundo(Branco)
+	box(stdscr, 0, 0);
+	init_pair(1,COLOR_WHITE,COLOR_BLACK); //Texto(BRANCO)     |  Fundo(PRETO)
 	bkgd(COLOR_PAIR(1));
-	move(1,0);
+	move(1,1);
 	Celula_t celula;
 	Ler_Tarefas(&celula, "teste.txt");
 	Imprime_Tarefas(&celula);
