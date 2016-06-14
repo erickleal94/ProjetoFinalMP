@@ -10,7 +10,7 @@ LIBS = -lm -lgtest -lpthread -lgtest_main -lncurses
 _DEPS = estruturas.h
 DEPS = $(patsubst%,$(IDIR)/%,$(_DEPS))
 
-_OBJ = main.o logica.o grafo.o lista.o
+_OBJ = main.o grafo.o lista.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 default_target: grafo
