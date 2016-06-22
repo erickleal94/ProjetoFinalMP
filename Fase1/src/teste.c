@@ -48,7 +48,7 @@ void Grava_Arq(Celula_priv_t *celula, char *NomeArq){
 
 
 
-int main(){
+/*int main(){
 	
 	initscr();
 	start_color();
@@ -63,4 +63,4 @@ int main(){
 	
 	endwin();
 	return 0;
-}
+}*/

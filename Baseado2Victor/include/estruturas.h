@@ -37,7 +37,22 @@ typedef enum{
 struct TipoLista_P{
 	apontador inicio, final;
 };
-	
+/**
+ * @struct Celula_P
+ * @brief Estrutura de dado que representa uma ID_tarefa
+ * @param anter Aponta para a tarefa anterior
+ * @param ID_tarefa id dado pelo usuario para a tarefa
+ * @param executada A tarefa já foi executada?
+ * @param duracao Duração da tarefa
+ * @param ini_min Tempo mínimo de início da tarefa
+ * @param pre_req Número de pré-requisitos
+ * @param nome Nome da tarefa
+ * @param reqs Vetor dos ids dos pré-requisitos
+ * @param prox Aponta para a próxima tarefa
+ * 
+ * @details A struct Celula_P contém todos os dados
+ * de uma tarefa
+*/
 struct Celula_P{
 	apontador anter;
 	int ID_tarefa, executada, duracao, ini_min, pre_req;
@@ -48,6 +63,22 @@ struct Celula_P{
 
 /*ESTRUTURAS DO GRAFO E DAS ARESTAS*/
 
+/**
+ * @struct Grafo_P
+ * @brief Estrutura de dado que representa uma ID_tarefa
+ * @param anter Aponta para a tarefa anterior
+ * @param ID_tarefa id dado pelo usuario para a tarefa
+ * @param executada A tarefa já foi executada?
+ * @param duracao Duração da tarefa
+ * @param ini_min Tempo mínimo de início da tarefa
+ * @param pre_req Número de pré-requisitos
+ * @param nome Nome da tarefa
+ * @param reqs Vetor dos ids dos pré-requisitos
+ * @param prox Aponta para a próxima tarefa
+ * 
+ * @details A struct Celula_P contém todos os dados
+ * de uma tarefa
+*/
 struct Grafo_P{
 	TipoLista* vertices;
 	TipoLista* origens;

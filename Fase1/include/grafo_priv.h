@@ -2,8 +2,9 @@
 #define GRAFO_PRIV
 
 typedef struct Celula_priv {
-	int id_externo, executada;
+	int id_externo, executada, duracao;
 	int ini_min, pre_req;
+	int *reqs;
 	char nome[200];
 
 } Celula_priv_t;

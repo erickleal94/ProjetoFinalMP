@@ -1,6 +1,6 @@
 CXX = g++
 IDIR = ../include
-CXXFLAGS = -I$(IDIR)
+CXXFLAGS = -I$(IDIR) -ftest-coverage -fprofile-arcs
 
 ODIR = ../obj
 LDIR = ../lib
@@ -20,8 +20,11 @@ $(ODIR)/%.o: %.cpp $(DEPS)
 	
 grafo: $(OBJ)
 	g++ -o $@ $^ $(CXXFLAGS) $(LIBS)
-	
+move:
+	mv $(ODIR)/*.gcno .
+	mv $(ODIR)/*.gcda .
+
 .PHONY: clean
 
 clean:
-	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~
+	rm -f $(ODIR)/*.o $(ODIR)/*.gcno $(ODIR)/*.gcda *.gcno *.gcda *~ core $(INCDIR)/*~
