@@ -49,7 +49,7 @@ void interface_editar_tarefa(){
 void interface_inserir_tarefa(){
 	
 	int ID, ini_min, duracao, pre_req, *reqs;
-	char *nome;
+	char nome[100];
 	int i, j;
 	
 	clear();
@@ -74,7 +74,7 @@ void interface_inserir_tarefa(){
 	scanw("%d", &pre_req);
 	if(pre_req > 0){
 		reqs = (int*)malloc(sizeof(int)*pre_req);
-		for (i = 0, j = 6; i < pre_req; i++, j++) {
+		for (i = 0, j = 7; i < pre_req; i++, j++) {
 			move(j,1);
 			printw("Codigo do pre-requisito: ");
 			scanw("%d", &reqs[i]);
