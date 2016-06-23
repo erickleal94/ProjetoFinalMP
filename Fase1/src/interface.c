@@ -1,7 +1,9 @@
 #include <curses.h>                
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
+#include <grafo_priv.h>
+#include <grafo.h>
 
 void interface_remover_tarefa(){
 	
@@ -93,7 +95,7 @@ void interface_inserir_tarefa(){
 	
 }
 
-void interface_caminho_completo(){
+void interface_caminho_completo(const grafo_priv_t *meu_grafo){
 	
 	int tempo;
 	
@@ -168,6 +170,41 @@ void interface_vizualizar_tarefas(){
 	refresh();
 }
 
+void interface_vizualizar_determinada_tarefa(const grafo_priv_t *meu_grafo){
+	
+	int ID, i;
+	Celula_priv_t celula;
+	
+	clear();
+	refresh();
+	box(stdscr, 0, 0);
+	move(1,1);
+	printw("Qual o codigo da tarefa que deseja visualizar?");
+	move(2,1);
+	scanw("%d", &ID);
+	
+	*celula = achar_celula(meu_grafo, ID);
+	
+	move(3,1);
+	printw("%d %s %d %d %d %d ", celula->id_externo, celula->nome, celula->executada, celula->duracao, celula->ini_min, celula->pre_req);
+	if(celula->pre_req > 0){
+		for(i = 0; i < celula->pre_req; i++){
+			printw("%d ", celula->reqs[i]);
+		}
+		
+	}
+	
+	
+	
+	refresh();
+	
+	getch();
+	clear();
+	box(stdscr, 0, 0);
+	refresh();	
+	
+}
+
 
 int main(){
 	
@@ -194,10 +231,12 @@ int main(){
 		move(6,1);
 		printw("5 - Visualizar situacao das tarefas em determinado tempo");
 		move(7,1);
-		printw("6 - Visualizar todas as tarefas");	
+		printw("6 - Visualizar todas as tarefas");
 		move(8,1);
-		printw("0 - Sair");
+		printw("7 - Visualizar determinada tarefa");	
 		move(9,1);
+		printw("0 - Sair");
+		move(10,1);
 		scanw("%d", &escolha);
 		refresh();
 		switch(escolha){
@@ -225,6 +264,10 @@ int main(){
 				interface_vizualizar_tarefas();
 				break;
 				
+			case 7:
+					interface_vizualizar_determinada_tarefa();
+					break;
+					
 			case 0:
 				break;			
 		}

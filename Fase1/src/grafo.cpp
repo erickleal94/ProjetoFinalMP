@@ -9,7 +9,7 @@ using namespace std;
 
 //se for 1 serão escritas mensagens de erro para
 //a saída padrão
-#define DEBUG 1
+#define DEBUG 0
 
 grafo_priv_t *criar_grafo(void) {
 	grafo_priv_t *meu_grafo = (grafo_priv_t *) malloc(sizeof(grafo_priv_t));
