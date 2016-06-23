@@ -1,0 +1,18 @@
+1 interface gráfica VICTOR
+2 adaptação grafo RAFAEL
+3 documentação/doxygen TODOS
+4 tabela de quem fez o que quando TODOS
+5 testes ERICK
+6 gcov RAFAEL
+7 iterador, programação genérica 
+8 ponteiro de função RAFAEL
+9 criar tarefa(inserir vertice) RAFA
+10 remover tarefa(vertice) RAFA
+11 editar tarefa(vertice) RAFA
+12 visualizar tarefas VICTOR
+13 visualizar pre reqs VICTOR
+14 garantir consistencia ERICK
+15 menor caminho RAFA
+16 visualizar o que está completo ou executando em determinado tempo VICTOR
+17 ver tempo que demora para completar determinada tarefa VICTOR
+18 CPPCheck 
