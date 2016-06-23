@@ -1,4 +1,4 @@
-1 interface gráfica VICTOR
+1 interface gráfica VICTOR OK
 2 adaptação grafo RAFAEL
 3 documentação/doxygen TODOS
 4 tabela de quem fez o que quando TODOS
