@@ -148,7 +148,7 @@ void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula) {
 			lista_vert_t *novo = (lista_vert_t *) malloc(sizeof(lista_vert_t));
 			
 			for (iterator = meu_grafo->vert; iterator != NULL; iterator = iterator->next) {
-				if (id > iterator->id) {
+				if (id < iterator->id) {
 					break;
 				}
 				prev = iterator;
