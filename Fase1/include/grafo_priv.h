@@ -1,6 +1,8 @@
 #ifndef GRAFO_PRIV
 #define GRAFO_PRIV
 
+#include <grafo.h>
+
 typedef struct Celula_priv {
 	int id_externo, executada, duracao;
 	int ini_min, pre_req;
@@ -26,7 +28,6 @@ typedef struct lista_aresta {
 typedef struct lista_vert {
 	int id;			/*representação interna do vértice, gerado pelo código*/
 	int id_externo;
-	int pre_req;
 	lista_aresta_t *antecessores;
 	lista_aresta_t *sucessores;
 	struct lista_vert *next;
@@ -43,10 +44,8 @@ typedef struct grafo_priv {
 	lista_origem_t *origem;
 } grafo_priv_t;
 
-enum resp;
-typedef enum resp resposta;
-
 resposta existe_origem(const grafo_priv_t *meu_grafo, int id_externo);
 void inserir_origem(grafo_priv_t *meu_grafo, Celula_priv_t *celula);
+void remover_origem(grafo_priv_t *meu_grafo, int id_externo);
 
 #endif

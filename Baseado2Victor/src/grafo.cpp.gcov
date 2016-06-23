@@ -1,0 +1,239 @@
+        -:    0:Source:grafo.cpp
+        -:    0:Graph:grafo.gcno
+        -:    0:Data:grafo.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*UNIVERSIDADE DE BRASÍLIA
+        -:    2:* INSTITUTO DE CIÊNCIAS EXATAS
+        -:    3:* DEPARTAMENTO DE CIÊNCIA DA COMPUTAÇÃO
+        -:    4:* Brasília, 15 de maio de 2016
+        -:    5:* Disciplina: MÉTODOS DE PROGRAMAÇÃO
+        -:    6:* Aluno: Victor Fabre Figueiredo – 15/0022948
+        -:    7:*        Erick Pizani Leal Guimaraes - 12/0116421
+        -:    8:*        Rafael Lourenço de Lima Chehab 15/0045123*/
+        -:    9:
+        -:   10:#include "estruturas.h"
+        -:   11:#include <stdio.h>
+        -:   12:#include <stdlib.h>
+        -:   13:#include <string.h>
+        -:   14:#include <ncurses.h> 
+        -:   15:
+        -:   16:/*Esta módulo contém as funções relacionadas à criação do grafo, leitura de arquivo, escrita em arquivo, inserção e remoção de vérticese de origens.*/
+        -:   17:
+        -:   18:
+        1:   19:t_grafo* criaGrafo(){
+        1:   20:	t_grafo* graph = (t_grafo*)malloc(sizeof(t_grafo));
+        1:   21:	graph->vertices = criaLista();
+        1:   22:	graph->origens = criaLista();
+        1:   23:	graph->arestas = NULL;
+        1:   24:	return graph;
+        -:   25:}
+        -:   26:
+        1:   27:t_grafo* criaGrafoArq(char *nomeArq){
+        1:   28:	t_grafo* g = criaGrafo();
+        -:   29:	int i , j;
+        -:   30:	FILE *fp, *fp2;
+        1:   31:	fp = fopen(nomeArq, "r");
+        -:   32:	char string[1000];
+        -:   33:	char nome[200], dest[100], *ps;
+        -:   34:	int ID_tarefa, executada, duracao, ini_min, pre_req, *reqs;
+        -:   35:
+        -:   36:
+        -:   37:
+        1:   38:	fp2 = fopen("saida.txt", "w");
+        -:   39:	
+        -:   40:	
+        -:   41:	//leitura dos vertices
+        1:   42:	j = 1;
+        7:   43:	while(fscanf(fp, "%d '%[^']' %d %d %d %d", &ID_tarefa, nome, &executada, &duracao, &ini_min, &pre_req)>0){
+        -:   44:		
+        3:   45:		reqs = (int*)malloc(sizeof(int)*pre_req);
+        5:   46:		for (i = 0; i < pre_req; i++) {
+        2:   47:			fscanf(fp, "%d", &reqs[i]);
+        -:   48:					
+        -:   49:		}
+        3:   50:		fprintf(fp2, "%d %s %d %d %d %d", ID_tarefa, nome, executada, duracao, ini_min, pre_req);
+        5:   51:		for (i = 0; i < pre_req; i++) {
+        2:   52:			fprintf(fp2, " %d", reqs[i]);
+        -:   53:					
+        -:   54:		}
+        3:   55:		fprintf(fp2, "\n");
+        3:   56:		insereVertice(g, nome, ID_tarefa, executada, duracao, ini_min, pre_req, reqs);
+        3:   57:		fgetc(fp);
+        -:   58:		
+        3:   59:		move(j, 1);
+        3:   60:		printw("%d %s %d %d %d %d", ID_tarefa, nome, executada, duracao, ini_min, pre_req);
+        5:   61:		for (i = 0; i < pre_req; i++) {
+        2:   62:			printw(" %d", reqs[i]);
+        -:   63:					
+        -:   64:		}
+        3:   65:		refresh();                                      
+        -:   66:		
+        -:   67:		
+        3:   68:		j++;
+        -:   69:	}
+        1:   70:	getch();
+        -:   71:	
+        -:   72:	/*
+        -:   73:	//Leitura das origens
+        -:   74:	fscanf(fp, "%[^\n]s", string);
+        -:   75:	j=0;
+        -:   76:	for(i = 0; i < strlen(string); i++){
+        -:   77:		if(string[i] != ',' && string[i] != ' '){
+        -:   78:			nome[j] = string[i];
+        -:   79:			j++;
+        -:   80:		}
+        -:   81:		else if(string[i] == ','){
+        -:   82:			//j++;
+        -:   83:			nome[j] = '\0';
+        -:   84:			j=0;
+        -:   85:			insereOrigem(g, nome);
+        -:   86:		}	
+        -:   87:	}
+        -:   88:	insereOrigem(g, nome);
+        -:   89:	fgetc(fp);
+        -:   90:	j=0;
+        -:   91:	//leitura das arestas
+        -:   92:	while(fscanf(fp, "%[^\n]s", string) > 0){
+        -:   93:		ps = strtok(string, " ,");
+        -:   94:		strcpy(nome, ps);
+        -:   95:		ps = strtok(NULL, " ,");
+        -:   96:		strcpy(dest, ps);
+        -:   97:		ps = strtok(NULL, " ,");
+        -:   98:
+        -:   99:		insereAresta(g, nome, dest, atoi(ps));
+        -:  100:		fgetc(fp);
+        -:  101:	}*/
+        -:  102:
+        1:  103:	fclose(fp);
+        1:  104:	fclose(fp2);
+        1:  105:	return g;
+        -:  106:}
+        -:  107:
+        3:  108:grafo_ret insereVertice(t_grafo* g, char vertice[], int ID_tarefa, int executada, int duracao, int ini_min, int pre_req, int reqs[]){
+        3:  109:	if(g == NULL || vertice == NULL){
+    #####:  110:		return GRAFO_ERR;
+        -:  111:	}
+        -:  112:	//verifica de o vertice já existe
+        3:  113:	else if(buscaLista(g->vertices, vertice) != NULL){
+    #####:  114:		return GRAFO_ERR;
+        -:  115:	}
+        3:  116:	insereLista(g->vertices, vertice, duracao, ID_tarefa, executada, ini_min, pre_req, reqs);
+        3:  117:	return GRAFO_OK;
+        -:  118:}
+        -:  119:
+        -:  120:/*grafo_ret insereOrigem(t_grafo* g, char origem[]){
+        -:  121:	if(g == NULL || origem == NULL){
+        -:  122:		return GRAFO_ERR;
+        -:  123:	}
+        -:  124:	//verifica se existe um vertice que sera origem
+        -:  125:	if(buscaLista(g->vertices, origem) == NULL){
+        -:  126:		return GRAFO_ERR;
+        -:  127:	}
+        -:  128:	else
+        -:  129:		//se existir insere-o como origem
+        -:  130:		insereLista(g->origens, origem, 0);
+        -:  131:		return GRAFO_OK;
+        -:  132:}
+        -:  133:
+        -:  134:grafo_ret retiraVertice(t_grafo* g, char vertice[]){
+        -:  135:	if(g == NULL || vertice == NULL){
+        -:  136:		return GRAFO_ERR;
+        -:  137:	}
+        -:  138:	//verifica se o elemento existe
+        -:  139:	else if(buscaLista(g->vertices, vertice) == NULL){
+        -:  140:		return GRAFO_ERR;
+        -:  141:	}
+        -:  142:	//ao remover um vertice deve removelo caso ele seja uma origem
+        -:  143:	retiraOrigem(g, vertice);
+        -:  144:	//retira o elemento requisitado da lista de vertices
+        -:  145:	retiraLista(g->vertices, buscaLista(g->vertices, vertice));
+        -:  146:	//retira as arestas que possuem o vertice removido
+        -:  147:	retiraVerAresta(g, vertice);
+        -:  148:
+        -:  149:	return GRAFO_OK;
+        -:  150:}
+        -:  151:
+        -:  152:grafo_ret retiraOrigem(t_grafo* g, char origem[]){
+        -:  153:	if(g == NULL || origem == NULL){
+        -:  154:		return GRAFO_ERR;
+        -:  155:	}
+        -:  156:	//verifica se o elemento existe
+        -:  157:	else if(buscaLista(g->origens, origem) == NULL){
+        -:  158:		return GRAFO_ERR;
+        -:  159:	}
+        -:  160:	//retira o elemento requisitado da lista de origens
+        -:  161:	retiraLista(g->origens, buscaLista(g->origens, origem));
+        -:  162:
+        -:  163:	return GRAFO_OK;
+        -:  164:}
+        -:  165:
+        -:  166://desaloca o grafo
+        -:  167:grafo_ret limpaGrafo(t_grafo* g){
+        -:  168:	if(g == NULL){
+        -:  169:		return GRAFO_ERR;
+        -:  170:	}
+        -:  171:	limpaLista(g->vertices);
+        -:  172:	limpaLista(g->origens);
+        -:  173:	limpaArestas(g);
+        -:  174:	free(g);
+        -:  175:
+        -:  176:	return GRAFO_OK;
+        -:  177:}
+        -:  178:
+        -:  179:void imprimeGrafo(t_grafo* g){
+        -:  180:	apontador AUX;
+        -:  181:	printf("Vertices: ");
+        -:  182:	for(AUX = g->vertices->inicio->prox ; AUX != NULL ; AUX = AUX->prox){
+        -:  183:		printf("%s, ", AUX->nome);
+        -:  184:	}
+        -:  185:	printf("\n");
+        -:  186:	printf("Origens: ");
+        -:  187:	for(AUX = g->origens->inicio->prox ; AUX != NULL ; AUX = AUX->prox){
+        -:  188:		printf("%s, ", AUX->nome);
+        -:  189:	}
+        -:  190:	printf("\n");
+        -:  191:	printf("Arestas: \n");
+        -:  192:	t_arestas* AUXa;
+        -:  193:	for(AUXa = g->arestas ; AUXa != NULL ; AUXa = AUXa->proxA){
+        -:  194:		for(AUX =  AUXa->adjacentes->inicio->prox; AUX != NULL ; AUX = AUX->prox){
+        -:  195:			printf("%s, ", AUXa->nome);
+        -:  196:			printf("%s, ", AUX->nome);
+        -:  197:			printf("%d\n", AUX->peso);
+        -:  198:		}
+        -:  199:	}
+        -:  200:}
+        -:  201:
+        -:  202:void imprimeGrafoArq(t_grafo* g, char *nomeArq){
+        -:  203:	FILE *fp;
+        -:  204:	fp = fopen(nomeArq, "w");
+        -:  205:
+        -:  206:	apontador AUX;
+        -:  207:	//Vertices
+        -:  208:	for(AUX = g->vertices->inicio->prox ; AUX != NULL ; AUX = AUX->prox){
+        -:  209:		fprintf(fp, "%s", AUX->nome);
+        -:  210:		if(AUX->prox != NULL){
+        -:  211:			fprintf(fp, ", ");
+        -:  212:		}
+        -:  213:	}
+        -:  214:	fprintf(fp, "\n");
+        -:  215:	//Origens
+        -:  216:	for(AUX = g->origens->inicio->prox ; AUX != NULL ; AUX = AUX->prox){
+        -:  217:		fprintf(fp, "%s", AUX->nome);
+        -:  218:		if(AUX->prox != NULL){
+        -:  219:			fprintf(fp, ", ");
+        -:  220:		}
+        -:  221:	}
+        -:  222:	fprintf(fp, "\n");
+        -:  223:	//Arestas
+        -:  224:	t_arestas* AUXa;
+        -:  225:	for(AUXa = g->arestas ; AUXa != NULL ; AUXa = AUXa->proxA){
+        -:  226:		for(AUX =  AUXa->adjacentes->inicio->prox; AUX != NULL ; AUX = AUX->prox){
+        -:  227:			fprintf(fp, "%s, ", AUXa->nome);
+        -:  228:			fprintf(fp, "%s, ", AUX->nome);
+        -:  229:			fprintf(fp, "%d\n", AUX->peso);
+        -:  230:		}
+        -:  231:	}
+        -:  232:
+        -:  233:	fclose(fp);
+        -:  234:}*/

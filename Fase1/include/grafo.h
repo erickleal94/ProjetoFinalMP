@@ -19,15 +19,15 @@ resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo); //DONE
 resposta existe_aresta(const grafo_priv_t *meu_grafo, int id_externo1, int id_externo2); //DONE
 
 int achar_id(const grafo_priv_t *meu_grafo, int id_externo); //DONE
-char *achar_nome(const grafo_priv_t *meu_grafo, int id_externo); //DONE
+Celula_priv_t *achar_celula(const grafo_priv_t *meu_grafo, int id_externo); //DONE
 
 void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula);  //DONE
-void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *celula2, double peso);  //DONE
+void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *celula2, int peso);  //DONE
 
 void Ler_Tarefas(grafo_priv_t *meu_grafo, Celula_priv_t *celula, const char *NomeArq);
 
-void remover_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula);
-void remover_aresta(grafo_priv_t *meu_grafo, Celula_priv_t *celula1, Celula_priv_t *celula2);
+void remover_vert(grafo_priv_t *meu_grafo, int id_externo);
+void remover_aresta(grafo_priv_t *meu_grafo, int id_externo1, int id_externo2);
 
 void Imprime_Tarefas(Celula_priv_t *celula);
 void Grava_Arq(Celula_priv_t *celula, char *NomeArq);
@@ -37,7 +37,7 @@ int maior_id(const grafo_priv_t *meu_grafo);
 int num_vert(const grafo_priv_t *meu_grafo);
 int num_arestas(const grafo_priv_t *meu_grafo);
 
-double menor_caminho(const grafo_priv_t *meu_grafo, const char *inicio, const char *fim);
+void menor_caminho(const grafo_priv_t *meu_grafo, int **dist);
 
 resposta eh_conexo(const grafo_priv_t *meu_grafo);
 

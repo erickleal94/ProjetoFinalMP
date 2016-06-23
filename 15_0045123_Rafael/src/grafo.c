@@ -46,6 +46,8 @@ typedef struct grafo {
 	lista_origem_t *origem;
 } grafo_t;
 
+
+
 grafo_t *criar_grafo(void) {
 	grafo_t *meu_grafo = (grafo_t *) malloc(sizeof(grafo_t));
 	meu_grafo->tabela = NULL;
@@ -127,7 +129,7 @@ char *achar_nome(const grafo_t *meu_grafo, int id_externo) {
 	}
 	return NULL;
 }
-/*
+
 void inserir_vert(grafo_t *meu_grafo, const char *nome) {
 	
 	if (existe_vert(meu_grafo, nome) == FALSE) {
@@ -329,31 +331,6 @@ void ler_vert(grafo_t *meu_grafo, FILE *fp) {
 			break;
 	}
 }
-void ler_origem(grafo_t *meu_grafo, FILE *fp) {
-	char s[101], c;
-	while (fscanf(fp, " %[^\n,]%c", s, &c) == 2) {
-		inserir_origem(meu_grafo, s);
-		if (c == '\n')
-			break;
-	}
-}
-void ler_aresta(grafo_t *meu_grafo, FILE *fp) {
-	char s1[101], s2[101];
-	double weight;
-	while (fscanf(fp, " %[^,]%*c %[^,]%*c%lf%*[ \n]", s1, s2, &weight) == 3) {
-		inserir_aresta(meu_grafo, s1, s2, weight);
-	}
-}
-
-void ler_grafo(grafo_t *meu_grafo, const char *file) {
-	
-	FILE *fp = fopen(file, "r");
-	if (fp != NULL) {
-		ler_vert(meu_grafo, fp);
-		ler_origem(meu_grafo, fp);
-		ler_aresta(meu_grafo, fp);
-	}
-}
 
 void remover_vert(grafo_t *meu_grafo, const char *nome) {
 	
@@ -505,58 +482,6 @@ void remover_aresta(grafo_t *meu_grafo, const char *nome1, const char *nome2) {
 	
 }
 
-void escrever_vert(const grafo_t *meu_grafo, FILE *fp) {
-	
-	lista_vert_codigo_t *iterator = meu_grafo->tabela;
-	
-	if (iterator != NULL) {
-		
-		fprintf(fp, "%s", iterator->dado.nome);
-		
-		for (iterator = iterator->next; iterator != NULL; iterator = iterator->next) {
-			fprintf(fp, ", %s", iterator->dado.nome);
-		}
-		fprintf(fp, "\n");
-	} else {//nenhum vertice
-		fprintf(fp, "\n");
-	}
-}
-void escrever_origem(const grafo_t *meu_grafo, FILE *fp) {
-	lista_origem_t *iterator = meu_grafo->origem;
-	
-	if (iterator != NULL) {
-		fprintf(fp, "%s", achar_nome(meu_grafo, iterator->destino->id));
-		
-		for (iterator = iterator->next; iterator != NULL; iterator = iterator->next) {
-			fprintf(fp, ", %s", achar_nome(meu_grafo, iterator->destino->id));
-		}
-		fprintf(fp, "\n");
-	} else {
-		fprintf(fp, "\n");
-	}
-}
-void escrever_aresta(const grafo_t *meu_grafo, FILE *fp) {
-	char *s1;
-	lista_vert_t *iterator1;
-	lista_aresta_t *iterator2;
-	
-	for (iterator1 = meu_grafo->vert; iterator1 != NULL; iterator1 = iterator1->next) {
-		s1 = achar_nome(meu_grafo, iterator1->id);
-		for (iterator2 = iterator1->sucessores; iterator2 != NULL; iterator2 = iterator2->next) {
-			fprintf(fp, "%s, %s, %lf\n", s1, achar_nome(meu_grafo, iterator2->destino->id), iterator2->peso);
-		}
-	}
-}
-
-void escrever_grafo(const grafo_t *meu_grafo, const char *file) {
-	
-	FILE *fp = fopen(file, "w");
-	
-	escrever_vert(meu_grafo, fp);
-	escrever_origem(meu_grafo, fp);
-	escrever_aresta(meu_grafo, fp);
-}
-
 int maior_id(const grafo_t *meu_grafo) {
 	lista_vert_codigo_t *iterator;
 	int maior = -1;
@@ -622,7 +547,7 @@ double menor_caminho(const grafo_t *meu_grafo, const char *inicio, const char *f
 				if (dist[iterator1->id] < 2e9) {//se a distancia nao for infinito
 					for (iterator2 = iterator1->sucessores; iterator2 != NULL; iterator2 = iterator2->next) {
 						if (dist[iterator1->id] + iterator2->peso < dist[iterator2->destino->id]) {
-							 dist[iterator2->destino->id] = dist[iterator1->id] + iterator2->peso;
+							 dist[iterator2->destino->id] = min(dist[iterator1->id], celula->ini_min) + iterator2->peso;
 						}
 					}
 				}
@@ -699,4 +624,3 @@ resposta eh_conexo(const grafo_t *meu_grafo) {
 	//nao necessario
 	return FALSE;
 }
-*/
