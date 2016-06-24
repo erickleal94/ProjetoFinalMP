@@ -610,6 +610,32 @@ void Imprime_Tarefas(const grafo_priv_t *meu_grafo, int linha, int coluna){
 	
 }
 
+void Grava_Arq(grafo_priv_t *meu_grafo, char *NomeArq){
+	
+	FILE *fp;
+	lista_vert_codigo_t *aux = meu_grafo->tabela;
+	int i;
+	
+	fp = fopen(NomeArq, "w");
+	
+	
+	while(aux->next != NULL){
+		
+		fprintf(fp, "%d %s %d %d %d %d ", aux->dado.id_externo, aux->dado.nome, aux->dado.executada, aux->dado.duracao, aux->dado.ini_min, aux->dado.pre_req);
+		if(aux->dado.pre_req > 0){
+			for(i = 0; i < aux->dado.pre_req; i++){
+				printw("%d ", aux->dado.reqs[i]);
+			}
+		fprintf(fp, "\n");
+		}else{ fprintf(fp, "\n"); }
+		
+	}		
+	
+	fclose(fp);
+	
+	
+}
+
 void editar_celula(grafo_priv_t *meu_grafo, int ID){
 	
 	Celula_priv_t *celula;	
