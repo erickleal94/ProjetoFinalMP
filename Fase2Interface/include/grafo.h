@@ -1,11 +1,10 @@
 #ifndef GRAFO
 #define GRAFO
 
-
-typedef enum resp{ 
-	FALSE,
-	TRUE
-}resposta;
+typedef enum resp { 
+	FALSE_T,
+	TRUE_T
+} resposta;
 
 
 
