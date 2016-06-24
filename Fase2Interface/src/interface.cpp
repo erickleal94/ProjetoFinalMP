@@ -5,11 +5,13 @@
 #include "grafo_priv.h"
 #include "grafo.h"
 
-/* Este modulo contem a interface grafica que sera mostrada para o usuario do Gerenciador de Tarefas.
- * Cada funcao foi feita para apresentar uma determinada janela e executar uma diferente operacao sobre o gerenciador.
- * As funcoes possuem uma padronizacao em sua denominacao, sendo esse padrao dado por "interface_o_que_a_funcao_faz"
- * Todas as funcoes recebem como parametro um ponteiro para o grafo que contem o gerenciador de tarefas.
- * Estas funcoes podem ser acessadas por meio de um menu inicial apresentado na tela quando se inicia o programa.
+/**
+ * @struct Modulo interface
+ * @details Este modulo contem a interface grafica que sera mostrada para o usuario do Gerenciador de Tarefas.
+ * @details Cada funcao foi feita para apresentar uma determinada janela e executar uma diferente operacao sobre o gerenciador.
+ * @details As funcoes possuem uma padronizacao em sua denominacao, sendo esse padrao dado por "interface_o_que_a_funcao_faz"
+ * @details Todas as funcoes recebem como parametro um ponteiro para o grafo que contem o gerenciador de tarefas.
+ * @details Estas funcoes podem ser acessadas por meio de um menu inicial apresentado na tela quando se inicia o programa.
  * */
 
 
@@ -95,7 +97,10 @@ void interface_inserir_tarefa(grafo_priv_t *meu_grafo){
 	
 	inserir_vert(meu_grafo, &celula);
 	refresh();
-	
+	for (i = 0; i < celula.pre_req; i++) {
+		inserir_aresta(meu_grafo, celula.reqs[i], &celula, celula.duracao);
+					
+	}
 	
 	getch();
 	clear();
@@ -222,7 +227,7 @@ int main(){
 	
 	int escolha = -1;
 	
-	grafo_priv_t *meu_grafo = criar_grafo();
+	grafo_priv_t *meu_grafo = criaGrafoArq("entrada.txt");
 	initscr();
 	start_color();
 	box(stdscr, 0, 0);

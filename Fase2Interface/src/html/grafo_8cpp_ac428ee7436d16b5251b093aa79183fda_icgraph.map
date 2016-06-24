@@ -1,13 +1,15 @@
 <map id="achar_id" name="achar_id">
-<area shape="rect" id="node2" href="$grafo_8h.html#a0e69707897c891bf77319d494cae8f26" title="inserir_aresta" alt="" coords="137,5,240,32"/>
-<area shape="rect" id="node3" href="$grafo__priv_8h.html#adc1a8c08d13a78eda202bc49275712f5" title="inserir_origem" alt="" coords="135,56,242,83"/>
-<area shape="rect" id="node6" href="$grafo_8h.html#ad507a38f9feef6cad69436ec774b535f" title="menor_caminho" alt="" coords="129,107,248,133"/>
-<area shape="rect" id="node9" href="$grafo_8h.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="130,157,247,184"/>
-<area shape="rect" id="node10" href="$grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="301,208,403,235"/>
-<area shape="rect" id="node12" href="$grafo__priv_8h.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="128,259,249,285"/>
-<area shape="rect" id="node4" href="$grafo_8h.html#a3e61bf2ada0f9af7e2e9883241496606" title="criar_grafo" alt="" coords="497,81,583,108"/>
-<area shape="rect" id="node5" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="673,120,724,147"/>
-<area shape="rect" id="node7" href="$grafo_8h.html#acb5b55f7d1508a1b35b76e43bc817623" title="ja_feito" alt="" coords="319,107,385,133"/>
-<area shape="rect" id="node8" href="$grafo_8h.html#a14183876086781302e2d81ab2457dc4e" title="tempo_minimo" alt="" coords="297,157,407,184"/>
-<area shape="rect" id="node11" href="$interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="455,157,625,184"/>
+<area shape="rect" id="node2" href="$grafo_8h.html#a0e69707897c891bf77319d494cae8f26" title="inserir_aresta" alt="" coords="301,5,403,32"/>
+<area shape="rect" id="node6" href="$grafo__priv_8h.html#adc1a8c08d13a78eda202bc49275712f5" title="inserir_origem" alt="" coords="135,56,242,83"/>
+<area shape="rect" id="node8" href="$grafo_8h.html#ad507a38f9feef6cad69436ec774b535f" title="menor_caminho" alt="" coords="129,107,248,133"/>
+<area shape="rect" id="node11" href="$grafo_8h.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="130,157,247,184"/>
+<area shape="rect" id="node12" href="$grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="301,208,403,235"/>
+<area shape="rect" id="node14" href="$grafo__priv_8h.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="128,259,249,285"/>
+<area shape="rect" id="node3" href="$grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205" title="criaGrafoArq" alt="" coords="491,56,589,83"/>
+<area shape="rect" id="node5" href="$interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec" title="interface_inserir_tarefa" alt="" coords="461,5,619,32"/>
+<area shape="rect" id="node4" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="673,56,724,83"/>
+<area shape="rect" id="node7" href="$grafo_8h.html#a3e61bf2ada0f9af7e2e9883241496606" title="Cria grafo. " alt="" coords="309,56,395,83"/>
+<area shape="rect" id="node9" href="$grafo_8h.html#acb5b55f7d1508a1b35b76e43bc817623" title="ja_feito" alt="" coords="319,107,385,133"/>
+<area shape="rect" id="node10" href="$grafo_8h.html#a14183876086781302e2d81ab2457dc4e" title="tempo_minimo" alt="" coords="297,157,407,184"/>
+<area shape="rect" id="node13" href="$interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="455,157,625,184"/>
 </map>

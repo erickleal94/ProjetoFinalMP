@@ -9,6 +9,7 @@ var grafo_8h =
     ] ],
     [ "achar_celula", "grafo_8h.html#a90390d2135067928e2c69cd964c9bec5", null ],
     [ "achar_id", "grafo_8h.html#ac428ee7436d16b5251b093aa79183fda", null ],
+    [ "criaGrafoArq", "grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205", null ],
     [ "criar_grafo", "grafo_8h.html#a3e61bf2ada0f9af7e2e9883241496606", null ],
     [ "deletar_grafo", "grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe", null ],
     [ "editar_celula", "grafo_8h.html#a79154a07716d283ad68106cf54beaf07", null ],

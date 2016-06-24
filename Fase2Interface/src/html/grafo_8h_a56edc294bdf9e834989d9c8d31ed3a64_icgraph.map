@@ -1,7 +1,9 @@
 <map id="existe_aresta" name="existe_aresta">
-<area shape="rect" id="node2" href="$grafo_8h.html#a0e69707897c891bf77319d494cae8f26" title="inserir_aresta" alt="" coords="163,5,266,32"/>
-<area shape="rect" id="node3" href="$grafo_8h.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="156,56,273,83"/>
-<area shape="rect" id="node4" href="$grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="321,56,423,83"/>
-<area shape="rect" id="node5" href="$interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="471,56,641,83"/>
-<area shape="rect" id="node6" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="689,56,740,83"/>
+<area shape="rect" id="node2" href="$grafo_8h.html#a0e69707897c891bf77319d494cae8f26" title="inserir_aresta" alt="" coords="321,56,424,83"/>
+<area shape="rect" id="node6" href="$grafo_8h.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="156,107,273,133"/>
+<area shape="rect" id="node3" href="$grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205" title="criaGrafoArq" alt="" coords="508,5,607,32"/>
+<area shape="rect" id="node5" href="$interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec" title="interface_inserir_tarefa" alt="" coords="479,56,636,83"/>
+<area shape="rect" id="node4" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="691,56,741,83"/>
+<area shape="rect" id="node7" href="$grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="322,107,423,133"/>
+<area shape="rect" id="node8" href="$interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="472,107,643,133"/>
 </map>

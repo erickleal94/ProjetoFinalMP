@@ -35,24 +35,24 @@ typedef struct Celula_priv Celula_priv_t;
  * 	possui nenhum vértice, origem ou aresta.
 ***************************************************************************/
 grafo_priv_t *criar_grafo(void);
-/***************************************************************************
- * Função: Deleta grafo
- * Descrição
+/**
+ * @brief Deleta grafo
+ * 
+ * @section desc Descrição
  * 	Desaloca toda a memória utilizada pelo grafo
- * Parâmetros
- *  	meu_grafo	- Deve ser passado um ponteiro para um grafo
+ *
+ * @param  	meu_grafo	- Deve ser passado um ponteiro para um grafo
  *			inicializado
  * 
- * Valor retornado
- * 	Retorna um ponteiro para o grafo, que será NULL.
+ * @return Retorna um ponteiro para o grafo, que será NULL.
  * 	O valor de retorno é muito importante, uma vez que
  * 	se ele não for utilizado o grafo do usuário apontará
  * 	para um endereço não alocado e qualquer tentativa de utilizá-lo
  * 	poderá gerar erros no sistema.
- * 	
  * 	Caso o grafo passado não tenha sido inicializado, o programa poderá
  * 	parar a execução
- * Assertiva de entrada
+ * 
+ * @section assert Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo()
  * Assertiva de saída
  * 	Se retornará um ponteiro para o mesmo grafo passado, após a deleção
@@ -453,5 +453,7 @@ void editar_celula(grafo_priv_t *meu_grafo, int ID);
 
 void Imprime_Tarefas(const grafo_priv_t *meu_grafo, int linha, int coluna);
 void Grava_Arq(grafo_priv_t *meu_grafo, char *NomeArq);
+
+grafo_priv_t* criaGrafoArq(char *nomeArq);
 
 #endif

@@ -729,4 +729,33 @@ void ja_feito(const grafo_priv_t *meu_grafo, int d) {
 	free(dist);
 }
 
+grafo_priv_t* criaGrafoArq(char *nomeArq){
+	grafo_priv_t* g = criar_grafo();
+	int i;
+	FILE *fp;
+	fp = fopen(nomeArq, "r");
+	char string[1000];
+	Celula_priv_t celula;
+	
+	
+	//leitura dos vertices
+	while(fscanf(fp, "%d '%[^']' %d %d %d %d", &celula.id_externo, celula.nome, &celula.executada, &celula.duracao, &celula.ini_min, &celula.pre_req)>0){
+		
+		celula.reqs = (int*)malloc(sizeof(int)*celula.pre_req);
+		for (i = 0; i < celula.pre_req; i++) {
+			fscanf(fp, "%d", &celula.reqs[i]);
+					
+		}
+		inserir_vert(g, &celula);
+		for (i = 0; i < celula.pre_req; i++) {
+			inserir_aresta(g, celula.reqs[i], &celula, celula.duracao);
+					
+		}
+	}
+	
+
+	fclose(fp);
+	return g;
+}
+
 #undef DEBUG

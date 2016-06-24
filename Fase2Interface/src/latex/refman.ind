@@ -3,15 +3,15 @@
   \item {/home/rafael/\+Projeto\+Final\+M\+P/\+Fase2\+Interface/include/grafo.\+h}, 
 		\hyperpage{13}
   \item {/home/rafael/\+Projeto\+Final\+M\+P/\+Fase2\+Interface/include/grafo\+\_\+priv.\+h}, 
-		\hyperpage{24}
+		\hyperpage{26}
 
   \indexspace
 
   \item {achar\+\_\+celula}
-    \subitem {grafo.\+cpp}, \hyperpage{29}
+    \subitem {grafo.\+cpp}, \hyperpage{31}
     \subitem {grafo.\+h}, \hyperpage{15}
   \item {achar\+\_\+id}
-    \subitem {grafo.\+cpp}, \hyperpage{30}
+    \subitem {grafo.\+cpp}, \hyperpage{31}
     \subitem {grafo.\+h}, \hyperpage{15}
   \item {antecessores}
     \subitem {lista\+\_\+vert}, \hyperpage{10}
@@ -28,47 +28,50 @@
     \subitem {reqs}, \hyperpage{6}
   \item {Celula\+\_\+priv\+\_\+t}
     \subitem {grafo.\+h}, \hyperpage{14}
-    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{26}
-  \item {criar\+\_\+grafo}
-    \subitem {grafo.\+cpp}, \hyperpage{30}
+    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{28}
+  \item {cria\+Grafo\+Arq}
+    \subitem {grafo.\+cpp}, \hyperpage{32}
     \subitem {grafo.\+h}, \hyperpage{15}
+  \item {criar\+\_\+grafo}
+    \subitem {grafo.\+cpp}, \hyperpage{32}
+    \subitem {grafo.\+h}, \hyperpage{16}
 
   \indexspace
 
   \item {D\+E\+B\+U\+G}
-    \subitem {grafo.\+cpp}, \hyperpage{29}
+    \subitem {grafo.\+cpp}, \hyperpage{31}
   \item {dado}
     \subitem {lista\+\_\+vert\+\_\+codigo}, \hyperpage{11}
   \item {deletar\+\_\+grafo}
-    \subitem {grafo.\+cpp}, \hyperpage{31}
-    \subitem {grafo.\+h}, \hyperpage{16}
+    \subitem {grafo.\+cpp}, \hyperpage{33}
+    \subitem {grafo.\+h}, \hyperpage{17}
   \item {destino}
     \subitem {lista\+\_\+aresta}, \hyperpage{8}
     \subitem {lista\+\_\+origem}, \hyperpage{9}
   \item {dfs}
-    \subitem {grafo.\+cpp}, \hyperpage{31}
+    \subitem {grafo.\+cpp}, \hyperpage{34}
   \item {duracao}
     \subitem {Celula\+\_\+priv}, \hyperpage{5}
 
   \indexspace
 
   \item {editar\+\_\+celula}
-    \subitem {grafo.\+cpp}, \hyperpage{31}
-    \subitem {grafo.\+h}, \hyperpage{16}
+    \subitem {grafo.\+cpp}, \hyperpage{34}
+    \subitem {grafo.\+h}, \hyperpage{18}
   \item {eh\+\_\+conexo}
-    \subitem {grafo.\+cpp}, \hyperpage{32}
-    \subitem {grafo.\+h}, \hyperpage{17}
+    \subitem {grafo.\+cpp}, \hyperpage{35}
+    \subitem {grafo.\+h}, \hyperpage{18}
   \item {executada}
     \subitem {Celula\+\_\+priv}, \hyperpage{5}
   \item {existe\+\_\+aresta}
-    \subitem {grafo.\+cpp}, \hyperpage{32}
-    \subitem {grafo.\+h}, \hyperpage{17}
+    \subitem {grafo.\+cpp}, \hyperpage{35}
+    \subitem {grafo.\+h}, \hyperpage{19}
   \item {existe\+\_\+origem}
-    \subitem {grafo.\+cpp}, \hyperpage{33}
-    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{26}
+    \subitem {grafo.\+cpp}, \hyperpage{36}
+    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{28}
   \item {existe\+\_\+vert}
-    \subitem {grafo.\+cpp}, \hyperpage{33}
-    \subitem {grafo.\+h}, \hyperpage{18}
+    \subitem {grafo.\+cpp}, \hyperpage{36}
+    \subitem {grafo.\+h}, \hyperpage{19}
 
   \indexspace
 
@@ -77,80 +80,82 @@
 
   \indexspace
 
-  \item {grafo.\+cpp}, \hyperpage{28}
-    \subitem {achar\+\_\+celula}, \hyperpage{29}
-    \subitem {achar\+\_\+id}, \hyperpage{30}
-    \subitem {criar\+\_\+grafo}, \hyperpage{30}
-    \subitem {D\+E\+B\+U\+G}, \hyperpage{29}
-    \subitem {deletar\+\_\+grafo}, \hyperpage{31}
-    \subitem {dfs}, \hyperpage{31}
-    \subitem {editar\+\_\+celula}, \hyperpage{31}
-    \subitem {eh\+\_\+conexo}, \hyperpage{32}
-    \subitem {existe\+\_\+aresta}, \hyperpage{32}
-    \subitem {existe\+\_\+origem}, \hyperpage{33}
-    \subitem {existe\+\_\+vert}, \hyperpage{33}
-    \subitem {Grava\+\_\+\+Arq}, \hyperpage{34}
-    \subitem {Imprime\+\_\+\+Tarefas}, \hyperpage{34}
-    \subitem {inserir\+\_\+aresta}, \hyperpage{35}
-    \subitem {inserir\+\_\+origem}, \hyperpage{35}
-    \subitem {inserir\+\_\+vert}, \hyperpage{36}
-    \subitem {ja\+\_\+feito}, \hyperpage{37}
-    \subitem {maior\+\_\+id}, \hyperpage{37}
-    \subitem {menor\+\_\+caminho}, \hyperpage{38}
-    \subitem {num\+\_\+arestas}, \hyperpage{39}
-    \subitem {num\+\_\+vert}, \hyperpage{39}
-    \subitem {remover\+\_\+aresta}, \hyperpage{39}
-    \subitem {remover\+\_\+origem}, \hyperpage{40}
-    \subitem {remover\+\_\+vert}, \hyperpage{41}
-    \subitem {tempo\+\_\+minimo}, \hyperpage{41}
+  \item {grafo.\+cpp}, \hyperpage{30}
+    \subitem {achar\+\_\+celula}, \hyperpage{31}
+    \subitem {achar\+\_\+id}, \hyperpage{31}
+    \subitem {cria\+Grafo\+Arq}, \hyperpage{32}
+    \subitem {criar\+\_\+grafo}, \hyperpage{32}
+    \subitem {D\+E\+B\+U\+G}, \hyperpage{31}
+    \subitem {deletar\+\_\+grafo}, \hyperpage{33}
+    \subitem {dfs}, \hyperpage{34}
+    \subitem {editar\+\_\+celula}, \hyperpage{34}
+    \subitem {eh\+\_\+conexo}, \hyperpage{35}
+    \subitem {existe\+\_\+aresta}, \hyperpage{35}
+    \subitem {existe\+\_\+origem}, \hyperpage{36}
+    \subitem {existe\+\_\+vert}, \hyperpage{36}
+    \subitem {Grava\+\_\+\+Arq}, \hyperpage{37}
+    \subitem {Imprime\+\_\+\+Tarefas}, \hyperpage{37}
+    \subitem {inserir\+\_\+aresta}, \hyperpage{38}
+    \subitem {inserir\+\_\+origem}, \hyperpage{38}
+    \subitem {inserir\+\_\+vert}, \hyperpage{39}
+    \subitem {ja\+\_\+feito}, \hyperpage{40}
+    \subitem {maior\+\_\+id}, \hyperpage{40}
+    \subitem {menor\+\_\+caminho}, \hyperpage{41}
+    \subitem {num\+\_\+arestas}, \hyperpage{42}
+    \subitem {num\+\_\+vert}, \hyperpage{42}
+    \subitem {remover\+\_\+aresta}, \hyperpage{42}
+    \subitem {remover\+\_\+origem}, \hyperpage{43}
+    \subitem {remover\+\_\+vert}, \hyperpage{44}
+    \subitem {tempo\+\_\+minimo}, \hyperpage{44}
   \item {grafo.\+h}
     \subitem {achar\+\_\+celula}, \hyperpage{15}
     \subitem {achar\+\_\+id}, \hyperpage{15}
     \subitem {Celula\+\_\+priv\+\_\+t}, \hyperpage{14}
-    \subitem {criar\+\_\+grafo}, \hyperpage{15}
-    \subitem {deletar\+\_\+grafo}, \hyperpage{16}
-    \subitem {editar\+\_\+celula}, \hyperpage{16}
-    \subitem {eh\+\_\+conexo}, \hyperpage{17}
-    \subitem {existe\+\_\+aresta}, \hyperpage{17}
-    \subitem {existe\+\_\+vert}, \hyperpage{18}
+    \subitem {cria\+Grafo\+Arq}, \hyperpage{15}
+    \subitem {criar\+\_\+grafo}, \hyperpage{16}
+    \subitem {deletar\+\_\+grafo}, \hyperpage{17}
+    \subitem {editar\+\_\+celula}, \hyperpage{18}
+    \subitem {eh\+\_\+conexo}, \hyperpage{18}
+    \subitem {existe\+\_\+aresta}, \hyperpage{19}
+    \subitem {existe\+\_\+vert}, \hyperpage{19}
     \subitem {F\+A\+L\+S\+E\+\_\+\+T}, \hyperpage{14}
     \subitem {grafo\+\_\+priv\+\_\+t}, \hyperpage{14}
-    \subitem {Grava\+\_\+\+Arq}, \hyperpage{18}
-    \subitem {Imprime\+\_\+\+Tarefas}, \hyperpage{19}
-    \subitem {inserir\+\_\+aresta}, \hyperpage{19}
-    \subitem {inserir\+\_\+vert}, \hyperpage{19}
-    \subitem {ja\+\_\+feito}, \hyperpage{20}
-    \subitem {Ler\+\_\+\+Tarefas}, \hyperpage{20}
-    \subitem {maior\+\_\+id}, \hyperpage{20}
-    \subitem {menor\+\_\+caminho}, \hyperpage{21}
-    \subitem {num\+\_\+arestas}, \hyperpage{22}
-    \subitem {num\+\_\+vert}, \hyperpage{22}
-    \subitem {remover\+\_\+aresta}, \hyperpage{22}
-    \subitem {remover\+\_\+vert}, \hyperpage{23}
+    \subitem {Grava\+\_\+\+Arq}, \hyperpage{20}
+    \subitem {Imprime\+\_\+\+Tarefas}, \hyperpage{20}
+    \subitem {inserir\+\_\+aresta}, \hyperpage{21}
+    \subitem {inserir\+\_\+vert}, \hyperpage{21}
+    \subitem {ja\+\_\+feito}, \hyperpage{22}
+    \subitem {Ler\+\_\+\+Tarefas}, \hyperpage{22}
+    \subitem {maior\+\_\+id}, \hyperpage{23}
+    \subitem {menor\+\_\+caminho}, \hyperpage{23}
+    \subitem {num\+\_\+arestas}, \hyperpage{24}
+    \subitem {num\+\_\+vert}, \hyperpage{24}
+    \subitem {remover\+\_\+aresta}, \hyperpage{24}
+    \subitem {remover\+\_\+vert}, \hyperpage{25}
     \subitem {resp}, \hyperpage{14}
     \subitem {resposta}, \hyperpage{14}
     \subitem {T\+R\+U\+E\+\_\+\+T}, \hyperpage{14}
-    \subitem {tempo\+\_\+minimo}, \hyperpage{24}
+    \subitem {tempo\+\_\+minimo}, \hyperpage{26}
   \item {grafo\+\_\+priv}, \hyperpage{6}
     \subitem {origem}, \hyperpage{7}
     \subitem {tabela}, \hyperpage{7}
     \subitem {vert}, \hyperpage{7}
   \item {grafo\+\_\+priv.\+h}
-    \subitem {Celula\+\_\+priv\+\_\+t}, \hyperpage{26}
-    \subitem {existe\+\_\+origem}, \hyperpage{26}
-    \subitem {grafo\+\_\+priv\+\_\+t}, \hyperpage{26}
-    \subitem {inserir\+\_\+origem}, \hyperpage{26}
-    \subitem {lista\+\_\+aresta\+\_\+t}, \hyperpage{26}
-    \subitem {lista\+\_\+origem\+\_\+t}, \hyperpage{26}
-    \subitem {lista\+\_\+vert\+\_\+codigo\+\_\+t}, \hyperpage{26}
-    \subitem {lista\+\_\+vert\+\_\+t}, \hyperpage{26}
-    \subitem {remover\+\_\+origem}, \hyperpage{27}
+    \subitem {Celula\+\_\+priv\+\_\+t}, \hyperpage{28}
+    \subitem {existe\+\_\+origem}, \hyperpage{28}
+    \subitem {grafo\+\_\+priv\+\_\+t}, \hyperpage{28}
+    \subitem {inserir\+\_\+origem}, \hyperpage{28}
+    \subitem {lista\+\_\+aresta\+\_\+t}, \hyperpage{28}
+    \subitem {lista\+\_\+origem\+\_\+t}, \hyperpage{28}
+    \subitem {lista\+\_\+vert\+\_\+codigo\+\_\+t}, \hyperpage{28}
+    \subitem {lista\+\_\+vert\+\_\+t}, \hyperpage{28}
+    \subitem {remover\+\_\+origem}, \hyperpage{29}
   \item {grafo\+\_\+priv\+\_\+t}
     \subitem {grafo.\+h}, \hyperpage{14}
-    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{26}
+    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{28}
   \item {Grava\+\_\+\+Arq}
-    \subitem {grafo.\+cpp}, \hyperpage{34}
-    \subitem {grafo.\+h}, \hyperpage{18}
+    \subitem {grafo.\+cpp}, \hyperpage{37}
+    \subitem {grafo.\+h}, \hyperpage{20}
 
   \indexspace
 
@@ -161,65 +166,65 @@
     \subitem {Celula\+\_\+priv}, \hyperpage{5}
     \subitem {lista\+\_\+vert}, \hyperpage{10}
   \item {Imprime\+\_\+\+Tarefas}
-    \subitem {grafo.\+cpp}, \hyperpage{34}
-    \subitem {grafo.\+h}, \hyperpage{19}
+    \subitem {grafo.\+cpp}, \hyperpage{37}
+    \subitem {grafo.\+h}, \hyperpage{20}
   \item {ini\+\_\+min}
     \subitem {Celula\+\_\+priv}, \hyperpage{6}
   \item {inserir\+\_\+aresta}
-    \subitem {grafo.\+cpp}, \hyperpage{35}
-    \subitem {grafo.\+h}, \hyperpage{19}
+    \subitem {grafo.\+cpp}, \hyperpage{38}
+    \subitem {grafo.\+h}, \hyperpage{21}
   \item {inserir\+\_\+origem}
-    \subitem {grafo.\+cpp}, \hyperpage{35}
-    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{26}
+    \subitem {grafo.\+cpp}, \hyperpage{38}
+    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{28}
   \item {inserir\+\_\+vert}
-    \subitem {grafo.\+cpp}, \hyperpage{36}
-    \subitem {grafo.\+h}, \hyperpage{19}
-  \item {interface.\+cpp}, \hyperpage{42}
-    \subitem {interface\+\_\+caminho\+\_\+completo}, \hyperpage{43}
-    \subitem {interface\+\_\+caminho\+\_\+parcial}, \hyperpage{43}
-    \subitem {interface\+\_\+editar\+\_\+tarefa}, \hyperpage{43}
-    \subitem {interface\+\_\+inserir\+\_\+tarefa}, \hyperpage{44}
-    \subitem {interface\+\_\+remover\+\_\+tarefa}, \hyperpage{44}
+    \subitem {grafo.\+cpp}, \hyperpage{39}
+    \subitem {grafo.\+h}, \hyperpage{21}
+  \item {interface.\+cpp}, \hyperpage{45}
+    \subitem {interface\+\_\+caminho\+\_\+completo}, \hyperpage{46}
+    \subitem {interface\+\_\+caminho\+\_\+parcial}, \hyperpage{46}
+    \subitem {interface\+\_\+editar\+\_\+tarefa}, \hyperpage{46}
+    \subitem {interface\+\_\+inserir\+\_\+tarefa}, \hyperpage{47}
+    \subitem {interface\+\_\+remover\+\_\+tarefa}, \hyperpage{47}
     \subitem {interface\+\_\+vizualizar\+\_\+determinada\+\_\+tarefa}, 
-		\hyperpage{45}
-    \subitem {interface\+\_\+vizualizar\+\_\+tarefas}, \hyperpage{46}
-    \subitem {main}, \hyperpage{46}
+		\hyperpage{48}
+    \subitem {interface\+\_\+vizualizar\+\_\+tarefas}, \hyperpage{49}
+    \subitem {main}, \hyperpage{49}
   \item {interface\+\_\+caminho\+\_\+completo}
-    \subitem {interface.\+cpp}, \hyperpage{43}
-  \item {interface\+\_\+caminho\+\_\+parcial}
-    \subitem {interface.\+cpp}, \hyperpage{43}
-  \item {interface\+\_\+editar\+\_\+tarefa}
-    \subitem {interface.\+cpp}, \hyperpage{43}
-  \item {interface\+\_\+inserir\+\_\+tarefa}
-    \subitem {interface.\+cpp}, \hyperpage{44}
-  \item {interface\+\_\+remover\+\_\+tarefa}
-    \subitem {interface.\+cpp}, \hyperpage{44}
-  \item {interface\+\_\+vizualizar\+\_\+determinada\+\_\+tarefa}
-    \subitem {interface.\+cpp}, \hyperpage{45}
-  \item {interface\+\_\+vizualizar\+\_\+tarefas}
     \subitem {interface.\+cpp}, \hyperpage{46}
+  \item {interface\+\_\+caminho\+\_\+parcial}
+    \subitem {interface.\+cpp}, \hyperpage{46}
+  \item {interface\+\_\+editar\+\_\+tarefa}
+    \subitem {interface.\+cpp}, \hyperpage{46}
+  \item {interface\+\_\+inserir\+\_\+tarefa}
+    \subitem {interface.\+cpp}, \hyperpage{47}
+  \item {interface\+\_\+remover\+\_\+tarefa}
+    \subitem {interface.\+cpp}, \hyperpage{47}
+  \item {interface\+\_\+vizualizar\+\_\+determinada\+\_\+tarefa}
+    \subitem {interface.\+cpp}, \hyperpage{48}
+  \item {interface\+\_\+vizualizar\+\_\+tarefas}
+    \subitem {interface.\+cpp}, \hyperpage{49}
 
   \indexspace
 
   \item {ja\+\_\+feito}
-    \subitem {grafo.\+cpp}, \hyperpage{37}
-    \subitem {grafo.\+h}, \hyperpage{20}
+    \subitem {grafo.\+cpp}, \hyperpage{40}
+    \subitem {grafo.\+h}, \hyperpage{22}
 
   \indexspace
 
   \item {Ler\+\_\+\+Tarefas}
-    \subitem {grafo.\+h}, \hyperpage{20}
+    \subitem {grafo.\+h}, \hyperpage{22}
   \item {lista\+\_\+aresta}, \hyperpage{7}
     \subitem {destino}, \hyperpage{8}
     \subitem {next}, \hyperpage{8}
     \subitem {peso}, \hyperpage{8}
   \item {lista\+\_\+aresta\+\_\+t}
-    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{26}
+    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{28}
   \item {lista\+\_\+origem}, \hyperpage{9}
     \subitem {destino}, \hyperpage{9}
     \subitem {next}, \hyperpage{9}
   \item {lista\+\_\+origem\+\_\+t}
-    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{26}
+    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{28}
   \item {lista\+\_\+vert}, \hyperpage{9}
     \subitem {antecessores}, \hyperpage{10}
     \subitem {id}, \hyperpage{10}
@@ -231,20 +236,21 @@
     \subitem {id}, \hyperpage{12}
     \subitem {next}, \hyperpage{12}
   \item {lista\+\_\+vert\+\_\+codigo\+\_\+t}
-    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{26}
+    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{28}
   \item {lista\+\_\+vert\+\_\+t}
-    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{26}
+    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{28}
 
   \indexspace
 
   \item {main}
-    \subitem {interface.\+cpp}, \hyperpage{46}
+    \subitem {interface.\+cpp}, \hyperpage{49}
   \item {maior\+\_\+id}
-    \subitem {grafo.\+cpp}, \hyperpage{37}
-    \subitem {grafo.\+h}, \hyperpage{20}
+    \subitem {grafo.\+cpp}, \hyperpage{40}
+    \subitem {grafo.\+h}, \hyperpage{23}
   \item {menor\+\_\+caminho}
-    \subitem {grafo.\+cpp}, \hyperpage{38}
-    \subitem {grafo.\+h}, \hyperpage{21}
+    \subitem {grafo.\+cpp}, \hyperpage{41}
+    \subitem {grafo.\+h}, \hyperpage{23}
+  \item {Modulo}, \hyperpage{12}
 
   \indexspace
 
@@ -256,11 +262,11 @@
   \item {nome}
     \subitem {Celula\+\_\+priv}, \hyperpage{6}
   \item {num\+\_\+arestas}
-    \subitem {grafo.\+cpp}, \hyperpage{39}
-    \subitem {grafo.\+h}, \hyperpage{22}
+    \subitem {grafo.\+cpp}, \hyperpage{42}
+    \subitem {grafo.\+h}, \hyperpage{24}
   \item {num\+\_\+vert}
-    \subitem {grafo.\+cpp}, \hyperpage{39}
-    \subitem {grafo.\+h}, \hyperpage{22}
+    \subitem {grafo.\+cpp}, \hyperpage{42}
+    \subitem {grafo.\+h}, \hyperpage{24}
 
   \indexspace
 
@@ -277,14 +283,14 @@
   \indexspace
 
   \item {remover\+\_\+aresta}
-    \subitem {grafo.\+cpp}, \hyperpage{39}
-    \subitem {grafo.\+h}, \hyperpage{22}
+    \subitem {grafo.\+cpp}, \hyperpage{42}
+    \subitem {grafo.\+h}, \hyperpage{24}
   \item {remover\+\_\+origem}
-    \subitem {grafo.\+cpp}, \hyperpage{40}
-    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{27}
+    \subitem {grafo.\+cpp}, \hyperpage{43}
+    \subitem {grafo\+\_\+priv.\+h}, \hyperpage{29}
   \item {remover\+\_\+vert}
-    \subitem {grafo.\+cpp}, \hyperpage{41}
-    \subitem {grafo.\+h}, \hyperpage{23}
+    \subitem {grafo.\+cpp}, \hyperpage{44}
+    \subitem {grafo.\+h}, \hyperpage{25}
   \item {reqs}
     \subitem {Celula\+\_\+priv}, \hyperpage{6}
   \item {resp}
@@ -304,8 +310,8 @@
   \item {tabela}
     \subitem {grafo\+\_\+priv}, \hyperpage{7}
   \item {tempo\+\_\+minimo}
-    \subitem {grafo.\+cpp}, \hyperpage{41}
-    \subitem {grafo.\+h}, \hyperpage{24}
+    \subitem {grafo.\+cpp}, \hyperpage{44}
+    \subitem {grafo.\+h}, \hyperpage{26}
 
   \indexspace
 

@@ -1,4 +1,7 @@
 <map id="interface_inserir_tarefa" name="interface_inserir_tarefa">
-<area shape="rect" id="node2" href="$grafo_8cpp.html#a659b567cb7e165b526b6fe05a433452e" title="inserir_vert" alt="" coords="211,5,297,32"/>
-<area shape="rect" id="node3" href="$grafo_8cpp.html#ac70f5a4fd6ff7c6913f0ce99de099263" title="existe_vert" alt="" coords="345,5,432,32"/>
+<area shape="rect" id="node2" href="$grafo_8cpp.html#a0e69707897c891bf77319d494cae8f26" title="inserir_aresta" alt="" coords="211,69,313,96"/>
+<area shape="rect" id="node6" href="$grafo_8cpp.html#a659b567cb7e165b526b6fe05a433452e" title="inserir_vert" alt="" coords="219,132,305,159"/>
+<area shape="rect" id="node3" href="$grafo_8cpp.html#ac428ee7436d16b5251b093aa79183fda" title="achar_id" alt="" coords="375,5,450,32"/>
+<area shape="rect" id="node4" href="$grafo_8cpp.html#a56edc294bdf9e834989d9c8d31ed3a64" title="existe_aresta" alt="" coords="361,56,464,83"/>
+<area shape="rect" id="node5" href="$grafo_8cpp.html#ac70f5a4fd6ff7c6913f0ce99de099263" title="existe_vert" alt="" coords="512,107,599,133"/>
 </map>

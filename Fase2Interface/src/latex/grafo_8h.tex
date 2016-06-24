@@ -1,7 +1,11 @@
 \hypertarget{grafo_8h}{}\section{Referência do Arquivo /home/rafael/\+Projeto\+Final\+M\+P/\+Fase2\+Interface/include/grafo.h}
 \label{grafo_8h}\index{/home/rafael/\+Projeto\+Final\+M\+P/\+Fase2\+Interface/include/grafo.\+h@{/home/rafael/\+Projeto\+Final\+M\+P/\+Fase2\+Interface/include/grafo.\+h}}
-Este grafo mostra quais arquivos estão direta ou indiretamente relacionados com este arquivo\+:
-\nopagebreak
+
+
+Define funções usadas pelo usuario.  
+
+
+Este grafo mostra quais arquivos estão direta ou indiretamente relacionados com este arquivo\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -28,9 +32,9 @@ enum \hyperlink{grafo_8h_a4a2eceb977b50eb0028c419047e56e1d}{resp} \{ \hyperlink{
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$ \hyperlink{grafo_8h_a3e61bf2ada0f9af7e2e9883241496606}{criar\+\_\+grafo} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Cria grafo. \end{DoxyCompactList}\item 
 \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$ \hyperlink{grafo_8h_af4f0fbcdd746c0f494e9601a83ddc9fe}{deletar\+\_\+grafo} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo)
-\item 
+\begin{DoxyCompactList}\small\item\em Deleta grafo. \end{DoxyCompactList}\item 
 \hyperlink{grafo_8h_a64f906a639abdfda7fffa9ace7e4c286}{resposta} \hyperlink{grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263}{existe\+\_\+vert} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
 \item 
 \hyperlink{grafo_8h_a64f906a639abdfda7fffa9ace7e4c286}{resposta} \hyperlink{grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64}{existe\+\_\+aresta} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo1, int id\+\_\+externo2)
@@ -68,7 +72,14 @@ void \hyperlink{grafo_8h_a79154a07716d283ad68106cf54beaf07}{editar\+\_\+celula} 
 void \hyperlink{grafo_8h_a1dd7cc6696ade339827db4d2019239fc}{Imprime\+\_\+\+Tarefas} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int linha, int coluna)
 \item 
 void \hyperlink{grafo_8h_aadbd57b376954aeeb119120d5a4a196f}{Grava\+\_\+\+Arq} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, char $\ast$Nome\+Arq)
+\item 
+\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$ \hyperlink{grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205}{cria\+Grafo\+Arq} (char $\ast$nome\+Arq)
 \end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Define funções usadas pelo usuario. 
+
 
 
 \subsection{Definições dos tipos}
@@ -77,14 +88,14 @@ void \hyperlink{grafo_8h_aadbd57b376954aeeb119120d5a4a196f}{Grava\+\_\+\+Arq} (\
 \subsubsection[{Celula\+\_\+priv\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Celula\+\_\+priv} {\bf Celula\+\_\+priv\+\_\+t}}\label{grafo_8h_ac2219b5d1f94e440b5895ce440ab23b9}
 
 
-Definição na linha 14 do arquivo grafo.\+h.
+Definição na linha 19 do arquivo grafo.\+h.
 
 \hypertarget{grafo_8h_a282167c584dceb79dde5c159a85b685b}{}\index{grafo.\+h@{grafo.\+h}!grafo\+\_\+priv\+\_\+t@{grafo\+\_\+priv\+\_\+t}}
 \index{grafo\+\_\+priv\+\_\+t@{grafo\+\_\+priv\+\_\+t}!grafo.\+h@{grafo.\+h}}
 \subsubsection[{grafo\+\_\+priv\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf grafo\+\_\+priv} {\bf grafo\+\_\+priv\+\_\+t}}\label{grafo_8h_a282167c584dceb79dde5c159a85b685b}
 
 
-Definição na linha 12 do arquivo grafo.\+h.
+Definição na linha 17 do arquivo grafo.\+h.
 
 \hypertarget{grafo_8h_a64f906a639abdfda7fffa9ace7e4c286}{}\index{grafo.\+h@{grafo.\+h}!resposta@{resposta}}
 \index{resposta@{resposta}!grafo.\+h@{grafo.\+h}}
@@ -106,7 +117,7 @@ Definição na linha 12 do arquivo grafo.\+h.
 \end{Desc}
 
 
-Definição na linha 4 do arquivo grafo.\+h.
+Definição na linha 9 do arquivo grafo.\+h.
 
 
 
@@ -133,8 +144,7 @@ Referenciado por editar\+\_\+celula(), interface\+\_\+vizualizar\+\_\+determinad
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -175,20 +185,20 @@ Este é o diagrama das funções que utilizam esta função\+:
 \end{figure}
 
 
-\hypertarget{grafo_8h_a3e61bf2ada0f9af7e2e9883241496606}{}\index{grafo.\+h@{grafo.\+h}!criar\+\_\+grafo@{criar\+\_\+grafo}}
-\index{criar\+\_\+grafo@{criar\+\_\+grafo}!grafo.\+h@{grafo.\+h}}
-\subsubsection[{criar\+\_\+grafo(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf grafo\+\_\+priv\+\_\+t}$\ast$ criar\+\_\+grafo (
+\hypertarget{grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205}{}\index{grafo.\+h@{grafo.\+h}!cria\+Grafo\+Arq@{cria\+Grafo\+Arq}}
+\index{cria\+Grafo\+Arq@{cria\+Grafo\+Arq}!grafo.\+h@{grafo.\+h}}
+\subsubsection[{cria\+Grafo\+Arq(char $\ast$nome\+Arq)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf grafo\+\_\+priv\+\_\+t}$\ast$ cria\+Grafo\+Arq (
 \begin{DoxyParamCaption}
-\item[{void}]{}
+\item[{char $\ast$}]{nome\+Arq}
 \end{DoxyParamCaption}
-)}\label{grafo_8h_a3e61bf2ada0f9af7e2e9883241496606}
+)}\label{grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205}
 
 
-Definição na linha 15 do arquivo grafo.\+cpp.
+Definição na linha 732 do arquivo grafo.\+cpp.
 
 
 
-Referências Celula\+\_\+priv\+::executada, Celula\+\_\+priv\+::id\+\_\+externo, Celula\+\_\+priv\+::ini\+\_\+min, inserir\+\_\+origem(), inserir\+\_\+vert(), Celula\+\_\+priv\+::nome, grafo\+\_\+priv\+::origem, Celula\+\_\+priv\+::pre\+\_\+req, grafo\+\_\+priv\+::tabela e grafo\+\_\+priv\+::vert.
+Referências criar\+\_\+grafo(), Celula\+\_\+priv\+::duracao, Celula\+\_\+priv\+::executada, Celula\+\_\+priv\+::id\+\_\+externo, Celula\+\_\+priv\+::ini\+\_\+min, inserir\+\_\+aresta(), inserir\+\_\+vert(), Celula\+\_\+priv\+::nome, Celula\+\_\+priv\+::pre\+\_\+req e Celula\+\_\+priv\+::reqs.
 
 
 
@@ -198,6 +208,60 @@ Referenciado por main().
 
 Este é o diagrama das funções utilizadas por esta função\+:
 \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8h_a3e61bf2ada0f9af7e2e9883241496606}{}\index{grafo.\+h@{grafo.\+h}!criar\+\_\+grafo@{criar\+\_\+grafo}}
+\index{criar\+\_\+grafo@{criar\+\_\+grafo}!grafo.\+h@{grafo.\+h}}
+\subsubsection[{criar\+\_\+grafo(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf grafo\+\_\+priv\+\_\+t}$\ast$ criar\+\_\+grafo (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{grafo_8h_a3e61bf2ada0f9af7e2e9883241496606}
+
+
+Cria grafo. 
+
+\hypertarget{grafo_8cpp_desc}{}\subsection{Descrição}\label{grafo_8cpp_desc}
+Aloca a memória necessária e inicializa um grafo \hypertarget{grafo_8cpp_para}{}\subsection{Parâmetros}\label{grafo_8cpp_para}
+Não ha parâmetros, a alocação e inicializam não dependem de nenhum parâmetro do usuário
+
+\begin{DoxyReturn}{Retorna}
+Se retorna um ponteiro para a grafo criado
+\end{DoxyReturn}
+\hypertarget{grafo_8cpp_assert}{}\subsection{Assertiva de saída}\label{grafo_8cpp_assert}
+O grafo gerado é consistente e não possui nenhum vértice, origem ou aresta. 
+
+Definição na linha 15 do arquivo grafo.\+cpp.
+
+
+
+Referências Celula\+\_\+priv\+::executada, Celula\+\_\+priv\+::id\+\_\+externo, Celula\+\_\+priv\+::ini\+\_\+min, inserir\+\_\+origem(), inserir\+\_\+vert(), Celula\+\_\+priv\+::nome, grafo\+\_\+priv\+::origem, Celula\+\_\+priv\+::pre\+\_\+req, grafo\+\_\+priv\+::tabela e grafo\+\_\+priv\+::vert.
+
+
+
+Referenciado por cria\+Grafo\+Arq().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -213,7 +277,7 @@ Este é o diagrama das funções que utilizam esta função\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=219pt]{grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_icgraph}
+\includegraphics[width=329pt]{grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_icgraph}
 \end{center}
 \end{figure}
 
@@ -226,6 +290,22 @@ Este é o diagrama das funções que utilizam esta função\+:
 \end{DoxyParamCaption}
 )}\label{grafo_8h_af4f0fbcdd746c0f494e9601a83ddc9fe}
 
+
+Deleta grafo. 
+
+\hypertarget{grafo_8cpp_desc}{}\subsection{Descrição}\label{grafo_8cpp_desc}
+Desaloca toda a memória utilizada pelo grafo
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em meu\+\_\+grafo} & -\/ Deve ser passado um ponteiro para um grafo inicializado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna um ponteiro para o grafo, que será N\+U\+L\+L. O valor de retorno é muito importante, uma vez que se ele não for utilizado o grafo do usuário apontará para um endereço não alocado e qualquer tentativa de utilizá-\/lo poderá gerar erros no sistema. Caso o grafo passado não tenha sido inicializado, o programa poderá parar a execução
+\end{DoxyReturn}
+\hypertarget{grafo_8cpp_assert}{}\subsection{Assertiva de saída}\label{grafo_8cpp_assert}
+O grafo já deve ter sido inicializado por \hyperlink{grafo_8h_a3e61bf2ada0f9af7e2e9883241496606}{criar\+\_\+grafo()} Assertiva de saída Se retornará um ponteiro para o mesmo grafo passado, após a deleção que será N\+U\+L\+L. 
 
 Definição na linha 35 do arquivo grafo.\+cpp.
 
@@ -255,8 +335,7 @@ Referenciado por interface\+\_\+editar\+\_\+tarefa().
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -267,8 +346,7 @@ Este é o diagrama das funções utilizadas por esta função\+:
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -294,8 +372,7 @@ Referências lista\+\_\+origem\+::destino, dfs(), F\+A\+L\+S\+E\+\_\+\+T, lista\
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -327,8 +404,7 @@ Referenciado por inserir\+\_\+aresta() e remover\+\_\+aresta().
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -403,8 +479,7 @@ Referenciado por main().
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -436,8 +511,7 @@ Referenciado por interface\+\_\+vizualizar\+\_\+tarefas().
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -466,12 +540,27 @@ Referências achar\+\_\+id(), lista\+\_\+aresta\+::destino, existe\+\_\+aresta()
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Referenciado por cria\+Grafo\+Arq() e interface\+\_\+inserir\+\_\+tarefa().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{grafo_8h_a0e69707897c891bf77319d494cae8f26_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8h_a0e69707897c891bf77319d494cae8f26_icgraph}
 \end{center}
 \end{figure}
 
@@ -494,12 +583,11 @@ Referências lista\+\_\+vert\+::antecessores, existe\+\_\+vert(), F\+A\+L\+S\+E\
 
 
 
-Referenciado por criar\+\_\+grafo() e interface\+\_\+inserir\+\_\+tarefa().
+Referenciado por cria\+Grafo\+Arq(), criar\+\_\+grafo() e interface\+\_\+inserir\+\_\+tarefa().
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -538,8 +626,7 @@ Referências lista\+\_\+vert\+\_\+codigo\+::id, menor\+\_\+caminho(), lista\+\_\
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -578,8 +665,7 @@ Referenciado por eh\+\_\+conexo() e menor\+\_\+caminho().
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -610,8 +696,7 @@ Referenciado por ja\+\_\+feito() e tempo\+\_\+minimo().
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -622,8 +707,7 @@ Este é o diagrama das funções utilizadas por esta função\+:
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -668,8 +752,7 @@ Referenciado por eh\+\_\+conexo() e menor\+\_\+caminho().
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -701,8 +784,7 @@ Referenciado por remover\+\_\+vert().
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -713,8 +795,7 @@ Este é o diagrama das funções utilizadas por esta função\+:
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -745,8 +826,7 @@ Referenciado por interface\+\_\+remover\+\_\+tarefa().
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -757,8 +837,7 @@ Este é o diagrama das funções utilizadas por esta função\+:
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -785,8 +864,7 @@ Referências menor\+\_\+caminho().
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
