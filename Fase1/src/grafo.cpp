@@ -128,8 +128,16 @@ Celula_priv_t *achar_celula(const grafo_priv_t *meu_grafo, int id_externo) {
 }
 
 void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula) {
+
+	resposta tem_pre_req = TRUE;
+	//verificar a existencia dos pre requisitos
+	for(int i=0; i<celula->pre_req; i++){
+		if(existe_vert(meu_grafo, celula->reqs[i]) == FALSE){
+			tem_pre_req = FALSE;
+		}
+	}
 	
-	if (existe_vert(meu_grafo, celula->id_externo) == FALSE
+	if (existe_vert(meu_grafo, celula->id_externo) == FALSE && tem_pre_req == TRUE
 	&& (celula->nome[0] == '\0'
 	|| !(celula->id_externo < 0 || celula->pre_req < 0 || celula->ini_min < 0))) {
 		
@@ -190,6 +198,11 @@ void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula) {
 	} else if (existe_vert(meu_grafo, celula->id_externo) == FALSE) {
 #if DEBUG
 		fprintf(stderr, "ERROR: Vertice ja existe, ");
+		fprintf(stderr, "tentativa de inserir vert <%s> nao sucedida\n", celula->nome);
+#endif
+	}else if (tem_pre_req == FALSE){
+#if DEBUG
+		fprintf(stderr, "ERROR: Um ou mais pre-requisitos nao existem, ");
 		fprintf(stderr, "tentativa de inserir vert <%s> nao sucedida\n", celula->nome);
 #endif
 	} else {
