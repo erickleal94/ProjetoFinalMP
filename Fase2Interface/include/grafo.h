@@ -417,7 +417,7 @@ int num_arestas(const grafo_priv_t *meu_grafo);
  * 	Caso contrário, o valor de retorno é maior ou igual à 0, e é o menor caminho de inicio até fim
  * 	O menor caminho de um vértice à ele mesmo é 0.
 ***************************************************************************/
-void menor_caminho(const grafo_priv_t *meu_grafo, int **dist);
+int menor_caminho(const grafo_priv_t *meu_grafo, int **dist);
 
 /***************************************************************************
  * Função: É conexo?

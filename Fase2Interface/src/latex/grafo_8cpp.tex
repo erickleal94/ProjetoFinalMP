@@ -1,0 +1,926 @@
+\hypertarget{grafo_8cpp}{}\section{Referência do Arquivo grafo.\+cpp}
+\label{grafo_8cpp}\index{grafo.\+cpp@{grafo.\+cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}grafo\+\_\+priv.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}grafo.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$curses.\+h$>$}\\*
+Gráfico de dependência de inclusões para grafo.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Definições e Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{grafo_8cpp_ad72dbcf6d0153db1b8d8a58001feed83}{D\+E\+B\+U\+G}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$ \hyperlink{grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606}{criar\+\_\+grafo} (void)
+\item 
+\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$ \hyperlink{grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe}{deletar\+\_\+grafo} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo)
+\item 
+\hyperlink{grafo_8h_a64f906a639abdfda7fffa9ace7e4c286}{resposta} \hyperlink{grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263}{existe\+\_\+vert} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
+\item 
+\hyperlink{grafo_8h_a64f906a639abdfda7fffa9ace7e4c286}{resposta} \hyperlink{grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8}{existe\+\_\+origem} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
+\item 
+\hyperlink{grafo_8h_a64f906a639abdfda7fffa9ace7e4c286}{resposta} \hyperlink{grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64}{existe\+\_\+aresta} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo1, int id\+\_\+externo2)
+\item 
+int \hyperlink{grafo_8cpp_ac428ee7436d16b5251b093aa79183fda}{achar\+\_\+id} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
+\item 
+\hyperlink{grafo_8h_ac2219b5d1f94e440b5895ce440ab23b9}{Celula\+\_\+priv\+\_\+t} $\ast$ \hyperlink{grafo_8cpp_a90390d2135067928e2c69cd964c9bec5}{achar\+\_\+celula} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
+\item 
+void \hyperlink{grafo_8cpp_a659b567cb7e165b526b6fe05a433452e}{inserir\+\_\+vert} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, \hyperlink{grafo_8h_ac2219b5d1f94e440b5895ce440ab23b9}{Celula\+\_\+priv\+\_\+t} $\ast$celula)
+\item 
+void \hyperlink{grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5}{inserir\+\_\+origem} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, \hyperlink{grafo_8h_ac2219b5d1f94e440b5895ce440ab23b9}{Celula\+\_\+priv\+\_\+t} $\ast$celula)
+\item 
+void \hyperlink{grafo_8cpp_a0e69707897c891bf77319d494cae8f26}{inserir\+\_\+aresta} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo1, \hyperlink{grafo_8h_ac2219b5d1f94e440b5895ce440ab23b9}{Celula\+\_\+priv\+\_\+t} $\ast$celula2, int peso)
+\item 
+void \hyperlink{grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372}{remover\+\_\+vert} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
+\item 
+void \hyperlink{grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f}{remover\+\_\+origem} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
+\item 
+void \hyperlink{grafo_8cpp_ac16199e4256247b546b67d6d881be137}{remover\+\_\+aresta} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo1, int id\+\_\+externo2)
+\item 
+int \hyperlink{grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef}{maior\+\_\+id} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo)
+\item 
+int \hyperlink{grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3}{num\+\_\+vert} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo)
+\item 
+int \hyperlink{grafo_8cpp_ac94be03e94792b9b868abb38c7e17e36}{num\+\_\+arestas} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo)
+\item 
+int \hyperlink{grafo_8cpp_ad507a38f9feef6cad69436ec774b535f}{menor\+\_\+caminho} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int $\ast$$\ast$dist)
+\item 
+int \hyperlink{grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b}{dfs} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, \hyperlink{grafo__priv_8h_aecb68281fecb412bf6427dd6a07d5077}{lista\+\_\+vert\+\_\+t} $\ast$atual, int $\ast$marc)
+\item 
+\hyperlink{grafo_8h_a64f906a639abdfda7fffa9ace7e4c286}{resposta} \hyperlink{grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7}{eh\+\_\+conexo} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo)
+\item 
+void \hyperlink{grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc}{Imprime\+\_\+\+Tarefas} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int linha, int coluna)
+\item 
+void \hyperlink{grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f}{Grava\+\_\+\+Arq} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, char $\ast$Nome\+Arq)
+\item 
+void \hyperlink{grafo_8cpp_a79154a07716d283ad68106cf54beaf07}{editar\+\_\+celula} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int I\+D)
+\item 
+int \hyperlink{grafo_8cpp_a14183876086781302e2d81ab2457dc4e}{tempo\+\_\+minimo} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+fim)
+\item 
+void \hyperlink{grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623}{ja\+\_\+feito} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int d)
+\end{DoxyCompactItemize}
+
+
+\subsection{Definições e macros}
+\hypertarget{grafo_8cpp_ad72dbcf6d0153db1b8d8a58001feed83}{}\index{grafo.\+cpp@{grafo.\+cpp}!D\+E\+B\+U\+G@{D\+E\+B\+U\+G}}
+\index{D\+E\+B\+U\+G@{D\+E\+B\+U\+G}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{D\+E\+B\+U\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G}\label{grafo_8cpp_ad72dbcf6d0153db1b8d8a58001feed83}
+
+
+Definição na linha 13 do arquivo grafo.\+cpp.
+
+
+
+\subsection{Funções}
+\hypertarget{grafo_8cpp_a90390d2135067928e2c69cd964c9bec5}{}\index{grafo.\+cpp@{grafo.\+cpp}!achar\+\_\+celula@{achar\+\_\+celula}}
+\index{achar\+\_\+celula@{achar\+\_\+celula}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{achar\+\_\+celula(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Celula\+\_\+priv\+\_\+t}$\ast$ achar\+\_\+celula (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a90390d2135067928e2c69cd964c9bec5}
+
+
+Definição na linha 99 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+vert\+\_\+codigo\+::dado, Celula\+\_\+priv\+::id\+\_\+externo, lista\+\_\+vert\+\_\+codigo\+::next e grafo\+\_\+priv\+::tabela.
+
+
+
+Referenciado por editar\+\_\+celula(), interface\+\_\+vizualizar\+\_\+determinada\+\_\+tarefa() e menor\+\_\+caminho().
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a90390d2135067928e2c69cd964c9bec5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_ac428ee7436d16b5251b093aa79183fda}{}\index{grafo.\+cpp@{grafo.\+cpp}!achar\+\_\+id@{achar\+\_\+id}}
+\index{achar\+\_\+id@{achar\+\_\+id}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{achar\+\_\+id(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo)}]{\setlength{\rightskip}{0pt plus 5cm}int achar\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_ac428ee7436d16b5251b093aa79183fda}
+
+
+Definição na linha 89 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+vert\+\_\+codigo\+::dado, lista\+\_\+vert\+\_\+codigo\+::id, Celula\+\_\+priv\+::id\+\_\+externo, lista\+\_\+vert\+\_\+codigo\+::next e grafo\+\_\+priv\+::tabela.
+
+
+
+Referenciado por inserir\+\_\+aresta(), inserir\+\_\+origem(), menor\+\_\+caminho(), remover\+\_\+aresta(), remover\+\_\+origem() e remover\+\_\+vert().
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_ac428ee7436d16b5251b093aa79183fda_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606}{}\index{grafo.\+cpp@{grafo.\+cpp}!criar\+\_\+grafo@{criar\+\_\+grafo}}
+\index{criar\+\_\+grafo@{criar\+\_\+grafo}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{criar\+\_\+grafo(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf grafo\+\_\+priv\+\_\+t}$\ast$ criar\+\_\+grafo (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606}
+
+
+Definição na linha 15 do arquivo grafo.\+cpp.
+
+
+
+Referências Celula\+\_\+priv\+::executada, Celula\+\_\+priv\+::id\+\_\+externo, Celula\+\_\+priv\+::ini\+\_\+min, inserir\+\_\+origem(), inserir\+\_\+vert(), Celula\+\_\+priv\+::nome, grafo\+\_\+priv\+::origem, Celula\+\_\+priv\+::pre\+\_\+req, grafo\+\_\+priv\+::tabela e grafo\+\_\+priv\+::vert.
+
+
+
+Referenciado por main().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe}{}\index{grafo.\+cpp@{grafo.\+cpp}!deletar\+\_\+grafo@{deletar\+\_\+grafo}}
+\index{deletar\+\_\+grafo@{deletar\+\_\+grafo}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{deletar\+\_\+grafo(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf grafo\+\_\+priv\+\_\+t}$\ast$ deletar\+\_\+grafo (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe}
+
+
+Definição na linha 35 do arquivo grafo.\+cpp.
+
+
+
+Referências grafo\+\_\+priv\+::tabela.
+
+\hypertarget{grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b}{}\index{grafo.\+cpp@{grafo.\+cpp}!dfs@{dfs}}
+\index{dfs@{dfs}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{dfs(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, lista\+\_\+vert\+\_\+t $\ast$atual, int $\ast$marc)}]{\setlength{\rightskip}{0pt plus 5cm}int dfs (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{{\bf lista\+\_\+vert\+\_\+t} $\ast$}]{atual, }
+\item[{int $\ast$}]{marc}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b}
+
+
+Definição na linha 544 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+aresta\+::destino, lista\+\_\+vert\+::id, lista\+\_\+aresta\+::next e lista\+\_\+vert\+::sucessores.
+
+
+
+Referenciado por eh\+\_\+conexo().
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a79154a07716d283ad68106cf54beaf07}{}\index{grafo.\+cpp@{grafo.\+cpp}!editar\+\_\+celula@{editar\+\_\+celula}}
+\index{editar\+\_\+celula@{editar\+\_\+celula}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{editar\+\_\+celula(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void editar\+\_\+celula (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{I\+D}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a79154a07716d283ad68106cf54beaf07}
+
+
+Definição na linha 641 do arquivo grafo.\+cpp.
+
+
+
+Referências achar\+\_\+celula(), Celula\+\_\+priv\+::duracao, Celula\+\_\+priv\+::executada, Celula\+\_\+priv\+::id\+\_\+externo, Celula\+\_\+priv\+::ini\+\_\+min, Celula\+\_\+priv\+::nome, Celula\+\_\+priv\+::pre\+\_\+req e Celula\+\_\+priv\+::reqs.
+
+
+
+Referenciado por interface\+\_\+editar\+\_\+tarefa().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{grafo_8cpp_a79154a07716d283ad68106cf54beaf07_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a79154a07716d283ad68106cf54beaf07_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7}{}\index{grafo.\+cpp@{grafo.\+cpp}!eh\+\_\+conexo@{eh\+\_\+conexo}}
+\index{eh\+\_\+conexo@{eh\+\_\+conexo}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{eh\+\_\+conexo(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf resposta} eh\+\_\+conexo (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7}
+
+
+Definição na linha 560 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+origem\+::destino, dfs(), F\+A\+L\+S\+E\+\_\+\+T, lista\+\_\+vert\+::id, maior\+\_\+id(), lista\+\_\+origem\+::next, num\+\_\+vert(), grafo\+\_\+priv\+::origem e T\+R\+U\+E\+\_\+\+T.
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64}{}\index{grafo.\+cpp@{grafo.\+cpp}!existe\+\_\+aresta@{existe\+\_\+aresta}}
+\index{existe\+\_\+aresta@{existe\+\_\+aresta}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{existe\+\_\+aresta(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo1, int id\+\_\+externo2)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf resposta} existe\+\_\+aresta (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo1, }
+\item[{int}]{id\+\_\+externo2}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64}
+
+
+Definição na linha 69 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+aresta\+::destino, existe\+\_\+vert(), F\+A\+L\+S\+E\+\_\+\+T, lista\+\_\+vert\+::id\+\_\+externo, lista\+\_\+aresta\+::next, lista\+\_\+vert\+::next, lista\+\_\+vert\+::sucessores, T\+R\+U\+E\+\_\+\+T e grafo\+\_\+priv\+::vert.
+
+
+
+Referenciado por inserir\+\_\+aresta() e remover\+\_\+aresta().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8}{}\index{grafo.\+cpp@{grafo.\+cpp}!existe\+\_\+origem@{existe\+\_\+origem}}
+\index{existe\+\_\+origem@{existe\+\_\+origem}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{existe\+\_\+origem(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf resposta} existe\+\_\+origem (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8}
+
+
+Definição na linha 56 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+origem\+::destino, existe\+\_\+vert(), F\+A\+L\+S\+E\+\_\+\+T, lista\+\_\+vert\+::id\+\_\+externo, lista\+\_\+origem\+::next, grafo\+\_\+priv\+::origem e T\+R\+U\+E\+\_\+\+T.
+
+
+
+Referenciado por inserir\+\_\+origem(), remover\+\_\+origem() e remover\+\_\+vert().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263}{}\index{grafo.\+cpp@{grafo.\+cpp}!existe\+\_\+vert@{existe\+\_\+vert}}
+\index{existe\+\_\+vert@{existe\+\_\+vert}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{existe\+\_\+vert(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf resposta} existe\+\_\+vert (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263}
+
+
+Definição na linha 46 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+vert\+\_\+codigo\+::dado, F\+A\+L\+S\+E\+\_\+\+T, Celula\+\_\+priv\+::id\+\_\+externo, lista\+\_\+vert\+\_\+codigo\+::next, grafo\+\_\+priv\+::tabela e T\+R\+U\+E\+\_\+\+T.
+
+
+
+Referenciado por existe\+\_\+aresta(), existe\+\_\+origem(), inserir\+\_\+aresta(), inserir\+\_\+origem(), inserir\+\_\+vert(), remover\+\_\+aresta(), remover\+\_\+origem() e remover\+\_\+vert().
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f}{}\index{grafo.\+cpp@{grafo.\+cpp}!Grava\+\_\+\+Arq@{Grava\+\_\+\+Arq}}
+\index{Grava\+\_\+\+Arq@{Grava\+\_\+\+Arq}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{Grava\+\_\+\+Arq(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, char $\ast$\+Nome\+Arq)}]{\setlength{\rightskip}{0pt plus 5cm}void Grava\+\_\+\+Arq (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{char $\ast$}]{Nome\+Arq}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f}
+
+
+Definição na linha 615 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+vert\+\_\+codigo\+::dado, Celula\+\_\+priv\+::duracao, Celula\+\_\+priv\+::executada, Celula\+\_\+priv\+::id\+\_\+externo, Celula\+\_\+priv\+::ini\+\_\+min, lista\+\_\+vert\+\_\+codigo\+::next, Celula\+\_\+priv\+::nome, Celula\+\_\+priv\+::pre\+\_\+req, Celula\+\_\+priv\+::reqs e grafo\+\_\+priv\+::tabela.
+
+
+
+Referenciado por main().
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc}{}\index{grafo.\+cpp@{grafo.\+cpp}!Imprime\+\_\+\+Tarefas@{Imprime\+\_\+\+Tarefas}}
+\index{Imprime\+\_\+\+Tarefas@{Imprime\+\_\+\+Tarefas}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{Imprime\+\_\+\+Tarefas(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int linha, int coluna)}]{\setlength{\rightskip}{0pt plus 5cm}void Imprime\+\_\+\+Tarefas (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{linha, }
+\item[{int}]{coluna}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc}
+
+
+Definição na linha 595 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+vert\+\_\+codigo\+::dado, Celula\+\_\+priv\+::duracao, Celula\+\_\+priv\+::executada, Celula\+\_\+priv\+::id\+\_\+externo, Celula\+\_\+priv\+::ini\+\_\+min, lista\+\_\+vert\+\_\+codigo\+::next, Celula\+\_\+priv\+::nome, Celula\+\_\+priv\+::pre\+\_\+req, Celula\+\_\+priv\+::reqs e grafo\+\_\+priv\+::tabela.
+
+
+
+Referenciado por interface\+\_\+vizualizar\+\_\+tarefas().
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a0e69707897c891bf77319d494cae8f26}{}\index{grafo.\+cpp@{grafo.\+cpp}!inserir\+\_\+aresta@{inserir\+\_\+aresta}}
+\index{inserir\+\_\+aresta@{inserir\+\_\+aresta}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{inserir\+\_\+aresta(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo1, Celula\+\_\+priv\+\_\+t $\ast$celula2, int peso)}]{\setlength{\rightskip}{0pt plus 5cm}void inserir\+\_\+aresta (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo1, }
+\item[{{\bf Celula\+\_\+priv\+\_\+t} $\ast$}]{celula2, }
+\item[{int}]{peso}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a0e69707897c891bf77319d494cae8f26}
+
+
+Definição na linha 232 do arquivo grafo.\+cpp.
+
+
+
+Referências achar\+\_\+id(), lista\+\_\+aresta\+::destino, existe\+\_\+aresta(), existe\+\_\+vert(), F\+A\+L\+S\+E\+\_\+\+T, Celula\+\_\+priv\+::id\+\_\+externo, lista\+\_\+aresta\+::next, lista\+\_\+vert\+::next, Celula\+\_\+priv\+::nome, lista\+\_\+aresta\+::peso, lista\+\_\+vert\+::sucessores, T\+R\+U\+E\+\_\+\+T e grafo\+\_\+priv\+::vert.
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a0e69707897c891bf77319d494cae8f26_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5}{}\index{grafo.\+cpp@{grafo.\+cpp}!inserir\+\_\+origem@{inserir\+\_\+origem}}
+\index{inserir\+\_\+origem@{inserir\+\_\+origem}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{inserir\+\_\+origem(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, Celula\+\_\+priv\+\_\+t $\ast$celula)}]{\setlength{\rightskip}{0pt plus 5cm}void inserir\+\_\+origem (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{{\bf Celula\+\_\+priv\+\_\+t} $\ast$}]{celula}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5}
+
+
+Definição na linha 184 do arquivo grafo.\+cpp.
+
+
+
+Referências achar\+\_\+id(), lista\+\_\+origem\+::destino, existe\+\_\+origem(), existe\+\_\+vert(), F\+A\+L\+S\+E\+\_\+\+T, lista\+\_\+vert\+::id, Celula\+\_\+priv\+::id\+\_\+externo, lista\+\_\+vert\+::next, lista\+\_\+origem\+::next, Celula\+\_\+priv\+::nome, grafo\+\_\+priv\+::origem, T\+R\+U\+E\+\_\+\+T e grafo\+\_\+priv\+::vert.
+
+
+
+Referenciado por criar\+\_\+grafo().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a659b567cb7e165b526b6fe05a433452e}{}\index{grafo.\+cpp@{grafo.\+cpp}!inserir\+\_\+vert@{inserir\+\_\+vert}}
+\index{inserir\+\_\+vert@{inserir\+\_\+vert}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{inserir\+\_\+vert(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, Celula\+\_\+priv\+\_\+t $\ast$celula)}]{\setlength{\rightskip}{0pt plus 5cm}void inserir\+\_\+vert (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{{\bf Celula\+\_\+priv\+\_\+t} $\ast$}]{celula}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a659b567cb7e165b526b6fe05a433452e}
+
+
+Definição na linha 110 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+vert\+::antecessores, existe\+\_\+vert(), F\+A\+L\+S\+E\+\_\+\+T, lista\+\_\+vert\+\_\+codigo\+::id, lista\+\_\+vert\+::id, Celula\+\_\+priv\+::id\+\_\+externo, lista\+\_\+vert\+::id\+\_\+externo, Celula\+\_\+priv\+::ini\+\_\+min, lista\+\_\+vert\+\_\+codigo\+::next, lista\+\_\+vert\+::next, Celula\+\_\+priv\+::nome, Celula\+\_\+priv\+::pre\+\_\+req, lista\+\_\+vert\+::sucessores, grafo\+\_\+priv\+::tabela e grafo\+\_\+priv\+::vert.
+
+
+
+Referenciado por criar\+\_\+grafo() e interface\+\_\+inserir\+\_\+tarefa().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623}{}\index{grafo.\+cpp@{grafo.\+cpp}!ja\+\_\+feito@{ja\+\_\+feito}}
+\index{ja\+\_\+feito@{ja\+\_\+feito}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{ja\+\_\+feito(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int d)}]{\setlength{\rightskip}{0pt plus 5cm}void ja\+\_\+feito (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623}
+
+
+Definição na linha 712 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+vert\+\_\+codigo\+::id, menor\+\_\+caminho(), lista\+\_\+vert\+\_\+codigo\+::next e grafo\+\_\+priv\+::tabela.
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef}{}\index{grafo.\+cpp@{grafo.\+cpp}!maior\+\_\+id@{maior\+\_\+id}}
+\index{maior\+\_\+id@{maior\+\_\+id}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{maior\+\_\+id(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo)}]{\setlength{\rightskip}{0pt plus 5cm}int maior\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef}
+
+
+Definição na linha 472 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+vert\+\_\+codigo\+::id, lista\+\_\+vert\+\_\+codigo\+::next e grafo\+\_\+priv\+::tabela.
+
+
+
+Referenciado por eh\+\_\+conexo() e menor\+\_\+caminho().
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_ad507a38f9feef6cad69436ec774b535f}{}\index{grafo.\+cpp@{grafo.\+cpp}!menor\+\_\+caminho@{menor\+\_\+caminho}}
+\index{menor\+\_\+caminho@{menor\+\_\+caminho}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{menor\+\_\+caminho(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int $\ast$$\ast$dist)}]{\setlength{\rightskip}{0pt plus 5cm}int menor\+\_\+caminho (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int $\ast$$\ast$}]{dist}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_ad507a38f9feef6cad69436ec774b535f}
+
+
+Definição na linha 506 do arquivo grafo.\+cpp.
+
+
+
+Referências achar\+\_\+celula(), achar\+\_\+id(), lista\+\_\+aresta\+::destino, lista\+\_\+vert\+::id, Celula\+\_\+priv\+::ini\+\_\+min, maior\+\_\+id(), lista\+\_\+aresta\+::next, lista\+\_\+vert\+::next, num\+\_\+vert(), lista\+\_\+aresta\+::peso, lista\+\_\+vert\+::sucessores e grafo\+\_\+priv\+::vert.
+
+
+
+Referenciado por ja\+\_\+feito() e tempo\+\_\+minimo().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_ac94be03e94792b9b868abb38c7e17e36}{}\index{grafo.\+cpp@{grafo.\+cpp}!num\+\_\+arestas@{num\+\_\+arestas}}
+\index{num\+\_\+arestas@{num\+\_\+arestas}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{num\+\_\+arestas(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo)}]{\setlength{\rightskip}{0pt plus 5cm}int num\+\_\+arestas (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_ac94be03e94792b9b868abb38c7e17e36}
+
+
+Definição na linha 493 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+aresta\+::next, lista\+\_\+vert\+::next, lista\+\_\+vert\+::sucessores e grafo\+\_\+priv\+::vert.
+
+\hypertarget{grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3}{}\index{grafo.\+cpp@{grafo.\+cpp}!num\+\_\+vert@{num\+\_\+vert}}
+\index{num\+\_\+vert@{num\+\_\+vert}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{num\+\_\+vert(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo)}]{\setlength{\rightskip}{0pt plus 5cm}int num\+\_\+vert (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3}
+
+
+Definição na linha 483 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+vert\+::next e grafo\+\_\+priv\+::vert.
+
+
+
+Referenciado por eh\+\_\+conexo() e menor\+\_\+caminho().
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_ac16199e4256247b546b67d6d881be137}{}\index{grafo.\+cpp@{grafo.\+cpp}!remover\+\_\+aresta@{remover\+\_\+aresta}}
+\index{remover\+\_\+aresta@{remover\+\_\+aresta}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{remover\+\_\+aresta(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo1, int id\+\_\+externo2)}]{\setlength{\rightskip}{0pt plus 5cm}void remover\+\_\+aresta (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo1, }
+\item[{int}]{id\+\_\+externo2}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_ac16199e4256247b546b67d6d881be137}
+
+
+Definição na linha 422 do arquivo grafo.\+cpp.
+
+
+
+Referências achar\+\_\+id(), lista\+\_\+vert\+::antecessores, existe\+\_\+aresta(), existe\+\_\+vert(), lista\+\_\+vert\+::id, lista\+\_\+aresta\+::next, lista\+\_\+vert\+::next, lista\+\_\+vert\+::sucessores, T\+R\+U\+E\+\_\+\+T e grafo\+\_\+priv\+::vert.
+
+
+
+Referenciado por remover\+\_\+vert().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_ac16199e4256247b546b67d6d881be137_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f}{}\index{grafo.\+cpp@{grafo.\+cpp}!remover\+\_\+origem@{remover\+\_\+origem}}
+\index{remover\+\_\+origem@{remover\+\_\+origem}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{remover\+\_\+origem(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo)}]{\setlength{\rightskip}{0pt plus 5cm}void remover\+\_\+origem (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f}
+
+
+Definição na linha 395 do arquivo grafo.\+cpp.
+
+
+
+Referências achar\+\_\+id(), lista\+\_\+origem\+::destino, existe\+\_\+origem(), existe\+\_\+vert(), lista\+\_\+vert\+::id, lista\+\_\+origem\+::next, grafo\+\_\+priv\+::origem e T\+R\+U\+E\+\_\+\+T.
+
+
+
+Referenciado por remover\+\_\+vert().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372}{}\index{grafo.\+cpp@{grafo.\+cpp}!remover\+\_\+vert@{remover\+\_\+vert}}
+\index{remover\+\_\+vert@{remover\+\_\+vert}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{remover\+\_\+vert(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo)}]{\setlength{\rightskip}{0pt plus 5cm}void remover\+\_\+vert (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372}
+
+
+Definição na linha 322 do arquivo grafo.\+cpp.
+
+
+
+Referências achar\+\_\+id(), lista\+\_\+aresta\+::destino, existe\+\_\+origem(), existe\+\_\+vert(), lista\+\_\+vert\+\_\+codigo\+::id, lista\+\_\+vert\+::id, lista\+\_\+vert\+::id\+\_\+externo, lista\+\_\+vert\+\_\+codigo\+::next, lista\+\_\+vert\+::next, remover\+\_\+aresta(), remover\+\_\+origem(), grafo\+\_\+priv\+::tabela, T\+R\+U\+E\+\_\+\+T e grafo\+\_\+priv\+::vert.
+
+
+
+Referenciado por interface\+\_\+remover\+\_\+tarefa().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo_8cpp_a14183876086781302e2d81ab2457dc4e}{}\index{grafo.\+cpp@{grafo.\+cpp}!tempo\+\_\+minimo@{tempo\+\_\+minimo}}
+\index{tempo\+\_\+minimo@{tempo\+\_\+minimo}!grafo.\+cpp@{grafo.\+cpp}}
+\subsubsection[{tempo\+\_\+minimo(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+fim)}]{\setlength{\rightskip}{0pt plus 5cm}int tempo\+\_\+minimo (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+fim}
+\end{DoxyParamCaption}
+)}\label{grafo_8cpp_a14183876086781302e2d81ab2457dc4e}
+
+
+Definição na linha 697 do arquivo grafo.\+cpp.
+
+
+
+Referências menor\+\_\+caminho().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8cpp_a14183876086781302e2d81ab2457dc4e_cgraph}
+\end{center}
+\end{figure}
+
+

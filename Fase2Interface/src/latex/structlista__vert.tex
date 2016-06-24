@@ -1,0 +1,99 @@
+\hypertarget{structlista__vert}{}\section{Referência da Estrutura lista\+\_\+vert}
+\label{structlista__vert}\index{lista\+\_\+vert@{lista\+\_\+vert}}
+
+
+{\ttfamily \#include $<$grafo\+\_\+priv.\+h$>$}
+
+
+
+Diagrama de colaboração para lista\+\_\+vert\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{structlista__vert__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structlista__vert_acce74c81e9c5ed24ff7bc175e22a7079}{id}
+\item 
+int \hyperlink{structlista__vert_a4741315d4db64dad0ee3b59d8f5a4951}{id\+\_\+externo}
+\item 
+\hyperlink{grafo__priv_8h_a8c99b03365ae7f753c4cf1a20d9e9257}{lista\+\_\+aresta\+\_\+t} $\ast$ \hyperlink{structlista__vert_a39a423ac0ec49cb5bcca3c73c353db19}{antecessores}
+\item 
+\hyperlink{grafo__priv_8h_a8c99b03365ae7f753c4cf1a20d9e9257}{lista\+\_\+aresta\+\_\+t} $\ast$ \hyperlink{structlista__vert_ac003e2d2beffcf2432cac5460cf82263}{sucessores}
+\item 
+struct \hyperlink{structlista__vert}{lista\+\_\+vert} $\ast$ \hyperlink{structlista__vert_a772eebf412b0d7e40a73f5989e6a1835}{next}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+
+
+Definição na linha 28 do arquivo grafo\+\_\+priv.\+h.
+
+
+
+\subsection{Campos}
+\hypertarget{structlista__vert_a39a423ac0ec49cb5bcca3c73c353db19}{}\index{lista\+\_\+vert@{lista\+\_\+vert}!antecessores@{antecessores}}
+\index{antecessores@{antecessores}!lista\+\_\+vert@{lista\+\_\+vert}}
+\subsubsection[{antecessores}]{\setlength{\rightskip}{0pt plus 5cm}{\bf lista\+\_\+aresta\+\_\+t}$\ast$ lista\+\_\+vert\+::antecessores}\label{structlista__vert_a39a423ac0ec49cb5bcca3c73c353db19}
+
+
+Definição na linha 31 do arquivo grafo\+\_\+priv.\+h.
+
+
+
+Referenciado por inserir\+\_\+vert() e remover\+\_\+aresta().
+
+\hypertarget{structlista__vert_acce74c81e9c5ed24ff7bc175e22a7079}{}\index{lista\+\_\+vert@{lista\+\_\+vert}!id@{id}}
+\index{id@{id}!lista\+\_\+vert@{lista\+\_\+vert}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}int lista\+\_\+vert\+::id}\label{structlista__vert_acce74c81e9c5ed24ff7bc175e22a7079}
+
+
+Definição na linha 29 do arquivo grafo\+\_\+priv.\+h.
+
+
+
+Referenciado por dfs(), eh\+\_\+conexo(), inserir\+\_\+origem(), inserir\+\_\+vert(), menor\+\_\+caminho(), remover\+\_\+aresta(), remover\+\_\+origem() e remover\+\_\+vert().
+
+\hypertarget{structlista__vert_a4741315d4db64dad0ee3b59d8f5a4951}{}\index{lista\+\_\+vert@{lista\+\_\+vert}!id\+\_\+externo@{id\+\_\+externo}}
+\index{id\+\_\+externo@{id\+\_\+externo}!lista\+\_\+vert@{lista\+\_\+vert}}
+\subsubsection[{id\+\_\+externo}]{\setlength{\rightskip}{0pt plus 5cm}int lista\+\_\+vert\+::id\+\_\+externo}\label{structlista__vert_a4741315d4db64dad0ee3b59d8f5a4951}
+
+
+Definição na linha 30 do arquivo grafo\+\_\+priv.\+h.
+
+
+
+Referenciado por existe\+\_\+aresta(), existe\+\_\+origem(), inserir\+\_\+vert() e remover\+\_\+vert().
+
+\hypertarget{structlista__vert_a772eebf412b0d7e40a73f5989e6a1835}{}\index{lista\+\_\+vert@{lista\+\_\+vert}!next@{next}}
+\index{next@{next}!lista\+\_\+vert@{lista\+\_\+vert}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf lista\+\_\+vert}$\ast$ lista\+\_\+vert\+::next}\label{structlista__vert_a772eebf412b0d7e40a73f5989e6a1835}
+
+
+Definição na linha 33 do arquivo grafo\+\_\+priv.\+h.
+
+
+
+Referenciado por existe\+\_\+aresta(), inserir\+\_\+aresta(), inserir\+\_\+origem(), inserir\+\_\+vert(), menor\+\_\+caminho(), num\+\_\+arestas(), num\+\_\+vert(), remover\+\_\+aresta() e remover\+\_\+vert().
+
+\hypertarget{structlista__vert_ac003e2d2beffcf2432cac5460cf82263}{}\index{lista\+\_\+vert@{lista\+\_\+vert}!sucessores@{sucessores}}
+\index{sucessores@{sucessores}!lista\+\_\+vert@{lista\+\_\+vert}}
+\subsubsection[{sucessores}]{\setlength{\rightskip}{0pt plus 5cm}{\bf lista\+\_\+aresta\+\_\+t}$\ast$ lista\+\_\+vert\+::sucessores}\label{structlista__vert_ac003e2d2beffcf2432cac5460cf82263}
+
+
+Definição na linha 32 do arquivo grafo\+\_\+priv.\+h.
+
+
+
+Referenciado por dfs(), existe\+\_\+aresta(), inserir\+\_\+aresta(), inserir\+\_\+vert(), menor\+\_\+caminho(), num\+\_\+arestas() e remover\+\_\+aresta().
+
+
+
+A documentação para esta estrutura foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+/home/rafael/\+Projeto\+Final\+M\+P/\+Fase2\+Interface/include/\hyperlink{grafo__priv_8h}{grafo\+\_\+priv.\+h}\end{DoxyCompactItemize}

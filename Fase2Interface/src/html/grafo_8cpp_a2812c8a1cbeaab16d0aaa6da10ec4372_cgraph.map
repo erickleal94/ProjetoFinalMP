@@ -1,0 +1,8 @@
+<map id="remover_vert" name="remover_vert">
+<area shape="rect" id="node2" href="$grafo_8cpp.html#ac428ee7436d16b5251b093aa79183fda" title="achar_id" alt="" coords="340,140,415,167"/>
+<area shape="rect" id="node3" href="$grafo_8cpp.html#aa7c7803e91592a28e4c0a85112b53fb8" title="existe_origem" alt="" coords="324,39,431,65"/>
+<area shape="rect" id="node4" href="$grafo_8cpp.html#ac70f5a4fd6ff7c6913f0ce99de099263" title="existe_vert" alt="" coords="479,89,565,116"/>
+<area shape="rect" id="node5" href="$grafo_8cpp.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="157,191,274,217"/>
+<area shape="rect" id="node7" href="$grafo_8cpp.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="155,89,276,116"/>
+<area shape="rect" id="node6" href="$grafo_8cpp.html#a56edc294bdf9e834989d9c8d31ed3a64" title="existe_aresta" alt="" coords="326,191,429,217"/>
+</map>

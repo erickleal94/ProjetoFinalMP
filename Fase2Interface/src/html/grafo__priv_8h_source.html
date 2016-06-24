@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Trabalho de Grafos: Código-Fonte de /home/rafael/ProjetoFinalMP/Fase2Interface/include/grafo_priv.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Trabalho de Grafos
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Adiciona tarefas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('grafo__priv_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">grafo_priv.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="grafo__priv_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAFO_PRIV</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GRAFO_PRIV</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="grafo_8h.html">grafo.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="structCelula__priv.html">    6</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structCelula__priv.html">Celula_priv</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">    7</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>, <a class="code" href="structCelula__priv.html#af5f995caad41372e844f965021c5d183">executada</a>, <a class="code" href="structCelula__priv.html#aee72d429cf8e17c945a1eb4e05ad85c7">duracao</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">    8</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a3c49601fe078bd7bb1512f0107af5301">ini_min</a>, <a class="code" href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">pre_req</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structCelula__priv.html#ad54839cd4d96e78a58c226ab2e8d0579">    9</a></span>&#160;        <span class="keywordtype">int</span> *<a class="code" href="structCelula__priv.html#ad54839cd4d96e78a58c226ab2e8d0579">reqs</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structCelula__priv.html#a7f33fa72aceed7b44922f0f39d6f7f59">   10</a></span>&#160;        <span class="keywordtype">char</span> <a class="code" href="structCelula__priv.html#a7f33fa72aceed7b44922f0f39d6f7f59">nome</a>[200];</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;} <a class="code" href="grafo__priv_8h.html#a54889edec2a20c11a5015e4437a6b656">Celula_priv_t</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">struct </span><a class="code" href="structlista__vert.html">lista_vert</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structlista__vert__codigo.html">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structlista__vert__codigo.html">lista_vert_codigo</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structlista__vert__codigo.html#a8e51b3141307b34cb74d6433a136f73b">   17</a></span>&#160;        <a class="code" href="structCelula__priv.html">Celula_priv_t</a> <a class="code" href="structlista__vert__codigo.html#a8e51b3141307b34cb74d6433a136f73b">dado</a>;     <span class="comment">/*nome do vértice, dada pelo usuário*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structlista__vert__codigo.html#acc7c3bce66ab242ba6e64e763dfb63b3">   18</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structlista__vert__codigo.html#acc7c3bce66ab242ba6e64e763dfb63b3">id</a>;                 <span class="comment">/*representação interna do vértice, gerado pelo código*/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structlista__vert__codigo.html#af1cac7f22cb6142a13bd1f9c41f4c0b5">   19</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structlista__vert__codigo.html">lista_vert_codigo</a> *<a class="code" href="structlista__vert__codigo.html#af1cac7f22cb6142a13bd1f9c41f4c0b5">next</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <a class="code" href="grafo__priv_8h.html#ae17c76eddcd8bd44e7d91faf7c00e2e5">lista_vert_codigo_t</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structlista__aresta.html">   22</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structlista__aresta.html">lista_aresta</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structlista__aresta.html#a324d065ab2fc1df5d59128027c4c8a5a">   23</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structlista__vert.html">lista_vert</a> *<a class="code" href="structlista__aresta.html#a324d065ab2fc1df5d59128027c4c8a5a">destino</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structlista__aresta.html#af006bc606a812d12d13d35a4f00c0e6c">   24</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structlista__aresta.html#af006bc606a812d12d13d35a4f00c0e6c">peso</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structlista__aresta.html#a55d9a8d5fcc901c1d8802239735b4af7">   25</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structlista__aresta.html">lista_aresta</a> *<a class="code" href="structlista__aresta.html#a55d9a8d5fcc901c1d8802239735b4af7">next</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <a class="code" href="grafo__priv_8h.html#a8c99b03365ae7f753c4cf1a20d9e9257">lista_aresta_t</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structlista__vert.html">   28</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structlista__vert.html">lista_vert</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structlista__vert.html#acce74c81e9c5ed24ff7bc175e22a7079">   29</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structlista__vert.html#acce74c81e9c5ed24ff7bc175e22a7079">id</a>;                 <span class="comment">/*representação interna do vértice, gerado pelo código*/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structlista__vert.html#a4741315d4db64dad0ee3b59d8f5a4951">   30</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structlista__vert.html#a4741315d4db64dad0ee3b59d8f5a4951">id_externo</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structlista__vert.html#a39a423ac0ec49cb5bcca3c73c353db19">   31</a></span>&#160;        <a class="code" href="structlista__aresta.html">lista_aresta_t</a> *<a class="code" href="structlista__vert.html#a39a423ac0ec49cb5bcca3c73c353db19">antecessores</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structlista__vert.html#ac003e2d2beffcf2432cac5460cf82263">   32</a></span>&#160;        <a class="code" href="structlista__aresta.html">lista_aresta_t</a> *<a class="code" href="structlista__vert.html#ac003e2d2beffcf2432cac5460cf82263">sucessores</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structlista__vert.html#a772eebf412b0d7e40a73f5989e6a1835">   33</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structlista__vert.html">lista_vert</a> *<a class="code" href="structlista__vert.html#a772eebf412b0d7e40a73f5989e6a1835">next</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <a class="code" href="grafo__priv_8h.html#aecb68281fecb412bf6427dd6a07d5077">lista_vert_t</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structlista__origem.html">   36</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structlista__origem.html">lista_origem</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structlista__origem.html#a2634ade77a03658b5cbc02e44d3e784f">   37</a></span>&#160;        <a class="code" href="structlista__vert.html">lista_vert_t</a> *<a class="code" href="structlista__origem.html#a2634ade77a03658b5cbc02e44d3e784f">destino</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structlista__origem.html#a3d90d523832090d0a99ee45025c95c03">   38</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structlista__origem.html">lista_origem</a> *<a class="code" href="structlista__origem.html#a3d90d523832090d0a99ee45025c95c03">next</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <a class="code" href="grafo__priv_8h.html#a91c8b187403e9724a757c92c941ab631">lista_origem_t</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structgrafo__priv.html">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structgrafo__priv.html">grafo_priv</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structgrafo__priv.html#a7aaee4699517501a8ca504043ef78ddb">   42</a></span>&#160;        <a class="code" href="structlista__vert__codigo.html">lista_vert_codigo_t</a> *<a class="code" href="structgrafo__priv.html#a7aaee4699517501a8ca504043ef78ddb">tabela</a>; <span class="comment">/* tabela nome do vértice - código*/</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structgrafo__priv.html#a6f7e609364c2e69e02c56860b1a2c3ad">   43</a></span>&#160;        <a class="code" href="structlista__vert.html">lista_vert_t</a> *<a class="code" href="structgrafo__priv.html#a6f7e609364c2e69e02c56860b1a2c3ad">vert</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structgrafo__priv.html#a49b9f7cfbed0b2dff3c5b373d79385db">   44</a></span>&#160;        <a class="code" href="structlista__origem.html">lista_origem_t</a> *<a class="code" href="structgrafo__priv.html#a49b9f7cfbed0b2dff3c5b373d79385db">origem</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <a class="code" href="grafo__priv_8h.html#a35fb938b8d010a769f7317ea5d8cb237">grafo_priv_t</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * Função: Existe origem nome?</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> *      Verfica a existência de uma origem dado</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> *                      Se a string tiver mais que 100 caracteres,</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> *                      a origem não será encontrado, uma vez que</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> *                      100 é o maior número de caracteres que uma</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> *                      origem pode ter.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> *      Retorna uma resposta, que será TRUE caso exista uma origem,</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> *      e FALSE caso não exista.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> *      strlen(nome) &lt;= 100</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> *      O retorno será TRUE ou FALSE</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *      O conteúdo do grafo e da string passados não serão modificados</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a> <a class="code" href="grafo__priv_8h.html#aa7c7803e91592a28e4c0a85112b53fb8">existe_origem</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> id_externo);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * Função: Inserir origem</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> *      Caso nome seja um vértice e ainda não seja uma origem, insere-se uma.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> *      Se não existir o vertice ou já exista essa origem, e caso a opção de DEBUG</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> *      seja ativada, (macro DEBUG é igual à 1), será enviada uma mensagem à saída</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> *      padrão de erro. Independente de DEBUG, a origem não será adicionada.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> *      Assim se for desejado adicionar uma origem que não se sabe se já é um vértice</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> *      ou não, use inserir_vert e depois inserir_origem, com o mesmo nome.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> *      Retorna a grafo modificado por referência, ou seja, o grafo</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> *      passado será modificado sem a necessidade de receber um valor</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> *      de retorno.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> *      strlen(nome) &lt;= 100</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> *      O grafo retornado foi adicionado de uma origem, não se assegura</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> *      sua conexividade.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> *      O conteúdo da string passada não será modificado</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo__priv_8h.html#adc1a8c08d13a78eda202bc49275712f5">inserir_origem</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <a class="code" href="structCelula__priv.html">Celula_priv_t</a> *celula);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> * Função: Remover origem</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> *      Caso não existir o vértice nome ou el não for uma origem, nada será feito,</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"> *      não será gerado nenhum warning.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> *      Se existir a origem, ela será removida. O vértices permanecerá no</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> *      grafo.</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> *      Retorna a grafo modificado por referência, ou seja, o grafo</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"> *      passado será modificado sem a necessidade de receber um valor</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"> *      de retorno.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"> *      strlen(nome) &lt;= 100</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> *      O grafo retornado por referência foi removido de uma origem,</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> *      não se assegura sua conexividade.</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> *      O conteúdo da string passada não será modificado</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo__priv_8h.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f">remover_origem</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> id_externo);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="grafo__priv_8h_html_a2f6600bf1f6ecc3c960e244f3e7b5c8f"><div class="ttname"><a href="grafo__priv_8h.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f">remover_origem</a></div><div class="ttdeci">void remover_origem(grafo_priv_t *meu_grafo, int id_externo)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00395">grafo.cpp:395</a></div></div>
+<div class="ttc" id="grafo_8h_html_a64f906a639abdfda7fffa9ace7e4c286"><div class="ttname"><a href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a></div><div class="ttdeci">enum resp resposta</div></div>
+<div class="ttc" id="grafo_8h_html"><div class="ttname"><a href="grafo_8h.html">grafo.h</a></div></div>
+<div class="ttc" id="structlista__aresta_html_a55d9a8d5fcc901c1d8802239735b4af7"><div class="ttname"><a href="structlista__aresta.html#a55d9a8d5fcc901c1d8802239735b4af7">lista_aresta::next</a></div><div class="ttdeci">struct lista_aresta * next</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00025">grafo_priv.h:25</a></div></div>
+<div class="ttc" id="structlista__vert_html_acce74c81e9c5ed24ff7bc175e22a7079"><div class="ttname"><a href="structlista__vert.html#acce74c81e9c5ed24ff7bc175e22a7079">lista_vert::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00029">grafo_priv.h:29</a></div></div>
+<div class="ttc" id="grafo__priv_8h_html_aa7c7803e91592a28e4c0a85112b53fb8"><div class="ttname"><a href="grafo__priv_8h.html#aa7c7803e91592a28e4c0a85112b53fb8">existe_origem</a></div><div class="ttdeci">resposta existe_origem(const grafo_priv_t *meu_grafo, int id_externo)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00056">grafo.cpp:56</a></div></div>
+<div class="ttc" id="structCelula__priv_html_a7f33fa72aceed7b44922f0f39d6f7f59"><div class="ttname"><a href="structCelula__priv.html#a7f33fa72aceed7b44922f0f39d6f7f59">Celula_priv::nome</a></div><div class="ttdeci">char nome[200]</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00010">grafo_priv.h:10</a></div></div>
+<div class="ttc" id="structlista__vert__codigo_html_acc7c3bce66ab242ba6e64e763dfb63b3"><div class="ttname"><a href="structlista__vert__codigo.html#acc7c3bce66ab242ba6e64e763dfb63b3">lista_vert_codigo::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00018">grafo_priv.h:18</a></div></div>
+<div class="ttc" id="structCelula__priv_html_af5f995caad41372e844f965021c5d183"><div class="ttname"><a href="structCelula__priv.html#af5f995caad41372e844f965021c5d183">Celula_priv::executada</a></div><div class="ttdeci">int executada</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00007">grafo_priv.h:7</a></div></div>
+<div class="ttc" id="grafo__priv_8h_html_a8c99b03365ae7f753c4cf1a20d9e9257"><div class="ttname"><a href="grafo__priv_8h.html#a8c99b03365ae7f753c4cf1a20d9e9257">lista_aresta_t</a></div><div class="ttdeci">struct lista_aresta lista_aresta_t</div></div>
+<div class="ttc" id="structCelula__priv_html_ad54839cd4d96e78a58c226ab2e8d0579"><div class="ttname"><a href="structCelula__priv.html#ad54839cd4d96e78a58c226ab2e8d0579">Celula_priv::reqs</a></div><div class="ttdeci">int * reqs</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00009">grafo_priv.h:9</a></div></div>
+<div class="ttc" id="grafo__priv_8h_html_a54889edec2a20c11a5015e4437a6b656"><div class="ttname"><a href="grafo__priv_8h.html#a54889edec2a20c11a5015e4437a6b656">Celula_priv_t</a></div><div class="ttdeci">struct Celula_priv Celula_priv_t</div></div>
+<div class="ttc" id="structlista__vert__codigo_html"><div class="ttname"><a href="structlista__vert__codigo.html">lista_vert_codigo</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00016">grafo_priv.h:16</a></div></div>
+<div class="ttc" id="structgrafo__priv_html_a49b9f7cfbed0b2dff3c5b373d79385db"><div class="ttname"><a href="structgrafo__priv.html#a49b9f7cfbed0b2dff3c5b373d79385db">grafo_priv::origem</a></div><div class="ttdeci">lista_origem_t * origem</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00044">grafo_priv.h:44</a></div></div>
+<div class="ttc" id="structgrafo__priv_html"><div class="ttname"><a href="structgrafo__priv.html">grafo_priv</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00041">grafo_priv.h:41</a></div></div>
+<div class="ttc" id="structlista__origem_html_a3d90d523832090d0a99ee45025c95c03"><div class="ttname"><a href="structlista__origem.html#a3d90d523832090d0a99ee45025c95c03">lista_origem::next</a></div><div class="ttdeci">struct lista_origem * next</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00038">grafo_priv.h:38</a></div></div>
+<div class="ttc" id="structlista__origem_html"><div class="ttname"><a href="structlista__origem.html">lista_origem</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00036">grafo_priv.h:36</a></div></div>
+<div class="ttc" id="structCelula__priv_html_a3ff8d3c4d0ba994771391320203619fc"><div class="ttname"><a href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">Celula_priv::pre_req</a></div><div class="ttdeci">int pre_req</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00008">grafo_priv.h:8</a></div></div>
+<div class="ttc" id="grafo__priv_8h_html_aecb68281fecb412bf6427dd6a07d5077"><div class="ttname"><a href="grafo__priv_8h.html#aecb68281fecb412bf6427dd6a07d5077">lista_vert_t</a></div><div class="ttdeci">struct lista_vert lista_vert_t</div></div>
+<div class="ttc" id="structlista__aresta_html"><div class="ttname"><a href="structlista__aresta.html">lista_aresta</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00022">grafo_priv.h:22</a></div></div>
+<div class="ttc" id="structCelula__priv_html_a78a8525da28e1918d0faaf127001bd7b"><div class="ttname"><a href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">Celula_priv::id_externo</a></div><div class="ttdeci">int id_externo</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00007">grafo_priv.h:7</a></div></div>
+<div class="ttc" id="structlista__vert_html_ac003e2d2beffcf2432cac5460cf82263"><div class="ttname"><a href="structlista__vert.html#ac003e2d2beffcf2432cac5460cf82263">lista_vert::sucessores</a></div><div class="ttdeci">lista_aresta_t * sucessores</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00032">grafo_priv.h:32</a></div></div>
+<div class="ttc" id="grafo__priv_8h_html_ae17c76eddcd8bd44e7d91faf7c00e2e5"><div class="ttname"><a href="grafo__priv_8h.html#ae17c76eddcd8bd44e7d91faf7c00e2e5">lista_vert_codigo_t</a></div><div class="ttdeci">struct lista_vert_codigo lista_vert_codigo_t</div></div>
+<div class="ttc" id="structCelula__priv_html_a3c49601fe078bd7bb1512f0107af5301"><div class="ttname"><a href="structCelula__priv.html#a3c49601fe078bd7bb1512f0107af5301">Celula_priv::ini_min</a></div><div class="ttdeci">int ini_min</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00008">grafo_priv.h:8</a></div></div>
+<div class="ttc" id="structlista__vert_html"><div class="ttname"><a href="structlista__vert.html">lista_vert</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00028">grafo_priv.h:28</a></div></div>
+<div class="ttc" id="structCelula__priv_html_aee72d429cf8e17c945a1eb4e05ad85c7"><div class="ttname"><a href="structCelula__priv.html#aee72d429cf8e17c945a1eb4e05ad85c7">Celula_priv::duracao</a></div><div class="ttdeci">int duracao</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00007">grafo_priv.h:7</a></div></div>
+<div class="ttc" id="grafo__priv_8h_html_adc1a8c08d13a78eda202bc49275712f5"><div class="ttname"><a href="grafo__priv_8h.html#adc1a8c08d13a78eda202bc49275712f5">inserir_origem</a></div><div class="ttdeci">void inserir_origem(grafo_priv_t *meu_grafo, Celula_priv_t *celula)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00184">grafo.cpp:184</a></div></div>
+<div class="ttc" id="structlista__origem_html_a2634ade77a03658b5cbc02e44d3e784f"><div class="ttname"><a href="structlista__origem.html#a2634ade77a03658b5cbc02e44d3e784f">lista_origem::destino</a></div><div class="ttdeci">lista_vert_t * destino</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00037">grafo_priv.h:37</a></div></div>
+<div class="ttc" id="structlista__aresta_html_a324d065ab2fc1df5d59128027c4c8a5a"><div class="ttname"><a href="structlista__aresta.html#a324d065ab2fc1df5d59128027c4c8a5a">lista_aresta::destino</a></div><div class="ttdeci">struct lista_vert * destino</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00023">grafo_priv.h:23</a></div></div>
+<div class="ttc" id="structCelula__priv_html"><div class="ttname"><a href="structCelula__priv.html">Celula_priv</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00006">grafo_priv.h:6</a></div></div>
+<div class="ttc" id="grafo__priv_8h_html_a35fb938b8d010a769f7317ea5d8cb237"><div class="ttname"><a href="grafo__priv_8h.html#a35fb938b8d010a769f7317ea5d8cb237">grafo_priv_t</a></div><div class="ttdeci">struct grafo_priv grafo_priv_t</div></div>
+<div class="ttc" id="structgrafo__priv_html_a6f7e609364c2e69e02c56860b1a2c3ad"><div class="ttname"><a href="structgrafo__priv.html#a6f7e609364c2e69e02c56860b1a2c3ad">grafo_priv::vert</a></div><div class="ttdeci">lista_vert_t * vert</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00043">grafo_priv.h:43</a></div></div>
+<div class="ttc" id="grafo__priv_8h_html_a91c8b187403e9724a757c92c941ab631"><div class="ttname"><a href="grafo__priv_8h.html#a91c8b187403e9724a757c92c941ab631">lista_origem_t</a></div><div class="ttdeci">struct lista_origem lista_origem_t</div></div>
+<div class="ttc" id="structlista__vert_html_a4741315d4db64dad0ee3b59d8f5a4951"><div class="ttname"><a href="structlista__vert.html#a4741315d4db64dad0ee3b59d8f5a4951">lista_vert::id_externo</a></div><div class="ttdeci">int id_externo</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00030">grafo_priv.h:30</a></div></div>
+<div class="ttc" id="structlista__vert_html_a772eebf412b0d7e40a73f5989e6a1835"><div class="ttname"><a href="structlista__vert.html#a772eebf412b0d7e40a73f5989e6a1835">lista_vert::next</a></div><div class="ttdeci">struct lista_vert * next</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00033">grafo_priv.h:33</a></div></div>
+<div class="ttc" id="structgrafo__priv_html_a7aaee4699517501a8ca504043ef78ddb"><div class="ttname"><a href="structgrafo__priv.html#a7aaee4699517501a8ca504043ef78ddb">grafo_priv::tabela</a></div><div class="ttdeci">lista_vert_codigo_t * tabela</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00042">grafo_priv.h:42</a></div></div>
+<div class="ttc" id="structlista__vert__codigo_html_af1cac7f22cb6142a13bd1f9c41f4c0b5"><div class="ttname"><a href="structlista__vert__codigo.html#af1cac7f22cb6142a13bd1f9c41f4c0b5">lista_vert_codigo::next</a></div><div class="ttdeci">struct lista_vert_codigo * next</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00019">grafo_priv.h:19</a></div></div>
+<div class="ttc" id="structlista__vert_html_a39a423ac0ec49cb5bcca3c73c353db19"><div class="ttname"><a href="structlista__vert.html#a39a423ac0ec49cb5bcca3c73c353db19">lista_vert::antecessores</a></div><div class="ttdeci">lista_aresta_t * antecessores</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00031">grafo_priv.h:31</a></div></div>
+<div class="ttc" id="structlista__vert__codigo_html_a8e51b3141307b34cb74d6433a136f73b"><div class="ttname"><a href="structlista__vert__codigo.html#a8e51b3141307b34cb74d6433a136f73b">lista_vert_codigo::dado</a></div><div class="ttdeci">Celula_priv_t dado</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00017">grafo_priv.h:17</a></div></div>
+<div class="ttc" id="structlista__aresta_html_af006bc606a812d12d13d35a4f00c0e6c"><div class="ttname"><a href="structlista__aresta.html#af006bc606a812d12d13d35a4f00c0e6c">lista_aresta::peso</a></div><div class="ttdeci">double peso</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00024">grafo_priv.h:24</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="grafo__priv_8h.html">grafo_priv.h</a></li>
+    <li class="footer">Gerado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

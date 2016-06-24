@@ -723,7 +723,7 @@ void ja_feito(const grafo_priv_t *meu_grafo, int d) {
 		} else if (dist[id] <= d) {
 			//ja fez
 		} else {
-			nao fez
+			//nao fez
 		}
 	}
 	free(dist);

@@ -1,0 +1,9 @@
+<map id="interface_remover_tarefa" name="interface_remover_tarefa">
+<area shape="rect" id="node2" href="$grafo_8cpp.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="224,89,325,116"/>
+<area shape="rect" id="node3" href="$grafo_8cpp.html#ac428ee7436d16b5251b093aa79183fda" title="achar_id" alt="" coords="559,140,633,167"/>
+<area shape="rect" id="node4" href="$grafo_8cpp.html#aa7c7803e91592a28e4c0a85112b53fb8" title="existe_origem" alt="" coords="543,39,649,65"/>
+<area shape="rect" id="node5" href="$grafo_8cpp.html#ac70f5a4fd6ff7c6913f0ce99de099263" title="existe_vert" alt="" coords="697,89,784,116"/>
+<area shape="rect" id="node6" href="$grafo_8cpp.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="375,191,493,217"/>
+<area shape="rect" id="node8" href="$grafo_8cpp.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="373,89,495,116"/>
+<area shape="rect" id="node7" href="$grafo_8cpp.html#a56edc294bdf9e834989d9c8d31ed3a64" title="existe_aresta" alt="" coords="545,191,647,217"/>
+</map>

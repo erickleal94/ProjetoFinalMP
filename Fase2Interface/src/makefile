@@ -21,7 +21,14 @@ $(ODIR)/%.o: %.cpp $(DEPS)
 interface: $(OBJ)
 	g++ -o $@ $^ $(CXXFLAGS) $(LIBS)
 	
-.PHONY: clean
+.PHONY: clean doc
 
 clean:
 	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~
+
+	
+doc:
+	# Target para Linux
+	SRCDIR=$(shell pwd) doxygen ./doxygen_log.txt
+	make -C latex
+	cp latex/refman.pdf documentacao.pdf

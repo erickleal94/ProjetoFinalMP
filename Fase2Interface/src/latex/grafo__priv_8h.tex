@@ -1,0 +1,214 @@
+\hypertarget{grafo__priv_8h}{}\section{Referência do Arquivo /home/rafael/\+Projeto\+Final\+M\+P/\+Fase2\+Interface/include/grafo\+\_\+priv.h}
+\label{grafo__priv_8h}\index{/home/rafael/\+Projeto\+Final\+M\+P/\+Fase2\+Interface/include/grafo\+\_\+priv.\+h@{/home/rafael/\+Projeto\+Final\+M\+P/\+Fase2\+Interface/include/grafo\+\_\+priv.\+h}}
+{\ttfamily \#include \char`\"{}grafo.\+h\char`\"{}}\\*
+Gráfico de dependência de inclusões para grafo\+\_\+priv.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{grafo__priv_8h__incl}
+\end{center}
+\end{figure}
+Este grafo mostra quais arquivos estão direta ou indiretamente relacionados com este arquivo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{grafo__priv_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCelula__priv}{Celula\+\_\+priv}
+\item 
+struct \hyperlink{structlista__vert__codigo}{lista\+\_\+vert\+\_\+codigo}
+\item 
+struct \hyperlink{structlista__aresta}{lista\+\_\+aresta}
+\item 
+struct \hyperlink{structlista__vert}{lista\+\_\+vert}
+\item 
+struct \hyperlink{structlista__origem}{lista\+\_\+origem}
+\item 
+struct \hyperlink{structgrafo__priv}{grafo\+\_\+priv}
+\end{DoxyCompactItemize}
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structCelula__priv}{Celula\+\_\+priv} \hyperlink{grafo__priv_8h_a54889edec2a20c11a5015e4437a6b656}{Celula\+\_\+priv\+\_\+t}
+\item 
+typedef struct \hyperlink{structlista__vert__codigo}{lista\+\_\+vert\+\_\+codigo} \hyperlink{grafo__priv_8h_ae17c76eddcd8bd44e7d91faf7c00e2e5}{lista\+\_\+vert\+\_\+codigo\+\_\+t}
+\item 
+typedef struct \hyperlink{structlista__aresta}{lista\+\_\+aresta} \hyperlink{grafo__priv_8h_a8c99b03365ae7f753c4cf1a20d9e9257}{lista\+\_\+aresta\+\_\+t}
+\item 
+typedef struct \hyperlink{structlista__vert}{lista\+\_\+vert} \hyperlink{grafo__priv_8h_aecb68281fecb412bf6427dd6a07d5077}{lista\+\_\+vert\+\_\+t}
+\item 
+typedef struct \hyperlink{structlista__origem}{lista\+\_\+origem} \hyperlink{grafo__priv_8h_a91c8b187403e9724a757c92c941ab631}{lista\+\_\+origem\+\_\+t}
+\item 
+typedef struct \hyperlink{structgrafo__priv}{grafo\+\_\+priv} \hyperlink{grafo__priv_8h_a35fb938b8d010a769f7317ea5d8cb237}{grafo\+\_\+priv\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{grafo_8h_a64f906a639abdfda7fffa9ace7e4c286}{resposta} \hyperlink{grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8}{existe\+\_\+origem} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
+\item 
+void \hyperlink{grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5}{inserir\+\_\+origem} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, \hyperlink{grafo_8h_ac2219b5d1f94e440b5895ce440ab23b9}{Celula\+\_\+priv\+\_\+t} $\ast$celula)
+\item 
+void \hyperlink{grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f}{remover\+\_\+origem} (\hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
+\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{grafo__priv_8h_a54889edec2a20c11a5015e4437a6b656}{}\index{grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}!Celula\+\_\+priv\+\_\+t@{Celula\+\_\+priv\+\_\+t}}
+\index{Celula\+\_\+priv\+\_\+t@{Celula\+\_\+priv\+\_\+t}!grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}}
+\subsubsection[{Celula\+\_\+priv\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Celula\+\_\+priv}  {\bf Celula\+\_\+priv\+\_\+t}}\label{grafo__priv_8h_a54889edec2a20c11a5015e4437a6b656}
+\hypertarget{grafo__priv_8h_a35fb938b8d010a769f7317ea5d8cb237}{}\index{grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}!grafo\+\_\+priv\+\_\+t@{grafo\+\_\+priv\+\_\+t}}
+\index{grafo\+\_\+priv\+\_\+t@{grafo\+\_\+priv\+\_\+t}!grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}}
+\subsubsection[{grafo\+\_\+priv\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf grafo\+\_\+priv}  {\bf grafo\+\_\+priv\+\_\+t}}\label{grafo__priv_8h_a35fb938b8d010a769f7317ea5d8cb237}
+\hypertarget{grafo__priv_8h_a8c99b03365ae7f753c4cf1a20d9e9257}{}\index{grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}!lista\+\_\+aresta\+\_\+t@{lista\+\_\+aresta\+\_\+t}}
+\index{lista\+\_\+aresta\+\_\+t@{lista\+\_\+aresta\+\_\+t}!grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}}
+\subsubsection[{lista\+\_\+aresta\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf lista\+\_\+aresta}  {\bf lista\+\_\+aresta\+\_\+t}}\label{grafo__priv_8h_a8c99b03365ae7f753c4cf1a20d9e9257}
+\hypertarget{grafo__priv_8h_a91c8b187403e9724a757c92c941ab631}{}\index{grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}!lista\+\_\+origem\+\_\+t@{lista\+\_\+origem\+\_\+t}}
+\index{lista\+\_\+origem\+\_\+t@{lista\+\_\+origem\+\_\+t}!grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}}
+\subsubsection[{lista\+\_\+origem\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf lista\+\_\+origem}  {\bf lista\+\_\+origem\+\_\+t}}\label{grafo__priv_8h_a91c8b187403e9724a757c92c941ab631}
+\hypertarget{grafo__priv_8h_ae17c76eddcd8bd44e7d91faf7c00e2e5}{}\index{grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}!lista\+\_\+vert\+\_\+codigo\+\_\+t@{lista\+\_\+vert\+\_\+codigo\+\_\+t}}
+\index{lista\+\_\+vert\+\_\+codigo\+\_\+t@{lista\+\_\+vert\+\_\+codigo\+\_\+t}!grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}}
+\subsubsection[{lista\+\_\+vert\+\_\+codigo\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf lista\+\_\+vert\+\_\+codigo}  {\bf lista\+\_\+vert\+\_\+codigo\+\_\+t}}\label{grafo__priv_8h_ae17c76eddcd8bd44e7d91faf7c00e2e5}
+\hypertarget{grafo__priv_8h_aecb68281fecb412bf6427dd6a07d5077}{}\index{grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}!lista\+\_\+vert\+\_\+t@{lista\+\_\+vert\+\_\+t}}
+\index{lista\+\_\+vert\+\_\+t@{lista\+\_\+vert\+\_\+t}!grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}}
+\subsubsection[{lista\+\_\+vert\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf lista\+\_\+vert}  {\bf lista\+\_\+vert\+\_\+t}}\label{grafo__priv_8h_aecb68281fecb412bf6427dd6a07d5077}
+
+
+\subsection{Funções}
+\hypertarget{grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8}{}\index{grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}!existe\+\_\+origem@{existe\+\_\+origem}}
+\index{existe\+\_\+origem@{existe\+\_\+origem}!grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}}
+\subsubsection[{existe\+\_\+origem(const grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf resposta} existe\+\_\+origem (
+\begin{DoxyParamCaption}
+\item[{const {\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo}
+\end{DoxyParamCaption}
+)}\label{grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8}
+
+
+Definição na linha 56 do arquivo grafo.\+cpp.
+
+
+
+Referências lista\+\_\+origem\+::destino, existe\+\_\+vert(), F\+A\+L\+S\+E\+\_\+\+T, lista\+\_\+vert\+::id\+\_\+externo, lista\+\_\+origem\+::next, grafo\+\_\+priv\+::origem e T\+R\+U\+E\+\_\+\+T.
+
+
+
+Referenciado por inserir\+\_\+origem(), remover\+\_\+origem() e remover\+\_\+vert().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5}{}\index{grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}!inserir\+\_\+origem@{inserir\+\_\+origem}}
+\index{inserir\+\_\+origem@{inserir\+\_\+origem}!grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}}
+\subsubsection[{inserir\+\_\+origem(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, Celula\+\_\+priv\+\_\+t $\ast$celula)}]{\setlength{\rightskip}{0pt plus 5cm}void inserir\+\_\+origem (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{{\bf Celula\+\_\+priv\+\_\+t} $\ast$}]{celula}
+\end{DoxyParamCaption}
+)}\label{grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5}
+
+
+Definição na linha 184 do arquivo grafo.\+cpp.
+
+
+
+Referências achar\+\_\+id(), lista\+\_\+origem\+::destino, existe\+\_\+origem(), existe\+\_\+vert(), F\+A\+L\+S\+E\+\_\+\+T, lista\+\_\+vert\+::id, Celula\+\_\+priv\+::id\+\_\+externo, lista\+\_\+vert\+::next, lista\+\_\+origem\+::next, Celula\+\_\+priv\+::nome, grafo\+\_\+priv\+::origem, T\+R\+U\+E\+\_\+\+T e grafo\+\_\+priv\+::vert.
+
+
+
+Referenciado por criar\+\_\+grafo().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f}{}\index{grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}!remover\+\_\+origem@{remover\+\_\+origem}}
+\index{remover\+\_\+origem@{remover\+\_\+origem}!grafo\+\_\+priv.\+h@{grafo\+\_\+priv.\+h}}
+\subsubsection[{remover\+\_\+origem(grafo\+\_\+priv\+\_\+t $\ast$meu\+\_\+grafo, int id\+\_\+externo)}]{\setlength{\rightskip}{0pt plus 5cm}void remover\+\_\+origem (
+\begin{DoxyParamCaption}
+\item[{{\bf grafo\+\_\+priv\+\_\+t} $\ast$}]{meu\+\_\+grafo, }
+\item[{int}]{id\+\_\+externo}
+\end{DoxyParamCaption}
+)}\label{grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f}
+
+
+Definição na linha 395 do arquivo grafo.\+cpp.
+
+
+
+Referências achar\+\_\+id(), lista\+\_\+origem\+::destino, existe\+\_\+origem(), existe\+\_\+vert(), lista\+\_\+vert\+::id, lista\+\_\+origem\+::next, grafo\+\_\+priv\+::origem e T\+R\+U\+E\+\_\+\+T.
+
+
+
+Referenciado por remover\+\_\+vert().
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph}
+\end{center}
+\end{figure}
+
+
