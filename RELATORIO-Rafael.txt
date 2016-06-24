@@ -14,3 +14,12 @@ Data	Horas Trabalhadas	Tipo Tarefa		Descrição da Tarefa Realizada
 							leitura
 
 14/06	1 hora e 30 minutos	rodar os cppcheck	corrige pequenos erros na leitura
+
+22/06	1 hora			instrumentar via gcov	adiciona dados no makefile que permitem o uso do gcov
+
+22/06	1 hora			documentar		documenta uma função com doxygen, para servir de exemplos à outras
+
+22/06	1 hora e 30 minutos	codificar módulos	Termina adaptação do grafo, incluindo funções de remoção e menor
+							caminho
+
+24/06				rodar os cppcheck	corrige bug com enum
