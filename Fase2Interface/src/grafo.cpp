@@ -503,7 +503,7 @@ int num_arestas(const grafo_priv_t *meu_grafo) {
 	return num;
 }
 
-void menor_caminho(const grafo_priv_t *meu_grafo, int **dist) {
+int menor_caminho(const grafo_priv_t *meu_grafo, int **dist) {
 	
 	int id_ini = achar_id(meu_grafo, -1);
 	int maior = maior_id(meu_grafo);
@@ -537,6 +537,8 @@ void menor_caminho(const grafo_priv_t *meu_grafo, int **dist) {
 			}
 		}
 	}
+	
+	return inf;
 }
 
 int dfs(const grafo_priv_t *meu_grafo, lista_vert_t *atual, int *marc) {
@@ -690,6 +692,41 @@ void editar_celula(grafo_priv_t *meu_grafo, int ID){
 	
 	
 	
+}
+
+int tempo_minimo(const grafo_priv_t *meu_grafo, int id_fim) {
+	
+	int *dist;
+	
+	int inf = menor_caminho(meu_grafo, &dist);
+	
+	if (dist[id_fim] >= inf) {
+		return -1;
+	} else {
+		int dist_fim = dist[id_fim];
+		free(dist);
+		return dist_fim;
+	}
+	
+}
+void ja_feito(const grafo_priv_t *meu_grafo, int d) {
+	int *dist;
+	
+	int inf = menor_caminho(meu_grafo, &dist);
+	
+	lista_vert_codigo_t *iterator;
+	
+	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = iterator->next) {
+		int id = iterator->id;
+		if (dist[id] < inf) {
+			//nao se alcanca nunca
+		} else if (dist[id] <= d) {
+			//ja fez
+		} else {
+			nao fez
+		}
+	}
+	free(dist);
 }
 
 #undef DEBUG

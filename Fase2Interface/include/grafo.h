@@ -439,6 +439,9 @@ void menor_caminho(const grafo_priv_t *meu_grafo, int **dist);
 ***************************************************************************/
 resposta eh_conexo(const grafo_priv_t *meu_grafo);
 
+int tempo_minimo(const grafo_priv_t *meu_grafo, int id_fim);
+void ja_feito(const grafo_priv_t *meu_grafo, int d);
+
 void Ler_Tarefas(grafo_priv_t *meu_grafo, Celula_priv_t *celula, const char *NomeArq);
 void editar_celula(grafo_priv_t *meu_grafo, int ID);
 
