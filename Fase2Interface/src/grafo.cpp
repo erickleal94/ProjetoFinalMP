@@ -4,7 +4,7 @@
 #include "grafo_priv.h"
 #include "grafo.h"
 #include <algorithm>
-#include <curses.h>  
+#include <curses.h>
 
 using namespace std;
 
@@ -48,9 +48,9 @@ resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo) {
 	
 	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = iterator->next) {
 		if (iterator->dado.id_externo == id_externo)
-			return TRUE;
+			return TRUE_T;
 	}
-	return FALSE;
+	return FALSE_T;
 }
 
 resposta existe_origem(const grafo_priv_t *meu_grafo, int id_externo) {
@@ -60,10 +60,10 @@ resposta existe_origem(const grafo_priv_t *meu_grafo, int id_externo) {
 		
 		for (iterator = meu_grafo->origem; iterator != NULL; iterator = iterator->next) {
 			if (iterator->destino->id_externo == id_externo)
-				return TRUE;
+				return TRUE_T;
 		}
 	}
-	return FALSE;
+	return FALSE_T;
 }
 
 resposta existe_aresta(const grafo_priv_t *meu_grafo, int id_externo1, int id_externo2) {
@@ -76,14 +76,14 @@ resposta existe_aresta(const grafo_priv_t *meu_grafo, int id_externo1, int id_ex
 			if (vert_inicial->id_externo == id_externo1) {
 				for (iterator = vert_inicial->sucessores; iterator != NULL; iterator = iterator->next) {
 					if (iterator->destino->id_externo == id_externo2) {
-						return TRUE;
+						return TRUE_T;
 					}
 				}
-				return FALSE;
+				return FALSE_T;
 			}
 		}
 	}
-	return FALSE;
+	return FALSE_T;
 }
 
 int achar_id(const grafo_priv_t *meu_grafo, int id_externo) {
@@ -109,7 +109,7 @@ Celula_priv_t *achar_celula(const grafo_priv_t *meu_grafo, int id_externo) {
 
 void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula) {
 	
-	if (existe_vert(meu_grafo, celula->id_externo) == FALSE
+	if (existe_vert(meu_grafo, celula->id_externo) == FALSE_T
 	&& (celula->nome[0] == '\0'
 	|| !(celula->id_externo < 0 || celula->pre_req < 0 || celula->ini_min < 0))) {
 		
@@ -167,7 +167,7 @@ void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula) {
 				prev->next = novo;
 			}
 		}
-	} else if (existe_vert(meu_grafo, celula->id_externo) == FALSE) {
+	} else if (existe_vert(meu_grafo, celula->id_externo) == FALSE_T) {
 #if DEBUG
 		fprintf(stderr, "ERROR: Vertice ja existe, ");
 		fprintf(stderr, "tentativa de inserir vert <%s> nao sucedida\n", celula->nome);
@@ -183,7 +183,7 @@ void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula) {
 
 void inserir_origem(grafo_priv_t *meu_grafo, Celula_priv_t *celula) {
 	
-	if (existe_vert(meu_grafo, celula->id_externo) == TRUE && existe_origem(meu_grafo, celula->id_externo) == FALSE) {
+	if (existe_vert(meu_grafo, celula->id_externo) == TRUE_T && existe_origem(meu_grafo, celula->id_externo) == FALSE_T) {
 		
 		int id = achar_id(meu_grafo, celula->id_externo);
 		
@@ -213,7 +213,7 @@ void inserir_origem(grafo_priv_t *meu_grafo, Celula_priv_t *celula) {
 			prev->next = novo;
 		}
 	} else {
-		if (existe_vert(meu_grafo, celula->id_externo) == TRUE) {
+		if (existe_vert(meu_grafo, celula->id_externo) == TRUE_T) {
 #if DEBUG
 			fprintf(stderr, "ERROR: Origem ja existe, ");
 			fprintf(stderr, "tentativa de inserir origem <%s> nao sucedida\n", celula->nome);
@@ -231,8 +231,8 @@ void inserir_origem(grafo_priv_t *meu_grafo, Celula_priv_t *celula) {
 
 void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *celula2, int peso) {
 	
-	if (existe_vert(meu_grafo, id_externo1) == TRUE && existe_vert(meu_grafo, celula2->id_externo) == TRUE
-		&& existe_aresta(meu_grafo, id_externo1, celula2->id_externo) == FALSE) {
+	if (existe_vert(meu_grafo, id_externo1) == TRUE_T && existe_vert(meu_grafo, celula2->id_externo) == TRUE_T
+		&& existe_aresta(meu_grafo, id_externo1, celula2->id_externo) == FALSE_T) {
 		
 		if (peso > 0) {
 			int id1 = achar_id(meu_grafo, id_externo1);
@@ -300,7 +300,7 @@ void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *cel
 #endif
 		}
 	} else {
-		if (existe_vert(meu_grafo, id_externo1) == TRUE && existe_vert(meu_grafo, celula2->id_externo) == TRUE) {
+		if (existe_vert(meu_grafo, id_externo1) == TRUE_T && existe_vert(meu_grafo, celula2->id_externo) == TRUE_T) {
 #if DEBUG
 			fprintf(stderr, "ERROR: Um dos vertices eh inexistente, ");
 			fprintf(stderr, "tentativa de inserir aresta <%s,%s,%lf> nao sucedida\n",
@@ -321,7 +321,7 @@ void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *cel
 
 void remover_vert(grafo_priv_t *meu_grafo, int id_externo) {
 	
-	if (existe_vert(meu_grafo, id_externo) == TRUE) {
+	if (existe_vert(meu_grafo, id_externo) == TRUE_T) {
 		
 		int id = achar_id(meu_grafo, id_externo);
 		{
@@ -394,7 +394,7 @@ void remover_vert(grafo_priv_t *meu_grafo, int id_externo) {
 
 void remover_origem(grafo_priv_t *meu_grafo, int id_externo) {
 	
-	if (existe_vert(meu_grafo, id_externo) == TRUE && existe_origem(meu_grafo, id_externo) == TRUE) {
+	if (existe_vert(meu_grafo, id_externo) == TRUE_T && existe_origem(meu_grafo, id_externo) == TRUE_T) {
 		
 		int id = achar_id(meu_grafo, id_externo);
 		
@@ -421,8 +421,8 @@ void remover_origem(grafo_priv_t *meu_grafo, int id_externo) {
 
 void remover_aresta(grafo_priv_t *meu_grafo, int id_externo1, int id_externo2) {
 	
-	if (existe_vert(meu_grafo, id_externo1) == TRUE && existe_vert(meu_grafo, id_externo2) == TRUE
-		&& existe_aresta(meu_grafo, id_externo1, id_externo2) == TRUE) {
+	if (existe_vert(meu_grafo, id_externo1) == TRUE_T && existe_vert(meu_grafo, id_externo2) == TRUE_T
+		&& existe_aresta(meu_grafo, id_externo1, id_externo2) == TRUE_T) {
 		
 		int id1 = achar_id(meu_grafo, id_externo1);
 		int id2 = achar_id(meu_grafo, id_externo2);
@@ -566,7 +566,7 @@ resposta eh_conexo(const grafo_priv_t *meu_grafo) {
 	lista_origem_t *iterator;
 	
 	if (n == 0) {
-		return TRUE; //se nao ha vertices, eh conexo
+		return TRUE_T; //se nao ha vertices, eh conexo
 	}
 	
 	for (i = 0; i <= maior; i++) {
@@ -582,12 +582,12 @@ resposta eh_conexo(const grafo_priv_t *meu_grafo) {
 	free(marc);
 	
 	if (visitados == n) {
-		return TRUE;
+		return TRUE_T;
 	} else {
-		return FALSE;
+		return FALSE_T;
 	}
 	//nao necessario
-	return FALSE;
+	return FALSE_T;
 }
 
 void Imprime_Tarefas(const grafo_priv_t *meu_grafo, int linha, int coluna){
