@@ -1,6 +1,11 @@
 #ifndef GRAFO
 #define GRAFO
 
+/**
+ * @file grafo.h
+ * @brief Define funções usadas pelo usuario
+ */
+
 typedef enum resp { 
 	FALSE_T,
 	TRUE_T
@@ -13,18 +18,19 @@ typedef struct grafo_priv grafo_priv_t;
 struct Celula_priv;
 typedef struct Celula_priv Celula_priv_t;
 
-/***************************************************************************
- * Função: Cria grafo
- * Descrição
+/**
+ * @brief Cria grafo
+ * 
+ * @section desc Descrição
  * 	Aloca a memória necessária e inicializa
  * 	um grafo
- * Parâmetros
+ * @section para Parâmetros
  * 	Não ha parâmetros, a alocação e inicializam não
  * 	dependem de nenhum parâmetro do usuário
  * 
- * Valor retornado
- * 	Se retorna um ponteiro para a grafo criado
- * Assertiva de saída
+ * @return	Se retorna um ponteiro para a grafo criado
+ * 
+ * @section assert Assertiva de saída
  * 	O grafo gerado é consistente e não
  * 	possui nenhum vértice, origem ou aresta.
 ***************************************************************************/
