@@ -9,8 +9,8 @@
 9 criar tarefa(inserir vertice) RAFA
 10 remover tarefa(vertice) RAFA
 11 editar tarefa(vertice) RAFA
-12 visualizar tarefas VICTOR
-13 visualizar pre reqs VICTOR
+12 visualizar tarefas VICTOR OK
+13 visualizar pre reqs VICTOR OK
 14 garantir consistencia ERICK
 15 menor caminho RAFA
 16 visualizar o que está completo ou executando em determinado tempo VICTOR

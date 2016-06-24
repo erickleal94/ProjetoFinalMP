@@ -2,8 +2,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <grafo_priv.h>
-#include <grafo.h>
+#include "grafo_priv.h"
+#include "grafo.h"
+
+void Imprime_Tarefas(grafo_priv_t *meu_grafo, int linha, int coluna){
+	
+	lista_vert_codigo_t *aux = meu_grafo->tabela;
+	int i;
+	while(aux->next != NULL){
+		linha++;
+		move(linha, 1);
+		printw("%d %s %d %d %d %d ", aux->dado.id_externo, aux->dado.nome, aux->dado.executada, aux->dado.duracao, aux->dado.ini_min, aux->dado.pre_req);
+		if(aux->dado.pre_req > 0){
+			for(i = 0; i < aux->dado.pre_req; i++){
+				printw("%d ", aux->dado.reqs[i]);
+			}
+		
+		}
+		
+	}	
+	
+	
+}
 
 void interface_remover_tarefa(){
 	
@@ -153,7 +173,7 @@ void interface_caminho_parcial(){
 	
 }
 
-void interface_vizualizar_tarefas(){
+void interface_vizualizar_tarefas(const grafo_priv_t *meu_grafo){
 	
 	clear();
 	refresh();
@@ -161,7 +181,7 @@ void interface_vizualizar_tarefas(){
 	move(1,1);
 	printw("As tarefas sao: ");
 	move(2,1);	
-	//funcao para imprimir tarefas
+	Imprime_Tarefas(meu_grafo, 2, 1);
 	refresh();
 	
 	getch();
@@ -173,7 +193,7 @@ void interface_vizualizar_tarefas(){
 void interface_vizualizar_determinada_tarefa(const grafo_priv_t *meu_grafo){
 	
 	int ID, i;
-	Celula_priv_t celula;
+	Celula_priv_t *celula;
 	
 	clear();
 	refresh();
@@ -183,7 +203,7 @@ void interface_vizualizar_determinada_tarefa(const grafo_priv_t *meu_grafo){
 	move(2,1);
 	scanw("%d", &ID);
 	
-	*celula = achar_celula(meu_grafo, ID);
+	celula = achar_celula(meu_grafo, ID);
 	
 	move(3,1);
 	printw("%d %s %d %d %d %d ", celula->id_externo, celula->nome, celula->executada, celula->duracao, celula->ini_min, celula->pre_req);
@@ -210,7 +230,7 @@ int main(){
 	
 	int escolha = -1;
 	
-	
+	grafo_priv_t *meu_grafo;
 	initscr();
 	start_color();
 	box(stdscr, 0, 0);
@@ -253,7 +273,7 @@ int main(){
 				break;
 			
 			case 4:
-				interface_caminho_completo();
+				interface_caminho_completo(meu_grafo);
 				break;
 				
 			case 5:
@@ -261,12 +281,12 @@ int main(){
 				break;
 				
 			case 6:
-				interface_vizualizar_tarefas();
+				interface_vizualizar_tarefas(meu_grafo);
 				break;
 				
 			case 7:
-					interface_vizualizar_determinada_tarefa();
-					break;
+				interface_vizualizar_determinada_tarefa(meu_grafo);
+				break;
 					
 			case 0:
 				break;			
