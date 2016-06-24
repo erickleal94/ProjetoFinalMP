@@ -42,6 +42,27 @@ grafo_priv_t *deletar_grafo(grafo_priv_t *meu_grafo) {
 	return NULL;
 }
 
+Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_min, int pre_req, int *reqs, char *nome){
+	Celula_priv_t *nova_celula = (Celula_priv_t *) malloc(sizeof(Celula_priv_t));
+
+	nova_celula->id_externo = id_externo;
+	nova_celula->executada = executada;
+	nova_celula->duracao = duracao;
+	nova_celula->ini_min = ini_min;
+	nova_celula->pre_req = pre_req;
+	if(reqs!=NULL){
+		nova_celula->reqs = (int*)malloc(sizeof(int)*pre_req);
+		for(int i=0; i<pre_req; i++){
+			nova_celula->reqs[i] = reqs[i];
+		}
+	}else{
+		nova_celula->reqs = NULL;
+	}
+	strcpy(nova_celula->nome, nome);
+
+	return nova_celula;
+}
+
 resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo) {
 	lista_vert_codigo_t *iterator;
 	

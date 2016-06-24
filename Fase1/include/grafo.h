@@ -16,6 +16,9 @@ typedef struct Celula_priv Celula_priv_t;
 grafo_priv_t *criar_grafo(void); //DONE
 grafo_priv_t *deletar_grafo(grafo_priv_t *meu_grafo); //DONE
 
+//funçao para criar nova celula
+Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_min, int pre_req, int *reqs, char *nome);
+
 resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo); //DONE
 resposta existe_aresta(const grafo_priv_t *meu_grafo, int id_externo1, int id_externo2); //DONE
 
