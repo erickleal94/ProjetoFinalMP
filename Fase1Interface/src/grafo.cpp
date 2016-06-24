@@ -4,6 +4,7 @@
 #include "grafo_priv.h"
 #include "grafo.h"
 #include <algorithm>
+#include <curses.h>  
 
 using namespace std;
 
@@ -589,5 +590,80 @@ resposta eh_conexo(const grafo_priv_t *meu_grafo) {
 	return FALSE;
 }
 
+void Imprime_Tarefas(const grafo_priv_t *meu_grafo, int linha, int coluna){
+	
+	lista_vert_codigo_t *aux = meu_grafo->tabela;
+	int i;
+	while(aux->next != NULL){
+		linha++;
+		move(linha, 1);
+		printw("%d %s %d %d %d %d ", aux->dado.id_externo, aux->dado.nome, aux->dado.executada, aux->dado.duracao, aux->dado.ini_min, aux->dado.pre_req);
+		if(aux->dado.pre_req > 0){
+			for(i = 0; i < aux->dado.pre_req; i++){
+				printw("%d ", aux->dado.reqs[i]);
+			}
+		
+		}
+		
+	}	
+	
+	
+}
+
+void editar_celula(grafo_priv_t *meu_grafo, int ID){
+	
+	Celula_priv_t *celula;	
+	int i, j;
+	
+	
+	celula = achar_celula(meu_grafo, ID);
+	
+	move(3,1);
+	printw("Informacoes atuais da celula: ");
+	move(4,1);
+	printw("%d %s %d %d %d %d ", celula->id_externo, celula->nome, celula->executada, celula->duracao, celula->ini_min, celula->pre_req);
+	if(celula->pre_req > 0){
+		for(i = 0; i < celula->pre_req; i++){
+			printw("%d ", celula->reqs[i]);
+		}
+		
+	}
+	
+	refresh();
+	move(5,1);
+	printw("Digite as informacoes da tarefa que deseja inserir:");
+	move(6,1);
+	printw("Codigo da tarefa: ");
+	scanw("%d", celula->id_externo);
+	move(7,1);
+	printw("Digite o nome da tarefa: ");
+	scanw(" %[^\n]", celula->nome);
+	move(8,1);
+	printw("Tempo de inicio minimo: ");
+	scanw("%d", celula->ini_min);
+	move(9,1);
+	printw("Tempo de duracao: ");
+	scanw("%d", celula->duracao);
+	move(10,1);
+	printw("Quantidade de pre-requisitos: ");
+	scanw("%d", celula->pre_req);
+	if(celula->pre_req > 0){
+		celula->reqs = (int*)malloc(sizeof(int)*celula->pre_req);
+		for (i = 0, j = 11; i < celula->pre_req; i++, j++) {
+			move(j,1);
+			printw("Codigo do pre-requisito: ");
+			scanw("%d", celula->reqs[i]);
+		}
+	}
+	celula->executada = 0;
+	
+	refresh();
+	
+	
+	
+	
+	
+	
+}
 
 #undef DEBUG

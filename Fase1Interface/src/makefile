@@ -1,4 +1,4 @@
-CXX = gcc
+CXX = g++
 IDIR = ../include
 CXXFLAGS = -I$(IDIR)
 
@@ -18,8 +18,8 @@ default_target: interface
 $(ODIR)/%.o: %.cpp $(DEPS)
 	$(CXX) -c -o $@ $< $(CXXFLAGS)
 	
-teste: $(OBJ)
-	gcc -o $@ $^ $(CXXFLAGS) $(LIBS)
+interface: $(OBJ)
+	g++ -o $@ $^ $(CXXFLAGS) $(LIBS)
 	
 .PHONY: clean
 

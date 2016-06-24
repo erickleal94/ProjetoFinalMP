@@ -2,10 +2,12 @@
 #define GRAFO
 
 
-typedef enum resp {
+typedef enum resp{ 
 	FALSE,
 	TRUE
-} resposta;
+}resposta;
+
+
 
 
 struct grafo_priv;
@@ -26,11 +28,12 @@ void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula);  //DONE
 void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *celula2, int peso);  //DONE
 
 void Ler_Tarefas(grafo_priv_t *meu_grafo, Celula_priv_t *celula, const char *NomeArq);
+void editar_celula(grafo_priv_t *meu_grafo, int ID);
 
 void remover_vert(grafo_priv_t *meu_grafo, int id_externo);
 void remover_aresta(grafo_priv_t *meu_grafo, int id_externo1, int id_externo2);
 
-void Imprime_Tarefas(grafo_priv_t *meu_grafo, int linha, int coluna);
+void Imprime_Tarefas(const grafo_priv_t *meu_grafo, int linha, int coluna);
 void Grava_Arq(grafo_priv_t *meu_grafo, char *NomeArq);
 
 int maior_id(const grafo_priv_t *meu_grafo);

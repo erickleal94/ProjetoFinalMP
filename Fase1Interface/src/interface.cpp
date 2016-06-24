@@ -5,27 +5,16 @@
 #include "grafo_priv.h"
 #include "grafo.h"
 
-void Imprime_Tarefas(grafo_priv_t *meu_grafo, int linha, int coluna){
-	
-	lista_vert_codigo_t *aux = meu_grafo->tabela;
-	int i;
-	while(aux->next != NULL){
-		linha++;
-		move(linha, 1);
-		printw("%d %s %d %d %d %d ", aux->dado.id_externo, aux->dado.nome, aux->dado.executada, aux->dado.duracao, aux->dado.ini_min, aux->dado.pre_req);
-		if(aux->dado.pre_req > 0){
-			for(i = 0; i < aux->dado.pre_req; i++){
-				printw("%d ", aux->dado.reqs[i]);
-			}
-		
-		}
-		
-	}	
-	
-	
-}
+/* Este modulo contem a interface grafica que sera mostrada para o usuario do Gerenciador de Tarefas.
+ * Cada funcao foi feita para apresentar uma determinada janela e executar uma diferente operacao sobre o gerenciador.
+ * As funcoes possuem uma padronizacao em sua denominacao, sendo esse padrao dado por "interface_o_que_a_funcao_faz"
+ * Todas as funcoes recebem como parametro um ponteiro para o grafo que contem o gerenciador de tarefas.
+ * Estas funcoes podem ser acessadas por meio de um menu inicial apresentado na tela quando se inicia o programa.
+ * */
 
-void interface_remover_tarefa(){
+
+
+void interface_remover_tarefa(grafo_priv_t *meu_grafo){
 	
 	int ID;
 	
@@ -36,7 +25,7 @@ void interface_remover_tarefa(){
 	printw("Qual o codigo da tarefa que deseja remover?");
 	move(2,1);
 	scanw("%d", &ID);
-	//funcao que vai remover tarefa
+	remover_vert(meu_grafo, ID);
 	refresh();
 	
 	getch();
@@ -47,7 +36,7 @@ void interface_remover_tarefa(){
 	
 }
 
-void interface_editar_tarefa(){
+void interface_editar_tarefa(grafo_priv_t *meu_grafo){
 	
 	int ID;
 	
@@ -58,7 +47,7 @@ void interface_editar_tarefa(){
 	printw("Qual o codigo da tarefa que deseja editar?");
 	move(2,1);
 	scanw("%d", &ID);
-	//funcao que vai editar tarefa
+	editar_celula(meu_grafo, ID);
 	refresh();
 	
 	getch();
@@ -68,10 +57,10 @@ void interface_editar_tarefa(){
 	
 }
 
-void interface_inserir_tarefa(){
+void interface_inserir_tarefa(grafo_priv_t *meu_grafo){
 	
-	int ID, ini_min, duracao, pre_req, *reqs;
-	char nome[100];
+	
+	Celula_priv_t celula;
 	int i, j;
 	
 	clear();
@@ -81,30 +70,30 @@ void interface_inserir_tarefa(){
 	printw("Digite as informacoes da tarefa que deseja inserir:");
 	move(2,1);
 	printw("Codigo da tarefa: ");
-	scanw("%d", &ID);
+	scanw("%d", &celula.id_externo);
 	move(3,1);
 	printw("Digite o nome da tarefa: ");
-	scanw(" %[^\n]", nome);
+	scanw(" %[^\n]", celula.nome);
 	move(4,1);
 	printw("Tempo de inicio minimo: ");
-	scanw("%d", &ini_min);
+	scanw("%d", &celula.ini_min);
 	move(5,1);
 	printw("Tempo de duracao: ");
-	scanw("%d", &duracao);
+	scanw("%d", &celula.duracao);
 	move(6,1);
 	printw("Quantidade de pre-requisitos: ");
-	scanw("%d", &pre_req);
-	if(pre_req > 0){
-		reqs = (int*)malloc(sizeof(int)*pre_req);
-		for (i = 0, j = 7; i < pre_req; i++, j++) {
+	scanw("%d", &celula.pre_req);
+	if(celula.pre_req > 0){
+		celula.reqs = (int*)malloc(sizeof(int)*celula.pre_req);
+		for (i = 0, j = 7; i < celula.pre_req; i++, j++) {
 			move(j,1);
 			printw("Codigo do pre-requisito: ");
-			scanw("%d", &reqs[i]);
+			scanw("%d", &celula.reqs[i]);
 		}
 	}
+	celula.executada = 0;
 	
-	
-	//funcao que vai inserir tarefa
+	inserir_vert(meu_grafo, &celula);
 	refresh();
 	
 	
@@ -135,7 +124,7 @@ void interface_caminho_completo(const grafo_priv_t *meu_grafo){
 		
 }
 
-void interface_caminho_parcial(){
+void interface_caminho_parcial(grafo_priv_t *meu_grafo){
 	
 	int tempo;
 	
@@ -230,7 +219,7 @@ int main(){
 	
 	int escolha = -1;
 	
-	grafo_priv_t *meu_grafo;
+	grafo_priv_t *meu_grafo = criar_grafo();
 	initscr();
 	start_color();
 	box(stdscr, 0, 0);
@@ -261,15 +250,15 @@ int main(){
 		refresh();
 		switch(escolha){
 			case 1:
-				interface_remover_tarefa();
+				interface_remover_tarefa(meu_grafo);
 				break;	
 			
 			case 2:
-				interface_editar_tarefa();
+				interface_editar_tarefa(meu_grafo);
 				break;
 			
 			case 3:
-				interface_inserir_tarefa();
+				interface_inserir_tarefa(meu_grafo);
 				break;
 			
 			case 4:
@@ -277,7 +266,7 @@ int main(){
 				break;
 				
 			case 5:
-				interface_caminho_parcial();
+				interface_caminho_parcial(meu_grafo);
 				break;
 				
 			case 6:
