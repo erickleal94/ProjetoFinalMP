@@ -1,0 +1,16 @@
+Data	Horas Trabalhadas	Tipo Tarefa		Descrição da Tarefa Realizada
+01/06	2 horas			projetar		Projetou-se modificações que deveriam ser feitas no trabalho 2
+							para adaptar o grafo
+
+08/06	30 minutos		revisar projetos	Conferir se as mudanças planejadas são o que é desejado, em
+							especial no algoritmo de menor caminho
+
+08/06	1 hora e 30 minutos	codificar módulos	Inicia-se a adaptar a estrutura de dados
+
+09/06	1 hora			rodar os cppcheck	Retira-se bugs da adaptação do grafo, também se comenta funções
+							não adapatadas
+
+12/06	4 horas			codificar módulos	adiciona header privado, funções de inserir e faz modificações na
+							leitura
+
+14/06	1 hora e 30 minutos	rodar os cppcheck	corrige pequenos erros na leitura
