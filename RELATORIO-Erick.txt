@@ -1,0 +1,12 @@
+Data	Horas Trabalhadas	Tipo Tarefa			Descrição da Tarefa Realizada
+01/06	2 horas				projetar			Projetou-se modificações que deveriam ser feitas no trabalho 2 para adaptar o grafo
+
+08/06	30 minutos			revisar projetos	Conferir se as mudanças planejadas são o que é desejado, em especial no algoritmo de menor caminho
+
+22/06	30 minutos			projetar			Planejar os testes das funçoes		
+
+22/06	1 hora 				codificar modulos	Codificar modulo de testes
+
+23/06	2 horas 			codificar modulos	Codificar modulo de testes
+
+24/06	2 horas 			codificar 			Revisar e adaptar codigos de inserçao para garantir a consistencia do grafo
