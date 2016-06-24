@@ -144,12 +144,15 @@ void interface_caminho_parcial(grafo_priv_t *meu_grafo){
 	move(3,1);
 	attron(COLOR_PAIR(3));
 	printw("Tarefas ja concluidas: ");
+	//printw(""); colocar as tarefas ja concluidas
 	move(4,1);
 	attron(COLOR_PAIR(4));
 	printw("Tarefas em execucao: ");
+	//printw(""); colocar as tarefas em execucao
 	move(5,1);	
 	attron(COLOR_PAIR(2));
 	printw("Tarefas nao iniciadas: ");
+	//printw(""); colocar as tarefas nao iniciadas
 	move(6,1);	
 	
 	refresh();
@@ -284,7 +287,7 @@ int main(){
 	
 	
 	
-	
+	Grava_Arq(meu_grafo, "saida.txt");
 	
 	
 	endwin();

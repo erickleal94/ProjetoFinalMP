@@ -1,0 +1,5 @@
+21/06 - 2 horas trabalhadas - Codificar módulo - Codificação do módulo que contém a interface gráfica que será usada.
+- revisar código do módulo - revisão do código do módulo codificado.
+
+23/06 - 3 horas trabalhadas - Codificar módulo - Codificação dos módulos para mostrar para o usuário as tarefas.
+- revisar código do módulo - revisão do código feito.
