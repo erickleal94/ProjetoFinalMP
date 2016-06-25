@@ -88,6 +88,37 @@ grafo_priv_t *deletar_grafo(grafo_priv_t *meu_grafo);
 resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo);
 
 /***************************************************************************
+ * Função: Criar nova célula
+ * Descrição
+ * 	Cria uma nova célula com os os dados inseridos
+ * Parâmetros
+ * 	meu_grafo	- Deve ser passado um ponteiro para um grafo
+ *			inicializado
+ *  id_externo 	- Deve ser um inteiro que é o ID da tarefa
+ *  executada 	- Deve ser um inteiro que indica se a tarefa 
+ * 			ja foi ou nao executada.
+ *  duracao 	- Deve ser um inteiro que representa a duraçao da tarefa
+ *  ini_min 	- Deve ser um inteiro que representa o tempo 
+ * 			minimo para iniciar a tarefa.
+ *  pre_req 	- Deve ser um inteiro que representa a quantidade de 
+ * 			pre requisitos que a tarega possui.
+ *  reqs 		- Deve ser um ponteiro pra inteiro contendo todos os 
+ *  		IDs dos pre requisitos da tarefa.
+ * 	nome		- Deve ser passado uma string de até 100 
+ * 			caracteres, mais o caracter zero terminal que será o nome da célular.
+ * 
+ * 
+ * Valor retornado
+ * 	Retorna uma célula com os dados que foram inseridos na chamada
+ * Assertiva de entrada
+ * 	Os numeros devem ser inteiros maiores que 0.
+ *  A string de nome deve ser de ate 100 caracteres.
+ * Assertivas de saída
+ * 	O retorno será uma célula contendo os dados que foram passados na entrada
+***************************************************************************/
+Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_min, int pre_req, int *reqs, char *nome);
+
+/***************************************************************************
  * Função: Existe aresta nome?
  * Descrição
  * 	Verfica a existência de um vértice dado
