@@ -3,10 +3,7 @@
 #include <string.h>
 #include "grafo_priv.h"
 #include "grafo.h"
-#include <algorithm>
 #include <curses.h>
-
-using namespace std;
 
 //se for 1 serão escritas mensagens de erro para
 //a saída padrão
@@ -36,7 +33,7 @@ grafo_priv_t *deletar_grafo(grafo_priv_t *meu_grafo) {
 	lista_vert_codigo_t *iterator;
 	
 	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = meu_grafo->tabela) {
-// 		remover_vert(meu_grafo, iterator->dado.nome);
+		remover_vert(meu_grafo, iterator->dado.id_externo);
 	}
 	free(meu_grafo);
 	
@@ -552,7 +549,10 @@ int menor_caminho(const grafo_priv_t *meu_grafo, int **dist) {
 				for (iterator2 = iterator1->sucessores; iterator2 != NULL; iterator2 = iterator2->next) {
 					if ((*dist)[iterator1->id] + iterator2->peso < (*dist)[iterator2->destino->id]) {
 						Celula_priv_t *celula = achar_celula(meu_grafo, iterator2->destino->id);
-						(*dist)[iterator2->destino->id] = min((*dist)[iterator1->id], celula->ini_min) + iterator2->peso;
+						
+						int min = (*dist)[iterator1->id] < celula->ini_min ? (*dist)[iterator1->id] : celula->ini_min;
+						
+						(*dist)[iterator2->destino->id] = min + iterator2->peso;
 					}
 				}
 			}

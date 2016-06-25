@@ -11,14 +11,14 @@ TEST(criar_grafoTest, criacao) {
 	EXPECT_EQ(0, num_vert(meu_grafo));
 	EXPECT_EQ(0, num_arestas(meu_grafo));
 
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 }
 
 TEST(deletar_grafoTest, delecao_grafo_vazio) {
 	
 	grafo_priv_t *meu_grafo = criar_grafo();
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 	EXPECT_TRUE(meu_grafo == NULL);
 	
@@ -34,7 +34,7 @@ TEST(existe_vertTest, vertices_nao_existentes) {
 	EXPECT_EQ(FALSE_T, existe_vert(meu_grafo, 200));
 	EXPECT_EQ(FALSE_T, existe_vert(meu_grafo, 201));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 }
 
@@ -60,7 +60,7 @@ TEST(existe_vertTest, vertices_existentes) {
 	EXPECT_EQ(TRUE_T, existe_vert(meu_grafo, 200));
 	EXPECT_EQ(TRUE_T, existe_vert(meu_grafo, 201));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 }
 
@@ -72,7 +72,7 @@ TEST(existe_arestaTest, vertices_inexistentes) {
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 100, 102));
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 200, 202));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 }
 
@@ -95,8 +95,9 @@ TEST(existe_arestaTest, arestas_inexistentes) {
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 100, 101));
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 100, 102));
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 200, 202));
-
-	//meu_grafo = deletar_grafo(meu_grafo);
+	
+	
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 }
 
@@ -126,7 +127,7 @@ TEST(existe_arestaTest, arestas_existentes) {
 	EXPECT_EQ(TRUE_T, existe_aresta(meu_grafo, 102, 201));
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 100, 200));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 }
 
@@ -155,7 +156,7 @@ TEST(existe_arestaTest, peso_invalido) {
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 101, 200));
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 102, 201));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 }
 
@@ -184,7 +185,7 @@ TEST(inserir_vertTest, insercao) {
 	EXPECT_EQ(FALSE_T, existe_vert(meu_grafo, 203));
 	EXPECT_EQ(FALSE_T, existe_vert(meu_grafo, 104));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 }
 
@@ -208,7 +209,7 @@ TEST(inserir_arestaTest, vertice_inexistente) {
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 101, 200));
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 102, 201));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 }
 TEST(inserir_arestaTest, vertice_existente) {
@@ -237,7 +238,7 @@ TEST(inserir_arestaTest, vertice_existente) {
 	EXPECT_EQ(TRUE_T, existe_aresta(meu_grafo, 102, 201));
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 100, 200));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 	
 }
 
@@ -265,7 +266,7 @@ TEST(remover_verticeTest, vertice_existente) {
 	EXPECT_EQ(FALSE_T, existe_vert(meu_grafo, 101));
 	EXPECT_EQ(FALSE_T, existe_vert(meu_grafo, 102));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 }
 
 TEST(remover_verticeTest, vertice_inexistente) {
@@ -281,7 +282,7 @@ TEST(remover_verticeTest, vertice_inexistente) {
 	EXPECT_EQ(FALSE_T, existe_vert(meu_grafo,100));
 	EXPECT_EQ(FALSE_T, existe_vert(meu_grafo, 101));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 }
 
 TEST(remover_verticeTest, vertice_existente_com_origem_e_arestas) {
@@ -320,7 +321,7 @@ TEST(remover_verticeTest, vertice_existente_com_origem_e_arestas) {
 	EXPECT_EQ(TRUE_T, existe_aresta(meu_grafo, 101, 200));
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 102, 201));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 }
 
 TEST(remover_arestaTest, vertice_inexistente) {
@@ -340,7 +341,7 @@ TEST(remover_arestaTest, vertice_inexistente) {
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 101, 102));
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 102, 200));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 }
 
 TEST(remover_arestaTest, aresta_existente) {
@@ -378,7 +379,7 @@ TEST(remover_arestaTest, aresta_existente) {
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 101, 200));
 	EXPECT_EQ(FALSE_T, existe_aresta(meu_grafo, 102, 201));
 	
-	//meu_grafo = deletar_grafo(meu_grafo);
+	meu_grafo = deletar_grafo(meu_grafo);
 }
 
 int main (int argc, char **argv) {
