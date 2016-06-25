@@ -1,4 +1,5 @@
 <map id="remover_vert" name="remover_vert">
-<area shape="rect" id="node2" href="$interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="155,5,325,32"/>
-<area shape="rect" id="node3" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="373,5,424,32"/>
+<area shape="rect" id="node2" href="$grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe" title="Deleta grafo. " alt="" coords="189,5,291,32"/>
+<area shape="rect" id="node3" href="$interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="155,56,325,83"/>
+<area shape="rect" id="node4" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="373,56,424,83"/>
 </map>

@@ -5,5 +5,6 @@
 <area shape="rect" id="node5" href="$interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec" title="interface_inserir_tarefa" alt="" coords="479,56,636,83"/>
 <area shape="rect" id="node4" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="691,56,741,83"/>
 <area shape="rect" id="node7" href="$grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="322,107,423,133"/>
-<area shape="rect" id="node8" href="$interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="472,107,643,133"/>
+<area shape="rect" id="node8" href="$grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe" title="Deleta grafo. " alt="" coords="506,107,609,133"/>
+<area shape="rect" id="node9" href="$interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="472,157,643,184"/>
 </map>

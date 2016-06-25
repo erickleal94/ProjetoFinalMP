@@ -40,7 +40,7 @@ grafo_priv_t *deletar_grafo(grafo_priv_t *meu_grafo) {
 	return NULL;
 }
 
-Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_min, int pre_req, int *reqs, char *nome){
+Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_min, int pre_req, int *reqs, const char *nome){
 	Celula_priv_t *nova_celula = (Celula_priv_t *) malloc(sizeof(Celula_priv_t));
 
 	nova_celula->id_externo = id_externo;

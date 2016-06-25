@@ -116,7 +116,7 @@ resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo);
  * Assertivas de saída
  * 	O retorno será uma célula contendo os dados que foram passados na entrada
 ***************************************************************************/
-Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_min, int pre_req, int *reqs, char *nome);
+Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_min, int pre_req, int *reqs, const char *nome);
 
 /***************************************************************************
  * Função: Existe aresta nome?

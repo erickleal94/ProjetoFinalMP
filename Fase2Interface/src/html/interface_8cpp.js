@@ -1,5 +1,6 @@
 var interface_8cpp =
 [
+    [ "NCURSES_CONST", "interface_8cpp.html#a5a896ea5afb0dba0998e667f37cc4824", null ],
     [ "interface_caminho_completo", "interface_8cpp.html#a45d07639c68b6754482304399deea404", null ],
     [ "interface_caminho_parcial", "interface_8cpp.html#a24af973236c7577368e0b5003d26b173", null ],
     [ "interface_editar_tarefa", "interface_8cpp.html#a82c53fa74aeeec1c1234672393299537", null ],

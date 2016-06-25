@@ -116,7 +116,6 @@ $(document).ready(function(){initNavTree('grafo_8cpp.html','');});
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="grafo__priv_8h_source.html">grafo_priv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="grafo_8h_source.html">grafo.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;curses.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Gráfico de dependência de inclusões para grafo.cpp:</div>
@@ -143,6 +142,8 @@ Funções</h2></td></tr>
 <tr class="memitem:af4f0fbcdd746c0f494e9601a83ddc9fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="grafo_8h.html#a282167c584dceb79dde5c159a85b685b">grafo_priv_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8cpp.html#af4f0fbcdd746c0f494e9601a83ddc9fe">deletar_grafo</a> (<a class="el" href="grafo_8h.html#a282167c584dceb79dde5c159a85b685b">grafo_priv_t</a> *meu_grafo)</td></tr>
 <tr class="memdesc:af4f0fbcdd746c0f494e9601a83ddc9fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleta grafo.  <a href="#af4f0fbcdd746c0f494e9601a83ddc9fe">Mais...</a><br /></td></tr>
 <tr class="separator:af4f0fbcdd746c0f494e9601a83ddc9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b6414a2684992da035d5605178c770"><td class="memItemLeft" align="right" valign="top"><a class="el" href="grafo_8h.html#ac2219b5d1f94e440b5895ce440ab23b9">Celula_priv_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8cpp.html#a28b6414a2684992da035d5605178c770">cria_celula</a> (int id_externo, int executada, int duracao, int ini_min, int pre_req, int *reqs, const char *nome)</td></tr>
+<tr class="separator:a28b6414a2684992da035d5605178c770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac70f5a4fd6ff7c6913f0ce99de099263"><td class="memItemLeft" align="right" valign="top"><a class="el" href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8cpp.html#ac70f5a4fd6ff7c6913f0ce99de099263">existe_vert</a> (const <a class="el" href="grafo_8h.html#a282167c584dceb79dde5c159a85b685b">grafo_priv_t</a> *meu_grafo, int id_externo)</td></tr>
 <tr class="separator:ac70f5a4fd6ff7c6913f0ce99de099263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c7803e91592a28e4c0a85112b53fb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grafo_8cpp.html#aa7c7803e91592a28e4c0a85112b53fb8">existe_origem</a> (const <a class="el" href="grafo_8h.html#a282167c584dceb79dde5c159a85b685b">grafo_priv_t</a> *meu_grafo, int id_externo)</td></tr>
@@ -201,7 +202,7 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00013">13</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00010">10</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
 </div>
 </div>
@@ -230,11 +231,11 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00099">99</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00117">117</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
 <p>Referências <a class="el" href="grafo__priv_8h_source.html#l00017">lista_vert_codigo::dado</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a> e <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00641">editar_celula()</a>, <a class="el" href="interface_8cpp_source.html#l00190">interface_vizualizar_determinada_tarefa()</a> e <a class="el" href="grafo_8cpp_source.html#l00506">menor_caminho()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00662">editar_celula()</a>, <a class="el" href="interface_8cpp_source.html#l00192">interface_vizualizar_determinada_tarefa()</a> e <a class="el" href="grafo_8cpp_source.html#l00524">menor_caminho()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
@@ -278,11 +279,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00089">89</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00107">107</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
 <p>Referências <a class="el" href="grafo__priv_8h_source.html#l00017">lista_vert_codigo::dado</a>, <a class="el" href="grafo__priv_8h_source.html#l00018">lista_vert_codigo::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a> e <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00232">inserir_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00184">inserir_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00506">menor_caminho()</a>, <a class="el" href="grafo_8cpp_source.html#l00422">remover_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00395">remover_origem()</a> e <a class="el" href="grafo_8cpp_source.html#l00322">remover_vert()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00250">inserir_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00202">inserir_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00524">menor_caminho()</a>, <a class="el" href="grafo_8cpp_source.html#l00440">remover_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00413">remover_origem()</a> e <a class="el" href="grafo_8cpp_source.html#l00340">remover_vert()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
@@ -294,17 +295,78 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="rect" id="node8" href="grafo_8h.html#ad507a38f9feef6cad69436ec774b535f" title="menor_caminho" alt="" coords="129,107,248,133"/>
 <area shape="rect" id="node11" href="grafo_8h.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="130,157,247,184"/>
 <area shape="rect" id="node12" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="301,208,403,235"/>
-<area shape="rect" id="node14" href="grafo__priv_8h.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="128,259,249,285"/>
+<area shape="rect" id="node15" href="grafo__priv_8h.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="128,259,249,285"/>
 <area shape="rect" id="node3" href="grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205" title="criaGrafoArq" alt="" coords="491,56,589,83"/>
 <area shape="rect" id="node5" href="interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec" title="interface_inserir_tarefa" alt="" coords="461,5,619,32"/>
 <area shape="rect" id="node4" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="673,56,724,83"/>
 <area shape="rect" id="node7" href="grafo_8h.html#a3e61bf2ada0f9af7e2e9883241496606" title="Cria grafo. " alt="" coords="309,56,395,83"/>
 <area shape="rect" id="node9" href="grafo_8h.html#acb5b55f7d1508a1b35b76e43bc817623" title="ja_feito" alt="" coords="319,107,385,133"/>
 <area shape="rect" id="node10" href="grafo_8h.html#a14183876086781302e2d81ab2457dc4e" title="tempo_minimo" alt="" coords="297,157,407,184"/>
-<area shape="rect" id="node13" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="455,157,625,184"/>
+<area shape="rect" id="node13" href="grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe" title="Deleta grafo. " alt="" coords="489,157,591,184"/>
+<area shape="rect" id="node14" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="455,208,625,235"/>
 </map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a28b6414a2684992da035d5605178c770"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="grafo_8h.html#ac2219b5d1f94e440b5895ce440ab23b9">Celula_priv_t</a>* cria_celula </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id_externo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>executada</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duracao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ini_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pre_req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>reqs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nome</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00043">43</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+
+<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::duracao</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::executada</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a> e <a class="el" href="grafo__priv_8h_source.html#l00009">Celula_priv::reqs</a>.</p>
 
 </div>
 </div>
@@ -322,11 +384,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00732">732</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00753">753</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo_8cpp_source.html#l00015">criar_grafo()</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::duracao</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::executada</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo_8cpp_source.html#l00232">inserir_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00110">inserir_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a> e <a class="el" href="grafo__priv_8h_source.html#l00009">Celula_priv::reqs</a>.</p>
+<p>Referências <a class="el" href="grafo_8cpp_source.html#l00012">criar_grafo()</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::duracao</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::executada</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo_8cpp_source.html#l00250">inserir_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00128">inserir_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a> e <a class="el" href="grafo__priv_8h_source.html#l00009">Celula_priv::reqs</a>.</p>
 
-<p>Referenciado por <a class="el" href="interface_8cpp_source.html#l00226">main()</a>.</p>
+<p>Referenciado por <a class="el" href="interface_8cpp_source.html#l00228">main()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -383,11 +445,11 @@ Parâmetros</h1>
 Assertiva de saída</h1>
 <p>O grafo gerado é consistente e não possui nenhum vértice, origem ou aresta. </p>
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00015">15</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00012">12</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::executada</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo_8cpp_source.html#l00184">inserir_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00110">inserir_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00044">grafo_priv::origem</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a>, <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
+<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::executada</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo_8cpp_source.html#l00202">inserir_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00128">inserir_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00044">grafo_priv::origem</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a>, <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00732">criaGrafoArq()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00753">criaGrafoArq()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -445,9 +507,25 @@ Descrição</h1>
 Assertiva de saída</h1>
 <p>O grafo já deve ter sido inicializado por <a class="el" href="grafo_8h.html#a3e61bf2ada0f9af7e2e9883241496606" title="Cria grafo. ">criar_grafo()</a> Assertiva de saída Se retornará um ponteiro para o mesmo grafo passado, após a deleção que será NULL. </p>
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00035">35</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00032">32</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>.</p>
+<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00017">lista_vert_codigo::dado</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo_8cpp_source.html#l00340">remover_vert()</a> e <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>.</p>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.png" border="0" usemap="#grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph" alt=""/></div>
+<map name="grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph" id="grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph">
+<area shape="rect" id="node2" href="grafo_8cpp.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="156,128,257,155"/>
+<area shape="rect" id="node3" href="grafo_8cpp.html#ac70f5a4fd6ff7c6913f0ce99de099263" title="existe_vert" alt="" coords="629,77,716,104"/>
+<area shape="rect" id="node4" href="grafo_8cpp.html#ac428ee7436d16b5251b093aa79183fda" title="achar_id" alt="" coords="491,128,565,155"/>
+<area shape="rect" id="node5" href="grafo_8cpp.html#aa7c7803e91592a28e4c0a85112b53fb8" title="existe_origem" alt="" coords="475,229,581,256"/>
+<area shape="rect" id="node6" href="grafo_8cpp.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="305,179,427,205"/>
+<area shape="rect" id="node7" href="grafo_8cpp.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="307,77,425,104"/>
+<area shape="rect" id="node8" href="grafo_8cpp.html#a56edc294bdf9e834989d9c8d31ed3a64" title="existe_aresta" alt="" coords="477,27,579,53"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -481,11 +559,11 @@ Assertiva de saída</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00544">544</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00565">565</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
 <p>Referências <a class="el" href="grafo__priv_8h_source.html#l00023">lista_aresta::destino</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00025">lista_aresta::next</a> e <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00560">eh_conexo()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00581">eh_conexo()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
@@ -523,11 +601,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00641">641</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00662">662</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo_8cpp_source.html#l00099">achar_celula()</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::duracao</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::executada</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a> e <a class="el" href="grafo__priv_8h_source.html#l00009">Celula_priv::reqs</a>.</p>
+<p>Referências <a class="el" href="grafo_8cpp_source.html#l00117">achar_celula()</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::duracao</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::executada</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a> e <a class="el" href="grafo__priv_8h_source.html#l00009">Celula_priv::reqs</a>.</p>
 
-<p>Referenciado por <a class="el" href="interface_8cpp_source.html#l00041">interface_editar_tarefa()</a>.</p>
+<p>Referenciado por <a class="el" href="interface_8cpp_source.html#l00043">interface_editar_tarefa()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -566,9 +644,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00560">560</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00581">581</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00037">lista_origem::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00544">dfs()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo_8cpp_source.html#l00472">maior_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00038">lista_origem::next</a>, <a class="el" href="grafo_8cpp_source.html#l00483">num_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00044">grafo_priv::origem</a> e <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a>.</p>
+<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00037">lista_origem::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00565">dfs()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo_8cpp_source.html#l00490">maior_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00038">lista_origem::next</a>, <a class="el" href="grafo_8cpp_source.html#l00501">num_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00044">grafo_priv::origem</a> e <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -614,11 +692,11 @@ Este é o diagrama das funções utilizadas por esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00069">69</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00087">87</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00023">lista_aresta::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00046">existe_vert()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00030">lista_vert::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00025">lista_aresta::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a>, <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
+<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00023">lista_aresta::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00064">existe_vert()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00030">lista_vert::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00025">lista_aresta::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a>, <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00232">inserir_aresta()</a> e <a class="el" href="grafo_8cpp_source.html#l00422">remover_aresta()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00250">inserir_aresta()</a> e <a class="el" href="grafo_8cpp_source.html#l00440">remover_aresta()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -641,7 +719,8 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="rect" id="node5" href="interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec" title="interface_inserir_tarefa" alt="" coords="479,56,636,83"/>
 <area shape="rect" id="node4" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="691,56,741,83"/>
 <area shape="rect" id="node7" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="322,107,423,133"/>
-<area shape="rect" id="node8" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="472,107,643,133"/>
+<area shape="rect" id="node8" href="grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe" title="Deleta grafo. " alt="" coords="506,107,609,133"/>
+<area shape="rect" id="node9" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="472,157,643,184"/>
 </map>
 </div>
 </p>
@@ -672,11 +751,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00056">56</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00074">74</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00037">lista_origem::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00046">existe_vert()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00030">lista_vert::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00038">lista_origem::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00044">grafo_priv::origem</a> e <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a>.</p>
+<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00037">lista_origem::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00064">existe_vert()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00030">lista_vert::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00038">lista_origem::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00044">grafo_priv::origem</a> e <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00184">inserir_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00395">remover_origem()</a> e <a class="el" href="grafo_8cpp_source.html#l00322">remover_vert()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00202">inserir_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00413">remover_origem()</a> e <a class="el" href="grafo_8cpp_source.html#l00340">remover_vert()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -695,11 +774,12 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <map name="grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_icgraph" id="grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_icgraph">
 <area shape="rect" id="node2" href="grafo__priv_8h.html#adc1a8c08d13a78eda202bc49275712f5" title="inserir_origem" alt="" coords="167,5,274,32"/>
 <area shape="rect" id="node6" href="grafo__priv_8h.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="160,56,281,83"/>
-<area shape="rect" id="node7" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="329,56,431,83"/>
+<area shape="rect" id="node7" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="329,81,431,108"/>
 <area shape="rect" id="node3" href="grafo_8h.html#a3e61bf2ada0f9af7e2e9883241496606" title="Cria grafo. " alt="" coords="337,5,423,32"/>
 <area shape="rect" id="node4" href="grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205" title="criaGrafoArq" alt="" coords="515,5,613,32"/>
-<area shape="rect" id="node5" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="697,31,748,57"/>
-<area shape="rect" id="node8" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="479,56,649,83"/>
+<area shape="rect" id="node5" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="697,56,748,83"/>
+<area shape="rect" id="node8" href="grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe" title="Deleta grafo. " alt="" coords="513,56,615,83"/>
+<area shape="rect" id="node9" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="479,107,649,133"/>
 </map>
 </div>
 </p>
@@ -730,30 +810,31 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00046">46</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00064">64</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
 <p>Referências <a class="el" href="grafo__priv_8h_source.html#l00017">lista_vert_codigo::dado</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a> e <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00069">existe_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00056">existe_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00232">inserir_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00184">inserir_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00110">inserir_vert()</a>, <a class="el" href="grafo_8cpp_source.html#l00422">remover_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00395">remover_origem()</a> e <a class="el" href="grafo_8cpp_source.html#l00322">remover_vert()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00087">existe_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00074">existe_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00250">inserir_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00202">inserir_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00128">inserir_vert()</a>, <a class="el" href="grafo_8cpp_source.html#l00440">remover_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00413">remover_origem()</a> e <a class="el" href="grafo_8cpp_source.html#l00340">remover_vert()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.png" border="0" usemap="#grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph" alt=""/></div>
 <map name="grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph" id="grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph">
-<area shape="rect" id="node2" href="grafo_8h.html#a56edc294bdf9e834989d9c8d31ed3a64" title="existe_aresta" alt="" coords="142,36,245,63"/>
-<area shape="rect" id="node3" href="grafo_8h.html#a0e69707897c891bf77319d494cae8f26" title="inserir_aresta" alt="" coords="304,24,407,51"/>
-<area shape="rect" id="node7" href="grafo_8h.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="297,137,414,164"/>
-<area shape="rect" id="node8" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="492,213,593,240"/>
-<area shape="rect" id="node10" href="grafo__priv_8h.html#aa7c7803e91592a28e4c0a85112b53fb8" title="existe_origem" alt="" coords="140,289,247,316"/>
-<area shape="rect" id="node11" href="grafo__priv_8h.html#adc1a8c08d13a78eda202bc49275712f5" title="inserir_origem" alt="" coords="302,239,409,265"/>
-<area shape="rect" id="node13" href="grafo__priv_8h.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="295,340,416,367"/>
-<area shape="rect" id="node14" href="grafo_8h.html#a659b567cb7e165b526b6fe05a433452e" title="inserir_vert" alt="" coords="312,87,399,113"/>
-<area shape="rect" id="node4" href="grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205" title="criaGrafoArq" alt="" coords="705,112,804,139"/>
-<area shape="rect" id="node6" href="interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec" title="interface_inserir_tarefa" alt="" coords="464,61,621,88"/>
-<area shape="rect" id="node5" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="888,112,939,139"/>
-<area shape="rect" id="node9" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="669,188,840,215"/>
-<area shape="rect" id="node12" href="grafo_8h.html#a3e61bf2ada0f9af7e2e9883241496606" title="Cria grafo. " alt="" coords="499,163,586,189"/>
+<area shape="rect" id="node2" href="grafo_8h.html#a56edc294bdf9e834989d9c8d31ed3a64" title="existe_aresta" alt="" coords="142,298,245,325"/>
+<area shape="rect" id="node3" href="grafo_8h.html#a0e69707897c891bf77319d494cae8f26" title="inserir_aresta" alt="" coords="304,298,407,325"/>
+<area shape="rect" id="node7" href="grafo_8h.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="297,197,414,224"/>
+<area shape="rect" id="node8" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="492,96,593,122"/>
+<area shape="rect" id="node11" href="grafo__priv_8h.html#aa7c7803e91592a28e4c0a85112b53fb8" title="existe_origem" alt="" coords="140,96,247,122"/>
+<area shape="rect" id="node12" href="grafo__priv_8h.html#adc1a8c08d13a78eda202bc49275712f5" title="inserir_origem" alt="" coords="302,146,409,173"/>
+<area shape="rect" id="node14" href="grafo__priv_8h.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="295,45,416,72"/>
+<area shape="rect" id="node15" href="grafo_8h.html#a659b567cb7e165b526b6fe05a433452e" title="inserir_vert" alt="" coords="312,248,399,274"/>
+<area shape="rect" id="node4" href="grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205" title="criaGrafoArq" alt="" coords="705,197,804,224"/>
+<area shape="rect" id="node6" href="interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec" title="interface_inserir_tarefa" alt="" coords="464,248,621,274"/>
+<area shape="rect" id="node5" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="888,197,939,224"/>
+<area shape="rect" id="node9" href="grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe" title="Deleta grafo. " alt="" coords="703,96,806,122"/>
+<area shape="rect" id="node10" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="669,146,840,173"/>
+<area shape="rect" id="node13" href="grafo_8h.html#a3e61bf2ada0f9af7e2e9883241496606" title="Cria grafo. " alt="" coords="499,146,586,173"/>
 </map>
 </div>
 </p>
@@ -784,11 +865,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00615">615</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00636">636</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
 <p>Referências <a class="el" href="grafo__priv_8h_source.html#l00017">lista_vert_codigo::dado</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::duracao</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::executada</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a>, <a class="el" href="grafo__priv_8h_source.html#l00009">Celula_priv::reqs</a> e <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>.</p>
 
-<p>Referenciado por <a class="el" href="interface_8cpp_source.html#l00226">main()</a>.</p>
+<p>Referenciado por <a class="el" href="interface_8cpp_source.html#l00228">main()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
@@ -832,11 +913,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00595">595</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00616">616</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
 <p>Referências <a class="el" href="grafo__priv_8h_source.html#l00017">lista_vert_codigo::dado</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::duracao</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::executada</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a>, <a class="el" href="grafo__priv_8h_source.html#l00009">Celula_priv::reqs</a> e <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>.</p>
 
-<p>Referenciado por <a class="el" href="interface_8cpp_source.html#l00173">interface_vizualizar_tarefas()</a>.</p>
+<p>Referenciado por <a class="el" href="interface_8cpp_source.html#l00175">interface_vizualizar_tarefas()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
@@ -887,11 +968,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00232">232</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00250">250</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo_8cpp_source.html#l00089">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00023">lista_aresta::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00069">existe_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00046">existe_vert()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00025">lista_aresta::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00024">lista_aresta::peso</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a>, <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
+<p>Referências <a class="el" href="grafo_8cpp_source.html#l00107">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00023">lista_aresta::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00087">existe_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00064">existe_vert()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00025">lista_aresta::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00024">lista_aresta::peso</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a>, <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00732">criaGrafoArq()</a> e <a class="el" href="interface_8cpp_source.html#l00062">interface_inserir_tarefa()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00753">criaGrafoArq()</a> e <a class="el" href="interface_8cpp_source.html#l00064">interface_inserir_tarefa()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -943,11 +1024,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00184">184</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00202">202</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo_8cpp_source.html#l00089">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00037">lista_origem::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00056">existe_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00046">existe_vert()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00038">lista_origem::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00044">grafo_priv::origem</a>, <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
+<p>Referências <a class="el" href="grafo_8cpp_source.html#l00107">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00037">lista_origem::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00074">existe_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00064">existe_vert()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00038">lista_origem::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00044">grafo_priv::origem</a>, <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00015">criar_grafo()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00012">criar_grafo()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -999,11 +1080,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00110">110</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00128">128</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00031">lista_vert::antecessores</a>, <a class="el" href="grafo_8cpp_source.html#l00046">existe_vert()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00018">lista_vert_codigo::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00030">lista_vert::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a>, <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
+<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00031">lista_vert::antecessores</a>, <a class="el" href="grafo_8cpp_source.html#l00064">existe_vert()</a>, <a class="el" href="grafo_8h_source.html#l00010">FALSE_T</a>, <a class="el" href="grafo__priv_8h_source.html#l00018">lista_vert_codigo::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00007">Celula_priv::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00030">lista_vert::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00010">Celula_priv::nome</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::pre_req</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a>, <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00732">criaGrafoArq()</a>, <a class="el" href="grafo_8cpp_source.html#l00015">criar_grafo()</a> e <a class="el" href="interface_8cpp_source.html#l00062">interface_inserir_tarefa()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00753">criaGrafoArq()</a>, <a class="el" href="grafo_8cpp_source.html#l00012">criar_grafo()</a> e <a class="el" href="interface_8cpp_source.html#l00064">interface_inserir_tarefa()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -1054,9 +1135,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00712">712</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00733">733</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00018">lista_vert_codigo::id</a>, <a class="el" href="grafo_8cpp_source.html#l00506">menor_caminho()</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a> e <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>.</p>
+<p>Referências <a class="el" href="grafo__priv_8h_source.html#l00018">lista_vert_codigo::id</a>, <a class="el" href="grafo_8cpp_source.html#l00524">menor_caminho()</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a> e <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -1088,11 +1169,11 @@ Este é o diagrama das funções utilizadas por esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00472">472</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00490">490</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
 <p>Referências <a class="el" href="grafo__priv_8h_source.html#l00018">lista_vert_codigo::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a> e <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00560">eh_conexo()</a> e <a class="el" href="grafo_8cpp_source.html#l00506">menor_caminho()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00581">eh_conexo()</a> e <a class="el" href="grafo_8cpp_source.html#l00524">menor_caminho()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
@@ -1133,11 +1214,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00506">506</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00524">524</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo_8cpp_source.html#l00099">achar_celula()</a>, <a class="el" href="grafo_8cpp_source.html#l00089">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00023">lista_aresta::destino</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo_8cpp_source.html#l00472">maior_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00025">lista_aresta::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo_8cpp_source.html#l00483">num_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00024">lista_aresta::peso</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
+<p>Referências <a class="el" href="grafo_8cpp_source.html#l00117">achar_celula()</a>, <a class="el" href="grafo_8cpp_source.html#l00107">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00023">lista_aresta::destino</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00008">Celula_priv::ini_min</a>, <a class="el" href="grafo_8cpp_source.html#l00490">maior_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00025">lista_aresta::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo_8cpp_source.html#l00501">num_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00024">lista_aresta::peso</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00712">ja_feito()</a> e <a class="el" href="grafo_8cpp_source.html#l00697">tempo_minimo()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00733">ja_feito()</a> e <a class="el" href="grafo_8cpp_source.html#l00718">tempo_minimo()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -1179,7 +1260,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00493">493</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00511">511</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
 <p>Referências <a class="el" href="grafo__priv_8h_source.html#l00025">lista_aresta::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
 
@@ -1199,11 +1280,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00483">483</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00501">501</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
 <p>Referências <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00560">eh_conexo()</a> e <a class="el" href="grafo_8cpp_source.html#l00506">menor_caminho()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00581">eh_conexo()</a> e <a class="el" href="grafo_8cpp_source.html#l00524">menor_caminho()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
@@ -1250,11 +1331,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00422">422</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00440">440</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo_8cpp_source.html#l00089">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00031">lista_vert::antecessores</a>, <a class="el" href="grafo_8cpp_source.html#l00069">existe_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00046">existe_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00025">lista_aresta::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a>, <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
+<p>Referências <a class="el" href="grafo_8cpp_source.html#l00107">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00031">lista_vert::antecessores</a>, <a class="el" href="grafo_8cpp_source.html#l00087">existe_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00064">existe_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00025">lista_aresta::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00032">lista_vert::sucessores</a>, <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00322">remover_vert()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00340">remover_vert()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -1273,9 +1354,10 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph.png" border="0" usemap="#grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph" alt=""/></div>
 <map name="grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph" id="grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph">
-<area shape="rect" id="node2" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="171,5,272,32"/>
-<area shape="rect" id="node3" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="320,5,491,32"/>
-<area shape="rect" id="node4" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="539,5,589,32"/>
+<area shape="rect" id="node2" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="171,31,272,57"/>
+<area shape="rect" id="node3" href="grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe" title="Deleta grafo. " alt="" coords="354,5,457,32"/>
+<area shape="rect" id="node4" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="320,56,491,83"/>
+<area shape="rect" id="node5" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="539,56,589,83"/>
 </map>
 </div>
 </p>
@@ -1306,11 +1388,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00395">395</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00413">413</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo_8cpp_source.html#l00089">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00037">lista_origem::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00056">existe_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00046">existe_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00038">lista_origem::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00044">grafo_priv::origem</a> e <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a>.</p>
+<p>Referências <a class="el" href="grafo_8cpp_source.html#l00107">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00037">lista_origem::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00074">existe_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00064">existe_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00038">lista_origem::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00044">grafo_priv::origem</a> e <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a>.</p>
 
-<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00322">remover_vert()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00340">remover_vert()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -1329,9 +1411,10 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.png" border="0" usemap="#grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph" alt=""/></div>
 <map name="grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph" id="grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph">
-<area shape="rect" id="node2" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="175,5,276,32"/>
-<area shape="rect" id="node3" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="324,5,495,32"/>
-<area shape="rect" id="node4" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="543,5,593,32"/>
+<area shape="rect" id="node2" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="175,31,276,57"/>
+<area shape="rect" id="node3" href="grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe" title="Deleta grafo. " alt="" coords="358,5,461,32"/>
+<area shape="rect" id="node4" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="324,56,495,83"/>
+<area shape="rect" id="node5" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="543,56,593,83"/>
 </map>
 </div>
 </p>
@@ -1362,11 +1445,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00322">322</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00340">340</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo_8cpp_source.html#l00089">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00023">lista_aresta::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00056">existe_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00046">existe_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00018">lista_vert_codigo::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00030">lista_vert::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo_8cpp_source.html#l00422">remover_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00395">remover_origem()</a>, <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>, <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
+<p>Referências <a class="el" href="grafo_8cpp_source.html#l00107">achar_id()</a>, <a class="el" href="grafo__priv_8h_source.html#l00023">lista_aresta::destino</a>, <a class="el" href="grafo_8cpp_source.html#l00074">existe_origem()</a>, <a class="el" href="grafo_8cpp_source.html#l00064">existe_vert()</a>, <a class="el" href="grafo__priv_8h_source.html#l00018">lista_vert_codigo::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00029">lista_vert::id</a>, <a class="el" href="grafo__priv_8h_source.html#l00030">lista_vert::id_externo</a>, <a class="el" href="grafo__priv_8h_source.html#l00019">lista_vert_codigo::next</a>, <a class="el" href="grafo__priv_8h_source.html#l00033">lista_vert::next</a>, <a class="el" href="grafo_8cpp_source.html#l00440">remover_aresta()</a>, <a class="el" href="grafo_8cpp_source.html#l00413">remover_origem()</a>, <a class="el" href="grafo__priv_8h_source.html#l00042">grafo_priv::tabela</a>, <a class="el" href="grafo_8h_source.html#l00011">TRUE_T</a> e <a class="el" href="grafo__priv_8h_source.html#l00043">grafo_priv::vert</a>.</p>
 
-<p>Referenciado por <a class="el" href="interface_8cpp_source.html#l00019">interface_remover_tarefa()</a>.</p>
+<p>Referenciado por <a class="el" href="grafo_8cpp_source.html#l00032">deletar_grafo()</a> e <a class="el" href="interface_8cpp_source.html#l00021">interface_remover_tarefa()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
@@ -1388,8 +1471,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.png" border="0" usemap="#grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph" alt=""/></div>
 <map name="grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph" id="grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph">
-<area shape="rect" id="node2" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="155,5,325,32"/>
-<area shape="rect" id="node3" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="373,5,424,32"/>
+<area shape="rect" id="node2" href="grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe" title="Deleta grafo. " alt="" coords="189,5,291,32"/>
+<area shape="rect" id="node3" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588" title="interface_remover_tarefa" alt="" coords="155,56,325,83"/>
+<area shape="rect" id="node4" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="373,56,424,83"/>
 </map>
 </div>
 </p>
@@ -1420,9 +1504,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00697">697</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
+<p>Definição na linha <a class="el" href="grafo_8cpp_source.html#l00718">718</a> do arquivo <a class="el" href="grafo_8cpp_source.html">grafo.cpp</a>.</p>
 
-<p>Referências <a class="el" href="grafo_8cpp_source.html#l00506">menor_caminho()</a>.</p>
+<p>Referências <a class="el" href="grafo_8cpp_source.html#l00524">menor_caminho()</a>.</p>
 
 <p><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>

@@ -37,6 +37,8 @@ enum \hyperlink{grafo_8h_a4a2eceb977b50eb0028c419047e56e1d}{resp} \{ \hyperlink{
 \begin{DoxyCompactList}\small\item\em Deleta grafo. \end{DoxyCompactList}\item 
 \hyperlink{grafo_8h_a64f906a639abdfda7fffa9ace7e4c286}{resposta} \hyperlink{grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263}{existe\+\_\+vert} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
 \item 
+\hyperlink{grafo_8h_ac2219b5d1f94e440b5895ce440ab23b9}{Celula\+\_\+priv\+\_\+t} $\ast$ \hyperlink{grafo_8h_a28b6414a2684992da035d5605178c770}{cria\+\_\+celula} (int id\+\_\+externo, int executada, int duracao, int ini\+\_\+min, int pre\+\_\+req, int $\ast$reqs, const char $\ast$nome)
+\item 
 \hyperlink{grafo_8h_a64f906a639abdfda7fffa9ace7e4c286}{resposta} \hyperlink{grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64}{existe\+\_\+aresta} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo1, int id\+\_\+externo2)
 \item 
 int \hyperlink{grafo_8h_ac428ee7436d16b5251b093aa79183fda}{achar\+\_\+id} (const \hyperlink{grafo_8h_a282167c584dceb79dde5c159a85b685b}{grafo\+\_\+priv\+\_\+t} $\ast$meu\+\_\+grafo, int id\+\_\+externo)
@@ -132,7 +134,7 @@ Definição na linha 9 do arquivo grafo.\+h.
 )}\label{grafo_8h_a90390d2135067928e2c69cd964c9bec5}
 
 
-Definição na linha 99 do arquivo grafo.\+cpp.
+Definição na linha 117 do arquivo grafo.\+cpp.
 
 
 
@@ -163,7 +165,7 @@ Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 )}\label{grafo_8h_ac428ee7436d16b5251b093aa79183fda}
 
 
-Definição na linha 89 do arquivo grafo.\+cpp.
+Definição na linha 107 do arquivo grafo.\+cpp.
 
 
 
@@ -185,6 +187,27 @@ Este é o diagrama das funções que utilizam esta função\+:
 \end{figure}
 
 
+\hypertarget{grafo_8h_a28b6414a2684992da035d5605178c770}{}\index{grafo.\+h@{grafo.\+h}!cria\+\_\+celula@{cria\+\_\+celula}}
+\index{cria\+\_\+celula@{cria\+\_\+celula}!grafo.\+h@{grafo.\+h}}
+\subsubsection[{cria\+\_\+celula(int id\+\_\+externo, int executada, int duracao, int ini\+\_\+min, int pre\+\_\+req, int $\ast$reqs, const char $\ast$nome)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Celula\+\_\+priv\+\_\+t}$\ast$ cria\+\_\+celula (
+\begin{DoxyParamCaption}
+\item[{int}]{id\+\_\+externo, }
+\item[{int}]{executada, }
+\item[{int}]{duracao, }
+\item[{int}]{ini\+\_\+min, }
+\item[{int}]{pre\+\_\+req, }
+\item[{int $\ast$}]{reqs, }
+\item[{const char $\ast$}]{nome}
+\end{DoxyParamCaption}
+)}\label{grafo_8h_a28b6414a2684992da035d5605178c770}
+
+
+Definição na linha 43 do arquivo grafo.\+cpp.
+
+
+
+Referências Celula\+\_\+priv\+::duracao, Celula\+\_\+priv\+::executada, Celula\+\_\+priv\+::id\+\_\+externo, Celula\+\_\+priv\+::ini\+\_\+min, Celula\+\_\+priv\+::nome, Celula\+\_\+priv\+::pre\+\_\+req e Celula\+\_\+priv\+::reqs.
+
 \hypertarget{grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205}{}\index{grafo.\+h@{grafo.\+h}!cria\+Grafo\+Arq@{cria\+Grafo\+Arq}}
 \index{cria\+Grafo\+Arq@{cria\+Grafo\+Arq}!grafo.\+h@{grafo.\+h}}
 \subsubsection[{cria\+Grafo\+Arq(char $\ast$nome\+Arq)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf grafo\+\_\+priv\+\_\+t}$\ast$ cria\+Grafo\+Arq (
@@ -194,7 +217,7 @@ Este é o diagrama das funções que utilizam esta função\+:
 )}\label{grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205}
 
 
-Definição na linha 732 do arquivo grafo.\+cpp.
+Definição na linha 753 do arquivo grafo.\+cpp.
 
 
 
@@ -206,8 +229,7 @@ Referenciado por main().
 
 
 
-Este é o diagrama das funções utilizadas por esta função\+:
-\nopagebreak
+Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -218,8 +240,7 @@ Este é o diagrama das funções utilizadas por esta função\+:
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -249,7 +270,7 @@ Se retorna um ponteiro para a grafo criado
 \hypertarget{grafo_8cpp_assert}{}\subsection{Assertiva de saída}\label{grafo_8cpp_assert}
 O grafo gerado é consistente e não possui nenhum vértice, origem ou aresta. 
 
-Definição na linha 15 do arquivo grafo.\+cpp.
+Definição na linha 12 do arquivo grafo.\+cpp.
 
 
 
@@ -272,8 +293,7 @@ Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -307,11 +327,23 @@ Retorna um ponteiro para o grafo, que será N\+U\+L\+L. O valor de retorno é mu
 \hypertarget{grafo_8cpp_assert}{}\subsection{Assertiva de saída}\label{grafo_8cpp_assert}
 O grafo já deve ter sido inicializado por \hyperlink{grafo_8h_a3e61bf2ada0f9af7e2e9883241496606}{criar\+\_\+grafo()} Assertiva de saída Se retornará um ponteiro para o mesmo grafo passado, após a deleção que será N\+U\+L\+L. 
 
-Definição na linha 35 do arquivo grafo.\+cpp.
+Definição na linha 32 do arquivo grafo.\+cpp.
 
 
 
-Referências grafo\+\_\+priv\+::tabela.
+Referências lista\+\_\+vert\+\_\+codigo\+::dado, Celula\+\_\+priv\+::id\+\_\+externo, remover\+\_\+vert() e grafo\+\_\+priv\+::tabela.
+
+
+
+Este é o diagrama das funções utilizadas por esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafo_8h_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{grafo_8h_a79154a07716d283ad68106cf54beaf07}{}\index{grafo.\+h@{grafo.\+h}!editar\+\_\+celula@{editar\+\_\+celula}}
 \index{editar\+\_\+celula@{editar\+\_\+celula}!grafo.\+h@{grafo.\+h}}
@@ -323,7 +355,7 @@ Referências grafo\+\_\+priv\+::tabela.
 )}\label{grafo_8h_a79154a07716d283ad68106cf54beaf07}
 
 
-Definição na linha 641 do arquivo grafo.\+cpp.
+Definição na linha 662 do arquivo grafo.\+cpp.
 
 
 
@@ -364,7 +396,7 @@ Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 )}\label{grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7}
 
 
-Definição na linha 560 do arquivo grafo.\+cpp.
+Definição na linha 581 do arquivo grafo.\+cpp.
 
 
 
@@ -392,7 +424,7 @@ Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 )}\label{grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64}
 
 
-Definição na linha 69 do arquivo grafo.\+cpp.
+Definição na linha 87 do arquivo grafo.\+cpp.
 
 
 
@@ -435,7 +467,7 @@ Este é o diagrama das funções que utilizam esta função\+:
 )}\label{grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263}
 
 
-Definição na linha 46 do arquivo grafo.\+cpp.
+Definição na linha 64 do arquivo grafo.\+cpp.
 
 
 
@@ -467,7 +499,7 @@ Este é o diagrama das funções que utilizam esta função\+:
 )}\label{grafo_8h_aadbd57b376954aeeb119120d5a4a196f}
 
 
-Definição na linha 615 do arquivo grafo.\+cpp.
+Definição na linha 636 do arquivo grafo.\+cpp.
 
 
 
@@ -499,7 +531,7 @@ Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 )}\label{grafo_8h_a1dd7cc6696ade339827db4d2019239fc}
 
 
-Definição na linha 595 do arquivo grafo.\+cpp.
+Definição na linha 616 do arquivo grafo.\+cpp.
 
 
 
@@ -532,7 +564,7 @@ Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 )}\label{grafo_8h_a0e69707897c891bf77319d494cae8f26}
 
 
-Definição na linha 232 do arquivo grafo.\+cpp.
+Definição na linha 250 do arquivo grafo.\+cpp.
 
 
 
@@ -555,8 +587,7 @@ Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -575,7 +606,7 @@ Este é o diagrama das funções que utilizam esta função\+:
 )}\label{grafo_8h_a659b567cb7e165b526b6fe05a433452e}
 
 
-Definição na linha 110 do arquivo grafo.\+cpp.
+Definição na linha 128 do arquivo grafo.\+cpp.
 
 
 
@@ -598,8 +629,7 @@ Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:
-\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -618,7 +648,7 @@ Este é o diagrama das funções que utilizam esta função\+:
 )}\label{grafo_8h_acb5b55f7d1508a1b35b76e43bc817623}
 
 
-Definição na linha 712 do arquivo grafo.\+cpp.
+Definição na linha 733 do arquivo grafo.\+cpp.
 
 
 
@@ -653,7 +683,7 @@ Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 )}\label{grafo_8h_a5bedfb800e326da354b0403421e0d1ef}
 
 
-Definição na linha 472 do arquivo grafo.\+cpp.
+Definição na linha 490 do arquivo grafo.\+cpp.
 
 
 
@@ -684,7 +714,7 @@ Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 )}\label{grafo_8h_ad507a38f9feef6cad69436ec774b535f}
 
 
-Definição na linha 506 do arquivo grafo.\+cpp.
+Definição na linha 524 do arquivo grafo.\+cpp.
 
 
 
@@ -725,7 +755,7 @@ Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 )}\label{grafo_8h_ac94be03e94792b9b868abb38c7e17e36}
 
 
-Definição na linha 493 do arquivo grafo.\+cpp.
+Definição na linha 511 do arquivo grafo.\+cpp.
 
 
 
@@ -740,7 +770,7 @@ Referências lista\+\_\+aresta\+::next, lista\+\_\+vert\+::next, lista\+\_\+vert
 )}\label{grafo_8h_a31c64875fe3134ba04439feb7d119cf3}
 
 
-Definição na linha 483 do arquivo grafo.\+cpp.
+Definição na linha 501 do arquivo grafo.\+cpp.
 
 
 
@@ -772,7 +802,7 @@ Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 )}\label{grafo_8h_ac16199e4256247b546b67d6d881be137}
 
 
-Definição na linha 422 do arquivo grafo.\+cpp.
+Definição na linha 440 do arquivo grafo.\+cpp.
 
 
 
@@ -795,7 +825,8 @@ Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -814,7 +845,7 @@ Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 )}\label{grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372}
 
 
-Definição na linha 322 do arquivo grafo.\+cpp.
+Definição na linha 340 do arquivo grafo.\+cpp.
 
 
 
@@ -822,7 +853,7 @@ Referências achar\+\_\+id(), lista\+\_\+aresta\+::destino, existe\+\_\+origem()
 
 
 
-Referenciado por interface\+\_\+remover\+\_\+tarefa().
+Referenciado por deletar\+\_\+grafo() e interface\+\_\+remover\+\_\+tarefa().
 
 
 
@@ -837,7 +868,8 @@ Este é o diagrama das funções utilizadas por esta função\+:\nopagebreak
 
 
 
-Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -856,7 +888,7 @@ Este é o diagrama das funções que utilizam esta função\+:\nopagebreak
 )}\label{grafo_8h_a14183876086781302e2d81ab2457dc4e}
 
 
-Definição na linha 697 do arquivo grafo.\+cpp.
+Definição na linha 718 do arquivo grafo.\+cpp.
 
 
 

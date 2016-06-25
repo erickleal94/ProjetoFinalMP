@@ -10,17 +10,21 @@ LIBS = -lm -lgtest -lpthread -lgtest_main -lncurses
 _DEPS = grafo.h grafo_priv.h
 DEPS = $(patsubst%,$(IDIR)/%,$(_DEPS))
 
-_OBJ = grafo.o interface.o
+_OBJ = grafo.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
-default_target: interface
+default_target: interface teste_grafo
 
 $(ODIR)/%.o: %.cpp $(DEPS)
 	$(CXX) -c -o $@ $< $(CXXFLAGS)
 	
-interface: $(OBJ)
+interface: $(OBJ) $(ODIR)/interface.o
 	g++ -o $@ $^ $(CXXFLAGS) $(LIBS)
+
 	
+teste_grafo: $(OBJ) $(ODIR)/teste_grafo.o
+	g++ -o $@ $^ $(CXXFLAGS) $(LIBS)
+
 .PHONY: clean doc
 
 clean:

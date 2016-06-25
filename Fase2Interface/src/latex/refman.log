@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.4.14)  24 JUN 2016 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.4.14)  25 JUN 2016 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1095,14 +1095,14 @@ Package babel Info: Redefining portuges shorthand "|
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 72.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 72.
+(Font)              scaled to size 6.29996pt on input line 71.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 71.
  [4]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 109.
  [5])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
@@ -1111,6 +1111,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
 
 [6]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 136.
+ [7]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 136.
+ [8
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 138.
 
 Cap\'{\i }tulo 1.
@@ -1139,7 +1147,6 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 143.
  [1
-
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1224,39 +1231,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
-<structgrafo__priv__coll__graph.pdf, id=819, 505.89pt x 245.91875pt>
+<structgrafo__priv__coll__graph.pdf, id=848, 505.89pt x 245.91875pt>
 File: structgrafo__priv__coll__graph.pdf Graphic file (type pdf)
 
 <use structgrafo__priv__coll__graph.pdf>
 Package pdftex.def Info: structgrafo__priv__coll__graph.pdf used on input line 
 13.
 (pdftex.def)             Requested size: 350.0pt x 170.1419pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 16.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 16.
- [6 <./structgrafo__priv__coll__graph.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 34.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 37.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 48.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 59.
-) (./structlista__aresta.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-
-<structlista__aresta__coll__graph.pdf, id=839, 203.76125pt x 178.6675pt>
-File: structlista__aresta__coll__graph.pdf Graphic file (type pdf)
-
-<use structlista__aresta__coll__graph.pdf>
-Package pdftex.def Info: structlista__aresta__coll__graph.pdf used on input lin
-e 13.
-(pdftex.def)             Requested size: 203.0pt x 178.0073pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1264,7 +1245,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 16.
- [7]
+ [6]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining portuges shorthand "|
@@ -1276,15 +1257,41 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
 )
-(./structlista__origem.tex
+(./structlista__aresta.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
+ [7 <./structgrafo__priv__coll__graph.pdf>]
+<structlista__aresta__coll__graph.pdf, id=879, 203.76125pt x 178.6675pt>
+File: structlista__aresta__coll__graph.pdf Graphic file (type pdf)
+
+<use structlista__aresta__coll__graph.pdf>
+Package pdftex.def Info: structlista__aresta__coll__graph.pdf used on input lin
+e 13.
+(pdftex.def)             Requested size: 203.0pt x 178.0073pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+) (./structlista__origem.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
  [8 <./structlista__aresta__coll__graph.pdf>]
-<structlista__origem__coll__graph.pdf, id=872, 319.1925pt x 178.6675pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+
+<structlista__origem__coll__graph.pdf, id=900, 319.1925pt x 178.6675pt>
 File: structlista__origem__coll__graph.pdf Graphic file (type pdf)
 
 <use structlista__origem__coll__graph.pdf>
@@ -1303,7 +1310,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
-<structlista__vert__coll__graph.pdf, id=878, 190.7125pt x 178.6675pt>
+<structlista__vert__coll__graph.pdf, id=906, 190.7125pt x 178.6675pt>
 File: structlista__vert__coll__graph.pdf Graphic file (type pdf)
 
 <use structlista__vert__coll__graph.pdf>
@@ -1350,7 +1357,7 @@ a(), inserir[]_[]vert(), menor[]_[]caminho(), num[]_[]arestas() e
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
-<structlista__vert__codigo__coll__graph.pdf, id=919, 213.79875pt x 167.62625pt>
+<structlista__vert__codigo__coll__graph.pdf, id=947, 213.79875pt x 167.62625pt>
 File: structlista__vert__codigo__coll__graph.pdf Graphic file (type pdf)
 <use structlista__vert__codigo__coll__graph.pdf>
 Package pdftex.def Info: structlista__vert__codigo__coll__graph.pdf used on inp
@@ -1388,7 +1395,7 @@ Package babel Info: Redefining portuges shorthand "|
 (./grafo_8h.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- <grafo_8h__dep__incl.pdf, id=946, 286.06876pt x 256.96pt>
+ <grafo_8h__dep__incl.pdf, id=975, 286.06876pt x 256.96pt>
 File: grafo_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use grafo_8h__dep__incl.pdf>
@@ -1408,118 +1415,130 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 35.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 82.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 90.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 110.
 
-Underfull \hbox (badness 10000) detected at line 110
+Underfull \hbox (badness 10000) detected at line 112
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 114.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 116.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 114.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 116.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 8.99994pt on input line 114.
+(Font)              scaled to size 8.99994pt on input line 116.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 114.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 116.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 114.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 116.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 6.29996pt on input line 114.
+(Font)              scaled to size 6.29996pt on input line 116.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 126.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 132.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 126.
 [14]
-LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 132.
-LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 132.
-LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 132.
-LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 6.29996pt on input line 132.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 126.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 134.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 8.99994pt on input line 134.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 134.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 6.29996pt on input line 134.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 132.
+(hyperref)                removing `math shift' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 132.
+(hyperref)                removing `\ast' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 132.
+(hyperref)                removing `math shift' on input line 134.
 
 
-<grafo_8h_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf, id=1056, 527.9725pt x 
+<grafo_8h_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf, id=1087, 527.9725pt x 
 222.8325pt>
 File: grafo_8h_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf
- used on input line 151.
+ used on input line 153.
 (pdftex.def)             Requested size: 350.0pt x 147.71593pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 165.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 163.
+(hyperref)                removing `math shift' on input line 165.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 163.
+(hyperref)                removing `\ast' on input line 165.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 163.
+(hyperref)                removing `math shift' on input line 165.
 
 
-<grafo_8h_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf, id=1057, 621.32124pt x
+<grafo_8h_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf, id=1088, 621.32124pt x
  291.0875pt>
 File: grafo_8h_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf
- used on input line 183.
+ used on input line 185.
 (pdftex.def)             Requested size: 350.0pt x 163.97171pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 194.
+(hyperref)                removing `math shift' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 194.
+(hyperref)                removing `\ast' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 194.
+(hyperref)                removing `math shift' on input line 202.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 202.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 202.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 202.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 210.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 210.
 [15 <./grafo_8h_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf> <./grafo_8h_ac42
 8ee7436d16b5251b093aa79183fda_icgraph.pdf
 
@@ -1527,40 +1546,54 @@ pdfTeX warning: pdflatex (file ./grafo_8h_ac428ee7436d16b5251b093aa79183fda_icg
 raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >]
-<grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf, id=1074, 590.205pt x 25
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 217.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 217.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 217.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 217.
+
+
+<grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf, id=1105, 590.205pt x 25
 2.945pt>
 File: grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf 
-used on input line 214.
+used on input line 236.
 (pdftex.def)             Requested size: 350.0pt x 150.00046pt.
 
-<grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf, id=1075, 228.855pt x 1
+<grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf, id=1106, 228.855pt x 1
 00.375pt>
 File: grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf
- used on input line 226.
+ used on input line 247.
 (pdftex.def)             Requested size: 228.0pt x 100.00409pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 242.
+(babel)             in language  on input line 263.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 243.
+(babel)             in language  on input line 264.
 
-Underfull \hbox (badness 10000) detected at line 246
+Underfull \hbox (badness 10000) detected at line 267
 [][][]
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 249.
+(babel)             in language  on input line 270.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 260.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 260.
+(babel)             in language  on input line 270.
 [16 <./grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf> <./grafo_8h_a1bb7
 038cecd5aa54025b6c5931bc0205_icgraph.pdf
 
@@ -1568,56 +1601,59 @@ pdfTeX warning: pdflatex (file ./grafo_8h_a1bb7038cecd5aa54025b6c5931bc0205_icg
 raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >]
-<grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf, id=1094, 479.7925pt x 1
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 270.
+
+<grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf, id=1126, 479.7925pt x 1
 71.64125pt>
 File: grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf 
-used on input line 268.
+used on input line 289.
 (pdftex.def)             Requested size: 350.0pt x 125.21062pt.
 
-<grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf, id=1095, 330.23375pt x
+<grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf, id=1127, 330.23375pt x
  100.375pt>
 File: grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf
- used on input line 280.
+ used on input line 300.
 (pdftex.def)             Requested size: 329.0pt x 100.00409pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 311.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 291.
+(hyperref)                removing `math shift' on input line 311.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 291.
+(hyperref)                removing `\ast' on input line 311.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 291.
+(hyperref)                removing `math shift' on input line 311.
 
 pdfTeX warning (ext4): destination with the same identifier (name{grafo_8cpp_de
 sc}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.296 \hypertarget{grafo_8cpp_desc}{}
+l.316 \hypertarget{grafo_8cpp_desc}{}
                                      \subsection{Descrição}\label{grafo_8c...
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 296.
+(babel)             in language  on input line 316.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 301.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 321.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 301.
+(Font)              scaled to size 8.99994pt on input line 321.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 301.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 321.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 301.
+(Font)              scaled to size 6.29996pt on input line 321.
 
-Underfull \hbox (badness 10000) detected at line 304
+Underfull \hbox (badness 10000) detected at line 324
 [][][]
  []
 
@@ -1625,14 +1661,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{grafo_8cpp_as
 sert}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.307 \hypertarget{grafo_8cpp_assert}{}
+l.327 \hypertarget{grafo_8cpp_assert}{}
                                        \subsection{Assertiva de saída}\labe...
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 307.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 318.
+(babel)             in language  on input line 330.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 318.
+(babel)             in language  on input line 330.
 [17 <./grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf> <./grafo_8h_a3e61
 bf2ada0f9af7e2e9883241496606_icgraph.pdf
 
@@ -1640,149 +1676,133 @@ pdfTeX warning: pdflatex (file ./grafo_8h_a3e61bf2ada0f9af7e2e9883241496606_icg
 raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >]
+<grafo_8h_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.pdf, id=1145, 615.29875pt x 
+269.005pt>
+File: grafo_8h_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.pdf Graphic file (type 
+pdf)
+ <use grafo_8h_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.pdf>
+Package pdftex.def Info: grafo_8h_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.pdf 
+used on input line 343.
+(pdftex.def)             Requested size: 350.0pt x 153.01837pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 323.
+(babel)             in language  on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 323.
+(hyperref)                removing `math shift' on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 323.
+(hyperref)                removing `\ast' on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 323.
+(hyperref)                removing `math shift' on input line 355.
 
 
-<grafo_8h_a79154a07716d283ad68106cf54beaf07_cgraph.pdf, id=1112, 264.99pt x 100
+<grafo_8h_a79154a07716d283ad68106cf54beaf07_cgraph.pdf, id=1146, 264.99pt x 100
 .375pt>
 File: grafo_8h_a79154a07716d283ad68106cf54beaf07_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_a79154a07716d283ad68106cf54beaf07_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_a79154a07716d283ad68106cf54beaf07_cgraph.pdf 
-used on input line 342.
+used on input line 374.
 (pdftex.def)             Requested size: 264.0pt x 100.00716pt.
 
-<grafo_8h_a79154a07716d283ad68106cf54beaf07_icgraph.pdf, id=1113, 381.425pt x 1
+<grafo_8h_a79154a07716d283ad68106cf54beaf07_icgraph.pdf, id=1147, 381.425pt x 1
 00.375pt>
 File: grafo_8h_a79154a07716d283ad68106cf54beaf07_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_a79154a07716d283ad68106cf54beaf07_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_a79154a07716d283ad68106cf54beaf07_icgraph.pdf
- used on input line 353.
+ used on input line 385.
 (pdftex.def)             Requested size: 350.0pt x 92.1087pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 364.
+(babel)             in language  on input line 396.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 364.
+(hyperref)                removing `math shift' on input line 396.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 364.
+(hyperref)                removing `\ast' on input line 396.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 364.
-
-
-<grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf, id=1114, 240.9pt x 176.
-66pt>
-File: grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf Graphic file (type 
-pdf)
- <use grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf>
-Package pdftex.def Info: grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf 
-used on input line 379.
-(pdftex.def)             Requested size: 240.0pt x 176.00452pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(hyperref)                removing `math shift' on input line 396.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 382.
+(babel)             in language  on input line 403.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 382.
- [18 <./grafo_8h_a79154a07716d283ad68106cf54beaf07_cgraph.pdf> <./grafo_8h_a791
-54a07716d283ad68106cf54beaf07_icgraph.pdf
+(babel)             in language  on input line 403.
+[18 <./grafo_8h_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.pdf> <./grafo_8h_a7915
+4a07716d283ad68106cf54beaf07_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8h_a79154a07716d283ad68106cf54beaf07_cgr
+aph.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> <./grafo_8h_a79154a07716d283ad68106cf54beaf07_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo_8h_a79154a07716d283ad68106cf54beaf07_icg
 raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >]
+<grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf, id=1168, 240.9pt x 176.
+66pt>
+File: grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf Graphic file (type 
+pdf)
+ <use grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf>
+Package pdftex.def Info: grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf 
+used on input line 411.
+(pdftex.def)             Requested size: 240.0pt x 176.00452pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 392.
+(babel)             in language  on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 392.
+(hyperref)                removing `\ast' on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 424.
 
 
-<grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf, id=1131, 258.9675pt x 1
+<grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf, id=1169, 258.9675pt x 1
 00.375pt>
 File: grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf 
-used on input line 411.
+used on input line 443.
 (pdftex.def)             Requested size: 258.0pt x 100.01021pt.
 
-<grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf, id=1132, 634.37pt x 17
-6.66pt>
+<grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf, id=1170, 634.37pt x 21
+4.8025pt>
 File: grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf
- used on input line 423.
-(pdftex.def)             Requested size: 350.0pt x 97.4706pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 435.
+ used on input line 455.
+(pdftex.def)             Requested size: 350.0pt x 118.51538pt.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 435.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 435.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 435.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 446.
+(babel)             in language  on input line 458.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 446.
-[19 <./grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf> <./grafo_8h_a56ed
-c294bdf9e834989d9c8d31ed3a64_cgraph.pdf
+(babel)             in language  on input line 458.
+ [19 <./grafo_8h_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf> <./grafo_8h_a56e
+dc294bdf9e834989d9c8d31ed3a64_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_cgr
 aph.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
-> <./grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_icg
-raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
 >]
-<grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf, id=1154, 782.925pt x 3
-52.31625pt>
-File: grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf Graphic file (type
- pdf)
- <use grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf>
-Package pdftex.def Info: grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf
- used on input line 455.
-(pdftex.def)             Requested size: 350.0pt x 157.5033pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 467.
 
@@ -1799,34 +1819,28 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 467.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 467.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 467.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 467.
-
-
-Underfull \hbox (badness 7595) in paragraph at lines 474--475
-[]\T1/phv/m/n/10 Refer�ncias lista[]_[]vert[]_[]codigo[]::dado, Celula[]_[]priv
-[]::duracao, Celula[]_[]priv[]::executada, Celula[]_[]priv[]::id[]_[]externo,
- []
-
-
-<grafo_8h_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf, id=1155, 220.825pt x 1
-00.375pt>
-File: grafo_8h_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf Graphic file (type
+<grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf, id=1186, 782.925pt x 3
+42.27875pt>
+File: grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf Graphic file (type
  pdf)
- <use grafo_8h_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf>
-Package pdftex.def Info: grafo_8h_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf
- used on input line 486.
-(pdftex.def)             Requested size: 220.0pt x 100.00409pt.
+ <use grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf>
+Package pdftex.def Info: grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf
+ used on input line 487.
+(pdftex.def)             Requested size: 350.0pt x 153.016pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 499.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 499.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 499.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 499.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1847,300 +1861,345 @@ Underfull \hbox (badness 7595) in paragraph at lines 506--507
  []
 
 
-<grafo_8h_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf, id=1156, 387.4475pt x 
+<grafo_8h_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf, id=1187, 220.825pt x 1
+00.375pt>
+File: grafo_8h_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf Graphic file (type
+ pdf)
+ <use grafo_8h_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf>
+Package pdftex.def Info: grafo_8h_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf
+ used on input line 518.
+(pdftex.def)             Requested size: 220.0pt x 100.00409pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 521.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 521.
+ [20 <./grafo_8h_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf> <./grafo_8h_ac7
+0f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263_icg
+raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 531.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 531.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 531.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 531.
+
+
+Underfull \hbox (badness 7595) in paragraph at lines 538--539
+[]\T1/phv/m/n/10 Refer�ncias lista[]_[]vert[]_[]codigo[]::dado, Celula[]_[]priv
+[]::duracao, Celula[]_[]priv[]::executada, Celula[]_[]priv[]::id[]_[]externo,
+ []
+
+
+<grafo_8h_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf, id=1203, 387.4475pt x 
 111.41624pt>
 File: grafo_8h_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf
- used on input line 518.
+ used on input line 550.
 (pdftex.def)             Requested size: 350.0pt x 100.6494pt.
-
-Underfull \vbox (badness 1728) has occurred while \output is active []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 521.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 521.
- [20 <./grafo_8h_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf> <./grafo_8h_aad
-bd57b376954aeeb119120d5a4a196f_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8h_aadbd57b376954aeeb119120d5a4a196f_icg
-raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
->]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 532.
+(babel)             in language  on input line 564.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 532.
+(hyperref)                removing `math shift' on input line 564.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 532.
+(hyperref)                removing `\ast' on input line 564.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 532.
+(hyperref)                removing `math shift' on input line 564.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 532.
+(hyperref)                removing `math shift' on input line 564.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 532.
+(hyperref)                removing `\ast' on input line 564.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 532.
+(hyperref)                removing `math shift' on input line 564.
 
 
-<grafo_8h_a0e69707897c891bf77319d494cae8f26_cgraph.pdf, id=1172, 372.39125pt x 
+<grafo_8h_a0e69707897c891bf77319d494cae8f26_cgraph.pdf, id=1204, 372.39125pt x 
 157.58875pt>
 File: grafo_8h_a0e69707897c891bf77319d494cae8f26_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_a0e69707897c891bf77319d494cae8f26_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_a0e69707897c891bf77319d494cae8f26_cgraph.pdf 
-used on input line 551.
+used on input line 583.
 (pdftex.def)             Requested size: 350.0pt x 148.119pt.
 
-<grafo_8h_a0e69707897c891bf77319d494cae8f26_icgraph.pdf, id=1173, 386.44376pt x
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 586.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 586.
+ [21 <./grafo_8h_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf> <./grafo_8h_a1d
+d7cc6696ade339827db4d2019239fc_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8h_a1dd7cc6696ade339827db4d2019239fc_icg
+raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+>]
+<grafo_8h_a0e69707897c891bf77319d494cae8f26_icgraph.pdf, id=1220, 386.44376pt x
  138.5175pt>
 File: grafo_8h_a0e69707897c891bf77319d494cae8f26_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_a0e69707897c891bf77319d494cae8f26_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_a0e69707897c891bf77319d494cae8f26_icgraph.pdf
- used on input line 563.
+ used on input line 594.
 (pdftex.def)             Requested size: 350.0pt x 125.45508pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 606.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
+(hyperref)                removing `math shift' on input line 606.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 575.
+(hyperref)                removing `\ast' on input line 606.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
+(hyperref)                removing `math shift' on input line 606.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
+(hyperref)                removing `math shift' on input line 606.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 575.
+(hyperref)                removing `\ast' on input line 606.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
+(hyperref)                removing `math shift' on input line 606.
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 583.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 583.
-[21 <./grafo_8h_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf> <./grafo_8h_a0e6
-9707897c891bf77319d494cae8f26_cgraph.pdf
 
-pdfTeX warning: pdflatex (file ./grafo_8h_a0e69707897c891bf77319d494cae8f26_cgr
-aph.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
-e
-> <./grafo_8h_a0e69707897c891bf77319d494cae8f26_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8h_a0e69707897c891bf77319d494cae8f26_icg
-raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
->]
-<grafo_8h_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf, id=1194, 246.9225pt x 1
+<grafo_8h_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf, id=1221, 246.9225pt x 1
 00.375pt>
 File: grafo_8h_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf 
-used on input line 594.
+used on input line 625.
 (pdftex.def)             Requested size: 246.0pt x 99.9995pt.
 
-<grafo_8h_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf, id=1195, 475.7775pt x 
+<grafo_8h_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf, id=1222, 475.7775pt x 
 149.55875pt>
 File: grafo_8h_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf
- used on input line 606.
+ used on input line 636.
 (pdftex.def)             Requested size: 350.0pt x 110.02591pt.
+
+Underfull \vbox (badness 8075) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 639.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 639.
+ [22 <./grafo_8h_a0e69707897c891bf77319d494cae8f26_cgraph.pdf> <./grafo_8h_a0e6
+9707897c891bf77319d494cae8f26_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8h_a0e69707897c891bf77319d494cae8f26_icg
+raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> <./grafo_8h_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8h_a659b567cb7e165b526b6fe05a433452e_cgr
+aph.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 648.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 618.
+(hyperref)                removing `math shift' on input line 648.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 618.
+(hyperref)                removing `\ast' on input line 648.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 618.
+(hyperref)                removing `math shift' on input line 648.
 
 
-<grafo_8h_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf, id=1196, 365.365pt x 21
+<grafo_8h_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf, id=1244, 365.365pt x 21
 4.8025pt>
 File: grafo_8h_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf 
-used on input line 633.
+used on input line 663.
 (pdftex.def)             Requested size: 350.0pt x 205.77869pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 646.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 646.
- [22 <./grafo_8h_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf> <./grafo_8h_a659
-b567cb7e165b526b6fe05a433452e_icgraph.pdf
+(babel)             in language  on input line 676.
 
-pdfTeX warning: pdflatex (file ./grafo_8h_a659b567cb7e165b526b6fe05a433452e_icg
-raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
-> <./grafo_8h_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 676.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 676.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 676.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 676.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 676.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 676.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 676.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 676.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 676.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 683.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 683.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 683.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 683.
+
+
+<grafo_8h_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf, id=1245, 380.42125pt x
+ 157.58875pt>
+File: grafo_8h_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf Graphic file (type
+ pdf)
+ <use grafo_8h_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf>
+Package pdftex.def Info: grafo_8h_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf
+ used on input line 702.
+(pdftex.def)             Requested size: 350.0pt x 144.9906pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 705.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 705.
+ [23 <./grafo_8h_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf> <./grafo_8h_acb
+5b55f7d1508a1b35b76e43bc817623_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo_8h_acb5b55f7d1508a1b35b76e43bc817623_cgr
 aph.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
 >]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 646.
+(babel)             in language  on input line 714.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 646.
+(hyperref)                removing `math shift' on input line 714.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 646.
+(hyperref)                removing `\ast' on input line 714.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 646.
+(hyperref)                removing `math shift' on input line 714.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 646.
+(hyperref)                removing `math shift' on input line 714.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 646.
+(hyperref)                removing `\ast' on input line 714.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 646.
+(hyperref)                removing `math shift' on input line 714.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 646.
+(hyperref)                removing `math shift' on input line 714.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 646.
+(hyperref)                removing `\ast' on input line 714.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 646.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 653.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 653.
+(hyperref)                removing `math shift' on input line 714.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 653.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 653.
-
-
-<grafo_8h_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf, id=1217, 380.42125pt x
- 157.58875pt>
-File: grafo_8h_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf Graphic file (type
- pdf)
- <use grafo_8h_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf>
-Package pdftex.def Info: grafo_8h_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf
- used on input line 672.
-(pdftex.def)             Requested size: 350.0pt x 144.9906pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 684.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 684.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 684.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 684.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 684.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 684.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 684.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 684.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 684.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 684.
-
-
-<grafo_8h_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf, id=1218, 280.04625pt x 
+<grafo_8h_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf, id=1262, 280.04625pt x 
 214.8025pt>
 File: grafo_8h_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf 
-used on input line 703.
+used on input line 733.
 (pdftex.def)             Requested size: 279.0pt x 214.00877pt.
 
-<grafo_8h_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf, id=1219, 288.07625pt x
+<grafo_8h_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf, id=1263, 288.07625pt x
  138.5175pt>
 File: grafo_8h_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf
- used on input line 714.
+ used on input line 744.
 (pdftex.def)             Requested size: 287.0pt x 138.00565pt.
 
-Underfull \vbox (badness 4024) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 717.
+(babel)             in language  on input line 747.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 717.
- [23 <./grafo_8h_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf> <./grafo_8h_ad5
+(babel)             in language  on input line 747.
+ [24 <./grafo_8h_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf> <./grafo_8h_ad5
 07a38f9feef6cad69436ec774b535f_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo_8h_ad507a38f9feef6cad69436ec774b535f_cgr
@@ -2148,129 +2207,127 @@ aph.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
 >]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 725.
+(babel)             in language  on input line 755.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 725.
+(hyperref)                removing `math shift' on input line 755.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 725.
+(hyperref)                removing `\ast' on input line 755.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 725.
+(hyperref)                removing `math shift' on input line 755.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 740.
+(babel)             in language  on input line 770.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 740.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 740.
+(hyperref)                removing `math shift' on input line 770.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 740.
+(hyperref)                removing `\ast' on input line 770.
 
 
-<grafo_8h_a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf, id=1236, 381.425pt x 1
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 770.
+
+
+<grafo_8h_a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf, id=1279, 381.425pt x 1
 57.58875pt>
 File: grafo_8h_a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf
- used on input line 759.
+ used on input line 789.
 (pdftex.def)             Requested size: 350.0pt x 144.61067pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 772.
+(babel)             in language  on input line 802.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 772.
+(hyperref)                removing `math shift' on input line 802.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 772.
+(hyperref)                removing `\ast' on input line 802.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 772.
+(hyperref)                removing `math shift' on input line 802.
 
 
-<grafo_8h_ac16199e4256247b546b67d6d881be137_cgraph.pdf, id=1237, 383.4325pt x 1
+<grafo_8h_ac16199e4256247b546b67d6d881be137_cgraph.pdf, id=1280, 383.4325pt x 1
 57.58875pt>
 File: grafo_8h_ac16199e4256247b546b67d6d881be137_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_ac16199e4256247b546b67d6d881be137_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_ac16199e4256247b546b67d6d881be137_cgraph.pdf 
-used on input line 791.
+used on input line 821.
 (pdftex.def)             Requested size: 350.0pt x 143.85562pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 794.
+(babel)             in language  on input line 824.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 794.
+(babel)             in language  on input line 824.
 
-[24 <./grafo_8h_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf> <./grafo_8h_a31c
+[25 <./grafo_8h_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf> <./grafo_8h_a31c
 64875fe3134ba04439feb7d119cf3_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo_8h_a31c64875fe3134ba04439feb7d119cf3_icg
 raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >]
-<grafo_8h_ac16199e4256247b546b67d6d881be137_icgraph.pdf, id=1253, 519.9425pt x 
-100.375pt>
+<grafo_8h_ac16199e4256247b546b67d6d881be137_icgraph.pdf, id=1296, 519.9425pt x 
+138.5175pt>
 File: grafo_8h_ac16199e4256247b546b67d6d881be137_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_ac16199e4256247b546b67d6d881be137_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_ac16199e4256247b546b67d6d881be137_icgraph.pdf
- used on input line 802.
-(pdftex.def)             Requested size: 350.0pt x 67.56793pt.
+ used on input line 833.
+(pdftex.def)             Requested size: 350.0pt x 93.24374pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 814.
+(babel)             in language  on input line 845.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 814.
+(hyperref)                removing `math shift' on input line 845.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 814.
+(hyperref)                removing `\ast' on input line 845.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 814.
+(hyperref)                removing `math shift' on input line 845.
 
 
-<grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf, id=1254, 501.875pt x 26
+<grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf, id=1297, 501.875pt x 26
 0.975pt>
 File: grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf 
-used on input line 833.
+used on input line 864.
 (pdftex.def)             Requested size: 350.0pt x 182.00827pt.
 
-<grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf, id=1255, 395.4775pt x 
-100.375pt>
+<grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf, id=1298, 395.4775pt x 
+138.5175pt>
 File: grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf Graphic file (type
  pdf)
  <use grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf>
 Package pdftex.def Info: grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf
- used on input line 844.
-(pdftex.def)             Requested size: 350.0pt x 88.83415pt.
-
-Underfull \vbox (badness 2856) has occurred while \output is active []
-
+ used on input line 876.
+(pdftex.def)             Requested size: 350.0pt x 122.59114pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 847.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 847.
- [25 <./grafo_8h_ac16199e4256247b546b67d6d881be137_cgraph.pdf> <./grafo_8h_ac16
-199e4256247b546b67d6d881be137_icgraph.pdf
+(babel)             in language  on input line 879.
+
+[26 <./grafo_8h_ac16199e4256247b546b67d6d881be137_cgraph.pdf> <./grafo_8h_ac161
+99e4256247b546b67d6d881be137_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo_8h_ac16199e4256247b546b67d6d881be137_icg
 raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
@@ -2282,35 +2339,35 @@ aph.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
 >]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 888.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 856.
+(hyperref)                removing `math shift' on input line 888.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 856.
+(hyperref)                removing `\ast' on input line 888.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 856.
+(hyperref)                removing `math shift' on input line 888.
 
 
-<grafo_8h_a14183876086781302e2d81ab2457dc4e_cgraph.pdf, id=1277, 398.48875pt x 
+<grafo_8h_a14183876086781302e2d81ab2457dc4e_cgraph.pdf, id=1319, 398.48875pt x 
 214.8025pt>
 File: grafo_8h_a14183876086781302e2d81ab2457dc4e_cgraph.pdf Graphic file (type 
 pdf)
  <use grafo_8h_a14183876086781302e2d81ab2457dc4e_cgraph.pdf>
 Package pdftex.def Info: grafo_8h_a14183876086781302e2d81ab2457dc4e_cgraph.pdf 
-used on input line 871.
+used on input line 903.
 (pdftex.def)             Requested size: 350.0pt x 188.67279pt.
 )
 (./grafo__priv_8h.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
-<grafo__priv_8h__incl.pdf, id=1278, 217.81375pt x 178.6675pt>
+<grafo__priv_8h__incl.pdf, id=1320, 217.81375pt x 178.6675pt>
 File: grafo__priv_8h__incl.pdf Graphic file (type pdf)
 
 <use grafo__priv_8h__incl.pdf>
@@ -2323,13 +2380,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 11.
- [26 <./grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf> <./grafo_8h_a14
+ [27 <./grafo_8h_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf> <./grafo_8h_a14
 183876086781302e2d81ab2457dc4e_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo_8h_a14183876086781302e2d81ab2457dc4e_cgr
 aph.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
->] <grafo__priv_8h__dep__incl.pdf, id=1294, 230.8625pt x 178.6675pt>
+>] <grafo__priv_8h__dep__incl.pdf, id=1336, 230.8625pt x 178.6675pt>
 File: grafo__priv_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use grafo__priv_8h__dep__incl.pdf>
@@ -2339,7 +2396,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 53.
- [27 <./grafo__priv_8h__incl.pdf> <./grafo__priv_8h__dep__incl.pdf
+ [28 <./grafo__priv_8h__incl.pdf> <./grafo__priv_8h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./grafo__priv_8h__dep__incl.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -2376,7 +2433,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 88.
 
 
-<grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf, id=1340, 261.9787
+<grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf, id=1383, 261.9787
 4pt x 100.375pt>
 File: grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf Graphic file 
 (type pdf)
@@ -2386,15 +2443,15 @@ Package pdftex.def Info: grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_cgrap
 h.pdf used on input line 107.
 (pdftex.def)             Requested size: 261.0pt x 100.00255pt.
 
-<grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf, id=1341, 639.388
-75pt x 151.56625pt>
+<grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf, id=1384, 639.388
+75pt x 176.66pt>
 File: grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf Graphic file
  (type pdf)
 
 <use grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf>
 Package pdftex.def Info: grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_icgra
 ph.pdf used on input line 119.
-(pdftex.def)             Requested size: 350.0pt x 82.96852pt.
+(pdftex.def)             Requested size: 350.0pt x 96.70503pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 131.
 
@@ -2426,14 +2483,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 138.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 138.
-[28 <./grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf> <./grafo__p
+[29 <./grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf> <./grafo__p
 riv_8h_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo__priv_8h_aa7c7803e91592a28e4c0a85112b53f
 b8_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
 >]
-<grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf, id=1362, 378.4137
+<grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf, id=1405, 378.4137
 6pt x 157.58875pt>
 File: grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf Graphic file 
 (type pdf)
@@ -2443,62 +2500,62 @@ Package pdftex.def Info: grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_cgrap
 h.pdf used on input line 150.
 (pdftex.def)             Requested size: 350.0pt x 145.75768pt.
 
-<grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf, id=1363, 446.668
+<grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf, id=1406, 446.668
 75pt x 100.375pt>
 File: grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf Graphic file
  (type pdf)
 
 <use grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf>
 Package pdftex.def Info: grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_icgra
-ph.pdf used on input line 162.
+ph.pdf used on input line 161.
 (pdftex.def)             Requested size: 350.0pt x 78.65363pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 174.
+(hyperref)                removing `math shift' on input line 173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 174.
+(hyperref)                removing `\ast' on input line 173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 174.
+(hyperref)                removing `math shift' on input line 173.
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 181--182
+Underfull \hbox (badness 1210) in paragraph at lines 180--181
 []\T1/phv/m/n/10 Refer�ncias achar[]_[]id(), lista[]_[]origem[]::destino, exist
 e[]_[]origem(), existe[]_[]vert(), lista[]_[]vert[]::id, lista[]_[]origem[]::ne
 xt,
  []
 
 
-<grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pdf, id=1364, 389.455p
+<grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pdf, id=1407, 389.455p
 t x 157.58875pt>
 File: grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pdf Graphic file 
 (type pdf)
 
 <use grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pdf>
 Package pdftex.def Info: grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgrap
-h.pdf used on input line 193.
+h.pdf used on input line 192.
 (pdftex.def)             Requested size: 350.0pt x 141.62897pt.
 
-<grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf, id=1365, 522.953
-75pt x 100.375pt>
+<grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf, id=1408, 522.953
+75pt x 138.5175pt>
 File: grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf Graphic file
  (type pdf)
 
 <use grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf>
 Package pdftex.def Info: grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgra
 ph.pdf used on input line 204.
-(pdftex.def)             Requested size: 350.0pt x 67.1789pt.
+(pdftex.def)             Requested size: 350.0pt x 92.7069pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 207.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 207.
- [29 <./grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf> <./grafo__
+ [30 <./grafo__priv_8h_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf> <./grafo__
 priv_8h_adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo__priv_8h_adc1a8c08d13a78eda202bc49275712
@@ -2512,151 +2569,171 @@ le page
 >]) (./grafo_8cpp.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- <grafo_8cpp__incl.pdf, id=1386, 531.9875pt x 212.795pt>
+ <grafo_8cpp__incl.pdf, id=1429, 455.7025pt x 212.795pt>
 File: grafo_8cpp__incl.pdf Graphic file (type pdf)
 
 <use grafo_8cpp__incl.pdf>
 Package pdftex.def Info: grafo_8cpp__incl.pdf used on input line 14.
-(pdftex.def)             Requested size: 350.0pt x 140.00352pt.
+(pdftex.def)             Requested size: 350.0pt x 163.44028pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 53.
- [30 <./grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf> <./grafo_
+(babel)             in language  on input line 45.
+ [31 <./grafo__priv_8h_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf> <./grafo_
 8cpp__incl.pdf
 
 pdfTeX warning: pdflatex (file ./grafo_8cpp__incl.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 82.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 97.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 95.
+(hyperref)                removing `math shift' on input line 97.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 95.
+(hyperref)                removing `\ast' on input line 97.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 95.
+(hyperref)                removing `math shift' on input line 97.
 
 
-<grafo_8cpp_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf, id=1477, 527.9725pt 
+<grafo_8cpp_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf, id=1520, 527.9725pt 
 x 222.8325pt>
 File: grafo_8cpp_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a90390d2135067928e2c69cd964c9bec5_icgraph.p
-df used on input line 114.
+df used on input line 116.
 (pdftex.def)             Requested size: 350.0pt x 147.71593pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `math shift' on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 126.
+(hyperref)                removing `\ast' on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `math shift' on input line 128.
 
-
-<grafo_8cpp_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf, id=1478, 621.32124pt
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 140.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 140.
+[32 <./grafo_8cpp_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf>]
+<grafo_8cpp_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf, id=1549, 621.32124pt
  x 291.0875pt>
 File: grafo_8cpp_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_ac428ee7436d16b5251b093aa79183fda_icgraph.p
-df used on input line 146.
+df used on input line 148.
 (pdftex.def)             Requested size: 350.0pt x 163.97171pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 165.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 165.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 165.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 165.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 165.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 165.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 165.
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 180.
 
-[31 <./grafo_8cpp_a90390d2135067928e2c69cd964c9bec5_icgraph.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 180.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 157.
+(hyperref)                removing `\ast' on input line 180.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 157.
+(hyperref)                removing `math shift' on input line 180.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 157.
-
-
-<grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf, id=1505, 590.205pt x 
+<grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf, id=1550, 590.205pt x 
 252.945pt>
 File: grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pd
-f used on input line 177.
+f used on input line 199.
 (pdftex.def)             Requested size: 350.0pt x 150.00046pt.
 
-<grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf, id=1506, 228.855pt x
+<grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf, id=1551, 228.855pt x
  100.375pt>
 File: grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.p
-df used on input line 189.
+df used on input line 210.
 (pdftex.def)             Requested size: 228.0pt x 100.00409pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 200.
-pdfTeX warning (ext4): destination with the same identifier (name{grafo_8cpp_de
-sc}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.205 \hypertarget{grafo_8cpp_desc}{}
-                                     \subsection{Descrição}\label{grafo_8c...
+(babel)             in language  on input line 213.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 205.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 205.
-[32 <./grafo_8cpp_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf> <./grafo_8cpp_
+(babel)             in language  on input line 213.
+
+[33 <./grafo_8cpp_ac428ee7436d16b5251b093aa79183fda_icgraph.pdf> <./grafo_8cpp_
 a1bb7038cecd5aa54025b6c5931bc0205_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_c
 graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
-> <./grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_i
-cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
 >]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 221.
+pdfTeX warning (ext4): destination with the same identifier (name{grafo_8cpp_de
+sc}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.226 \hypertarget{grafo_8cpp_desc}{}
+                                     \subsection{Descrição}\label{grafo_8c...
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 226.
 pdfTeX warning (ext4): destination with the same identifier (name{grafo_8cpp_pa
 ra}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206 ... um grafo \hypertarget{grafo_8cpp_para}{}
+l.227 ... um grafo \hypertarget{grafo_8cpp_para}{}
                                                   \subsection{Parâmetros}\l...
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 206.
+(babel)             in language  on input line 227.
 
-Underfull \hbox (badness 10000) detected at line 209
+Underfull \hbox (badness 10000) detected at line 230
 [][][]
  []
 
@@ -2664,64 +2741,65 @@ pdfTeX warning (ext4): destination with the same identifier (name{grafo_8cpp_as
 sert}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 \hypertarget{grafo_8cpp_assert}{}
+l.233 \hypertarget{grafo_8cpp_assert}{}
                                        \subsection{Assertiva de saída}\labe...
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 212.
+(babel)             in language  on input line 233.
 
-<grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf, id=1527, 479.7925pt x
+<grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf, id=1567, 479.7925pt x
  171.64125pt>
 File: grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pd
-f used on input line 231.
+f used on input line 252.
 (pdftex.def)             Requested size: 350.0pt x 125.21062pt.
 
-<grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf, id=1528, 330.23375pt
+<grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf, id=1568, 330.23375pt
  x 100.375pt>
 File: grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_icgraph.p
-df used on input line 243.
+df used on input line 263.
 (pdftex.def)             Requested size: 329.0pt x 100.00409pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 254.
+(babel)             in language  on input line 266.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 266.
+
+[34 <./grafo_8cpp_a1bb7038cecd5aa54025b6c5931bc0205_icgraph.pdf> <./grafo_8cpp_
+a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_c
+graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 274.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 274.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 254.
+(hyperref)                removing `\ast' on input line 274.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 274.
 
 pdfTeX warning (ext4): destination with the same identifier (name{grafo_8cpp_de
 sc}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.259 \hypertarget{grafo_8cpp_desc}{}
+l.279 \hypertarget{grafo_8cpp_desc}{}
                                      \subsection{Descrição}\label{grafo_8c...
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 259.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 259.
-[33 <./grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_cgraph.pdf> <./grafo_8cpp_a
-3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf
+(babel)             in language  on input line 279.
 
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_i
-cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 259.
-
-Underfull \hbox (badness 10000) detected at line 267
+Underfull \hbox (badness 10000) detected at line 287
 [][][]
  []
 
@@ -2729,248 +2807,230 @@ pdfTeX warning (ext4): destination with the same identifier (name{grafo_8cpp_as
 sert}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.270 \hypertarget{grafo_8cpp_assert}{}
+l.290 \hypertarget{grafo_8cpp_assert}{}
                                        \subsection{Assertiva de saída}\labe...
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 270.
+(babel)             in language  on input line 290.
+
+<grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.pdf, id=1586, 615.29875pt 
+x 269.005pt>
+File: grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.pdf Graphic file (typ
+e pdf)
+ <use grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.pdf>
+Package pdftex.def Info: grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.pd
+f used on input line 306.
+(pdftex.def)             Requested size: 350.0pt x 153.01837pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 287.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 287.
+(babel)             in language  on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 287.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 287.
+(hyperref)                removing `\ast' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 287.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 287.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 287.
+(hyperref)                removing `\ast' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 287.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 287.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 287.
+(hyperref)                removing `\ast' on input line 319.
 
 
-<grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b_icgraph.pdf, id=1545, 213.79875pt
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 319.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 326.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 326.
+[35 <./grafo_8cpp_a3e61bf2ada0f9af7e2e9883241496606_icgraph.pdf> <./grafo_8cpp_
+af4f0fbcdd746c0f494e9601a83ddc9fe_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_af4f0fbcdd746c0f494e9601a83ddc9fe_c
+graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
+<grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b_icgraph.pdf, id=1603, 213.79875pt
  x 100.375pt>
 File: grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b_icgraph.p
-df used on input line 306.
+df used on input line 338.
 (pdftex.def)             Requested size: 213.0pt x 99.9995pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 318.
+(babel)             in language  on input line 350.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 318.
+(hyperref)                removing `math shift' on input line 350.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 318.
+(hyperref)                removing `\ast' on input line 350.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 318.
+(hyperref)                removing `math shift' on input line 350.
 
 
-<grafo_8cpp_a79154a07716d283ad68106cf54beaf07_cgraph.pdf, id=1546, 264.99pt x 1
+<grafo_8cpp_a79154a07716d283ad68106cf54beaf07_cgraph.pdf, id=1604, 264.99pt x 1
 00.375pt>
 File: grafo_8cpp_a79154a07716d283ad68106cf54beaf07_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_a79154a07716d283ad68106cf54beaf07_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a79154a07716d283ad68106cf54beaf07_cgraph.pd
-f used on input line 337.
+f used on input line 369.
 (pdftex.def)             Requested size: 264.0pt x 100.00716pt.
 
-Underfull \vbox (badness 4144) has occurred while \output is active []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 340.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 340.
- [34 <./grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b_icgraph.pdf>]
-<grafo_8cpp_a79154a07716d283ad68106cf54beaf07_icgraph.pdf, id=1557, 381.425pt x
+<grafo_8cpp_a79154a07716d283ad68106cf54beaf07_icgraph.pdf, id=1605, 381.425pt x
  100.375pt>
 File: grafo_8cpp_a79154a07716d283ad68106cf54beaf07_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a79154a07716d283ad68106cf54beaf07_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a79154a07716d283ad68106cf54beaf07_icgraph.p
-df used on input line 348.
+df used on input line 380.
 (pdftex.def)             Requested size: 350.0pt x 92.1087pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 359.
+(babel)             in language  on input line 391.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 359.
+(hyperref)                removing `math shift' on input line 391.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 359.
+(hyperref)                removing `\ast' on input line 391.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 359.
+(hyperref)                removing `math shift' on input line 391.
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 402.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 402.
+[36 <./grafo_8cpp_a8081c2a1fc44913609de1a49fb491c3b_icgraph.pdf> <./grafo_8cpp_
+a79154a07716d283ad68106cf54beaf07_cgraph.pdf
 
-<grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf, id=1558, 240.9pt x 17
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a79154a07716d283ad68106cf54beaf07_c
+graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./grafo_8cpp_a79154a07716d283ad68106cf54beaf07_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a79154a07716d283ad68106cf54beaf07_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf, id=1626, 240.9pt x 17
 6.66pt>
 File: grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pd
-f used on input line 374.
+f used on input line 406.
 (pdftex.def)             Requested size: 240.0pt x 176.00452pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 387.
+(babel)             in language  on input line 419.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 387.
+(hyperref)                removing `math shift' on input line 419.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 387.
+(hyperref)                removing `\ast' on input line 419.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 387.
+(hyperref)                removing `math shift' on input line 419.
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
-[35 <./grafo_8cpp_a79154a07716d283ad68106cf54beaf07_cgraph.pdf> <./grafo_8cpp_a
-79154a07716d283ad68106cf54beaf07_icgraph.pdf
 
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a79154a07716d283ad68106cf54beaf07_i
-cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
-> <./grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7_c
-graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
->]
-<grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf, id=1580, 258.9675pt x
+<grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf, id=1627, 258.9675pt x
  100.375pt>
 File: grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pd
-f used on input line 406.
+f used on input line 438.
 (pdftex.def)             Requested size: 258.0pt x 100.01021pt.
 
-<grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf, id=1581, 634.37pt x 
-176.66pt>
+<grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf, id=1628, 634.37pt x 
+214.8025pt>
 File: grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.p
-df used on input line 418.
-(pdftex.def)             Requested size: 350.0pt x 97.4706pt.
+df used on input line 450.
+(pdftex.def)             Requested size: 350.0pt x 118.51538pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 430.
+(hyperref)                removing `math shift' on input line 462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 430.
+(hyperref)                removing `\ast' on input line 462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 430.
+(hyperref)                removing `math shift' on input line 462.
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 469.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 469.
+[37 <./grafo_8cpp_a46f8363c4da6edf056e5fffba46e1bc7_cgraph.pdf> <./grafo_8cpp_a
+56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf
 
-<grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf, id=1582, 261.97874pt 
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_c
+graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf, id=1649, 261.97874pt 
 x 100.375pt>
 File: grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pd
-f used on input line 449.
+f used on input line 481.
 (pdftex.def)             Requested size: 261.0pt x 100.00255pt.
 
-<grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf, id=1583, 639.38875pt
- x 151.56625pt>
+<grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf, id=1650, 639.38875pt
+ x 176.66pt>
 File: grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.p
-df used on input line 461.
-(pdftex.def)             Requested size: 350.0pt x 82.96852pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 473.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 473.
-
-[36 <./grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_cgraph.pdf> <./grafo_8cpp_a
-56edc294bdf9e834989d9c8d31ed3a64_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a56edc294bdf9e834989d9c8d31ed3a64_i
-cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
-> <./grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_c
-graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
-> <./grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_i
-cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 473.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 473.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 473.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 473.
-
-
-<grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf, id=1609, 782.925pt x
- 352.31625pt>
-File: grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf Graphic file (ty
-pe pdf)
- <use grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf>
-Package pdftex.def Info: grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.p
 df used on input line 493.
-(pdftex.def)             Requested size: 350.0pt x 157.5033pt.
+(pdftex.def)             Requested size: 350.0pt x 96.70503pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 505.
 
@@ -2987,34 +3047,45 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 505.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 505.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 505.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 505.
-
-
-Underfull \hbox (badness 7595) in paragraph at lines 512--513
-[]\T1/phv/m/n/10 Refer�ncias lista[]_[]vert[]_[]codigo[]::dado, Celula[]_[]priv
-[]::duracao, Celula[]_[]priv[]::executada, Celula[]_[]priv[]::id[]_[]externo,
- []
-
-
-<grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf, id=1610, 220.825pt x
- 100.375pt>
-File: grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf Graphic file (ty
+<grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf, id=1651, 782.925pt x
+ 342.27875pt>
+File: grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf Graphic file (ty
 pe pdf)
- <use grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf>
-Package pdftex.def Info: grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_icgraph.p
-df used on input line 524.
-(pdftex.def)             Requested size: 220.0pt x 100.00409pt.
+ <use grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf>
+Package pdftex.def Info: grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.p
+df used on input line 525.
+(pdftex.def)             Requested size: 350.0pt x 153.016pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 537.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 537.
+
+[38 <./grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_cgraph.pdf> <./grafo_8cpp_a
+a7c7803e91592a28e4c0a85112b53fb8_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_aa7c7803e91592a28e4c0a85112b53fb8_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <./grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 537.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 537.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 537.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 537.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -3035,654 +3106,688 @@ Underfull \hbox (badness 7595) in paragraph at lines 544--545
  []
 
 
-<grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf, id=1611, 387.4475pt 
+<grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf, id=1672, 220.825pt x
+ 100.375pt>
+File: grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf Graphic file (ty
+pe pdf)
+ <use grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf>
+Package pdftex.def Info: grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_icgraph.p
+df used on input line 556.
+(pdftex.def)             Requested size: 220.0pt x 100.00409pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 569.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 569.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 569.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 569.
+
+
+Underfull \hbox (badness 7595) in paragraph at lines 576--577
+[]\T1/phv/m/n/10 Refer�ncias lista[]_[]vert[]_[]codigo[]::dado, Celula[]_[]priv
+[]::duracao, Celula[]_[]priv[]::executada, Celula[]_[]priv[]::id[]_[]externo,
+ []
+
+
+<grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf, id=1673, 387.4475pt 
 x 111.41624pt>
 File: grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc_icgraph.p
-df used on input line 556.
+df used on input line 588.
 (pdftex.def)             Requested size: 350.0pt x 100.6494pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 559.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 559.
-
-[37 <./grafo_8cpp_ac70f5a4fd6ff7c6913f0ce99de099263_icgraph.pdf> <./grafo_8cpp_
-aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_i
-cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 602.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 570.
+(hyperref)                removing `math shift' on input line 602.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 570.
+(hyperref)                removing `\ast' on input line 602.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 570.
+(hyperref)                removing `math shift' on input line 602.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 570.
+(hyperref)                removing `math shift' on input line 602.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 570.
+(hyperref)                removing `\ast' on input line 602.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 570.
+(hyperref)                removing `math shift' on input line 602.
 
 
-<grafo_8cpp_a0e69707897c891bf77319d494cae8f26_cgraph.pdf, id=1628, 372.39125pt 
+<grafo_8cpp_a0e69707897c891bf77319d494cae8f26_cgraph.pdf, id=1674, 372.39125pt 
 x 157.58875pt>
 File: grafo_8cpp_a0e69707897c891bf77319d494cae8f26_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_a0e69707897c891bf77319d494cae8f26_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a0e69707897c891bf77319d494cae8f26_cgraph.pd
-f used on input line 589.
+f used on input line 621.
 (pdftex.def)             Requested size: 350.0pt x 148.119pt.
 
-<grafo_8cpp_a0e69707897c891bf77319d494cae8f26_icgraph.pdf, id=1629, 386.44376pt
+Underfull \vbox (badness 3209) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 624.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 624.
+ [39 <./grafo_8cpp_aadbd57b376954aeeb119120d5a4a196f_icgraph.pdf> <./grafo_8cpp
+_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<grafo_8cpp_a0e69707897c891bf77319d494cae8f26_icgraph.pdf, id=1691, 386.44376pt
  x 138.5175pt>
 File: grafo_8cpp_a0e69707897c891bf77319d494cae8f26_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a0e69707897c891bf77319d494cae8f26_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a0e69707897c891bf77319d494cae8f26_icgraph.p
-df used on input line 601.
+df used on input line 632.
 (pdftex.def)             Requested size: 350.0pt x 125.45508pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 613.
+(babel)             in language  on input line 644.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 613.
+(hyperref)                removing `math shift' on input line 644.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 613.
+(hyperref)                removing `\ast' on input line 644.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 613.
+(hyperref)                removing `math shift' on input line 644.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 613.
+(hyperref)                removing `math shift' on input line 644.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 613.
+(hyperref)                removing `\ast' on input line 644.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 613.
+(hyperref)                removing `math shift' on input line 644.
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 621.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 621.
-[38 <./grafo_8cpp_a1dd7cc6696ade339827db4d2019239fc_icgraph.pdf> <./grafo_8cpp_
-a0e69707897c891bf77319d494cae8f26_cgraph.pdf
 
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a0e69707897c891bf77319d494cae8f26_c
-graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
-> <./grafo_8cpp_a0e69707897c891bf77319d494cae8f26_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a0e69707897c891bf77319d494cae8f26_i
-cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->]
-<grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf, id=1650, 378.41376pt 
+<grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf, id=1692, 378.41376pt 
 x 157.58875pt>
 File: grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_cgraph.pd
-f used on input line 632.
+f used on input line 663.
 (pdftex.def)             Requested size: 350.0pt x 145.75768pt.
 
-<grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf, id=1651, 446.66875pt
+<grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf, id=1693, 446.66875pt
  x 100.375pt>
 File: grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_icgraph.p
-df used on input line 644.
+df used on input line 674.
 (pdftex.def)             Requested size: 350.0pt x 78.65363pt.
+
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 656.
+(babel)             in language  on input line 677.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 677.
+ [40 <./grafo_8cpp_a0e69707897c891bf77319d494cae8f26_cgraph.pdf> <./grafo_8cpp_
+a0e69707897c891bf77319d494cae8f26_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a0e69707897c891bf77319d494cae8f26_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <./grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_c
+graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 656.
+(hyperref)                removing `math shift' on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 656.
+(hyperref)                removing `\ast' on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 656.
+(hyperref)                removing `math shift' on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 656.
+(hyperref)                removing `math shift' on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 656.
+(hyperref)                removing `\ast' on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 656.
+(hyperref)                removing `math shift' on input line 686.
 
 
-<grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf, id=1652, 246.9225pt x
+<grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf, id=1714, 246.9225pt x
  100.375pt>
 File: grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_cgraph.pd
-f used on input line 675.
+f used on input line 705.
 (pdftex.def)             Requested size: 246.0pt x 99.9995pt.
 
-<grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf, id=1653, 475.7775pt 
+<grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf, id=1715, 475.7775pt 
 x 149.55875pt>
 File: grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_icgraph.p
-df used on input line 687.
+df used on input line 716.
 (pdftex.def)             Requested size: 350.0pt x 110.02591pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 690.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 690.
- [39 <./grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_cgraph.pdf> <./grafo_8cpp_
-adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_i
-cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
-> <./grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_c
-graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
->]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 699.
+(babel)             in language  on input line 728.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 699.
+(hyperref)                removing `math shift' on input line 728.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 699.
+(hyperref)                removing `\ast' on input line 728.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 699.
+(hyperref)                removing `math shift' on input line 728.
 
 
-<grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf, id=1674, 365.365pt x 
+<grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf, id=1716, 365.365pt x 
 214.8025pt>
 File: grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pd
-f used on input line 714.
+f used on input line 743.
 (pdftex.def)             Requested size: 350.0pt x 205.77869pt.
+
+Underfull \vbox (badness 2181) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 725.
+(babel)             in language  on input line 746.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 746.
+ [41 <./grafo_8cpp_adc1a8c08d13a78eda202bc49275712f5_icgraph.pdf> <./grafo_8cpp
+_a659b567cb7e165b526b6fe05a433452e_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_c
+graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 754.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 725.
+(hyperref)                removing `math shift' on input line 754.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 725.
+(hyperref)                removing `\ast' on input line 754.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 725.
+(hyperref)                removing `math shift' on input line 754.
 
 
-<grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf, id=1675, 380.42125pt
+<grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf, id=1738, 380.42125pt
  x 157.58875pt>
 File: grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef_icgraph.p
-df used on input line 744.
+df used on input line 773.
 (pdftex.def)             Requested size: 350.0pt x 144.9906pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 747.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 747.
- [40 <./grafo_8cpp_a659b567cb7e165b526b6fe05a433452e_icgraph.pdf> <./grafo_8cpp
-_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623_c
-graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
->]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 756.
+(babel)             in language  on input line 785.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 756.
+(hyperref)                removing `math shift' on input line 785.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 756.
+(hyperref)                removing `\ast' on input line 785.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 756.
+(hyperref)                removing `math shift' on input line 785.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 756.
+(hyperref)                removing `math shift' on input line 785.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 756.
+(hyperref)                removing `\ast' on input line 785.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 756.
+(hyperref)                removing `math shift' on input line 785.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 756.
+(hyperref)                removing `math shift' on input line 785.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 756.
+(hyperref)                removing `\ast' on input line 785.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 756.
+(hyperref)                removing `math shift' on input line 785.
 
 
-<grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf, id=1692, 280.04625pt 
+<grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf, id=1739, 280.04625pt 
 x 214.8025pt>
 File: grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_cgraph.pd
-f used on input line 775.
+f used on input line 804.
 (pdftex.def)             Requested size: 279.0pt x 214.00877pt.
 
-<grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf, id=1693, 288.07625pt
+Underfull \vbox (badness 1960) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 807.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 807.
+ [42 <./grafo_8cpp_acb5b55f7d1508a1b35b76e43bc817623_cgraph.pdf> <./grafo_8cpp_
+a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf, id=1755, 288.07625pt
  x 138.5175pt>
 File: grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_icgraph.p
-df used on input line 786.
+df used on input line 815.
 (pdftex.def)             Requested size: 287.0pt x 138.00565pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 826.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 826.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 826.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 826.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 789.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 789.
- [41 <./grafo_8cpp_a5bedfb800e326da354b0403421e0d1ef_icgraph.pdf> <./grafo_8cpp
-_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf
+(babel)             in language  on input line 841.
 
-pdfTeX warning: pdflatex (file ./grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_c
-graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
->]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 797.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 841.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 797.
+(hyperref)                removing `\ast' on input line 841.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 797.
+(hyperref)                removing `math shift' on input line 841.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 797.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 812.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 812.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 812.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 812.
-
-
-<grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf, id=1709, 381.425pt x
+<grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf, id=1756, 381.425pt x
  157.58875pt>
 File: grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3_icgraph.p
-df used on input line 831.
+df used on input line 860.
 (pdftex.def)             Requested size: 350.0pt x 144.61067pt.
+
+Underfull \vbox (badness 7256) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 844.
+(babel)             in language  on input line 863.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 863.
+ [43 <./grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_cgraph.pdf> <./grafo_8cpp_
+ad507a38f9feef6cad69436ec774b535f_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 873.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 844.
+(hyperref)                removing `math shift' on input line 873.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 844.
+(hyperref)                removing `\ast' on input line 873.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 844.
+(hyperref)                removing `math shift' on input line 873.
 
 
-<grafo_8cpp_ac16199e4256247b546b67d6d881be137_cgraph.pdf, id=1710, 383.4325pt x
+<grafo_8cpp_ac16199e4256247b546b67d6d881be137_cgraph.pdf, id=1772, 383.4325pt x
  157.58875pt>
 File: grafo_8cpp_ac16199e4256247b546b67d6d881be137_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_ac16199e4256247b546b67d6d881be137_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_ac16199e4256247b546b67d6d881be137_cgraph.pd
-f used on input line 863.
+f used on input line 892.
 (pdftex.def)             Requested size: 350.0pt x 143.85562pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 866.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 866.
 
-[42 <./grafo_8cpp_ad507a38f9feef6cad69436ec774b535f_icgraph.pdf> <./grafo_8cpp_
-a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3_i
-cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->]
-<grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph.pdf, id=1726, 519.9425pt 
-x 100.375pt>
+<grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph.pdf, id=1773, 519.9425pt 
+x 138.5175pt>
 File: grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph.p
-df used on input line 874.
-(pdftex.def)             Requested size: 350.0pt x 67.56793pt.
+df used on input line 904.
+(pdftex.def)             Requested size: 350.0pt x 93.24374pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 886.
+(babel)             in language  on input line 916.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 886.
+(hyperref)                removing `math shift' on input line 916.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 886.
+(hyperref)                removing `\ast' on input line 916.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 886.
+(hyperref)                removing `math shift' on input line 916.
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 893--894
+Underfull \hbox (badness 1210) in paragraph at lines 923--924
 []\T1/phv/m/n/10 Refer�ncias achar[]_[]id(), lista[]_[]origem[]::destino, exist
 e[]_[]origem(), existe[]_[]vert(), lista[]_[]vert[]::id, lista[]_[]origem[]::ne
 xt,
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 924.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 924.
+[44 <./grafo_8cpp_a31c64875fe3134ba04439feb7d119cf3_icgraph.pdf> <./grafo_8cpp_
+ac16199e4256247b546b67d6d881be137_cgraph.pdf
 
-<grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pdf, id=1727, 389.455pt x 
+pdfTeX warning: pdflatex (file ./grafo_8cpp_ac16199e4256247b546b67d6d881be137_c
+graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./grafo_8cpp_ac16199e4256247b546b67d6d881be137_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_ac16199e4256247b546b67d6d881be137_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pdf, id=1794, 389.455pt x 
 157.58875pt>
 File: grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pd
-f used on input line 905.
+f used on input line 935.
 (pdftex.def)             Requested size: 350.0pt x 141.62897pt.
 
-<grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf, id=1728, 522.95375pt
- x 100.375pt>
+<grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf, id=1795, 522.95375pt
+ x 138.5175pt>
 File: grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.p
-df used on input line 916.
-(pdftex.def)             Requested size: 350.0pt x 67.1789pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+df used on input line 947.
+(pdftex.def)             Requested size: 350.0pt x 92.7069pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 919.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 919.
- [43 <./grafo_8cpp_ac16199e4256247b546b67d6d881be137_cgraph.pdf> <./grafo_8cpp_
-ac16199e4256247b546b67d6d881be137_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_ac16199e4256247b546b67d6d881be137_i
-cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
-> <./grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_c
-graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
->]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 928.
+(babel)             in language  on input line 959.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 928.
+(hyperref)                removing `math shift' on input line 959.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 928.
+(hyperref)                removing `\ast' on input line 959.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 928.
+(hyperref)                removing `math shift' on input line 959.
 
 
-<grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf, id=1750, 501.875pt x 
+<grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf, id=1796, 501.875pt x 
 260.975pt>
 File: grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pd
-f used on input line 947.
+f used on input line 978.
 (pdftex.def)             Requested size: 350.0pt x 182.00827pt.
 
-<grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf, id=1751, 395.4775pt 
-x 100.375pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 981.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 981.
+ [45 <./grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_cgraph.pdf> <./grafo_8cpp_
+a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_i
+cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf, id=1813, 395.4775pt 
+x 138.5175pt>
 File: grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf Graphic file (ty
 pe pdf)
  <use grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.p
-df used on input line 958.
-(pdftex.def)             Requested size: 350.0pt x 88.83415pt.
+df used on input line 990.
+(pdftex.def)             Requested size: 350.0pt x 122.59114pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 970.
+(babel)             in language  on input line 1002.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 970.
+(hyperref)                removing `math shift' on input line 1002.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 970.
+(hyperref)                removing `\ast' on input line 1002.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 970.
+(hyperref)                removing `math shift' on input line 1002.
 
 
-<grafo_8cpp_a14183876086781302e2d81ab2457dc4e_cgraph.pdf, id=1752, 398.48875pt 
+<grafo_8cpp_a14183876086781302e2d81ab2457dc4e_cgraph.pdf, id=1814, 398.48875pt 
 x 214.8025pt>
 File: grafo_8cpp_a14183876086781302e2d81ab2457dc4e_cgraph.pdf Graphic file (typ
 e pdf)
  <use grafo_8cpp_a14183876086781302e2d81ab2457dc4e_cgraph.pdf>
 Package pdftex.def Info: grafo_8cpp_a14183876086781302e2d81ab2457dc4e_cgraph.pd
-f used on input line 985.
+f used on input line 1017.
 (pdftex.def)             Requested size: 350.0pt x 188.67279pt.
+)
+(./interface_8cpp.tex
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 988.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 988.
-
-[44 <./grafo_8cpp_a2f6600bf1f6ecc3c960e244f3e7b5c8f_icgraph.pdf> <./grafo_8cpp_
-a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf
-
-pdfTeX warning: pdflatex (file ./grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_c
-graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
-> <./grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf
+(babel)             in language  on input line 1.
+ [46 <./grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_cgraph.pdf> <./grafo_8cpp_
+a2812c8a1cbeaab16d0aaa6da10ec4372_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./grafo_8cpp_a2812c8a1cbeaab16d0aaa6da10ec4372_i
 cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
->]) (./interface_8cpp.tex
+> <./grafo_8cpp_a14183876086781302e2d81ab2457dc4e_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./grafo_8cpp_a14183876086781302e2d81ab2457dc4e_c
+graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-
-<interface_8cpp__incl.pdf, id=1773, 438.63875pt x 212.795pt>
+ <interface_8cpp__incl.pdf, id=1835, 438.63875pt x 212.795pt>
 File: interface_8cpp__incl.pdf Graphic file (type pdf)
 
 <use interface_8cpp__incl.pdf>
 Package pdftex.def Info: interface_8cpp__incl.pdf used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 169.79787pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 37.
- [45 <./grafo_8cpp_a14183876086781302e2d81ab2457dc4e_cgraph.pdf> <./interface_8
-cpp__incl.pdf
-
-pdfTeX warning: pdflatex (file ./interface_8cpp__incl.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
->]
+(babel)             in language  on input line 45.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 44.
+(hyperref)                removing `math shift' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 44.
+(hyperref)                removing `\ast' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 44.
+(hyperref)                removing `math shift' on input line 59.
 
 
-<interface_8cpp_a45d07639c68b6754482304399deea404_icgraph.pdf, id=1814, 300.121
+<interface_8cpp_a45d07639c68b6754482304399deea404_icgraph.pdf, id=1852, 300.121
 25pt x 100.375pt>
 File: interface_8cpp_a45d07639c68b6754482304399deea404_icgraph.pdf Graphic file
  (type pdf)
 
 <use interface_8cpp_a45d07639c68b6754482304399deea404_icgraph.pdf>
 Package pdftex.def Info: interface_8cpp_a45d07639c68b6754482304399deea404_icgra
-ph.pdf used on input line 59.
+ph.pdf used on input line 74.
 (pdftex.def)             Requested size: 299.0pt x 100.00868pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 77.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 77.
+ [47 <./interface_8cpp__incl.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 70.
+(hyperref)                removing `math shift' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 70.
+(hyperref)                removing `\ast' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 70.
+(hyperref)                removing `math shift' on input line 85.
 
 
-<interface_8cpp_a24af973236c7577368e0b5003d26b173_icgraph.pdf, id=1815, 289.08p
+<interface_8cpp_a24af973236c7577368e0b5003d26b173_icgraph.pdf, id=1875, 289.08p
 t x 100.375pt>
 File: interface_8cpp_a24af973236c7577368e0b5003d26b173_icgraph.pdf Graphic file
  (type pdf)
 
 <use interface_8cpp_a24af973236c7577368e0b5003d26b173_icgraph.pdf>
 Package pdftex.def Info: interface_8cpp_a24af973236c7577368e0b5003d26b173_icgra
-ph.pdf used on input line 85.
+ph.pdf used on input line 100.
 (pdftex.def)             Requested size: 288.0pt x 100.00562pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 96.
+(babel)             in language  on input line 111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 96.
+(hyperref)                removing `math shift' on input line 111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 96.
+(hyperref)                removing `\ast' on input line 111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 96.
+(hyperref)                removing `math shift' on input line 111.
 
 
-<interface_8cpp_a82c53fa74aeeec1c1234672393299537_cgraph.pdf, id=1816, 417.56pt
+<interface_8cpp_a82c53fa74aeeec1c1234672393299537_cgraph.pdf, id=1876, 417.56pt
  x 100.375pt>
 File: interface_8cpp_a82c53fa74aeeec1c1234672393299537_cgraph.pdf Graphic file 
 (type pdf)
 
 <use interface_8cpp_a82c53fa74aeeec1c1234672393299537_cgraph.pdf>
 Package pdftex.def Info: interface_8cpp_a82c53fa74aeeec1c1234672393299537_cgrap
-h.pdf used on input line 115.
+h.pdf used on input line 130.
 (pdftex.def)             Requested size: 350.0pt x 84.1398pt.
 
-<interface_8cpp_a82c53fa74aeeec1c1234672393299537_icgraph.pdf, id=1817, 271.012
+<interface_8cpp_a82c53fa74aeeec1c1234672393299537_icgraph.pdf, id=1877, 271.012
 5pt x 100.375pt>
 File: interface_8cpp_a82c53fa74aeeec1c1234672393299537_icgraph.pdf Graphic file
  (type pdf)
 
 <use interface_8cpp_a82c53fa74aeeec1c1234672393299537_icgraph.pdf>
 Package pdftex.def Info: interface_8cpp_a82c53fa74aeeec1c1234672393299537_icgra
-ph.pdf used on input line 126.
+ph.pdf used on input line 141.
 (pdftex.def)             Requested size: 270.0pt x 100.00409pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
- [46 <./interface_8cpp_a45d07639c68b6754482304399deea404_icgraph.pdf> <./interf
+(babel)             in language  on input line 144.
+ [48 <./interface_8cpp_a45d07639c68b6754482304399deea404_icgraph.pdf> <./interf
 ace_8cpp_a24af973236c7577368e0b5003d26b173_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./interface_8cpp_a24af973236c7577368e0b5003d26b1
@@ -3695,70 +3800,70 @@ pdfTeX warning: pdflatex (file ./interface_8cpp_a82c53fa74aeeec1c12346723932995
 le page
 >]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 137.
+(hyperref)                removing `math shift' on input line 152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 137.
+(hyperref)                removing `\ast' on input line 152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 137.
+(hyperref)                removing `math shift' on input line 152.
 
 
-<interface_8cpp_a730338c13fb573bc4fc2d050488b66ec_cgraph.pdf, id=1838, 526.9687
+<interface_8cpp_a730338c13fb573bc4fc2d050488b66ec_cgraph.pdf, id=1898, 526.9687
 5pt x 195.73125pt>
 File: interface_8cpp_a730338c13fb573bc4fc2d050488b66ec_cgraph.pdf Graphic file 
 (type pdf)
 
 <use interface_8cpp_a730338c13fb573bc4fc2d050488b66ec_cgraph.pdf>
 Package pdftex.def Info: interface_8cpp_a730338c13fb573bc4fc2d050488b66ec_cgrap
-h.pdf used on input line 157.
+h.pdf used on input line 171.
 (pdftex.def)             Requested size: 350.0pt x 130.00731pt.
 
-<interface_8cpp_a730338c13fb573bc4fc2d050488b66ec_icgraph.pdf, id=1839, 273.02p
+<interface_8cpp_a730338c13fb573bc4fc2d050488b66ec_icgraph.pdf, id=1899, 273.02p
 t x 100.375pt>
 File: interface_8cpp_a730338c13fb573bc4fc2d050488b66ec_icgraph.pdf Graphic file
  (type pdf)
 
 <use interface_8cpp_a730338c13fb573bc4fc2d050488b66ec_icgraph.pdf>
 Package pdftex.def Info: interface_8cpp_a730338c13fb573bc4fc2d050488b66ec_icgra
-ph.pdf used on input line 168.
+ph.pdf used on input line 182.
 (pdftex.def)             Requested size: 272.0pt x 100.00562pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 193.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 179.
+(hyperref)                removing `math shift' on input line 193.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 179.
+(hyperref)                removing `\ast' on input line 193.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 179.
+(hyperref)                removing `math shift' on input line 193.
 
 
-<interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_cgraph.pdf, id=1840, 666.49pt
+<interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_cgraph.pdf, id=1900, 666.49pt
  x 260.975pt>
 File: interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_cgraph.pdf Graphic file 
 (type pdf)
 
 <use interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_cgraph.pdf>
 Package pdftex.def Info: interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_cgrap
-h.pdf used on input line 198.
+h.pdf used on input line 212.
 (pdftex.def)             Requested size: 350.0pt x 137.04976pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 201.
+(babel)             in language  on input line 215.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 201.
- [47 <./interface_8cpp_a82c53fa74aeeec1c1234672393299537_icgraph.pdf> <./interf
+(babel)             in language  on input line 215.
+ [49 <./interface_8cpp_a82c53fa74aeeec1c1234672393299537_icgraph.pdf> <./interf
 ace_8cpp_a730338c13fb573bc4fc2d050488b66ec_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./interface_8cpp_a730338c13fb573bc4fc2d050488b66
@@ -3770,58 +3875,58 @@ pdfTeX warning: pdflatex (file ./interface_8cpp_a730338c13fb573bc4fc2d050488b66
 ec_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
 >]
-<interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_icgraph.pdf, id=1861, 283.057
+<interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_icgraph.pdf, id=1921, 283.057
 5pt x 100.375pt>
 File: interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_icgraph.pdf Graphic file
  (type pdf)
 
 <use interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_icgraph.pdf>
 Package pdftex.def Info: interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_icgra
-ph.pdf used on input line 209.
+ph.pdf used on input line 223.
 (pdftex.def)             Requested size: 282.0pt x 100.00868pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 220.
+(hyperref)                removing `math shift' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 220.
+(hyperref)                removing `\ast' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 220.
+(hyperref)                removing `math shift' on input line 234.
 
 
-<interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_cgraph.pdf, id=1862, 301.125p
+<interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_cgraph.pdf, id=1922, 301.125p
 t x 111.41624pt>
 File: interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_cgraph.pdf Graphic file 
 (type pdf)
 
 <use interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_cgraph.pdf>
 Package pdftex.def Info: interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_cgrap
-h.pdf used on input line 239.
+h.pdf used on input line 253.
 (pdftex.def)             Requested size: 300.0pt x 111.00964pt.
 
-<interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_icgraph.pdf, id=1863, 264.99p
+<interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_icgraph.pdf, id=1923, 264.99p
 t x 111.41624pt>
 File: interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_icgraph.pdf Graphic file
  (type pdf)
 
 <use interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_icgraph.pdf>
 Package pdftex.def Info: interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_icgra
-ph.pdf used on input line 250.
+ph.pdf used on input line 264.
 (pdftex.def)             Requested size: 264.0pt x 111.00795pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 267.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 253.
- [48 <./interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_cgraph.pdf> <./interfa
+(babel)             in language  on input line 267.
+ [50 <./interface_8cpp_ae481ead3e27aae5737f68899a0d8d588_cgraph.pdf> <./interfa
 ce_8cpp_ae481ead3e27aae5737f68899a0d8d588_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./interface_8cpp_ae481ead3e27aae5737f68899a0d8d5
@@ -3834,57 +3939,57 @@ pdfTeX warning: pdflatex (file ./interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f
 le page
 >]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 275.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 261.
+(hyperref)                removing `math shift' on input line 275.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 261.
+(hyperref)                removing `\ast' on input line 275.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 261.
+(hyperref)                removing `math shift' on input line 275.
 
 
-<interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_cgraph.pdf, id=1884, 313.17pt
+<interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_cgraph.pdf, id=1945, 313.17pt
  x 111.41624pt>
 File: interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_cgraph.pdf Graphic file 
 (type pdf)
 
 <use interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_cgraph.pdf>
 Package pdftex.def Info: interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_cgrap
-h.pdf used on input line 280.
+h.pdf used on input line 294.
 (pdftex.def)             Requested size: 312.0pt x 111.00455pt.
 
-<interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_icgraph.pdf, id=1885, 257.963
+<interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_icgraph.pdf, id=1946, 257.963
 75pt x 111.41624pt>
 File: interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_icgraph.pdf Graphic file
  (type pdf)
 
 <use interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_icgraph.pdf>
 Package pdftex.def Info: interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_icgra
-ph.pdf used on input line 291.
+ph.pdf used on input line 305.
 (pdftex.def)             Requested size: 257.0pt x 111.00964pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 316.
 
-<interface_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=1886, 799.9887
+<interface_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=1947, 799.9887
 5pt x 485.815pt>
 File: interface_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf Graphic file 
 (type pdf)
 
 <use interface_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>
 Package pdftex.def Info: interface_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgrap
-h.pdf used on input line 318.
+h.pdf used on input line 331.
 (pdftex.def)             Requested size: 350.0pt x 212.55095pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 334.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 321.
- [49 <./interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_icgraph.pdf> <./interf
+(babel)             in language  on input line 334.
+ [51 <./interface_8cpp_a79781e0e904f80b7525c4ee52c5e4f86_icgraph.pdf> <./interf
 ace_8cpp_a9b0c3c81c4a66fd4591e720a3c2b9015_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./interface_8cpp_a9b0c3c81c4a66fd4591e720a3c2b90
@@ -3900,7 +4005,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 161.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 161.
- [50 <./interface_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>]
+ [52 <./interface_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 165.
 
@@ -3920,7 +4025,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 116.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 116.
-[51
+[53
 
 
 
@@ -3929,19 +4034,19 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 241.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 241.
- [52]
+ [54]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 329.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 321.
- [53])
+(babel)             in language  on input line 329.
+ [55])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
  (./refman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: FD60BC35B1803B6E07AF54CA461AA336;38490.
+(rerunfilecheck)             Checksum: 620B35299AA3A7CC854495F95C6FE53F;40309.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3949,10 +4054,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 14389 strings out of 495025
- 226197 string characters out of 6181515
- 300773 words of memory out of 5000000
- 16927 multiletter control sequences out of 15000+600000
+ 14416 strings out of 495025
+ 227240 string characters out of 6181515
+ 302484 words of memory out of 5000000
+ 16942 multiletter control sequences out of 15000+600000
  67831 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,16n,43p,1929b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3967,10 +4072,10 @@ hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb><
 texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (59 pages, 385862 bytes).
+Output written on refman.pdf (63 pages, 397201 bytes).
 PDF statistics:
- 2240 PDF objects out of 2487 (max. 8388607)
- 1964 compressed objects within 20 object streams
- 320 named destinations out of 1000 (max. 500000)
- 1597 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2309 PDF objects out of 2487 (max. 8388607)
+ 2024 compressed objects within 21 object streams
+ 330 named destinations out of 1000 (max. 500000)
+ 1639 words of extra memory for PDF output out of 10000 (max. 10000000)
 

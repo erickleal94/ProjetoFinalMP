@@ -1,3 +1,5 @@
+#define NCURSES_CONST const
+
 #include <curses.h>
 #include <stdio.h>
 #include <stdlib.h>
