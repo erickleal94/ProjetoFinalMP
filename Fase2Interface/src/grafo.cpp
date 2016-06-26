@@ -523,7 +523,6 @@ int num_arestas(const grafo_priv_t *meu_grafo) {
 
 int menor_caminho(const grafo_priv_t *meu_grafo, int **dist) {
 	
-	int id_ini = achar_id(meu_grafo, -1);
 	int maior = maior_id(meu_grafo);
 	int n = num_vert(meu_grafo);
 
@@ -531,24 +530,37 @@ int menor_caminho(const grafo_priv_t *meu_grafo, int **dist) {
 	
 	//vertices existentes variam de 0 ate maior,
 	//possivelmente com buracos, ou seja, valores sem nada
-	*dist = (int *) malloc(sizeof(int) * (maior + 1));
+	*dist = (int *) malloc(sizeof(int) * (maior + 2));
+// 	printf("%p %p %d", dist, *dist, (*dist)[0]);
 	
 	int i;
 	lista_vert_t *iterator1;
 	lista_aresta_t *iterator2;
 	
-	for (i = 0; i <= maior; i++) {
+	for (i = 0; i <= maior + 1; i++) {
 		(*dist)[i] = inf; //infinito
 	}
-	(*dist)[id_ini] = 0;
 	
 	//Bellman Ford's Algorithm
 	for (i = 1; i <= n - 1; i++) {
 		for (iterator1 = meu_grafo->vert; iterator1 != NULL; iterator1 = iterator1->next) {
+			Celula_priv_t *celula = achar_celula(meu_grafo, iterator1->id_externo);
+			
+			
+			if (celula->executada == 1) {
+				(*dist)[iterator1->id] = 0;
+			}
+			
 			if ((*dist)[iterator1->id] < 2e9) {//se a distancia nao for infinito
 				for (iterator2 = iterator1->sucessores; iterator2 != NULL; iterator2 = iterator2->next) {
+					
+// 					printf("%d\n\n", iterator2->peso);
+					
+// 					printf("%d %d\n", iterator1->id, iterator2->destino->id);
+// 					printf("%d %d\n", celula->id_externo, iterator2->destino->id_externo);
+// 					printf("%d %d %d\n", (*dist)[iterator1->id], iterator2->peso, (*dist)[iterator2->destino->id]);
 					if ((*dist)[iterator1->id] + iterator2->peso < (*dist)[iterator2->destino->id]) {
-						Celula_priv_t *celula = achar_celula(meu_grafo, iterator2->destino->id);
+						celula = achar_celula(meu_grafo, iterator2->destino->id_externo);
 						
 						int min = (*dist)[iterator1->id] < celula->ini_min ? (*dist)[iterator1->id] : celula->ini_min;
 						
@@ -726,7 +738,7 @@ int tempo_minimo(const grafo_priv_t *meu_grafo, int id_fim) {
 	if (dist[id_fim] >= inf) {
 		return -1;
 	} else {
-		int dist_fim = dist[id_fim];
+		int dist_fim = -dist[id_fim];
 		free(dist);
 		return dist_fim;
 	}
@@ -743,9 +755,9 @@ void ja_feito(const grafo_priv_t *meu_grafo, int d) {
 	
 	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = iterator->next) {
 		int id = iterator->id;
-		if (dist[id] < inf) {
+		if (dist[id] >= inf) {
 			//nao se alcanca nunca
-		} else if (dist[id] <= d) {
+		} else if (-dist[id] <= d) {
 			move(3,j);
 			attron(COLOR_PAIR(3));
 			printw("Tarefas ja concluidas: ");
@@ -788,7 +800,6 @@ grafo_priv_t* criaGrafoArq(char *nomeArq){
 		inserir_vert(g, &celula);
 		for (i = 0; i < celula.pre_req; i++) {
 			inserir_aresta(g, celula.reqs[i], &celula, celula.duracao);
-					
 		}
 		if (celula.pre_req == 0) {
 			inserir_aresta(g, -1, &celula, celula.duracao);

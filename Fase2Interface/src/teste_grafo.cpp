@@ -399,7 +399,13 @@ TEST(criaGrafoArqTest, cria_grafo) {
 	
 	grafo_priv_t *meu_grafo = criaGrafoArq("entrada.txt");
 	
-	//EXPECT_EQ();
+	EXPECT_EQ(2, num_vert(meu_grafo));
+	EXPECT_EQ(TRUE_T, existe_vert(meu_grafo, -1));
+	EXPECT_EQ(TRUE_T, existe_vert(meu_grafo, 100));
+	EXPECT_EQ(TRUE_T, existe_aresta(meu_grafo, -1, 100));
+	
+	
+	EXPECT_EQ(5, tempo_minimo(meu_grafo, achar_id(meu_grafo, 100)));
 	
 	meu_grafo = deletar_grafo(meu_grafo);
 }

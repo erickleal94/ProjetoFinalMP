@@ -21,7 +21,7 @@ typedef struct lista_vert_codigo {
 
 typedef struct lista_aresta {
 	struct lista_vert *destino;
-	double peso;
+	int peso;
 	struct lista_aresta *next;
 } lista_aresta_t;
 
