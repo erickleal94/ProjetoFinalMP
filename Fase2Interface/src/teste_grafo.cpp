@@ -399,7 +399,7 @@ TEST(criaGrafoArqTest, cria_grafo) {
 	
 	grafo_priv_t *meu_grafo = criaGrafoArq("entrada.txt");
 	
-	EXPECT_EQ();
+	//EXPECT_EQ();
 	
 	meu_grafo = deletar_grafo(meu_grafo);
 }

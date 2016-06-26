@@ -8,7 +8,7 @@
 #include "grafo.h"
 
 /**
- * @struct Modulo interface
+ * @file Modulo interface
  * @details Este modulo contem a interface grafica que sera mostrada para o usuario do Gerenciador de Tarefas.
  * @details Cada funcao foi feita para apresentar uma determinada janela e executar uma diferente operacao sobre o gerenciador.
  * @details As funcoes possuem uma padronizacao em sua denominacao, sendo esse padrao dado por "interface_o_que_a_funcao_faz"
