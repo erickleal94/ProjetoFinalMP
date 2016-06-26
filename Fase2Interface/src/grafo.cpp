@@ -313,22 +313,22 @@ void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *cel
 		} else {
 #if DEBUG
 			fprintf(stderr, "ERROR: Peso invalido, ");
-			fprintf(stderr, "tentativa de inserir aresta <%d,%s,%lf> nao sucedida\n",
-				id_externo1, celula2->nome, -peso);
+			fprintf(stderr, "tentativa de inserir aresta <%d,%d,%d> nao sucedida\n",
+				id_externo1, celula2->id_externo, -peso);
 #endif
 		}
 	} else {
 		if (existe_vert(meu_grafo, id_externo1) == TRUE_T && existe_vert(meu_grafo, celula2->id_externo) == TRUE_T) {
 #if DEBUG
-			fprintf(stderr, "ERROR: Um dos vertices eh inexistente, ");
-			fprintf(stderr, "tentativa de inserir aresta <%s,%s,%lf> nao sucedida\n",
-				id_externo1, celula2->nome, -peso);
+			fprintf(stderr, "ERROR: Ja existe aresta entre esses vertices, ");
+			fprintf(stderr, "tentativa de inserir aresta <%d,%d,%d> nao sucedida\n",
+				id_externo1, celula2->id_externo, -peso);
 #endif
 		} else {
 #if DEBUG
-			fprintf(stderr, "ERROR: Ja existe aresta entre esses vertices, ");
-			fprintf(stderr, "tentativa de inserir aresta <%s,%s,%lf> nao sucedida\n",
-				id_externo1, celula2->nome, -peso);
+			fprintf(stderr, "ERROR: Um dos vertices eh inexistente, ");
+			fprintf(stderr, "tentativa de inserir aresta <%d,%d,%d> nao sucedida\n",
+				id_externo1, celula2->id_externo, -peso);
 #endif
 		}
 	}
@@ -789,6 +789,9 @@ grafo_priv_t* criaGrafoArq(char *nomeArq){
 		for (i = 0; i < celula.pre_req; i++) {
 			inserir_aresta(g, celula.reqs[i], &celula, celula.duracao);
 					
+		}
+		if (celula.pre_req == 0) {
+			inserir_aresta(g, -1, &celula, celula.duracao);
 		}
 	}
 	

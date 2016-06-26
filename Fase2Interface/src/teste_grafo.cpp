@@ -8,7 +8,7 @@ TEST(criar_grafoTest, criacao) {
 	grafo_priv_t *meu_grafo = criar_grafo();
 	
 	EXPECT_TRUE(meu_grafo != NULL);
-	EXPECT_EQ(0, num_vert(meu_grafo));
+	EXPECT_EQ(1, num_vert(meu_grafo));
 	EXPECT_EQ(0, num_arestas(meu_grafo));
 
 	meu_grafo = deletar_grafo(meu_grafo);
@@ -117,6 +117,10 @@ TEST(existe_arestaTest, arestas_existentes) {
 
 	inserir_vert(meu_grafo, nova1);
 	inserir_vert(meu_grafo, nova2);
+	inserir_vert(meu_grafo, nova3);
+	inserir_vert(meu_grafo, nova4);
+	inserir_vert(meu_grafo, nova5);
+
 
 	inserir_aresta(meu_grafo, 100, nova3, 1.0);
 	inserir_aresta(meu_grafo, 101, nova4, 2.0);
@@ -228,6 +232,9 @@ TEST(inserir_arestaTest, vertice_existente) {
 
 	inserir_vert(meu_grafo, nova1);
 	inserir_vert(meu_grafo, nova2);
+	inserir_vert(meu_grafo, nova3);
+	inserir_vert(meu_grafo, nova4);
+	inserir_vert(meu_grafo, nova5);
 
 	inserir_aresta(meu_grafo, 100, nova3, 1.0);
 	inserir_aresta(meu_grafo, 101, nova4, 2.0);
@@ -301,6 +308,9 @@ TEST(remover_verticeTest, vertice_existente_com_origem_e_arestas) {
 
 	inserir_vert(meu_grafo, nova1);
 	inserir_vert(meu_grafo, nova2);
+	inserir_vert(meu_grafo, nova3);
+	inserir_vert(meu_grafo, nova4);
+	inserir_vert(meu_grafo, nova5);
 
 	inserir_aresta(meu_grafo, 100, nova3, 1.0);
 	inserir_aresta(meu_grafo, 101, nova4, 2.0);
@@ -360,7 +370,10 @@ TEST(remover_arestaTest, aresta_existente) {
 
 	inserir_vert(meu_grafo, nova1);
 	inserir_vert(meu_grafo, nova2);
-
+	inserir_vert(meu_grafo, nova3);
+	inserir_vert(meu_grafo, nova4);
+	inserir_vert(meu_grafo, nova5);
+	
 	inserir_aresta(meu_grafo, 100, nova3, 1.0);
 	inserir_aresta(meu_grafo, 101, nova4, 2.0);
 	inserir_aresta(meu_grafo, 102, nova5, 5);
