@@ -67,22 +67,18 @@ grafo_priv_t *deletar_grafo(grafo_priv_t *meu_grafo);
  * 
  * @param 	meu_grafo	- Deve ser passado um ponteiro para um grafo
  *			inicializado
- * @param	nome		- Deve ser passado uma string de até 100 
- * 			caracteres, mais o caracter zero terminal.
- * 			Se a string tiver mais que 100 caracteres,
- * 			o vértice não será encontrado, uma vez que
- * 			100 é o maior número de caracteres que um
- * 			vértice pode ter.
+ * @param	nome		- Deve ser passado o número de identificação da
+ * tarefa.
  * 
  * @return Retorna uma resposta, que será TRUE caso exista o vértice,
  * 	e FALSE caso não exista.
  * @section asert Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
- * 	strlen(nome) <= 100
+ * 	
  * Assertivas de saída
  * 	O retorno será TRUE ou FALSE
- * 	O conteúdo do grafo e da string passados não serão modificados
+ * 	O conteúdo do grafo não será modificado
 ***************************************************************************/
 resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo);
 
@@ -119,69 +115,42 @@ resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo);
 Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_min, int pre_req, int *reqs, const char *nome);
 
 /**
- * @brief Existe aresta nome?
+ * @brief Existe aresta?
  * @section desc Descrição
  * 	Verfica a existência de um vértice dado
  * @param	meu_grafo	- Deve ser passado um grafo inicializado
- * @param	nome1
- * @param	nome2	- Devem ser passadas duas string de até 100 
- * 			caracteres, mais o caracter zero terminal.
- * 			Se as strings tiverem mais que 100 caracteres,
- * 			a aresta não será encontrado, uma vez que
- * 			100 é o maior número de caracteres que um
- * 			os vértices da aresta podem ter.
+ * @param	id_externo1
+ * @param	id_externo2	- Devem ser passadas dois IDs de tarefa, que são números inteiros.
  * 
  * @return	Retorna uma resposta, que será TRUE caso exista a aresta,
  * 	e FALSE caso não exista.
  * @section asert Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
- * 	strlen(nome1) <= 100
- * 	strlen(nome2) <= 100
+ * 	
  * Assertivas de saída
  * 	O retorno será TRUE ou FALSE
- * 	O conteúdo do grafo e das strings passados não serão modificados
+ * 	O conteúdo do grafo não será modificado.
 ***************************************************************************/
 resposta existe_aresta(const grafo_priv_t *meu_grafo, int id_externo1, int id_externo2);
 
 /**
  * @brief Achar id
  * @section desc Descrição
- * 	Todo vértice armazenado no grafo possui um nome, uma string
- * 	de até 100 caracteres mais o caracter zero terminal, e um
- * 	identificador (id), um inteiro que é como o vértice é
- * 	armazenado internamente.
+ * 	Todo vértice armazenado no grafo possui um nome, e um
+ * 	identificador (id_externo).
  * 	Essa função acha esse identificador
  * 
- * 	O valor do id não deverá interessar ao usuário, porém,
- * 	se algum cliente desejar criar mais utilidades para a biblioteca
- * 	grafos, essa função é necessária.
- * 
- * 	Vale dizer que vértices, origens, e arestas estão ordenados
- * 	de menores id até maiores, logo se for sesejado que se mostrem os
- * 	dados em ordem alfabética, devem-se inserir os vértices em ordem
- * 	alfabética.
- * 
- * 	ids são criados do menor para o maior, sendo o menor valor possível
- * 	0.
- * 
- * 	Por motivos de segurança sempre se verifica se existe_vert nome antes
- * 	de se usar achar_id
  * @param	meu_grafo	- Deve ser passado um grafo inicializado
- * @param	nome		- Deve ser passado uma string de até 100 
- * 			caracteres, mais o caracter zero terminal.
- * 			Se a string tiver mais que 100 caracteres,
- * 			a origem não será encontrado, uma vez que
- * 			100 é o maior número de caracteres que uma
- * 			origem pode ter.
+ * @param	id_externo		- um inteiro que representa o identificador da tarefa.
  * 
- * @return	Retorna um inteiro id. Caso não se ache o vértice nome, esse
+ * @return	Retorna um inteiro id. Caso não se ache o vértice id, esse
  * 	inteiro será -1, caso contrário será o valor do identificador
- * 	de nome
+ * 	da tarefa.
  * @section asert Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
- * 	strlen(nome) <= 100
+ * 	
  * 	Já foi checado que existe_vert(meu_grafo, nome) == TRUE
  * Assertivas de saída
  * 	Se existir um vértice nome, 0 <= id <= max(int), sendo que
@@ -189,24 +158,20 @@ resposta existe_aresta(const grafo_priv_t *meu_grafo, int id_externo1, int id_ex
  * 	Se não existir id = -1
  * Assertivas de saída
  * 	O retorno será TRUE ou FALSE
- * 	O conteúdo do grafo e da string passados não serão modificados
+ * 	O conteúdo do grafo não será modificado.
 ***************************************************************************/
 int achar_id(const grafo_priv_t *meu_grafo, int id_externo);
 
 /**
- * @brief Achar nome
+ * @brief Achar célula
  * @section desc Descrição
- * 	Encontra o nome dado pelo usuário ao vértice de identificador id
+ * 	Encontra a célula e os dados dados pelo usuário ao vértice de identificador id
  * 
- * 	Todo vértice armazenado no grafo possui um nome, uma string
- * 	de até 100 caracteres mais o caracter zero terminal, e um
- * 	identificador (id), um inteiro que é como o vértice é
- * 	armazenado internamente.
  * @param	meu_grafo	- Deve ser passado um grafo inicializado
  * @param	id		- Deve ser passado um inteiro não negativo
  * 			válido, ou seja, que represente um vértice
  * 
- * @return	Retorna um ponteiro para o começo do nome. Caso não se ache
+ * @return	Retorna um ponteiro para uma célula. Caso não se ache
  *	um vérice com id, retorna-se NULL.
  * @section asse Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
@@ -216,12 +181,11 @@ int achar_id(const grafo_priv_t *meu_grafo, int id_externo);
  * 
  * Assertivas de saída
  * 	Se existir um vértice id, a resposta será um ponteiro != NULL,
- * 	que aponta para onde está armazenado o nome dado pelo usuário
- * 	ao vértice
+ * 	que aponta para onde está armazenado a célula.
  * 	Se não existir, retorna-se NULL
  * Assertivas de saída
- * 	O retorno será TRUE ou FALSE
- * 	O conteúdo do grafo e do inteiro passados não serão modificados
+ * 	O retorno um ponteiro para uma célula.
+ * 	O conteúdo do grafo não será modificado.
 ***************************************************************************/
 Celula_priv_t *achar_celula(const grafo_priv_t *meu_grafo, int id_externo);
 
@@ -234,11 +198,11 @@ Celula_priv_t *achar_celula(const grafo_priv_t *meu_grafo, int id_externo);
  * 	(macro DEBUG é igual à 1), será enviada uma mensagem à saída padrão
  * 	de erro. Independente de DEBUG, o vértice não será adicionado.
  * 
- * 	Para isso guarda-se uma cópia da string dada pelo
+ * 	Para isso guarda-se uma cópia da célula dada pelo
  * 	usuário
  * @param 	meu_grafo	- Deve ser passado um grafo inicializado
- * @param	nome		- Deve ser passado uma string de até 100 
- * 			caracteres, mais o caracter zero terminal.
+ * @param	celula		- Deve ser passado uma célula com todas as
+ * informações que nela são necessárias existir.
  * 
  *@return	Retorna a grafo modificado por referência, ou seja, o grafo
  * 	passado será modificado sem a necessidade de receber um valor
@@ -246,21 +210,22 @@ Celula_priv_t *achar_celula(const grafo_priv_t *meu_grafo, int id_externo);
  * @section asse Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
- * 	strlen(nome) <= 100
+ * 	
  * 
  * Assertivas de saída
  * 	O grafo retornado por referência foi adicionado de um vértice,
  *	não se assegura sua conexividade.
- * 	O conteúdo da string passada não serão modificado, porém será
+ * 	O conteúdo da célula passada não será modificado, porém será
  * 	copiado
 ***************************************************************************/
 void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula);
 
+
 /**
  * @brief Inserir aresta
  * @section desc Descrição
- * 	Caso nome1 e nome2 sejam vértices, peso > 0 e ainda não haja uma aresta
- * 	ente eles, insere-se uma.
+ * 	Caso id_externo1 e celula2 sejam vértices, peso > 0 e ainda não haja uma aresta
+ * 	entre eles, insere-se uma.
  *
  * 
  * 	Se não existir algum dos vértices ou já exista uma aresta ou se peso <= 0,
@@ -270,14 +235,9 @@ void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula);
  * 	Assim se for desejado adicionar uma aresta que não se sabe se já exitem os vértices
  * 	ou não, use inserir_vert, para cada um e depois inserir_aresta.
  * @param	meu_grafo	- Deve ser passado um grafo inicializado
- * @param	nome1
- * @param	nome2	- Devem ser passadas duas string de até 100 
- * 			caracteres, mais o caracter zero terminal.
- * 			Se as strings tiverem mais que 100 caracteres,
- * 			a aresta não será encontrado, uma vez que
- * 			100 é o maior número de caracteres que um
- * 			os vértices da aresta podem ter.
- * @param	peso 	- Deve ser um número real maior que zero
+ * @param	id_externo1 - Deve ser passado o id da tarefa de pre requisito
+ * @param	celula2     - Deve ser passado um ponteiro para a célula destino
+ * @param	peso 		- Deve ser um número real maior que zero
  * 
  * @return 	Retorna a grafo modificado por referência, ou seja, o grafo
  * 	passado será modificado sem a necessidade de receber um valor
@@ -285,31 +245,29 @@ void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula);
  * @section aser Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
- * 	strlen(nome1) <= 100
- * 	strlen(nome2) <= 100
  * 	peso > 0
  * 
  * Assertivas de saída
  * 	O grafo retornado foi adicionado de uma aresta, não se assegura
  * 	sua conexividade.
- * 	O conteúdo das strings passadas e do número real não serão modificados
+ * 	O conteúdo das células passadas e do número inteiro não serão modificados
 ***************************************************************************/
 void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *celula2, int peso);
 
 
+
 /**
  * @brief Remover vértice
- * @section desc Descrição
- * 	Caso não existir um vértice nome, nada será feito, não será
+ * @section desc Descrição 
+ * Caso não existir um vértice id_externo, nada será feito, não será
  * 	gerado nenhum warning.
  * 
  * 	Se existir o vertice, ele será removido.
- * 	Se ele for origem, a origem será removida.
  * 	Se houverem arestas incidentes nele, saindo ou entrando, elas serão removidas,
  * 	incluindo dos outros vértices.
  * @param	meu_grafo	- Deve ser passado um grafo inicializado
- * @param	nome		- Deve ser passado uma string de até 100 
- * 			caracteres, mais o caracter zero terminal.
+ * @param	 id_externo  - Deve ser passado um inteiro que é o
+ * identificador de uma tarefa
  * 
  * @return 	Retorna a grafo modificado por referência, ou seja, o grafo
  * 	passado será modificado sem a necessidade de receber um valor
@@ -317,31 +275,25 @@ void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *cel
  * @section aser Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
- * 	strlen(nome) <= 100
  * 
  * Assertivas de saída
  * 	O grafo retornado por referência foi removido de um vértice,
  *	não se assegura sua conexividade.
- * 	O conteúdo da string passada não serão modificado
 ***************************************************************************/
 void remover_vert(grafo_priv_t *meu_grafo, int id_externo);
+
 
 /**
  * @brief Remover aresta
  * @section desc Descrição
- * 	Caso não existirem vértices nome1 e nome2 ou não existir uma aresta
- * 	de nome1 para nome2, nada será feito, não será gerado nenhum warning.
+ * 	Caso não existirem vértices id_externo1 e id_externo2 ou não existir uma aresta
+ * 	de id_externo1 para id_externo2, nada será feito, não será gerado nenhum warning.
  * 
  * 	Se existir a aresta, ela será removida. Os vértices permanecerão no
  *	grafo.
  * @param	meu_grafo	- Deve ser passado um grafo inicializado
- * @param	nome1
- * @param	nome2	- Devem ser passadas duas string de até 100 
- * 			caracteres, mais o caracter zero terminal.
- * 			Se as strings tiverem mais que 100 caracteres,
- * 			a aresta não será encontrado, uma vez que
- * 			100 é o maior número de caracteres que um
- * 			os vértices da aresta podem ter.
+ * @param	id_externo1
+ * @param	id_externo2 - Deve ser passado os identificadores
  * 
  * @return	Retorna a grafo modificado por referência, ou seja, o grafo
  * 	passado será modificado sem a necessidade de receber um valor
@@ -349,13 +301,10 @@ void remover_vert(grafo_priv_t *meu_grafo, int id_externo);
  * @section aser Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
- * 	strlen(nome1) <= 100
- * 	strlen(nome2) <= 100
  * 
  * Assertivas de saída
  * 	O grafo retornado por referência foi removido de uma aresta,
  *	não se assegura sua conexividade.
- * 	O conteúdo das string passadas não será modificado
 ***************************************************************************/
 void remover_aresta(grafo_priv_t *meu_grafo, int id_externo1, int id_externo2);
 
