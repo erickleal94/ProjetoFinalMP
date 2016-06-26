@@ -1,12 +1,12 @@
 <map id="existe_vert" name="existe_vert">
-<area shape="rect" id="node2" href="$grafo_8h.html#a56edc294bdf9e834989d9c8d31ed3a64" title="existe_aresta" alt="" coords="142,298,245,325"/>
-<area shape="rect" id="node3" href="$grafo_8h.html#a0e69707897c891bf77319d494cae8f26" title="inserir_aresta" alt="" coords="304,298,407,325"/>
-<area shape="rect" id="node7" href="$grafo_8h.html#ac16199e4256247b546b67d6d881be137" title="remover_aresta" alt="" coords="297,197,414,224"/>
-<area shape="rect" id="node8" href="$grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="492,96,593,122"/>
+<area shape="rect" id="node2" href="$grafo_8h.html#a56edc294bdf9e834989d9c8d31ed3a64" title="Existe aresta? " alt="" coords="142,298,245,325"/>
+<area shape="rect" id="node3" href="$grafo_8h.html#a0e69707897c891bf77319d494cae8f26" title="Inserir aresta. " alt="" coords="304,298,407,325"/>
+<area shape="rect" id="node7" href="$grafo_8h.html#ac16199e4256247b546b67d6d881be137" title="Remover aresta. " alt="" coords="297,197,414,224"/>
+<area shape="rect" id="node8" href="$grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="Remover vértice. " alt="" coords="492,96,593,122"/>
 <area shape="rect" id="node11" href="$grafo__priv_8h.html#aa7c7803e91592a28e4c0a85112b53fb8" title="existe_origem" alt="" coords="140,96,247,122"/>
 <area shape="rect" id="node12" href="$grafo__priv_8h.html#adc1a8c08d13a78eda202bc49275712f5" title="inserir_origem" alt="" coords="302,146,409,173"/>
 <area shape="rect" id="node14" href="$grafo__priv_8h.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="295,45,416,72"/>
-<area shape="rect" id="node15" href="$grafo_8h.html#a659b567cb7e165b526b6fe05a433452e" title="inserir_vert" alt="" coords="312,248,399,274"/>
+<area shape="rect" id="node15" href="$grafo_8h.html#a659b567cb7e165b526b6fe05a433452e" title="Inserir vértice. " alt="" coords="312,248,399,274"/>
 <area shape="rect" id="node4" href="$grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205" title="criaGrafoArq" alt="" coords="705,197,804,224"/>
 <area shape="rect" id="node6" href="$interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec" title="interface_inserir_tarefa" alt="" coords="464,248,621,274"/>
 <area shape="rect" id="node5" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="888,197,939,224"/>

@@ -1,7 +1,6 @@
 <map id="tempo_minimo" name="tempo_minimo">
-<area shape="rect" id="node2" href="$grafo_8cpp.html#ad507a38f9feef6cad69436ec774b535f" title="menor_caminho" alt="" coords="163,81,281,108"/>
-<area shape="rect" id="node3" href="$grafo_8cpp.html#ac428ee7436d16b5251b093aa79183fda" title="achar_id" alt="" coords="341,5,416,32"/>
-<area shape="rect" id="node4" href="$grafo_8cpp.html#a5bedfb800e326da354b0403421e0d1ef" title="maior_id" alt="" coords="341,56,416,83"/>
-<area shape="rect" id="node5" href="$grafo_8cpp.html#a31c64875fe3134ba04439feb7d119cf3" title="num_vert" alt="" coords="341,107,417,133"/>
-<area shape="rect" id="node6" href="$grafo_8cpp.html#a90390d2135067928e2c69cd964c9bec5" title="achar_celula" alt="" coords="329,157,428,184"/>
+<area shape="rect" id="node2" href="$grafo_8cpp.html#ad507a38f9feef6cad69436ec774b535f" title="Menor caminho. " alt="" coords="163,56,281,83"/>
+<area shape="rect" id="node3" href="$grafo_8cpp.html#a5bedfb800e326da354b0403421e0d1ef" title="Maior id. " alt="" coords="341,5,416,32"/>
+<area shape="rect" id="node4" href="$grafo_8cpp.html#a31c64875fe3134ba04439feb7d119cf3" title="Número de vértices. " alt="" coords="341,56,417,83"/>
+<area shape="rect" id="node5" href="$grafo_8cpp.html#a90390d2135067928e2c69cd964c9bec5" title="Achar célula. " alt="" coords="329,107,428,133"/>
 </map>

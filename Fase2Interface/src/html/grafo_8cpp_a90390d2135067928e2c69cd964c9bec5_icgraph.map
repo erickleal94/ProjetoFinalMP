@@ -1,7 +1,7 @@
 <map id="achar_celula" name="achar_celula">
 <area shape="rect" id="node2" href="$grafo_8h.html#a79154a07716d283ad68106cf54beaf07" title="editar_celula" alt="" coords="162,9,261,36"/>
 <area shape="rect" id="node5" href="$interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86" title="interface_vizualizar\l_determinada_tarefa" alt="" coords="545,54,691,95"/>
-<area shape="rect" id="node6" href="$grafo_8h.html#ad507a38f9feef6cad69436ec774b535f" title="menor_caminho" alt="" coords="152,116,271,143"/>
+<area shape="rect" id="node6" href="$grafo_8h.html#ad507a38f9feef6cad69436ec774b535f" title="Menor caminho. " alt="" coords="152,116,271,143"/>
 <area shape="rect" id="node3" href="$interface_8cpp.html#a82c53fa74aeeec1c1234672393299537" title="interface_editar_tarefa" alt="" coords="319,5,473,32"/>
 <area shape="rect" id="node4" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="763,91,813,117"/>
 <area shape="rect" id="node7" href="$grafo_8h.html#acb5b55f7d1508a1b35b76e43bc817623" title="ja_feito" alt="" coords="363,169,429,196"/>

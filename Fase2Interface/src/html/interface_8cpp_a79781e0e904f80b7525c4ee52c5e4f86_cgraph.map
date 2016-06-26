@@ -1,8 +1,7 @@
 <map id="interface_vizualizar_determinada_tarefa" name="interface_vizualizar_determinada_tarefa">
-<area shape="rect" id="node2" href="$grafo_8cpp.html#a90390d2135067928e2c69cd964c9bec5" title="achar_celula" alt="" coords="524,5,623,32"/>
+<area shape="rect" id="node2" href="$grafo_8cpp.html#a90390d2135067928e2c69cd964c9bec5" title="Achar célula. " alt="" coords="524,5,623,32"/>
 <area shape="rect" id="node3" href="$grafo_8cpp.html#a14183876086781302e2d81ab2457dc4e" title="tempo_minimo" alt="" coords="200,56,309,83"/>
-<area shape="rect" id="node4" href="$grafo_8cpp.html#ad507a38f9feef6cad69436ec774b535f" title="menor_caminho" alt="" coords="357,56,476,83"/>
-<area shape="rect" id="node5" href="$grafo_8cpp.html#ac428ee7436d16b5251b093aa79183fda" title="achar_id" alt="" coords="536,56,611,83"/>
-<area shape="rect" id="node6" href="$grafo_8cpp.html#a5bedfb800e326da354b0403421e0d1ef" title="maior_id" alt="" coords="536,107,611,133"/>
-<area shape="rect" id="node7" href="$grafo_8cpp.html#a31c64875fe3134ba04439feb7d119cf3" title="num_vert" alt="" coords="535,157,611,184"/>
+<area shape="rect" id="node4" href="$grafo_8cpp.html#ad507a38f9feef6cad69436ec774b535f" title="Menor caminho. " alt="" coords="357,56,476,83"/>
+<area shape="rect" id="node5" href="$grafo_8cpp.html#a5bedfb800e326da354b0403421e0d1ef" title="Maior id. " alt="" coords="536,56,611,83"/>
+<area shape="rect" id="node6" href="$grafo_8cpp.html#a31c64875fe3134ba04439feb7d119cf3" title="Número de vértices. " alt="" coords="535,107,611,133"/>
 </map>
