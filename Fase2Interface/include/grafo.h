@@ -60,24 +60,23 @@ grafo_priv_t *criar_grafo(void);
 ***************************************************************************/
 grafo_priv_t *deletar_grafo(grafo_priv_t *meu_grafo);
 
-/***************************************************************************
- * Função: Existe vértice nome?
- * Descrição
+/**
+ * @brief Existe vértice nome?
+ * @section desc Descrição
  * 	Verfica a existência de um vértice dado
- * Parâmetros
- * 	meu_grafo	- Deve ser passado um ponteiro para um grafo
+ * 
+ * @param 	meu_grafo	- Deve ser passado um ponteiro para um grafo
  *			inicializado
- * 	nome		- Deve ser passado uma string de até 100 
+ * @param	nome		- Deve ser passado uma string de até 100 
  * 			caracteres, mais o caracter zero terminal.
  * 			Se a string tiver mais que 100 caracteres,
  * 			o vértice não será encontrado, uma vez que
  * 			100 é o maior número de caracteres que um
  * 			vértice pode ter.
  * 
- * Valor retornado
- * 	Retorna uma resposta, que será TRUE caso exista o vértice,
+ * @return Retorna uma resposta, que será TRUE caso exista o vértice,
  * 	e FALSE caso não exista.
- * Assertiva de entrada
+ * @section asert Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
  * 	strlen(nome) <= 100
@@ -87,30 +86,31 @@ grafo_priv_t *deletar_grafo(grafo_priv_t *meu_grafo);
 ***************************************************************************/
 resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo);
 
-/***************************************************************************
- * Função: Criar nova célula
- * Descrição
+/**
+ * @brief Criar nova célula
+ * 
+ * @section desc Descrição
  * 	Cria uma nova célula com os os dados inseridos
- * Parâmetros
- * 	meu_grafo	- Deve ser passado um ponteiro para um grafo
+ * @param	meu_grafo	- Deve ser passado um ponteiro para um grafo
  *			inicializado
- *  id_externo 	- Deve ser um inteiro que é o ID da tarefa
- *  executada 	- Deve ser um inteiro que indica se a tarefa 
+ * @param id_externo 	- Deve ser um inteiro que é o ID da tarefa
+ * @param executada 	- Deve ser um inteiro que indica se a tarefa 
  * 			ja foi ou nao executada.
- *  duracao 	- Deve ser um inteiro que representa a duraçao da tarefa
- *  ini_min 	- Deve ser um inteiro que representa o tempo 
+ * @param duracao 	- Deve ser um inteiro que representa a duraçao da tarefa
+ * @param ini_min 	- Deve ser um inteiro que representa o tempo 
  * 			minimo para iniciar a tarefa.
- *  pre_req 	- Deve ser um inteiro que representa a quantidade de 
+ * @param pre_req 	- Deve ser um inteiro que representa a quantidade de 
  * 			pre requisitos que a tarega possui.
- *  reqs 		- Deve ser um ponteiro pra inteiro contendo todos os 
+ * @param reqs 		- Deve ser um ponteiro pra inteiro contendo todos os 
  *  		IDs dos pre requisitos da tarefa.
- * 	nome		- Deve ser passado uma string de até 100 
+ * @param	nome		- Deve ser passado uma string de até 100 
  * 			caracteres, mais o caracter zero terminal que será o nome da célular.
  * 
  * 
- * Valor retornado
- * 	Retorna uma célula com os dados que foram inseridos na chamada
- * Assertiva de entrada
+ * @return	Retorna uma célula com os dados que foram inseridos na chamada
+ * 
+ * 
+ * @section asert Assertiva de entrada
  * 	Os numeros devem ser inteiros maiores que 0.
  *  A string de nome deve ser de ate 100 caracteres.
  * Assertivas de saída
@@ -118,13 +118,13 @@ resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo);
 ***************************************************************************/
 Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_min, int pre_req, int *reqs, const char *nome);
 
-/***************************************************************************
- * Função: Existe aresta nome?
- * Descrição
+/**
+ * @brief Existe aresta nome?
+ * @section desc Descrição
  * 	Verfica a existência de um vértice dado
- * Parâmetros
- * 	meu_grafo	- Deve ser passado um grafo inicializado
- * 	nome1 e nome2	- Devem ser passadas duas string de até 100 
+ * @param	meu_grafo	- Deve ser passado um grafo inicializado
+ * @param	nome1
+ * @param	nome2	- Devem ser passadas duas string de até 100 
  * 			caracteres, mais o caracter zero terminal.
  * 			Se as strings tiverem mais que 100 caracteres,
  * 			a aresta não será encontrado, uma vez que

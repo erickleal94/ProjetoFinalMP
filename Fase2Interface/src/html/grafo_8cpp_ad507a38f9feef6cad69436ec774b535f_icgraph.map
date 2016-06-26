@@ -1,4 +1,8 @@
 <map id="menor_caminho" name="menor_caminho">
 <area shape="rect" id="node2" href="$grafo_8h.html#acb5b55f7d1508a1b35b76e43bc817623" title="ja_feito" alt="" coords="194,5,259,32"/>
-<area shape="rect" id="node3" href="$grafo_8h.html#a14183876086781302e2d81ab2457dc4e" title="tempo_minimo" alt="" coords="172,56,281,83"/>
+<area shape="rect" id="node5" href="$grafo_8h.html#a14183876086781302e2d81ab2457dc4e" title="tempo_minimo" alt="" coords="172,56,281,83"/>
+<area shape="rect" id="node3" href="$interface_8cpp.html#a24af973236c7577368e0b5003d26b173" title="interface_caminho_parcial" alt="" coords="337,5,515,32"/>
+<area shape="rect" id="node4" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="571,56,621,83"/>
+<area shape="rect" id="node6" href="$interface_8cpp.html#a45d07639c68b6754482304399deea404" title="interface_caminho_completo" alt="" coords="329,56,523,83"/>
+<area shape="rect" id="node7" href="$interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86" title="interface_vizualizar\l_determinada_tarefa" alt="" coords="353,107,499,149"/>
 </map>

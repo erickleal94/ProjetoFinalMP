@@ -1,6 +1,6 @@
 <map id="deletar_grafo" name="deletar_grafo">
 <area shape="rect" id="node2" href="$grafo_8cpp.html#a2812c8a1cbeaab16d0aaa6da10ec4372" title="remover_vert" alt="" coords="156,128,257,155"/>
-<area shape="rect" id="node3" href="$grafo_8cpp.html#ac70f5a4fd6ff7c6913f0ce99de099263" title="existe_vert" alt="" coords="629,77,716,104"/>
+<area shape="rect" id="node3" href="$grafo_8cpp.html#ac70f5a4fd6ff7c6913f0ce99de099263" title="Existe vértice nome? " alt="" coords="629,77,716,104"/>
 <area shape="rect" id="node4" href="$grafo_8cpp.html#ac428ee7436d16b5251b093aa79183fda" title="achar_id" alt="" coords="491,128,565,155"/>
 <area shape="rect" id="node5" href="$grafo_8cpp.html#aa7c7803e91592a28e4c0a85112b53fb8" title="existe_origem" alt="" coords="475,229,581,256"/>
 <area shape="rect" id="node6" href="$grafo_8cpp.html#a2f6600bf1f6ecc3c960e244f3e7b5c8f" title="remover_origem" alt="" coords="305,179,427,205"/>

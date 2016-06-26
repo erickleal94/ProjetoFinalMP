@@ -126,438 +126,413 @@ $(document).ready(function(){initNavTree('grafo_8h_source.html','');});
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *<a class="code" href="grafo_8h.html#a3e61bf2ada0f9af7e2e9883241496606">criar_grafo</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *<a class="code" href="grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe">deletar_grafo</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * Função: Existe vértice nome?</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> *      Verfica a existência de um vértice dado</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um ponteiro para um grafo</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> *                      inicializado</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> *                      Se a string tiver mais que 100 caracteres,</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> *                      o vértice não será encontrado, uma vez que</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> *                      100 é o maior número de caracteres que um</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> *                      vértice pode ter.</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> *      Retorna uma resposta, que será TRUE caso exista o vértice,</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> *      e FALSE caso não exista.</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> *      strlen(nome) &lt;= 100</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> *      O retorno será TRUE ou FALSE</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> *      O conteúdo do grafo e da string passados não serão modificados</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a> <a class="code" href="grafo_8h.html#ac70f5a4fd6ff7c6913f0ce99de099263">existe_vert</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * Função: Criar nova célula</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> *      Cria uma nova célula com os os dados inseridos</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um ponteiro para um grafo</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> *                      inicializado</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> *  id_externo  - Deve ser um inteiro que é o ID da tarefa</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> *  executada   - Deve ser um inteiro que indica se a tarefa </span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> *                      ja foi ou nao executada.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> *  duracao     - Deve ser um inteiro que representa a duraçao da tarefa</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> *  ini_min     - Deve ser um inteiro que representa o tempo </span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> *                      minimo para iniciar a tarefa.</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> *  pre_req     - Deve ser um inteiro que representa a quantidade de </span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"> *                      pre requisitos que a tarega possui.</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"> *  reqs                - Deve ser um ponteiro pra inteiro contendo todos os </span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"> *              IDs dos pre requisitos da tarefa.</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal que será o nome da célular.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a> <a class="code" href="grafo_8h.html#ac70f5a4fd6ff7c6913f0ce99de099263">existe_vert</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * Função: Criar nova célula</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> *      Cria uma nova célula com os os dados inseridos</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um ponteiro para um grafo</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> *                      inicializado</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> *  id_externo  - Deve ser um inteiro que é o ID da tarefa</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> *  executada   - Deve ser um inteiro que indica se a tarefa </span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> *                      ja foi ou nao executada.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> *  duracao     - Deve ser um inteiro que representa a duraçao da tarefa</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> *  ini_min     - Deve ser um inteiro que representa o tempo </span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> *                      minimo para iniciar a tarefa.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> *  pre_req     - Deve ser um inteiro que representa a quantidade de </span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> *                      pre requisitos que a tarega possui.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"> *  reqs                - Deve ser um ponteiro pra inteiro contendo todos os </span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"> *              IDs dos pre requisitos da tarefa.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal que será o nome da célular.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> * </span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"> *      Retorna uma célula com os dados que foram inseridos na chamada</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> *      Os numeros devem ser inteiros maiores que 0.</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> *  A string de nome deve ser de ate 100 caracteres.</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> *      O retorno será uma célula contendo os dados que foram passados na entrada</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="code" href="structCelula__priv.html">Celula_priv_t</a> *<a class="code" href="grafo_8h.html#a28b6414a2684992da035d5605178c770">cria_celula</a>(<span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#af5f995caad41372e844f965021c5d183">executada</a>, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#aee72d429cf8e17c945a1eb4e05ad85c7">duracao</a>, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a3c49601fe078bd7bb1512f0107af5301">ini_min</a>, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">pre_req</a>, <span class="keywordtype">int</span> *<a class="code" href="structCelula__priv.html#ad54839cd4d96e78a58c226ab2e8d0579">reqs</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structCelula__priv.html#a7f33fa72aceed7b44922f0f39d6f7f59">nome</a>);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> * Função: Existe aresta nome?</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"> *      Verfica a existência de um vértice dado</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"> *      nome1 e nome2   - Devem ser passadas duas string de até 100 </span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"> *                      Se as strings tiverem mais que 100 caracteres,</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"> *                      a aresta não será encontrado, uma vez que</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> *                      100 é o maior número de caracteres que um</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> *                      os vértices da aresta podem ter.</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"> *      Retorna uma resposta, que será TRUE caso exista a aresta,</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"> *      e FALSE caso não exista.</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"> *      strlen(nome1) &lt;= 100</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment"> *      strlen(nome2) &lt;= 100</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"> *      O retorno será TRUE ou FALSE</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"> *      O conteúdo do grafo e das strings passados não serão modificados</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<a class="code" href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a> <a class="code" href="grafo_8h.html#a56edc294bdf9e834989d9c8d31ed3a64">existe_aresta</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> id_externo1, <span class="keywordtype">int</span> id_externo2);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"> * Função: Achar id</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"> *      Todo vértice armazenado no grafo possui um nome, uma string</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"> *      de até 100 caracteres mais o caracter zero terminal, e um</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment"> *      identificador (id), um inteiro que é como o vértice é</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment"> *      armazenado internamente.</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"> *      Essa função acha esse identificador</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"> *      O valor do id não deverá interessar ao usuário, porém,</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment"> *      se algum cliente desejar criar mais utilidades para a biblioteca</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment"> *      grafos, essa função é necessária.</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment"> *      Vale dizer que vértices, origens, e arestas estão ordenados</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment"> *      de menores id até maiores, logo se for sesejado que se mostrem os</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"> *      dados em ordem alfabética, devem-se inserir os vértices em ordem</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"> *      alfabética.</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"> *      ids são criados do menor para o maior, sendo o menor valor possível</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"> *      0.</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"> *      Por motivos de segurança sempre se verifica se existe_vert nome antes</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"> *      de se usar achar_id</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"> *                      Se a string tiver mais que 100 caracteres,</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"> *                      a origem não será encontrado, uma vez que</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"> *                      100 é o maior número de caracteres que uma</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"> *                      origem pode ter.</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment"> *      Retorna um inteiro id. Caso não se ache o vértice nome, esse</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment"> *      inteiro será -1, caso contrário será o valor do identificador</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"> *      de nome</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"> *      strlen(nome) &lt;= 100</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment"> *      Já foi checado que existe_vert(meu_grafo, nome) == TRUE</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"> *      Se existir um vértice nome, 0 &lt;= id &lt;= max(int), sendo que</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"> *      max(int) é o maior valor que pode ser representado num inteiro</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"> *      Se não existir id = -1</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> *      O retorno será TRUE ou FALSE</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment"> *      O conteúdo do grafo e da string passados não serão modificados</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#ac428ee7436d16b5251b093aa79183fda">achar_id</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"> * Função: Achar nome</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"> *      Encontra o nome dado pelo usuário ao vértice de identificador id</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> *      Todo vértice armazenado no grafo possui um nome, uma string</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> *      de até 100 caracteres mais o caracter zero terminal, e um</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"> *      identificador (id), um inteiro que é como o vértice é</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"> *      armazenado internamente.</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> *      id              - Deve ser passado um inteiro não negativo</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment"> *                      válido, ou seja, que represente um vértice</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment"> *      Retorna um ponteiro para o começo do nome. Caso não se ache</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment"> *      um vérice com id, retorna-se NULL.</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment"> *      0 &lt;= id</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment"> *      Há um vértice representado por id</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment"> *      Se existir um vértice id, a resposta será um ponteiro != NULL,</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment"> *      que aponta para onde está armazenado o nome dado pelo usuário</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment"> *      ao vértice</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment"> *      Se não existir, retorna-se NULL</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment"> *      O retorno será TRUE ou FALSE</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment"> *      O conteúdo do grafo e do inteiro passados não serão modificados</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<a class="code" href="structCelula__priv.html">Celula_priv_t</a> *<a class="code" href="grafo_8h.html#a90390d2135067928e2c69cd964c9bec5">achar_celula</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment"> * Função: Inserir vértice</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment"> *      Caso não existir um vértice nome, insere-se um.</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment"> *      Se já existir o vertice, e caso a opção de DEBUG seja ativada,</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment"> *      (macro DEBUG é igual à 1), será enviada uma mensagem à saída padrão</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment"> *      de erro. Independente de DEBUG, o vértice não será adicionado.</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment"> *      Para isso guarda-se uma cópia da string dada pelo</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment"> *      usuário</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment"> *      Retorna a grafo modificado por referência, ou seja, o grafo</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment"> *      passado será modificado sem a necessidade de receber um valor</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment"> *      de retorno.</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment"> *      strlen(nome) &lt;= 100</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment"> *      O grafo retornado por referência foi adicionado de um vértice,</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment"> *      não se assegura sua conexividade.</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment"> *      O conteúdo da string passada não serão modificado, porém será</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment"> *      copiado</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#a659b567cb7e165b526b6fe05a433452e">inserir_vert</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <a class="code" href="structCelula__priv.html">Celula_priv_t</a> *celula);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment"> * Função: Inserir aresta</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment"> *      Caso nome1 e nome2 sejam vértices, peso &gt; 0 e ainda não haja uma aresta</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment"> *      ente eles, insere-se uma.</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment"> *      Se não existir algum dos vértices ou já exista uma aresta ou se peso &lt;= 0,</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment"> *      e caso a opção de DEBUG seja ativada, (macro DEBUG é igual à 1), será enviada</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment"> *      uma mensagem à saída padrão de erro. Independente de DEBUG, a aresta não será adicionada.</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment"> *      Assim se for desejado adicionar uma aresta que não se sabe se já exitem os vértices</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment"> *      ou não, use inserir_vert, para cada um e depois inserir_aresta.</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment"> *      nome1 e nome2   - Devem ser passadas duas string de até 100 </span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment"> *                      Se as strings tiverem mais que 100 caracteres,</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment"> *                      a aresta não será encontrado, uma vez que</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment"> *                      100 é o maior número de caracteres que um</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment"> *                      os vértices da aresta podem ter.</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment"> *      peso            - Deve ser um número real maior que zero</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment"> *      Retorna a grafo modificado por referência, ou seja, o grafo</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment"> *      passado será modificado sem a necessidade de receber um valor</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment"> *      de retorno.</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment"> *      strlen(nome1) &lt;= 100</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment"> *      strlen(nome2) &lt;= 100</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment"> *      peso &gt; 0</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment"> *      O grafo retornado foi adicionado de uma aresta, não se assegura</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment"> *      sua conexividade.</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment"> *      O conteúdo das strings passadas e do número real não serão modificados</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#a0e69707897c891bf77319d494cae8f26">inserir_aresta</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> id_externo1, <a class="code" href="structCelula__priv.html">Celula_priv_t</a> *celula2, <span class="keywordtype">int</span> peso);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> *      Retorna uma célula com os dados que foram inseridos na chamada</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"> *      Os numeros devem ser inteiros maiores que 0.</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> *  A string de nome deve ser de ate 100 caracteres.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> *      O retorno será uma célula contendo os dados que foram passados na entrada</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="structCelula__priv.html">Celula_priv_t</a> *<a class="code" href="grafo_8h.html#a28b6414a2684992da035d5605178c770">cria_celula</a>(<span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#af5f995caad41372e844f965021c5d183">executada</a>, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#aee72d429cf8e17c945a1eb4e05ad85c7">duracao</a>, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a3c49601fe078bd7bb1512f0107af5301">ini_min</a>, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">pre_req</a>, <span class="keywordtype">int</span> *<a class="code" href="structCelula__priv.html#ad54839cd4d96e78a58c226ab2e8d0579">reqs</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structCelula__priv.html#a7f33fa72aceed7b44922f0f39d6f7f59">nome</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"> * Função: Existe aresta nome?</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"> *      Verfica a existência de um vértice dado</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"> *      nome1 e nome2   - Devem ser passadas duas string de até 100 </span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"> *                      Se as strings tiverem mais que 100 caracteres,</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"> *                      a aresta não será encontrado, uma vez que</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"> *                      100 é o maior número de caracteres que um</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> *                      os vértices da aresta podem ter.</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> *      Retorna uma resposta, que será TRUE caso exista a aresta,</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"> *      e FALSE caso não exista.</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment"> *      strlen(nome1) &lt;= 100</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"> *      strlen(nome2) &lt;= 100</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"> *      O retorno será TRUE ou FALSE</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"> *      O conteúdo do grafo e das strings passados não serão modificados</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<a class="code" href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a> <a class="code" href="grafo_8h.html#a56edc294bdf9e834989d9c8d31ed3a64">existe_aresta</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> id_externo1, <span class="keywordtype">int</span> id_externo2);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"> * Função: Achar id</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"> *      Todo vértice armazenado no grafo possui um nome, uma string</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"> *      de até 100 caracteres mais o caracter zero terminal, e um</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"> *      identificador (id), um inteiro que é como o vértice é</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment"> *      armazenado internamente.</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment"> *      Essa função acha esse identificador</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"> *      O valor do id não deverá interessar ao usuário, porém,</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"> *      se algum cliente desejar criar mais utilidades para a biblioteca</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment"> *      grafos, essa função é necessária.</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment"> *      Vale dizer que vértices, origens, e arestas estão ordenados</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment"> *      de menores id até maiores, logo se for sesejado que se mostrem os</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment"> *      dados em ordem alfabética, devem-se inserir os vértices em ordem</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"> *      alfabética.</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"> *      ids são criados do menor para o maior, sendo o menor valor possível</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"> *      0.</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment"> *      Por motivos de segurança sempre se verifica se existe_vert nome antes</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"> *      de se usar achar_id</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment"> *                      Se a string tiver mais que 100 caracteres,</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"> *                      a origem não será encontrado, uma vez que</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"> *                      100 é o maior número de caracteres que uma</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"> *                      origem pode ter.</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment"> *      Retorna um inteiro id. Caso não se ache o vértice nome, esse</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment"> *      inteiro será -1, caso contrário será o valor do identificador</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment"> *      de nome</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"> *      strlen(nome) &lt;= 100</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"> *      Já foi checado que existe_vert(meu_grafo, nome) == TRUE</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment"> *      Se existir um vértice nome, 0 &lt;= id &lt;= max(int), sendo que</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"> *      max(int) é o maior valor que pode ser representado num inteiro</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"> *      Se não existir id = -1</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> *      O retorno será TRUE ou FALSE</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> *      O conteúdo do grafo e da string passados não serão modificados</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#ac428ee7436d16b5251b093aa79183fda">achar_id</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment"> * Função: Achar nome</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"> *      Encontra o nome dado pelo usuário ao vértice de identificador id</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> *      Todo vértice armazenado no grafo possui um nome, uma string</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> *      de até 100 caracteres mais o caracter zero terminal, e um</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> *      identificador (id), um inteiro que é como o vértice é</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"> *      armazenado internamente.</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> *      id              - Deve ser passado um inteiro não negativo</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> *                      válido, ou seja, que represente um vértice</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment"> *      Retorna um ponteiro para o começo do nome. Caso não se ache</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment"> *      um vérice com id, retorna-se NULL.</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment"> *      0 &lt;= id</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment"> *      Há um vértice representado por id</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment"> *      Se existir um vértice id, a resposta será um ponteiro != NULL,</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment"> *      que aponta para onde está armazenado o nome dado pelo usuário</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment"> *      ao vértice</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment"> *      Se não existir, retorna-se NULL</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment"> *      O retorno será TRUE ou FALSE</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment"> *      O conteúdo do grafo e do inteiro passados não serão modificados</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<a class="code" href="structCelula__priv.html">Celula_priv_t</a> *<a class="code" href="grafo_8h.html#a90390d2135067928e2c69cd964c9bec5">achar_celula</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment"> * Função: Inserir vértice</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment"> *      Caso não existir um vértice nome, insere-se um.</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment"> *      Se já existir o vertice, e caso a opção de DEBUG seja ativada,</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment"> *      (macro DEBUG é igual à 1), será enviada uma mensagem à saída padrão</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment"> *      de erro. Independente de DEBUG, o vértice não será adicionado.</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment"> *      Para isso guarda-se uma cópia da string dada pelo</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment"> *      usuário</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment"> *      Retorna a grafo modificado por referência, ou seja, o grafo</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment"> *      passado será modificado sem a necessidade de receber um valor</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment"> *      de retorno.</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment"> *      strlen(nome) &lt;= 100</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment"> *      O grafo retornado por referência foi adicionado de um vértice,</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment"> *      não se assegura sua conexividade.</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment"> *      O conteúdo da string passada não serão modificado, porém será</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment"> *      copiado</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#a659b567cb7e165b526b6fe05a433452e">inserir_vert</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <a class="code" href="structCelula__priv.html">Celula_priv_t</a> *celula);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment"> * Função: Inserir aresta</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment"> *      Caso nome1 e nome2 sejam vértices, peso &gt; 0 e ainda não haja uma aresta</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment"> *      ente eles, insere-se uma.</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment"> *      Se não existir algum dos vértices ou já exista uma aresta ou se peso &lt;= 0,</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment"> *      e caso a opção de DEBUG seja ativada, (macro DEBUG é igual à 1), será enviada</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment"> *      uma mensagem à saída padrão de erro. Independente de DEBUG, a aresta não será adicionada.</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment"> *      Assim se for desejado adicionar uma aresta que não se sabe se já exitem os vértices</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment"> *      ou não, use inserir_vert, para cada um e depois inserir_aresta.</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment"> *      nome1 e nome2   - Devem ser passadas duas string de até 100 </span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment"> *                      Se as strings tiverem mais que 100 caracteres,</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment"> *                      a aresta não será encontrado, uma vez que</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment"> *                      100 é o maior número de caracteres que um</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment"> *                      os vértices da aresta podem ter.</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment"> *      peso            - Deve ser um número real maior que zero</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment"> *      Retorna a grafo modificado por referência, ou seja, o grafo</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment"> *      passado será modificado sem a necessidade de receber um valor</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment"> *      de retorno.</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment"> *      strlen(nome1) &lt;= 100</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment"> *      strlen(nome2) &lt;= 100</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment"> *      peso &gt; 0</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment"> *      O grafo retornado foi adicionado de uma aresta, não se assegura</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment"> *      sua conexividade.</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment"> *      O conteúdo das strings passadas e do número real não serão modificados</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#a0e69707897c891bf77319d494cae8f26">inserir_aresta</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> id_externo1, <a class="code" href="structCelula__priv.html">Celula_priv_t</a> *celula2, <span class="keywordtype">int</span> peso);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment"> * Função: Remover vértice</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment"> *      Caso não existir um vértice nome, nada será feito, não será</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment"> *      gerado nenhum warning.</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment"> *      Se existir o vertice, ele será removido.</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment"> *      Se ele for origem, a origem será removida.</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment"> *      Se houverem arestas incidentes nele, saindo ou entrando, elas serão removidas,</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment"> *      incluindo dos outros vértices.</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment"> *      Retorna a grafo modificado por referência, ou seja, o grafo</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment"> *      passado será modificado sem a necessidade de receber um valor</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment"> *      de retorno.</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment"> *      strlen(nome) &lt;= 100</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment"> *      O grafo retornado por referência foi removido de um vértice,</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment"> *      não se assegura sua conexividade.</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment"> *      O conteúdo da string passada não serão modificado</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372">remover_vert</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment"> * Função: Remover aresta</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment"> *      Caso não existirem vértices nome1 e nome2 ou não existir uma aresta</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment"> *      de nome1 para nome2, nada será feito, não será gerado nenhum warning.</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment"> *      Se existir a aresta, ela será removida. Os vértices permanecerão no</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment"> *      grafo.</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment"> *      nome1 e nome2   - Devem ser passadas duas string de até 100 </span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment"> *                      Se as strings tiverem mais que 100 caracteres,</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment"> *                      a aresta não será encontrado, uma vez que</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment"> *                      100 é o maior número de caracteres que um</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment"> *                      os vértices da aresta podem ter.</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment"> *      Retorna a grafo modificado por referência, ou seja, o grafo</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment"> *      passado será modificado sem a necessidade de receber um valor</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment"> *      de retorno.</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment"> *      strlen(nome1) &lt;= 100</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment"> *      strlen(nome2) &lt;= 100</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment"> *      O grafo retornado por referência foi removido de uma aresta,</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment"> *      não se assegura sua conexividade.</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment"> *      O conteúdo das string passadas não será modificado</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#ac16199e4256247b546b67d6d881be137">remover_aresta</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> id_externo1, <span class="keywordtype">int</span> id_externo2);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment"> * Função: Remover vértice</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment"> *      Caso não existir um vértice nome, nada será feito, não será</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment"> *      gerado nenhum warning.</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment"> *      Se existir o vertice, ele será removido.</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment"> *      Se ele for origem, a origem será removida.</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment"> *      Se houverem arestas incidentes nele, saindo ou entrando, elas serão removidas,</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment"> *      incluindo dos outros vértices.</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment"> *      nome            - Deve ser passado uma string de até 100 </span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment"> *      Retorna a grafo modificado por referência, ou seja, o grafo</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment"> *      passado será modificado sem a necessidade de receber um valor</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment"> *      de retorno.</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment"> *      strlen(nome) &lt;= 100</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment"> *      O grafo retornado por referência foi removido de um vértice,</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment"> *      não se assegura sua conexividade.</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment"> *      O conteúdo da string passada não serão modificado</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#a2812c8a1cbeaab16d0aaa6da10ec4372">remover_vert</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> <a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment"> * Função: Remover aresta</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment"> *      Caso não existirem vértices nome1 e nome2 ou não existir uma aresta</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment"> *      de nome1 para nome2, nada será feito, não será gerado nenhum warning.</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment"> *      Se existir a aresta, ela será removida. Os vértices permanecerão no</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment"> *      grafo.</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment"> *      nome1 e nome2   - Devem ser passadas duas string de até 100 </span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment"> *                      caracteres, mais o caracter zero terminal.</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment"> *                      Se as strings tiverem mais que 100 caracteres,</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment"> *                      a aresta não será encontrado, uma vez que</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment"> *                      100 é o maior número de caracteres que um</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment"> *                      os vértices da aresta podem ter.</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment"> *      Retorna a grafo modificado por referência, ou seja, o grafo</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment"> *      passado será modificado sem a necessidade de receber um valor</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment"> *      de retorno.</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment"> *      strlen(nome1) &lt;= 100</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment"> *      strlen(nome2) &lt;= 100</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment"> *      O grafo retornado por referência foi removido de uma aresta,</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment"> *      não se assegura sua conexividade.</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment"> *      O conteúdo das string passadas não será modificado</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#ac16199e4256247b546b67d6d881be137">remover_aresta</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> id_externo1, <span class="keywordtype">int</span> id_externo2);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment"> * Função: Maior id</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment"> *      Retorna o valor do maior identificador (id) usado.</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment"> *      Se não foi utilizado nenhum id, ou seja, se não há nenhum vértice retorna -1</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment"> *      Será retornado um inteiro.</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment"> *      O grafo não será modificado.</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment"> *      Se não há nenhum vértice (num_vert(meu_grafo) == 0), retorna -1</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment"> *      Caso contrário, o valor de retorno &gt;= 0</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#a5bedfb800e326da354b0403421e0d1ef">maior_id</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment"> * Função: Número de vértices</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment"> *      Retorna o número de vértices do grafo</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment"> *      Será retornado um inteiro &gt;= 0.</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment"> *      O grafo não será modificado.</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment"> *      O valor de retorno é maior ou igual 0</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#a31c64875fe3134ba04439feb7d119cf3">num_vert</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment"> * Função: Número de arestas</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment"> *      Retorna o número de arestas do grafo</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment"> *      Será retornado um inteiro &gt;= 0.</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment"> *      O grafo não será modificado.</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment"> *      O valor de retorno é maior ou igual 0</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#ac94be03e94792b9b868abb38c7e17e36">num_arestas</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment"> * Função: Menor caminho</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment"> *      Retorna o tamanho de menor caminho de inicio até fim.</span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment"> *      Caso não haja um caminho entre os dois, ou um deles não for vértice retorna</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment"> *      -1.</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment"> *      inicio e fim    - Devem ser passadas duas string de até 100 </span></div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="comment"> *                      caracteres, sem contar o caracter zero terminal.</span></div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment"> *      Será retornado um número real.</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment"> *      O grafo não será modificado.</span></div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment"> *      Se não houver caminho retorna -1.</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment"> *      Caso contrário, o valor de retorno é maior ou igual à 0, e é o menor caminho de inicio até fim</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment"> *      O menor caminho de um vértice à ele mesmo é 0.</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#ad507a38f9feef6cad69436ec774b535f">menor_caminho</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> **dist);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="comment"> * Função: É conexo?</span></div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment"> * Descrição</span></div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="comment"> *      Verifica se partindo da origem podem-se alcançar todos os vértices do grafo.</span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="comment"> *      SE for possível retorna TRUE, caso contrário FALSE.</span></div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="comment"> * Parâmetros</span></div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="comment"> * Valor retornado</span></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="comment"> *      Se for possível alcançar todos os vértices partindo das origens retorna TRUE,</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="comment"> *      caso contrário FALSE.</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="comment"> *      Um grafo sem vértices é conexo.</span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="comment"> *      O grafo não será modificado.</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="comment">***************************************************************************/</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<a class="code" href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a> <a class="code" href="grafo_8h.html#a46f8363c4da6edf056e5fffba46e1bc7">eh_conexo</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo);</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#a14183876086781302e2d81ab2457dc4e">tempo_minimo</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> id_fim);</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#acb5b55f7d1508a1b35b76e43bc817623">ja_feito</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> d);</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#acd0aa806c04807a2b8086bd7a6c59b50">Ler_Tarefas</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <a class="code" href="structCelula__priv.html">Celula_priv_t</a> *celula, <span class="keyword">const</span> <span class="keywordtype">char</span> *NomeArq);</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#a79154a07716d283ad68106cf54beaf07">editar_celula</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> ID);</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#a1dd7cc6696ade339827db4d2019239fc">Imprime_Tarefas</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna);</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#aadbd57b376954aeeb119120d5a4a196f">Grava_Arq</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">char</span> *NomeArq);</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;<a class="code" href="structgrafo__priv.html">grafo_priv_t</a>* <a class="code" href="grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205">criaGrafoArq</a>(<span class="keywordtype">char</span> *nomeArq);</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment"> * Função: Maior id</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment"> *      Retorna o valor do maior identificador (id) usado.</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment"> *      Se não foi utilizado nenhum id, ou seja, se não há nenhum vértice retorna -1</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment"> *      Será retornado um inteiro.</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment"> *      O grafo não será modificado.</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment"> *      Se não há nenhum vértice (num_vert(meu_grafo) == 0), retorna -1</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment"> *      Caso contrário, o valor de retorno &gt;= 0</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#a5bedfb800e326da354b0403421e0d1ef">maior_id</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment"> * Função: Número de vértices</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment"> *      Retorna o número de vértices do grafo</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment"> *      Será retornado um inteiro &gt;= 0.</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment"> *      O grafo não será modificado.</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment"> *      O valor de retorno é maior ou igual 0</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#a31c64875fe3134ba04439feb7d119cf3">num_vert</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment"> * Função: Número de arestas</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment"> *      Retorna o número de arestas do grafo</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment"> *      Será retornado um inteiro &gt;= 0.</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment"> *      O grafo não será modificado.</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment"> *      O valor de retorno é maior ou igual 0</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#ac94be03e94792b9b868abb38c7e17e36">num_arestas</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment"> * Função: Menor caminho</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment"> *      Retorna o tamanho de menor caminho de inicio até fim.</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment"> *      Caso não haja um caminho entre os dois, ou um deles não for vértice retorna</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment"> *      -1.</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment"> *      inicio e fim    - Devem ser passadas duas string de até 100 </span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment"> *                      caracteres, sem contar o caracter zero terminal.</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="comment"> *      Será retornado um número real.</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="comment"> *      O grafo não será modificado.</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment"> *      Se não houver caminho retorna -1.</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment"> *      Caso contrário, o valor de retorno é maior ou igual à 0, e é o menor caminho de inicio até fim</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment"> *      O menor caminho de um vértice à ele mesmo é 0.</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#ad507a38f9feef6cad69436ec774b535f">menor_caminho</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> **dist);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment"> * Função: É conexo?</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="comment"> * Descrição</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment"> *      Verifica se partindo da origem podem-se alcançar todos os vértices do grafo.</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="comment"> *      SE for possível retorna TRUE, caso contrário FALSE.</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="comment"> * Parâmetros</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="comment"> *      meu_grafo       - Deve ser passado um grafo inicializado</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="comment"> * Valor retornado</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="comment"> *      Se for possível alcançar todos os vértices partindo das origens retorna TRUE,</span></div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="comment"> *      caso contrário FALSE.</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="comment"> *      Um grafo sem vértices é conexo.</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="comment"> * Assertiva de entrada</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="comment"> *      O grafo já deve ter sido inicializado por criar_grafo(),</span></div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="comment"> *      se não for o programa pode ser interrompido.</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="comment"> * Assertivas de saída</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="comment"> *      O grafo não será modificado.</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="comment">***************************************************************************/</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<a class="code" href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a> <a class="code" href="grafo_8h.html#a46f8363c4da6edf056e5fffba46e1bc7">eh_conexo</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo);</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grafo_8h.html#a14183876086781302e2d81ab2457dc4e">tempo_minimo</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> id_fim);</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#acb5b55f7d1508a1b35b76e43bc817623">ja_feito</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> d);</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#acd0aa806c04807a2b8086bd7a6c59b50">Ler_Tarefas</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <a class="code" href="structCelula__priv.html">Celula_priv_t</a> *celula, <span class="keyword">const</span> <span class="keywordtype">char</span> *NomeArq);</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#a79154a07716d283ad68106cf54beaf07">editar_celula</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> ID);</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#a1dd7cc6696ade339827db4d2019239fc">Imprime_Tarefas</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna);</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grafo_8h.html#aadbd57b376954aeeb119120d5a4a196f">Grava_Arq</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo, <span class="keywordtype">char</span> *NomeArq);</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<a class="code" href="structgrafo__priv.html">grafo_priv_t</a>* <a class="code" href="grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205">criaGrafoArq</a>(<span class="keywordtype">char</span> *nomeArq);</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="grafo_8h_html_a64f906a639abdfda7fffa9ace7e4c286"><div class="ttname"><a href="grafo_8h.html#a64f906a639abdfda7fffa9ace7e4c286">resposta</a></div><div class="ttdeci">enum resp resposta</div></div>
-<div class="ttc" id="grafo_8h_html_ac70f5a4fd6ff7c6913f0ce99de099263"><div class="ttname"><a href="grafo_8h.html#ac70f5a4fd6ff7c6913f0ce99de099263">existe_vert</a></div><div class="ttdeci">resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00064">grafo.cpp:64</a></div></div>
-<div class="ttc" id="grafo_8h_html_acb5b55f7d1508a1b35b76e43bc817623"><div class="ttname"><a href="grafo_8h.html#acb5b55f7d1508a1b35b76e43bc817623">ja_feito</a></div><div class="ttdeci">void ja_feito(const grafo_priv_t *meu_grafo, int d)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00733">grafo.cpp:733</a></div></div>
-<div class="ttc" id="grafo_8h_html_aadbd57b376954aeeb119120d5a4a196f"><div class="ttname"><a href="grafo_8h.html#aadbd57b376954aeeb119120d5a4a196f">Grava_Arq</a></div><div class="ttdeci">void Grava_Arq(grafo_priv_t *meu_grafo, char *NomeArq)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00636">grafo.cpp:636</a></div></div>
+<div class="ttc" id="grafo_8h_html_ac70f5a4fd6ff7c6913f0ce99de099263"><div class="ttname"><a href="grafo_8h.html#ac70f5a4fd6ff7c6913f0ce99de099263">existe_vert</a></div><div class="ttdeci">resposta existe_vert(const grafo_priv_t *meu_grafo, int id_externo)</div><div class="ttdoc">Existe vértice nome? </div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00064">grafo.cpp:64</a></div></div>
+<div class="ttc" id="grafo_8h_html_acb5b55f7d1508a1b35b76e43bc817623"><div class="ttname"><a href="grafo_8h.html#acb5b55f7d1508a1b35b76e43bc817623">ja_feito</a></div><div class="ttdeci">void ja_feito(const grafo_priv_t *meu_grafo, int d)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00735">grafo.cpp:735</a></div></div>
+<div class="ttc" id="grafo_8h_html_aadbd57b376954aeeb119120d5a4a196f"><div class="ttname"><a href="grafo_8h.html#aadbd57b376954aeeb119120d5a4a196f">Grava_Arq</a></div><div class="ttdeci">void Grava_Arq(grafo_priv_t *meu_grafo, char *NomeArq)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00637">grafo.cpp:637</a></div></div>
 <div class="ttc" id="grafo_8h_html_af4f0fbcdd746c0f494e9601a83ddc9fe"><div class="ttname"><a href="grafo_8h.html#af4f0fbcdd746c0f494e9601a83ddc9fe">deletar_grafo</a></div><div class="ttdeci">grafo_priv_t * deletar_grafo(grafo_priv_t *meu_grafo)</div><div class="ttdoc">Deleta grafo. </div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00032">grafo.cpp:32</a></div></div>
 <div class="ttc" id="structCelula__priv_html_a7f33fa72aceed7b44922f0f39d6f7f59"><div class="ttname"><a href="structCelula__priv.html#a7f33fa72aceed7b44922f0f39d6f7f59">Celula_priv::nome</a></div><div class="ttdeci">char nome[200]</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00010">grafo_priv.h:10</a></div></div>
 <div class="ttc" id="structCelula__priv_html_af5f995caad41372e844f965021c5d183"><div class="ttname"><a href="structCelula__priv.html#af5f995caad41372e844f965021c5d183">Celula_priv::executada</a></div><div class="ttdeci">int executada</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00007">grafo_priv.h:7</a></div></div>
@@ -569,11 +544,11 @@ $(document).ready(function(){initNavTree('grafo_8h_source.html','');});
 <div class="ttc" id="grafo_8h_html_a659b567cb7e165b526b6fe05a433452e"><div class="ttname"><a href="grafo_8h.html#a659b567cb7e165b526b6fe05a433452e">inserir_vert</a></div><div class="ttdeci">void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00128">grafo.cpp:128</a></div></div>
 <div class="ttc" id="grafo_8h_html_a4a2eceb977b50eb0028c419047e56e1da5cb1a0e1a9975a61106e3b540ca4c0ad"><div class="ttname"><a href="grafo_8h.html#a4a2eceb977b50eb0028c419047e56e1da5cb1a0e1a9975a61106e3b540ca4c0ad">TRUE_T</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo_8h_source.html#l00011">grafo.h:11</a></div></div>
 <div class="ttc" id="structCelula__priv_html_a3ff8d3c4d0ba994771391320203619fc"><div class="ttname"><a href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">Celula_priv::pre_req</a></div><div class="ttdeci">int pre_req</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00008">grafo_priv.h:8</a></div></div>
-<div class="ttc" id="grafo_8h_html_a1bb7038cecd5aa54025b6c5931bc0205"><div class="ttname"><a href="grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205">criaGrafoArq</a></div><div class="ttdeci">grafo_priv_t * criaGrafoArq(char *nomeArq)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00753">grafo.cpp:753</a></div></div>
+<div class="ttc" id="grafo_8h_html_a1bb7038cecd5aa54025b6c5931bc0205"><div class="ttname"><a href="grafo_8h.html#a1bb7038cecd5aa54025b6c5931bc0205">criaGrafoArq</a></div><div class="ttdeci">grafo_priv_t * criaGrafoArq(char *nomeArq)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00767">grafo.cpp:767</a></div></div>
 <div class="ttc" id="grafo_8h_html_a4a2eceb977b50eb0028c419047e56e1da18eca9337ac663e3309296308db9dcd7"><div class="ttname"><a href="grafo_8h.html#a4a2eceb977b50eb0028c419047e56e1da18eca9337ac663e3309296308db9dcd7">FALSE_T</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo_8h_source.html#l00010">grafo.h:10</a></div></div>
 <div class="ttc" id="grafo_8h_html_ac94be03e94792b9b868abb38c7e17e36"><div class="ttname"><a href="grafo_8h.html#ac94be03e94792b9b868abb38c7e17e36">num_arestas</a></div><div class="ttdeci">int num_arestas(const grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00511">grafo.cpp:511</a></div></div>
 <div class="ttc" id="structCelula__priv_html_a78a8525da28e1918d0faaf127001bd7b"><div class="ttname"><a href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">Celula_priv::id_externo</a></div><div class="ttdeci">int id_externo</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00007">grafo_priv.h:7</a></div></div>
-<div class="ttc" id="grafo_8h_html_a14183876086781302e2d81ab2457dc4e"><div class="ttname"><a href="grafo_8h.html#a14183876086781302e2d81ab2457dc4e">tempo_minimo</a></div><div class="ttdeci">int tempo_minimo(const grafo_priv_t *meu_grafo, int id_fim)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00718">grafo.cpp:718</a></div></div>
+<div class="ttc" id="grafo_8h_html_a14183876086781302e2d81ab2457dc4e"><div class="ttname"><a href="grafo_8h.html#a14183876086781302e2d81ab2457dc4e">tempo_minimo</a></div><div class="ttdeci">int tempo_minimo(const grafo_priv_t *meu_grafo, int id_fim)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00720">grafo.cpp:720</a></div></div>
 <div class="ttc" id="structCelula__priv_html_a3c49601fe078bd7bb1512f0107af5301"><div class="ttname"><a href="structCelula__priv.html#a3c49601fe078bd7bb1512f0107af5301">Celula_priv::ini_min</a></div><div class="ttdeci">int ini_min</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00008">grafo_priv.h:8</a></div></div>
 <div class="ttc" id="grafo_8h_html_a56edc294bdf9e834989d9c8d31ed3a64"><div class="ttname"><a href="grafo_8h.html#a56edc294bdf9e834989d9c8d31ed3a64">existe_aresta</a></div><div class="ttdeci">resposta existe_aresta(const grafo_priv_t *meu_grafo, int id_externo1, int id_externo2)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00087">grafo.cpp:87</a></div></div>
 <div class="ttc" id="structCelula__priv_html_aee72d429cf8e17c945a1eb4e05ad85c7"><div class="ttname"><a href="structCelula__priv.html#aee72d429cf8e17c945a1eb4e05ad85c7">Celula_priv::duracao</a></div><div class="ttdeci">int duracao</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00007">grafo_priv.h:7</a></div></div>
@@ -584,7 +559,7 @@ $(document).ready(function(){initNavTree('grafo_8h_source.html','');});
 <div class="ttc" id="structCelula__priv_html"><div class="ttname"><a href="structCelula__priv.html">Celula_priv</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00006">grafo_priv.h:6</a></div></div>
 <div class="ttc" id="grafo_8h_html_a4a2eceb977b50eb0028c419047e56e1d"><div class="ttname"><a href="grafo_8h.html#a4a2eceb977b50eb0028c419047e56e1d">resp</a></div><div class="ttdeci">resp</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8h_source.html#l00009">grafo.h:9</a></div></div>
 <div class="ttc" id="grafo_8h_html_a5bedfb800e326da354b0403421e0d1ef"><div class="ttname"><a href="grafo_8h.html#a5bedfb800e326da354b0403421e0d1ef">maior_id</a></div><div class="ttdeci">int maior_id(const grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00490">grafo.cpp:490</a></div></div>
-<div class="ttc" id="grafo_8h_html_a79154a07716d283ad68106cf54beaf07"><div class="ttname"><a href="grafo_8h.html#a79154a07716d283ad68106cf54beaf07">editar_celula</a></div><div class="ttdeci">void editar_celula(grafo_priv_t *meu_grafo, int ID)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00662">grafo.cpp:662</a></div></div>
+<div class="ttc" id="grafo_8h_html_a79154a07716d283ad68106cf54beaf07"><div class="ttname"><a href="grafo_8h.html#a79154a07716d283ad68106cf54beaf07">editar_celula</a></div><div class="ttdeci">void editar_celula(grafo_priv_t *meu_grafo, int ID)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00664">grafo.cpp:664</a></div></div>
 <div class="ttc" id="grafo_8h_html_ac428ee7436d16b5251b093aa79183fda"><div class="ttname"><a href="grafo_8h.html#ac428ee7436d16b5251b093aa79183fda">achar_id</a></div><div class="ttdeci">int achar_id(const grafo_priv_t *meu_grafo, int id_externo)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00107">grafo.cpp:107</a></div></div>
 <div class="ttc" id="grafo_8h_html_a90390d2135067928e2c69cd964c9bec5"><div class="ttname"><a href="grafo_8h.html#a90390d2135067928e2c69cd964c9bec5">achar_celula</a></div><div class="ttdeci">Celula_priv_t * achar_celula(const grafo_priv_t *meu_grafo, int id_externo)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00117">grafo.cpp:117</a></div></div>
 <div class="ttc" id="grafo_8h_html_a0e69707897c891bf77319d494cae8f26"><div class="ttname"><a href="grafo_8h.html#a0e69707897c891bf77319d494cae8f26">inserir_aresta</a></div><div class="ttdeci">void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *celula2, int peso)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00250">grafo.cpp:250</a></div></div>

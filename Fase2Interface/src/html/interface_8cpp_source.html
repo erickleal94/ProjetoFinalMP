@@ -212,222 +212,225 @@ $(document).ready(function(){initNavTree('interface_8cpp_source.html','');});
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="interface_8cpp.html#a45d07639c68b6754482304399deea404">  114</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8cpp.html#a45d07639c68b6754482304399deea404">interface_caminho_completo</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo){</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">int</span> tempo;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">int</span> tempo = -1, tempo_aux;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        clear();</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        refresh();</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        box(stdscr, 0, 0);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        move(1,1);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        printw(<span class="stringliteral">&quot;Tempo para executar todas as tarefas: &quot;</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="comment">//tempo = funcao que vai medir o tempo</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">//printw(&quot;%d&quot;, tempo);</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        refresh();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        getch();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        clear();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        box(stdscr, 0, 0);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        refresh();</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="interface_8cpp.html#a24af973236c7577368e0b5003d26b173">  134</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8cpp.html#a24af973236c7577368e0b5003d26b173">interface_caminho_parcial</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo){</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordtype">int</span> tempo;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        init_pair(2,COLOR_RED,COLOR_BLACK);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        init_pair(3,COLOR_GREEN,COLOR_BLACK);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        init_pair(4,COLOR_YELLOW,COLOR_BLACK);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="structlista__vert__codigo.html">lista_vert_codigo_t</a> *iterator;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">for</span> (iterator = meu_grafo-&gt;<a class="code" href="structgrafo__priv.html#a7aaee4699517501a8ca504043ef78ddb">tabela</a>; iterator != NULL; iterator = iterator-&gt;<a class="code" href="structlista__vert__codigo.html#af1cac7f22cb6142a13bd1f9c41f4c0b5">next</a>) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                tempo_aux = <a class="code" href="grafo_8cpp.html#a14183876086781302e2d81ab2457dc4e">tempo_minimo</a>(meu_grafo,meu_grafo-&gt;<a class="code" href="structgrafo__priv.html#a7aaee4699517501a8ca504043ef78ddb">tabela</a>-&gt;<a class="code" href="structlista__vert__codigo.html#a8e51b3141307b34cb74d6433a136f73b">dado</a>.<a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="keywordflow">if</span>(tempo_aux &gt; tempo){</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                        tempo = tempo_aux;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        printw(<span class="stringliteral">&quot;%d&quot;</span>, tempo);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        refresh();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        getch();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        clear();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        box(stdscr, 0, 0);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        refresh();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="interface_8cpp.html#a24af973236c7577368e0b5003d26b173">  141</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8cpp.html#a24af973236c7577368e0b5003d26b173">interface_caminho_parcial</a>(<a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo){</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        clear();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        refresh();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        box(stdscr, 0, 0);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        move(1,1);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        printw(<span class="stringliteral">&quot;Qual o tempo que deseja analisar?&quot;</span>);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        move(2,1);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        scanw(<span class="stringliteral">&quot;%d&quot;</span>, &amp;tempo);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="comment">//funcao que vai analisar o tempo</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        move(3,1);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        attron(COLOR_PAIR(3));</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        printw(<span class="stringliteral">&quot;Tarefas ja concluidas: &quot;</span>);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="comment">//printw(&quot;&quot;); colocar as tarefas ja concluidas</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        move(4,1);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        attron(COLOR_PAIR(4));</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        printw(<span class="stringliteral">&quot;Tarefas em execucao: &quot;</span>);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">//printw(&quot;&quot;); colocar as tarefas em execucao</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        move(5,1);      </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        attron(COLOR_PAIR(2));</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        printw(<span class="stringliteral">&quot;Tarefas nao iniciadas: &quot;</span>);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">//printw(&quot;&quot;); colocar as tarefas nao iniciadas</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        move(6,1);      </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordtype">int</span> tempo;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        init_pair(2,COLOR_RED,COLOR_BLACK);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        init_pair(3,COLOR_GREEN,COLOR_BLACK);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        init_pair(4,COLOR_YELLOW,COLOR_BLACK);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        clear();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        refresh();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        box(stdscr, 0, 0);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        move(1,1);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        printw(<span class="stringliteral">&quot;Qual o tempo que deseja analisar?&quot;</span>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        move(2,1);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        scanw(<span class="stringliteral">&quot;%d&quot;</span>, &amp;tempo);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="grafo_8cpp.html#acb5b55f7d1508a1b35b76e43bc817623">ja_feito</a>(meu_grafo, tempo);     </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        refresh();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        getch();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        clear();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        attron(COLOR_PAIR(1));</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        box(stdscr, 0, 0);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        refresh();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        getch();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        clear();</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        attron(COLOR_PAIR(1));</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        box(stdscr, 0, 0);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        refresh();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="interface_8cpp.html#a9b0c3c81c4a66fd4591e720a3c2b9015">  170</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8cpp.html#a9b0c3c81c4a66fd4591e720a3c2b9015">interface_vizualizar_tarefas</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo){</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="interface_8cpp.html#a9b0c3c81c4a66fd4591e720a3c2b9015">  175</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8cpp.html#a9b0c3c81c4a66fd4591e720a3c2b9015">interface_vizualizar_tarefas</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo){</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        clear();</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        refresh();</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        box(stdscr, 0, 0);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        move(1,1);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        printw(<span class="stringliteral">&quot;As tarefas sao: &quot;</span>);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        move(2,1);      </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="grafo_8cpp.html#a1dd7cc6696ade339827db4d2019239fc">Imprime_Tarefas</a>(meu_grafo, 2, 1);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        clear();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        refresh();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        box(stdscr, 0, 0);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        move(1,1);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        printw(<span class="stringliteral">&quot;As tarefas sao: &quot;</span>);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        move(2,1);      </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="grafo_8cpp.html#a1dd7cc6696ade339827db4d2019239fc">Imprime_Tarefas</a>(meu_grafo, 2, 1);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        refresh();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        getch();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        clear();</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        box(stdscr, 0, 0);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        refresh();</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        getch();</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        clear();</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        box(stdscr, 0, 0);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        refresh();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86">  192</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86">interface_vizualizar_determinada_tarefa</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo){</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordtype">int</span> ID, i;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="structCelula__priv.html">Celula_priv_t</a> *celula;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        clear();</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        refresh();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        box(stdscr, 0, 0);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        move(1,1);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        printw(<span class="stringliteral">&quot;Qual o codigo da tarefa que deseja visualizar?&quot;</span>);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        move(2,1);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        scanw(<span class="stringliteral">&quot;%d&quot;</span>, &amp;ID);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        celula = <a class="code" href="grafo_8cpp.html#a90390d2135067928e2c69cd964c9bec5">achar_celula</a>(meu_grafo, ID);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        move(3,1);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        printw(<span class="stringliteral">&quot;%d %s %d %d %d %d &quot;</span>, celula-&gt;<a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>, celula-&gt;<a class="code" href="structCelula__priv.html#a7f33fa72aceed7b44922f0f39d6f7f59">nome</a>, celula-&gt;<a class="code" href="structCelula__priv.html#af5f995caad41372e844f965021c5d183">executada</a>, celula-&gt;<a class="code" href="structCelula__priv.html#aee72d429cf8e17c945a1eb4e05ad85c7">duracao</a>, celula-&gt;<a class="code" href="structCelula__priv.html#a3c49601fe078bd7bb1512f0107af5301">ini_min</a>, celula-&gt;<a class="code" href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">pre_req</a>);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">if</span>(celula-&gt;<a class="code" href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">pre_req</a> &gt; 0){</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                <span class="keywordflow">for</span>(i = 0; i &lt; celula-&gt;<a class="code" href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">pre_req</a>; i++){</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        printw(<span class="stringliteral">&quot;%d &quot;</span>, celula-&gt;<a class="code" href="structCelula__priv.html#ad54839cd4d96e78a58c226ab2e8d0579">reqs</a>[i]);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86">  187</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86">interface_vizualizar_determinada_tarefa</a>(<span class="keyword">const</span> <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo){</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordtype">int</span> ID, i, tempo = 0;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <a class="code" href="structCelula__priv.html">Celula_priv_t</a> *celula;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        clear();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        refresh();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        box(stdscr, 0, 0);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        move(1,1);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        printw(<span class="stringliteral">&quot;Qual o codigo da tarefa que deseja visualizar?&quot;</span>);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        move(2,1);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        scanw(<span class="stringliteral">&quot;%d&quot;</span>, &amp;ID);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        celula = <a class="code" href="grafo_8cpp.html#a90390d2135067928e2c69cd964c9bec5">achar_celula</a>(meu_grafo, ID);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        move(3,1);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        printw(<span class="stringliteral">&quot;%d %s %d %d %d %d &quot;</span>, celula-&gt;<a class="code" href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">id_externo</a>, celula-&gt;<a class="code" href="structCelula__priv.html#a7f33fa72aceed7b44922f0f39d6f7f59">nome</a>, celula-&gt;<a class="code" href="structCelula__priv.html#af5f995caad41372e844f965021c5d183">executada</a>, celula-&gt;<a class="code" href="structCelula__priv.html#aee72d429cf8e17c945a1eb4e05ad85c7">duracao</a>, celula-&gt;<a class="code" href="structCelula__priv.html#a3c49601fe078bd7bb1512f0107af5301">ini_min</a>, celula-&gt;<a class="code" href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">pre_req</a>);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">if</span>(celula-&gt;<a class="code" href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">pre_req</a> &gt; 0){</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordflow">for</span>(i = 0; i &lt; celula-&gt;<a class="code" href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">pre_req</a>; i++){</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                        printw(<span class="stringliteral">&quot;%d &quot;</span>, celula-&gt;<a class="code" href="structCelula__priv.html#ad54839cd4d96e78a58c226ab2e8d0579">reqs</a>[i]);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        tempo = <a class="code" href="grafo_8cpp.html#a14183876086781302e2d81ab2457dc4e">tempo_minimo</a>(meu_grafo, ID);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        move(4,1);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">if</span>(tempo &gt; 0){</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                printw(<span class="stringliteral">&quot;Tempo para concluir a tarefa: %d&quot;</span>, tempo);</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        refresh();</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        </div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        refresh();</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        getch();</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        clear();</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        box(stdscr, 0, 0);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        refresh();      </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;}</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">  228</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordtype">int</span> escolha = -1;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo = <a class="code" href="grafo_8cpp.html#a1bb7038cecd5aa54025b6c5931bc0205">criaGrafoArq</a>(<span class="stringliteral">&quot;entrada.txt&quot;</span>);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        initscr();</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        start_color();</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        box(stdscr, 0, 0);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        init_pair(1,COLOR_WHITE,COLOR_BLACK); <span class="comment">//Texto(BRANCO) | Fundo(PRETO)</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        bkgd(COLOR_PAIR(1));</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">while</span>(escolha != 0){</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                move(1,1);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                printw(<span class="stringliteral">&quot;Escolha o que deseja fazer:&quot;</span>);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                move(2,1);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                printw(<span class="stringliteral">&quot;1 - Remover tarefa&quot;</span>);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                move(3,1);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                printw(<span class="stringliteral">&quot;2 - Editar tarefa&quot;</span>);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                move(4,1);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                printw(<span class="stringliteral">&quot;3 - Inserir tarefa&quot;</span>);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                move(5,1);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                printw(<span class="stringliteral">&quot;4 - Visualizar tempo para completar todas as tarefas&quot;</span>);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                move(6,1);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                printw(<span class="stringliteral">&quot;5 - Visualizar situacao das tarefas em determinado tempo&quot;</span>);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                move(7,1);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                printw(<span class="stringliteral">&quot;6 - Visualizar todas as tarefas&quot;</span>);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                move(8,1);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                printw(<span class="stringliteral">&quot;7 - Visualizar determinada tarefa&quot;</span>);    </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                move(9,1);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                printw(<span class="stringliteral">&quot;0 - Sair&quot;</span>);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                move(10,1);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                scanw(<span class="stringliteral">&quot;%d&quot;</span>, &amp;escolha);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                refresh();</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                <span class="keywordflow">switch</span>(escolha){</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                        <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                <a class="code" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588">interface_remover_tarefa</a>(meu_grafo);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                <span class="keywordflow">break</span>;  </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                        </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                        <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                <a class="code" href="interface_8cpp.html#a82c53fa74aeeec1c1234672393299537">interface_editar_tarefa</a>(meu_grafo);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                        </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                        <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                <a class="code" href="interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec">interface_inserir_tarefa</a>(meu_grafo);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                        </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                        <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                                <a class="code" href="interface_8cpp.html#a45d07639c68b6754482304399deea404">interface_caminho_completo</a>(meu_grafo);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                                </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        <span class="keywordflow">case</span> 5:</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                <a class="code" href="interface_8cpp.html#a24af973236c7577368e0b5003d26b173">interface_caminho_parcial</a>(meu_grafo);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        <span class="keywordflow">case</span> 6:</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                                <a class="code" href="interface_8cpp.html#a9b0c3c81c4a66fd4591e720a3c2b9015">interface_vizualizar_tarefas</a>(meu_grafo);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                                </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        <span class="keywordflow">case</span> 7:</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                                <a class="code" href="interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86">interface_vizualizar_determinada_tarefa</a>(meu_grafo);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                                        </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                        <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                <span class="keywordflow">break</span>;                  </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                }</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        }</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        getch();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        clear();</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        box(stdscr, 0, 0);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        refresh();      </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">  225</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordtype">int</span> escolha = -1;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <a class="code" href="structgrafo__priv.html">grafo_priv_t</a> *meu_grafo = <a class="code" href="grafo_8cpp.html#a1bb7038cecd5aa54025b6c5931bc0205">criaGrafoArq</a>(<span class="stringliteral">&quot;entrada.txt&quot;</span>);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        initscr();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        start_color();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        box(stdscr, 0, 0);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        init_pair(1,COLOR_WHITE,COLOR_BLACK); <span class="comment">//Texto(BRANCO) | Fundo(PRETO)</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        bkgd(COLOR_PAIR(1));</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">while</span>(escolha != 0){</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                move(1,1);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                printw(<span class="stringliteral">&quot;Escolha o que deseja fazer:&quot;</span>);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                move(2,1);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                printw(<span class="stringliteral">&quot;1 - Remover tarefa&quot;</span>);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                move(3,1);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                printw(<span class="stringliteral">&quot;2 - Editar tarefa&quot;</span>);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                move(4,1);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                printw(<span class="stringliteral">&quot;3 - Inserir tarefa&quot;</span>);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                move(5,1);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                printw(<span class="stringliteral">&quot;4 - Visualizar tempo para completar todas as tarefas&quot;</span>);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                move(6,1);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                printw(<span class="stringliteral">&quot;5 - Visualizar situacao das tarefas em determinado tempo&quot;</span>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                move(7,1);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                printw(<span class="stringliteral">&quot;6 - Visualizar todas as tarefas&quot;</span>);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                move(8,1);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                printw(<span class="stringliteral">&quot;7 - Visualizar determinada tarefa&quot;</span>);    </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                move(9,1);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                printw(<span class="stringliteral">&quot;0 - Sair&quot;</span>);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                move(10,1);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                scanw(<span class="stringliteral">&quot;%d&quot;</span>, &amp;escolha);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                refresh();</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                <span class="keywordflow">switch</span>(escolha){</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                <a class="code" href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588">interface_remover_tarefa</a>(meu_grafo);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                <span class="keywordflow">break</span>;  </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                        </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                        <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                <a class="code" href="interface_8cpp.html#a82c53fa74aeeec1c1234672393299537">interface_editar_tarefa</a>(meu_grafo);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                        </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                        <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                <a class="code" href="interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec">interface_inserir_tarefa</a>(meu_grafo);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                        </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                        <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                <a class="code" href="interface_8cpp.html#a45d07639c68b6754482304399deea404">interface_caminho_completo</a>(meu_grafo);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                        <span class="keywordflow">case</span> 5:</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                <a class="code" href="interface_8cpp.html#a24af973236c7577368e0b5003d26b173">interface_caminho_parcial</a>(meu_grafo);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        <span class="keywordflow">case</span> 6:</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                <a class="code" href="interface_8cpp.html#a9b0c3c81c4a66fd4591e720a3c2b9015">interface_vizualizar_tarefas</a>(meu_grafo);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        <span class="keywordflow">case</span> 7:</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                <a class="code" href="interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86">interface_vizualizar_determinada_tarefa</a>(meu_grafo);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                                        </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                        <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                                <span class="keywordflow">break</span>;                  </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <a class="code" href="grafo_8cpp.html#aadbd57b376954aeeb119120d5a4a196f">Grava_Arq</a>(meu_grafo, <span class="stringliteral">&quot;saida.txt&quot;</span>);</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        </div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <a class="code" href="grafo_8cpp.html#aadbd57b376954aeeb119120d5a4a196f">Grava_Arq</a>(meu_grafo, <span class="stringliteral">&quot;saida.txt&quot;</span>);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        endwin();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        endwin();</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
-<div class="ttc" id="grafo_8cpp_html_a1bb7038cecd5aa54025b6c5931bc0205"><div class="ttname"><a href="grafo_8cpp.html#a1bb7038cecd5aa54025b6c5931bc0205">criaGrafoArq</a></div><div class="ttdeci">grafo_priv_t * criaGrafoArq(char *nomeArq)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00753">grafo.cpp:753</a></div></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}</div>
+<div class="ttc" id="grafo_8cpp_html_a1bb7038cecd5aa54025b6c5931bc0205"><div class="ttname"><a href="grafo_8cpp.html#a1bb7038cecd5aa54025b6c5931bc0205">criaGrafoArq</a></div><div class="ttdeci">grafo_priv_t * criaGrafoArq(char *nomeArq)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00767">grafo.cpp:767</a></div></div>
 <div class="ttc" id="grafo_8h_html"><div class="ttname"><a href="grafo_8h.html">grafo.h</a></div><div class="ttdoc">Define funções usadas pelo usuario. </div></div>
 <div class="ttc" id="grafo_8cpp_html_a659b567cb7e165b526b6fe05a433452e"><div class="ttname"><a href="grafo_8cpp.html#a659b567cb7e165b526b6fe05a433452e">inserir_vert</a></div><div class="ttdeci">void inserir_vert(grafo_priv_t *meu_grafo, Celula_priv_t *celula)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00128">grafo.cpp:128</a></div></div>
-<div class="ttc" id="grafo_8cpp_html_aadbd57b376954aeeb119120d5a4a196f"><div class="ttname"><a href="grafo_8cpp.html#aadbd57b376954aeeb119120d5a4a196f">Grava_Arq</a></div><div class="ttdeci">void Grava_Arq(grafo_priv_t *meu_grafo, char *NomeArq)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00636">grafo.cpp:636</a></div></div>
-<div class="ttc" id="interface_8cpp_html_a79781e0e904f80b7525c4ee52c5e4f86"><div class="ttname"><a href="interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86">interface_vizualizar_determinada_tarefa</a></div><div class="ttdeci">void interface_vizualizar_determinada_tarefa(const grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00192">interface.cpp:192</a></div></div>
+<div class="ttc" id="grafo_8cpp_html_aadbd57b376954aeeb119120d5a4a196f"><div class="ttname"><a href="grafo_8cpp.html#aadbd57b376954aeeb119120d5a4a196f">Grava_Arq</a></div><div class="ttdeci">void Grava_Arq(grafo_priv_t *meu_grafo, char *NomeArq)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00637">grafo.cpp:637</a></div></div>
+<div class="ttc" id="interface_8cpp_html_a79781e0e904f80b7525c4ee52c5e4f86"><div class="ttname"><a href="interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86">interface_vizualizar_determinada_tarefa</a></div><div class="ttdeci">void interface_vizualizar_determinada_tarefa(const grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00187">interface.cpp:187</a></div></div>
 <div class="ttc" id="structCelula__priv_html_a7f33fa72aceed7b44922f0f39d6f7f59"><div class="ttname"><a href="structCelula__priv.html#a7f33fa72aceed7b44922f0f39d6f7f59">Celula_priv::nome</a></div><div class="ttdeci">char nome[200]</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00010">grafo_priv.h:10</a></div></div>
 <div class="ttc" id="structCelula__priv_html_af5f995caad41372e844f965021c5d183"><div class="ttname"><a href="structCelula__priv.html#af5f995caad41372e844f965021c5d183">Celula_priv::executada</a></div><div class="ttdeci">int executada</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00007">grafo_priv.h:7</a></div></div>
 <div class="ttc" id="grafo_8cpp_html_a90390d2135067928e2c69cd964c9bec5"><div class="ttname"><a href="grafo_8cpp.html#a90390d2135067928e2c69cd964c9bec5">achar_celula</a></div><div class="ttdeci">Celula_priv_t * achar_celula(const grafo_priv_t *meu_grafo, int id_externo)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00117">grafo.cpp:117</a></div></div>
 <div class="ttc" id="grafo_8cpp_html_a1dd7cc6696ade339827db4d2019239fc"><div class="ttname"><a href="grafo_8cpp.html#a1dd7cc6696ade339827db4d2019239fc">Imprime_Tarefas</a></div><div class="ttdeci">void Imprime_Tarefas(const grafo_priv_t *meu_grafo, int linha, int coluna)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00616">grafo.cpp:616</a></div></div>
 <div class="ttc" id="structCelula__priv_html_ad54839cd4d96e78a58c226ab2e8d0579"><div class="ttname"><a href="structCelula__priv.html#ad54839cd4d96e78a58c226ab2e8d0579">Celula_priv::reqs</a></div><div class="ttdeci">int * reqs</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00009">grafo_priv.h:9</a></div></div>
+<div class="ttc" id="structlista__vert__codigo_html"><div class="ttname"><a href="structlista__vert__codigo.html">lista_vert_codigo</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00016">grafo_priv.h:16</a></div></div>
 <div class="ttc" id="structgrafo__priv_html"><div class="ttname"><a href="structgrafo__priv.html">grafo_priv</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00041">grafo_priv.h:41</a></div></div>
-<div class="ttc" id="interface_8cpp_html_a24af973236c7577368e0b5003d26b173"><div class="ttname"><a href="interface_8cpp.html#a24af973236c7577368e0b5003d26b173">interface_caminho_parcial</a></div><div class="ttdeci">void interface_caminho_parcial(grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00134">interface.cpp:134</a></div></div>
+<div class="ttc" id="interface_8cpp_html_a24af973236c7577368e0b5003d26b173"><div class="ttname"><a href="interface_8cpp.html#a24af973236c7577368e0b5003d26b173">interface_caminho_parcial</a></div><div class="ttdeci">void interface_caminho_parcial(grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00141">interface.cpp:141</a></div></div>
 <div class="ttc" id="structCelula__priv_html_a3ff8d3c4d0ba994771391320203619fc"><div class="ttname"><a href="structCelula__priv.html#a3ff8d3c4d0ba994771391320203619fc">Celula_priv::pre_req</a></div><div class="ttdeci">int pre_req</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00008">grafo_priv.h:8</a></div></div>
 <div class="ttc" id="structCelula__priv_html_a78a8525da28e1918d0faaf127001bd7b"><div class="ttname"><a href="structCelula__priv.html#a78a8525da28e1918d0faaf127001bd7b">Celula_priv::id_externo</a></div><div class="ttdeci">int id_externo</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00007">grafo_priv.h:7</a></div></div>
 <div class="ttc" id="structCelula__priv_html_a3c49601fe078bd7bb1512f0107af5301"><div class="ttname"><a href="structCelula__priv.html#a3c49601fe078bd7bb1512f0107af5301">Celula_priv::ini_min</a></div><div class="ttdeci">int ini_min</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00008">grafo_priv.h:8</a></div></div>
 <div class="ttc" id="structCelula__priv_html_aee72d429cf8e17c945a1eb4e05ad85c7"><div class="ttname"><a href="structCelula__priv.html#aee72d429cf8e17c945a1eb4e05ad85c7">Celula_priv::duracao</a></div><div class="ttdeci">int duracao</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00007">grafo_priv.h:7</a></div></div>
+<div class="ttc" id="grafo_8cpp_html_a14183876086781302e2d81ab2457dc4e"><div class="ttname"><a href="grafo_8cpp.html#a14183876086781302e2d81ab2457dc4e">tempo_minimo</a></div><div class="ttdeci">int tempo_minimo(const grafo_priv_t *meu_grafo, int id_fim)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00720">grafo.cpp:720</a></div></div>
 <div class="ttc" id="interface_8cpp_html_a730338c13fb573bc4fc2d050488b66ec"><div class="ttname"><a href="interface_8cpp.html#a730338c13fb573bc4fc2d050488b66ec">interface_inserir_tarefa</a></div><div class="ttdeci">void interface_inserir_tarefa(grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00064">interface.cpp:64</a></div></div>
 <div class="ttc" id="interface_8cpp_html_ae481ead3e27aae5737f68899a0d8d588"><div class="ttname"><a href="interface_8cpp.html#ae481ead3e27aae5737f68899a0d8d588">interface_remover_tarefa</a></div><div class="ttdeci">void interface_remover_tarefa(grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00021">interface.cpp:21</a></div></div>
 <div class="ttc" id="interface_8cpp_html_a45d07639c68b6754482304399deea404"><div class="ttname"><a href="interface_8cpp.html#a45d07639c68b6754482304399deea404">interface_caminho_completo</a></div><div class="ttdeci">void interface_caminho_completo(const grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00114">interface.cpp:114</a></div></div>
-<div class="ttc" id="interface_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00228">interface.cpp:228</a></div></div>
+<div class="ttc" id="grafo_8cpp_html_acb5b55f7d1508a1b35b76e43bc817623"><div class="ttname"><a href="grafo_8cpp.html#acb5b55f7d1508a1b35b76e43bc817623">ja_feito</a></div><div class="ttdeci">void ja_feito(const grafo_priv_t *meu_grafo, int d)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00735">grafo.cpp:735</a></div></div>
+<div class="ttc" id="interface_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00225">interface.cpp:225</a></div></div>
 <div class="ttc" id="grafo__priv_8h_html"><div class="ttname"><a href="grafo__priv_8h.html">grafo_priv.h</a></div></div>
 <div class="ttc" id="structCelula__priv_html"><div class="ttname"><a href="structCelula__priv.html">Celula_priv</a></div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00006">grafo_priv.h:6</a></div></div>
 <div class="ttc" id="grafo_8cpp_html_a0e69707897c891bf77319d494cae8f26"><div class="ttname"><a href="grafo_8cpp.html#a0e69707897c891bf77319d494cae8f26">inserir_aresta</a></div><div class="ttdeci">void inserir_aresta(grafo_priv_t *meu_grafo, int id_externo1, Celula_priv_t *celula2, int peso)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00250">grafo.cpp:250</a></div></div>
-<div class="ttc" id="grafo_8cpp_html_a79154a07716d283ad68106cf54beaf07"><div class="ttname"><a href="grafo_8cpp.html#a79154a07716d283ad68106cf54beaf07">editar_celula</a></div><div class="ttdeci">void editar_celula(grafo_priv_t *meu_grafo, int ID)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00662">grafo.cpp:662</a></div></div>
+<div class="ttc" id="grafo_8cpp_html_a79154a07716d283ad68106cf54beaf07"><div class="ttname"><a href="grafo_8cpp.html#a79154a07716d283ad68106cf54beaf07">editar_celula</a></div><div class="ttdeci">void editar_celula(grafo_priv_t *meu_grafo, int ID)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00664">grafo.cpp:664</a></div></div>
 <div class="ttc" id="grafo_8cpp_html_a2812c8a1cbeaab16d0aaa6da10ec4372"><div class="ttname"><a href="grafo_8cpp.html#a2812c8a1cbeaab16d0aaa6da10ec4372">remover_vert</a></div><div class="ttdeci">void remover_vert(grafo_priv_t *meu_grafo, int id_externo)</div><div class="ttdef"><b>Definition:</b> <a href="grafo_8cpp_source.html#l00340">grafo.cpp:340</a></div></div>
-<div class="ttc" id="interface_8cpp_html_a9b0c3c81c4a66fd4591e720a3c2b9015"><div class="ttname"><a href="interface_8cpp.html#a9b0c3c81c4a66fd4591e720a3c2b9015">interface_vizualizar_tarefas</a></div><div class="ttdeci">void interface_vizualizar_tarefas(const grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00175">interface.cpp:175</a></div></div>
+<div class="ttc" id="structgrafo__priv_html_a7aaee4699517501a8ca504043ef78ddb"><div class="ttname"><a href="structgrafo__priv.html#a7aaee4699517501a8ca504043ef78ddb">grafo_priv::tabela</a></div><div class="ttdeci">lista_vert_codigo_t * tabela</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00042">grafo_priv.h:42</a></div></div>
+<div class="ttc" id="structlista__vert__codigo_html_af1cac7f22cb6142a13bd1f9c41f4c0b5"><div class="ttname"><a href="structlista__vert__codigo.html#af1cac7f22cb6142a13bd1f9c41f4c0b5">lista_vert_codigo::next</a></div><div class="ttdeci">struct lista_vert_codigo * next</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00019">grafo_priv.h:19</a></div></div>
+<div class="ttc" id="interface_8cpp_html_a9b0c3c81c4a66fd4591e720a3c2b9015"><div class="ttname"><a href="interface_8cpp.html#a9b0c3c81c4a66fd4591e720a3c2b9015">interface_vizualizar_tarefas</a></div><div class="ttdeci">void interface_vizualizar_tarefas(const grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00170">interface.cpp:170</a></div></div>
 <div class="ttc" id="interface_8cpp_html_a82c53fa74aeeec1c1234672393299537"><div class="ttname"><a href="interface_8cpp.html#a82c53fa74aeeec1c1234672393299537">interface_editar_tarefa</a></div><div class="ttdeci">void interface_editar_tarefa(grafo_priv_t *meu_grafo)</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00043">interface.cpp:43</a></div></div>
+<div class="ttc" id="structlista__vert__codigo_html_a8e51b3141307b34cb74d6433a136f73b"><div class="ttname"><a href="structlista__vert__codigo.html#a8e51b3141307b34cb74d6433a136f73b">lista_vert_codigo::dado</a></div><div class="ttdeci">Celula_priv_t dado</div><div class="ttdef"><b>Definition:</b> <a href="grafo__priv_8h_source.html#l00017">grafo_priv.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

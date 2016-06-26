@@ -395,6 +395,15 @@ TEST(remover_arestaTest, aresta_existente) {
 	meu_grafo = deletar_grafo(meu_grafo);
 }
 
+TEST(criaGrafoArqTest, cria_grafo) {
+	
+	grafo_priv_t *meu_grafo = criaGrafoArq("entrada.txt");
+	
+	EXPECT_EQ();
+	
+	meu_grafo = deletar_grafo(meu_grafo);
+}
+
 int main (int argc, char **argv) {
 	
 	grafo_priv_t *meu_grafo = criar_grafo();

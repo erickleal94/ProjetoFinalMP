@@ -2,5 +2,9 @@
 <area shape="rect" id="node2" href="$grafo_8h.html#a46f8363c4da6edf056e5fffba46e1bc7" title="eh_conexo" alt="" coords="143,5,232,32"/>
 <area shape="rect" id="node3" href="$grafo_8h.html#ad507a38f9feef6cad69436ec774b535f" title="menor_caminho" alt="" coords="128,56,247,83"/>
 <area shape="rect" id="node4" href="$grafo_8h.html#acb5b55f7d1508a1b35b76e43bc817623" title="ja_feito" alt="" coords="317,31,382,57"/>
-<area shape="rect" id="node5" href="$grafo_8h.html#a14183876086781302e2d81ab2457dc4e" title="tempo_minimo" alt="" coords="295,81,404,108"/>
+<area shape="rect" id="node7" href="$grafo_8h.html#a14183876086781302e2d81ab2457dc4e" title="tempo_minimo" alt="" coords="295,81,404,108"/>
+<area shape="rect" id="node5" href="$interface_8cpp.html#a24af973236c7577368e0b5003d26b173" title="interface_caminho_parcial" alt="" coords="459,31,638,57"/>
+<area shape="rect" id="node6" href="$interface_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="693,81,744,108"/>
+<area shape="rect" id="node8" href="$interface_8cpp.html#a45d07639c68b6754482304399deea404" title="interface_caminho_completo" alt="" coords="452,81,645,108"/>
+<area shape="rect" id="node9" href="$interface_8cpp.html#a79781e0e904f80b7525c4ee52c5e4f86" title="interface_vizualizar\l_determinada_tarefa" alt="" coords="475,133,622,174"/>
 </map>
