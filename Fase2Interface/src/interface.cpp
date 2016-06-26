@@ -113,15 +113,22 @@ void interface_inserir_tarefa(grafo_priv_t *meu_grafo){
 
 void interface_caminho_completo(const grafo_priv_t *meu_grafo){
 	
-	int tempo;
+	int tempo = -1, tempo_aux;
 	
 	clear();
 	refresh();
 	box(stdscr, 0, 0);
 	move(1,1);
 	printw("Tempo para executar todas as tarefas: ");
-	//tempo = funcao que vai medir o tempo
-	//printw("%d", tempo);
+	lista_vert_codigo_t *iterator;
+	
+	for (iterator = meu_grafo->tabela; iterator != NULL; iterator = iterator->next) {
+		tempo_aux = tempo_minimo(meu_grafo,meu_grafo->tabela->dado.id_externo);
+		if(tempo_aux > tempo){
+			tempo = tempo_aux;
+		}
+	}
+	printw("%d", tempo);
 	refresh();
 	
 	getch();
@@ -147,20 +154,8 @@ void interface_caminho_parcial(grafo_priv_t *meu_grafo){
 	printw("Qual o tempo que deseja analisar?");
 	move(2,1);
 	scanw("%d", &tempo);
-	//funcao que vai analisar o tempo
-	move(3,1);
-	attron(COLOR_PAIR(3));
-	printw("Tarefas ja concluidas: ");
-	//printw(""); colocar as tarefas ja concluidas
-	move(4,1);
-	attron(COLOR_PAIR(4));
-	printw("Tarefas em execucao: ");
-	//printw(""); colocar as tarefas em execucao
-	move(5,1);	
-	attron(COLOR_PAIR(2));
-	printw("Tarefas nao iniciadas: ");
-	//printw(""); colocar as tarefas nao iniciadas
-	move(6,1);	
+
+	ja_feito(meu_grafo, tempo);	
 	
 	refresh();
 	getch();
@@ -191,7 +186,7 @@ void interface_vizualizar_tarefas(const grafo_priv_t *meu_grafo){
 
 void interface_vizualizar_determinada_tarefa(const grafo_priv_t *meu_grafo){
 	
-	int ID, i;
+	int ID, i, tempo = 0;
 	Celula_priv_t *celula;
 	
 	clear();
@@ -212,9 +207,11 @@ void interface_vizualizar_determinada_tarefa(const grafo_priv_t *meu_grafo){
 		}
 		
 	}
-	
-	
-	
+	tempo = tempo_minimo(meu_grafo, ID);
+	move(4,1);
+	if(tempo > 0){
+		printw("Tempo para concluir a tarefa: %d", tempo);
+	}
 	refresh();
 	
 	getch();

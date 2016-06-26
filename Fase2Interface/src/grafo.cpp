@@ -617,7 +617,8 @@ void Imprime_Tarefas(const grafo_priv_t *meu_grafo, int linha, int coluna){
 	
 	lista_vert_codigo_t *aux = meu_grafo->tabela;
 	int i;
-	while(aux->next != NULL){
+	aux = aux->next;
+	while(aux != NULL){
 		linha++;
 		move(linha, 1);
 		printw("%d %s %d %d %d %d ", aux->dado.id_externo, aux->dado.nome, aux->dado.executada, aux->dado.duracao, aux->dado.ini_min, aux->dado.pre_req);
@@ -627,7 +628,7 @@ void Imprime_Tarefas(const grafo_priv_t *meu_grafo, int linha, int coluna){
 			}
 		
 		}
-		
+		aux = aux->next;
 	}	
 	
 	
@@ -641,8 +642,8 @@ void Grava_Arq(grafo_priv_t *meu_grafo, char *NomeArq){
 	
 	fp = fopen(NomeArq, "w");
 	
-	
-	while(aux->next != NULL){
+	aux = aux->next;
+	while(aux!= NULL){
 		
 		fprintf(fp, "%d %s %d %d %d %d ", aux->dado.id_externo, aux->dado.nome, aux->dado.executada, aux->dado.duracao, aux->dado.ini_min, aux->dado.pre_req);
 		if(aux->dado.pre_req > 0){
@@ -651,6 +652,7 @@ void Grava_Arq(grafo_priv_t *meu_grafo, char *NomeArq){
 			}
 		fprintf(fp, "\n");
 		}else{ fprintf(fp, "\n"); }
+		aux = aux->next;
 		
 	}		
 	
@@ -734,6 +736,8 @@ void ja_feito(const grafo_priv_t *meu_grafo, int d) {
 	int *dist;
 	
 	int inf = menor_caminho(meu_grafo, &dist);
+	int j = 1, k = 1;
+	
 	
 	lista_vert_codigo_t *iterator;
 	
@@ -742,9 +746,19 @@ void ja_feito(const grafo_priv_t *meu_grafo, int d) {
 		if (dist[id] < inf) {
 			//nao se alcanca nunca
 		} else if (dist[id] <= d) {
-			//ja fez
+			move(3,j);
+			attron(COLOR_PAIR(3));
+			printw("Tarefas ja concluidas: ");
+			printw(" %d", id);
+			refresh();
+			j++;
 		} else {
-			//nao fez
+			move(4,k);	
+			attron(COLOR_PAIR(2));
+			printw("Tarefas nao iniciadas ou em execucao: ");
+			printw(" %d", id);
+			refresh();
+			k++;
 		}
 	}
 	free(dist);
@@ -758,6 +772,10 @@ grafo_priv_t* criaGrafoArq(char *nomeArq){
 	char string[1000];
 	Celula_priv_t celula;
 	
+	if(fp == NULL){
+		printf("ARQUIVO NAO ENCONTRADO!\n");
+		return g;
+	}
 	
 	//leitura dos vertices
 	while(fscanf(fp, "%d '%[^']' %d %d %d %d", &celula.id_externo, celula.nome, &celula.executada, &celula.duracao, &celula.ini_min, &celula.pre_req)>0){

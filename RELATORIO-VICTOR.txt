@@ -1,5 +1,9 @@
+Data	Horas Trabalhadas	Tipo Tarefa			Descrição da Tarefa Realizada
 21/06 - 2 horas trabalhadas - Codificar módulo - Codificação do módulo que contém a interface gráfica que será usada.
-- revisar código do módulo - revisão do código do módulo codificado.
+                            - revisar código do módulo - revisão do código do módulo codificado.
 
 23/06 - 3 horas trabalhadas - Codificar módulo - Codificação dos módulos para mostrar para o usuário as tarefas.
-- revisar código do módulo - revisão do código feito.
+                            - revisar código do módulo - revisão do código feito.
+
+25/06 - 2 horas trabalhadas - Codificar módulo - Codificação da interface para mostrar caminho parcial e tempo completo.
+                            - revisar código do módulo - revisão do código feito.
