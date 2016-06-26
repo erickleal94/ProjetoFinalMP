@@ -131,10 +131,9 @@ Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_m
  * 			100 é o maior número de caracteres que um
  * 			os vértices da aresta podem ter.
  * 
- * Valor retornado
- * 	Retorna uma resposta, que será TRUE caso exista a aresta,
+ * @return	Retorna uma resposta, que será TRUE caso exista a aresta,
  * 	e FALSE caso não exista.
- * Assertiva de entrada
+ * @section asert Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
  * 	strlen(nome1) <= 100
@@ -145,9 +144,9 @@ Celula_priv_t *cria_celula(int id_externo, int executada, int duracao, int ini_m
 ***************************************************************************/
 resposta existe_aresta(const grafo_priv_t *meu_grafo, int id_externo1, int id_externo2);
 
-/***************************************************************************
- * Função: Achar id
- * Descrição
+/**
+ * @brief Achar id
+ * @section desc Descrição
  * 	Todo vértice armazenado no grafo possui um nome, uma string
  * 	de até 100 caracteres mais o caracter zero terminal, e um
  * 	identificador (id), um inteiro que é como o vértice é
@@ -168,20 +167,18 @@ resposta existe_aresta(const grafo_priv_t *meu_grafo, int id_externo1, int id_ex
  * 
  * 	Por motivos de segurança sempre se verifica se existe_vert nome antes
  * 	de se usar achar_id
- * Parâmetros
- * 	meu_grafo	- Deve ser passado um grafo inicializado
- * 	nome		- Deve ser passado uma string de até 100 
+ * @param	meu_grafo	- Deve ser passado um grafo inicializado
+ * @param	nome		- Deve ser passado uma string de até 100 
  * 			caracteres, mais o caracter zero terminal.
  * 			Se a string tiver mais que 100 caracteres,
  * 			a origem não será encontrado, uma vez que
  * 			100 é o maior número de caracteres que uma
  * 			origem pode ter.
  * 
- * Valor retornado
- * 	Retorna um inteiro id. Caso não se ache o vértice nome, esse
+ * @return	Retorna um inteiro id. Caso não se ache o vértice nome, esse
  * 	inteiro será -1, caso contrário será o valor do identificador
  * 	de nome
- * Assertiva de entrada
+ * @section asert Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
  * 	strlen(nome) <= 100
@@ -196,24 +193,22 @@ resposta existe_aresta(const grafo_priv_t *meu_grafo, int id_externo1, int id_ex
 ***************************************************************************/
 int achar_id(const grafo_priv_t *meu_grafo, int id_externo);
 
-/***************************************************************************
- * Função: Achar nome
- * Descrição
+/**
+ * @brief Achar nome
+ * @section desc Descrição
  * 	Encontra o nome dado pelo usuário ao vértice de identificador id
  * 
  * 	Todo vértice armazenado no grafo possui um nome, uma string
  * 	de até 100 caracteres mais o caracter zero terminal, e um
  * 	identificador (id), um inteiro que é como o vértice é
  * 	armazenado internamente.
- * Parâmetros
- * 	meu_grafo	- Deve ser passado um grafo inicializado
- * 	id		- Deve ser passado um inteiro não negativo
+ * @param	meu_grafo	- Deve ser passado um grafo inicializado
+ * @param	id		- Deve ser passado um inteiro não negativo
  * 			válido, ou seja, que represente um vértice
  * 
- * Valor retornado
- * 	Retorna um ponteiro para o começo do nome. Caso não se ache
+ * @return	Retorna um ponteiro para o começo do nome. Caso não se ache
  *	um vérice com id, retorna-se NULL.
- * Assertiva de entrada
+ * @section asse Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
  * 	0 <= id
@@ -230,9 +225,9 @@ int achar_id(const grafo_priv_t *meu_grafo, int id_externo);
 ***************************************************************************/
 Celula_priv_t *achar_celula(const grafo_priv_t *meu_grafo, int id_externo);
 
-/***************************************************************************
- * Função: Inserir vértice
- * Descrição
+/**
+ * @brief Inserir vértice
+ * @section desc Descrição
  * 	Caso não existir um vértice nome, insere-se um.
  * 
  * 	Se já existir o vertice, e caso a opção de DEBUG seja ativada,
@@ -241,16 +236,14 @@ Celula_priv_t *achar_celula(const grafo_priv_t *meu_grafo, int id_externo);
  * 
  * 	Para isso guarda-se uma cópia da string dada pelo
  * 	usuário
- * Parâmetros
- * 	meu_grafo	- Deve ser passado um grafo inicializado
- * 	nome		- Deve ser passado uma string de até 100 
+ * @param 	meu_grafo	- Deve ser passado um grafo inicializado
+ * @param	nome		- Deve ser passado uma string de até 100 
  * 			caracteres, mais o caracter zero terminal.
  * 
- * Valor retornado
- * 	Retorna a grafo modificado por referência, ou seja, o grafo
+ *@return	Retorna a grafo modificado por referência, ou seja, o grafo
  * 	passado será modificado sem a necessidade de receber um valor
  * 	de retorno.
- * Assertiva de entrada
+ * @section asse Assertiva de entrada
  * 	O grafo já deve ter sido inicializado por criar_grafo(),
  * 	se não for o programa pode ser interrompido.
  * 	strlen(nome) <= 100
